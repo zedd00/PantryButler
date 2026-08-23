@@ -1,0 +1,303 @@
+{
+  "announcements": {
+    "toasts": {
+      "accessDenied": "访问被拒绝：仅限超级管理员",
+      "verifyFailed": "验证访问失败",
+      "loadFailed": "加载公告失败：{{error}}",
+      "titleAndMessageRequired": "需要标题和消息",
+      "updated": "公告更新成功",
+      "created": "公告创建成功",
+      "saveFailed": "保存公告失败：{{error}}",
+      "deleted": "公告删除成功",
+      "deleteFailed": "删除公告失败：{{error}}"
+    },
+    "headings": {
+      "management": "公告管理",
+      "edit": "编辑公告",
+      "create": "创建新公告"
+    },
+    "text": {
+      "description": "管理显示给用户的PantryButler新闻公告",
+      "empty": "还没有公告。创建一个即可开始。",
+      "editHint": "更新下面的公告详情。",
+      "createHint": "创建一个新公告以显示给所有用户。"
+    },
+    "buttons": {
+      "new": "新建公告"
+    },
+    "badges": {
+      "active": "启用",
+      "inactive": "停用"
+    },
+    "labels": {
+      "title": "标题",
+      "message": "消息",
+      "active": "启用（显示给用户）"
+    },
+    "placeholders": {
+      "title": "欢迎使用PantryButler！",
+      "message": "输入您的公告消息..."
+    },
+    "dialogs": {
+      "deleteTitle": "删除公告",
+      "deleteDescription": "您确定要删除\"{{title}}\"吗？此操作无法撤销。"
+    }
+  },
+  "instances": {
+    "toasts": {
+      "unauthorized": "未授权的访问",
+      "loadFailed": "加载实例失败：{{error}}",
+      "deleted": "实例\"{{name}}\"删除成功",
+      "deleteFailed": "删除实例失败：{{error}}"
+    },
+    "headings": {
+      "management": "实例管理",
+      "all": "所有实例",
+      "aboutDeletion": "关于实例删除",
+      "deleteConfirm": "删除实例？"
+    },
+    "text": {
+      "description": "用于管理实例和数据的管理面板",
+      "loading": "正在加载实例...",
+      "empty": "未找到实例",
+      "deletionWarning": "删除实例将永久移除所有关联数据，包括：食谱、食材、食品储藏室项目、设备、日历餐食、购物清单、单位换算、自定义位置、设置和用户成员资格。此操作无法撤销。"
+    },
+    "table": {
+      "instanceName": "实例名称",
+      "creator": "创建者",
+      "created": "创建时间",
+      "lastLogin": "上次登录",
+      "actions": "操作"
+    },
+    "buttons": {
+      "deleting": "正在删除...",
+      "deleteInstance": "删除实例"
+    },
+    "deleteDialog": {
+      "confirmText": "您确定要删除实例\"{{name}}\"吗？",
+      "permanently": "这将永久删除：",
+      "items": {
+        "recipes": "所有食谱和食材",
+        "pantry": "所有食品储藏室项目和设备",
+        "calendar": "所有日历餐食和购物清单",
+        "settings": "所有设置和自定义数据",
+        "memberships": "此实例的所有用户成员资格"
+      },
+      "cannotUndo": "此操作无法撤销。"
+    },
+    "formatDate": {
+      "never": "从未",
+      "invalidDate": "无效日期"
+    }
+  },
+  "userManagement": {
+    "toasts": {
+      "noInstance": "未找到实例",
+      "loadFailed": "加载用户失败：{{error}}",
+      "usernamePasswordRequired": "需要用户名和密码",
+      "created": "用户已创建",
+      "createFailed": "创建用户失败：{{error}}",
+      "cannotDemoteLastAdmin": "不能降级最后一位管理员",
+      "roleUpdated": "角色更新成功",
+      "roleUpdateFailed": "更新角色失败：{{error}}",
+      "permissionsUpdated": "权限已更新",
+      "permissionsUpdateFailed": "更新权限失败：{{error}}",
+      "cannotDeleteOwn": "不能删除您自己的账户",
+      "deleted": "用户已删除",
+      "deleteFailed": "删除用户失败：{{error}}"
+    },
+    "headings": {
+      "management": "用户管理",
+      "users": "用户",
+      "addUser": "添加用户",
+      "editPermissions": "编辑用户权限",
+      "deleteUser": "删除用户"
+    },
+    "text": {
+      "description": "管理用户账户和角色",
+      "calendarPermissionHint": "没有日历权限的用户可以查看但不能修改日历餐食",
+      "deleteDescription": "您确定要删除此用户吗？他们的食谱将被重新分配给系统账户。"
+    },
+    "labels": {
+      "username": "用户名",
+      "password": "密码",
+      "role": "角色",
+      "canEditCalendar": "可以编辑日历"
+    },
+    "buttons": {
+      "addUser": "添加用户",
+      "saveChanges": "保存更改"
+    },
+    "roles": {
+      "user": "用户",
+      "admin": "管理员"
+    },
+    "placeholders": {
+      "search": "搜索用户..."
+    }
+  },
+  "dataImport": {
+    "toasts": {
+      "accessDenied": "访问被拒绝：仅限超级管理员",
+      "verifyFailed": "验证访问失败",
+      "parseFailed": "解析{{file}}失败：无效的JSON",
+      "importProgress": "已导入{{current}}/{{total}}...",
+      "imported": "从{{fileName}}导入了{{total}}种营养食品",
+      "importFailed": "导入失败：{{error}}",
+      "loadFailed": "加载{{file}}失败：{{error}}"
+    },
+    "headings": {
+      "dataImport": "数据导入",
+      "nutritionStatus": "营养数据库状态",
+      "serverFiles": "服务器上可用",
+      "uploadFromComputer": "从计算机上传",
+      "uploadedFiles": "已上传待导入的文件",
+      "importResults": "导入结果"
+    },
+    "text": {
+      "description": "从JSON文件导入营养数据",
+      "recordsImported": "条记录已导入",
+      "noDataImported": "尚未导入数据",
+      "serverFilesDescription": "在容器的设置目录中找到的JSON文件",
+      "dropNutritionFileBefore": "将",
+      "dropNutritionFileAfter": "文件拖放到此处以从您的本地计算机导入",
+      "dropFilesHere": "将文件拖放到此处...",
+      "dragDrop": "将JSON文件拖放到此处",
+      "orClickToBrowse": "或单击浏览",
+      "records": "条记录"
+    },
+    "buttons": {
+      "importing": "正在导入...",
+      "import": "导入",
+      "remove": "移除",
+      "importToDatabase": "导入到数据库"
+    },
+    "table": {
+      "file": "文件",
+      "imported": "已导入",
+      "status": "状态"
+    },
+    "status": {
+      "success": "成功"
+    },
+    "alert": {
+      "title": "注意",
+      "description": "营养数据会被更新或插入（具有匹配ID的现有记录会被更新）。这需要超级管理员权限。"
+    }
+  },
+  "setup": {
+    "steps": {
+      "testConnection": {
+        "title": "测试数据库连接",
+        "description": "验证数据库是否已连接并在运行"
+      },
+      "seedNutrition": {
+        "title": "导入营养数据",
+        "description": "从USDA数据库导入营养食品"
+      },
+      "createAdmin": {
+        "title": "创建管理员用户",
+        "description": "创建初始管理员账户"
+      },
+      "validate": {
+        "title": "验证设置",
+        "description": "验证所有组件是否配置正确"
+      }
+    },
+    "errors": {
+      "adminEmailRequired": "需要管理员电子邮件",
+      "adminPasswordRequired": "需要管理员密码",
+      "passwordsMismatch": "密码不匹配",
+      "passwordMinLength": "密码必须至少8个字符",
+      "dbTestFailed": "数据库连接测试失败",
+      "unknown": "未知错误"
+    },
+    "status": {
+      "dbConnected": "数据库已连接",
+      "seeded": "已导入{{count}}种营养食品",
+      "superadminCreated": "超级管理员已创建：{{email}}",
+      "validation": "营养：{{foods}}种食品，用户：{{users}}，实例：{{instances}}"
+    },
+    "complete": {
+      "title": "设置完成！",
+      "description": "PantryButler已成功配置，可以使用了。",
+      "importantLabel": "重要：",
+      "securityWarning": "出于安全考虑，请在初始配置后禁用或移除设置页面。",
+      "adminCredentials": "管理员凭据",
+      "emailLabel": "电子邮件：",
+      "passwordLabel": "密码：",
+      "nextSteps": "后续步骤",
+      "nextStepsItems": [
+        "使用您的管理员凭据登录",
+        "创建您的第一个实例",
+        "禁用或移除设置页面"
+      ],
+      "goToLogin": "前往登录"
+    },
+    "headings": {
+      "title": "PantryButler设置",
+      "adminAccount": "管理员账户"
+    },
+    "text": {
+      "description": "配置您的PantryButler部署。此向导将设置数据库、导入初始数据并创建您的管理员账户。"
+    },
+    "labels": {
+      "adminEmail": "管理员电子邮件",
+      "adminPassword": "管理员密码",
+      "confirmPassword": "确认密码",
+      "minCharacters": "至少8个字符"
+    },
+    "buttons": {
+      "startSetup": "开始设置"
+    },
+    "placeholders": {
+      "adminEmail": "admin@example.com"
+    },
+    "progress": {
+      "label": "设置进度"
+    }
+  },
+  "config": {
+    "toasts": {
+      "accessDenied": "访问被拒绝：仅限超级管理员",
+      "verifyFailed": "验证访问失败",
+      "loadFailed": "加载配置失败：{{error}}",
+      "saved": "配置保存成功",
+      "saveFailed": "保存配置失败：{{error}}",
+      "resetDone": "SMTP 设置已重置为环境默认值",
+      "resetFailed": "重置 SMTP 设置失败：{{error}}"
+    },
+    "headings": {
+      "management": "认证与邮件配置",
+      "emailVerification": "邮箱验证",
+      "smtp": "SMTP / 外发邮件"
+    },
+    "text": {
+      "description": "配置实例创建者的邮箱验证和外发邮件服务器。",
+      "emailVerificationDesc": "启用后，新的实例创建者必须确认其邮箱地址，之后才会创建厨房。禁用时，实例会在注册时立即创建。",
+      "smtpDesc": "SMTP 用于发送验证邮件。留空的字段会回退到环境配置。",
+      "smtpEnvFallback": "留空的字段会回退到服务器的环境设置（SMTP_HOST、SMTP_PORT、SMTP_USERNAME、SMTP_PASSWORD、SMTP_FROM、SMTP_SECURE）。当未设置 SMTP 主机时，验证邮件会记录到服务器控制台，而不是发送出去。"
+    },
+    "labels": {
+      "requireEmailVerification": "要求新的实例创建者进行邮箱验证",
+      "smtpHost": "SMTP 主机",
+      "smtpPort": "SMTP 端口",
+      "smtpUsername": "SMTP 用户名",
+      "smtpPassword": "SMTP 密码",
+      "smtpFrom": "发件地址",
+      "smtpSecure": "使用隐式 TLS（SMTPS）"
+    },
+    "placeholders": {
+      "password": "SMTP 密码",
+      "passwordSaved": "已保存的密码（留空以保持不变）"
+    },
+    "buttons": {
+      "save": "保存配置",
+      "resetSmtp": "将 SMTP 重置为默认值"
+    },
+    "dialogs": {
+      "resetSmtpTitle": "重置 SMTP 设置？",
+      "resetSmtpDescription": "这将清除数据库中存储的所有 SMTP 覆盖设置。服务器将回退到其环境设置来发送外发邮件。"
+    }
+  }
+}

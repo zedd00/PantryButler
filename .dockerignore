@@ -1,0 +1,52 @@
+/tmp/
+
+# ── Dependencies & build output ──────────────────────────────────────────────
+node_modules/
+dist/
+
+# ── Environment / secrets — never bake into the image ────────────────────────
+.env
+.env.local
+.env.production
+.env.*.local
+secrets/
+
+# ── Version control ───────────────────────────────────────────────────────────
+.git/
+.gitignore
+.gitattributes
+
+# ── Documentation & dev tooling ───────────────────────────────────────────────
+docs/
+tests/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+.vscode/
+.idea/
+
+# ── Platform-specific files ───────────────────────────────────────────────────
+.skills/
+tasks/
+history/
+historical_context.txt
+venv/
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── Dev-only Vite configs (only vite.config.prod.ts is used in Docker) ────────
+vite.config.dev.ts
+vite.config.ts
+
+# ── pnpm workspace config — single-package build, causes "packages field missing" ──
+pnpm-workspace.yaml
+
+# ── Keep setup folder — nutrition seed data is needed at runtime ──────────────
+!setup/
+!setup/nutrition_foods.json

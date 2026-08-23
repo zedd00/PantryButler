@@ -1,0 +1,59 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+output
+*.local
+package-lock.json
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.sync
+history/*.json
+.vite_cache
+
+# Secrets and Environment Variables
+.env
+.env.local
+# Live generated env file (scripts rotate JWT_SECRET into it). Commit the
+# template docker/.env.2container.example instead, never the live file.
+.env.2container
+.env.production
+.env.development
+secrets/config.py
+secrets/*.py
+!secrets/config.template.py
+!secrets/__init__.py
+
+# Uploads (local file storage)
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Temporary files
+scripts/translation_log.json
+scripts/translation_output.log
+scripts/translation_pid.txt
+scripts/translation_run.log
+*.tmp
+*.temp
+
+/tmp/
+/.skills
+/tasks
+package.json.[0-9]*

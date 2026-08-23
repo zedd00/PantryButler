@@ -1,0 +1,79 @@
+{
+  "dashboard": {
+    "welcome": "Mirë se vini në PantryButler! Më lejoni t'ju tregoj panelin.",
+    "quickStats": "Këtu mund të shihni statistika të shpejta për magazinën tuaj, duke përfshirë përbërësit totalë, artikujt me stok të ulët dhe artikujt që po skadojnë.",
+    "recentRecipes": "Shikoni recetat e shtuara ose të shikuara së fundmi për qasje të shpejtë.",
+    "quickActions": "Përdorni këta butona veprimi të shpejtë për të shtuar përbërës, krijuar receta ose planifikuar vakte."
+  },
+  "recipes": {
+    "welcome": "Mirë se vini në PantryButler! Më lejoni t'ju tregoj aplikacionin dhe koleksionin e recetave.",
+    "navRecipes": "Kjo është seksioni i Recetave ku mund të menaxhoni koleksionin tuaj të recetave.",
+    "navGrocery": "Përdorni Listën e Blerjeve për të planifikuar udhëtimet e blerjeve dhe për të ndjekur atë që duhet të blini.",
+    "navCalendar": "Kalendari ju ndihmon të planifikoni vaktet për javën.",
+    "navPantry": "Menaxhoni këtu përbërësit e kambaresë dhe pajisjet e kuzhinës.",
+    "notifications": "Kontrolloni njoftimet për përditësime, receta të ndara dhe njoftime.",
+    "userMenu": "Hyni në profilin dhe cilësimet tuaja nga menyja e përdoruesit.",
+    "addRecipe": "Klikoni këtu për të shtuar një recetë të re në koleksionin tuaj.",
+    "searchRecipes": "Kërkoni receta sipas emrit ose përbërësve.",
+    "filterFolder": "Organizoni recetat tuaja në dosje dhe filtroni sipas dosjes.",
+    "filterTags": "Filtroni recetat sipas etiketave si \"vegjetariane\", \"të shpejta\" ose etiketave të personalizuara që krijoni.",
+    "recipeCard": "Klikoni në çdo kartë recete për të parë detajet, për të filluar gatimin ose për të redaktuar recetën."
+  },
+  "ingredients": {
+    "welcome": "Mirë se vini në kambarën tuaj! Këtu është vendi ku menaxhoni të gjithë përbërësit tuaj.",
+    "addIngredient": "Klikoni këtu për të shtuar një përbërës të ri në kambarën tuaj.",
+    "searchIngredients": "Kërkoni përbërës sipas emrit.",
+    "filterLocation": "Filtroni përbërësit sipas vendndodhjes së ruajtjes (Kambare, Frigorifer, Ngrirës, etj.).",
+    "ingredientRow": "Çdo përbërës tregon emrin, sasinë, njësinë dhe vendndodhjen e tij. Klikoni për të parë detajet.",
+    "ingredientActions": "Përdorni menynë e veprimeve për të redaktuar, fshirë ose rregulluar sasitë e përbërësve."
+  },
+  "equipment": {
+    "welcome": "Ky është inventari juaj i pajisjeve. Ndiqni të gjitha mjetet dhe pajisjet tuaja të kuzhinës këtu.",
+    "addEquipment": "Klikoni këtu për të shtuar pajisje të reja kuzhine.",
+    "searchEquipment": "Kërkoni pajisje sipas emrit.",
+    "equipmentLocation": "Ndryshoni vendndodhjen e ruajtjes për çdo copë pajisje duke përdorur këtë meny rënëse."
+  },
+  "groceryList": {
+    "welcome": "Lista juaj e blerjeve ju ndihmon të planifikoni udhëtimet e blerjeve dhe të ndiqni atë që duhet të blini.",
+    "addItem": "Shtoni artikuj në listën tuaj të blerjeve manualisht.",
+    "addFromRecipe": "Shtoni përbërësit që mungojnë nga një recetë drejtpërdrejt në listën tuaj të blerjeve.",
+    "checkItem": "Shënoni artikujt ndërsa blini. Artikujt e shënuar mund të zhvendosen në kambarën tuaj.",
+    "moveToPantry": "Zhvendosni artikujt e shënuar në inventarin e kambaresë kur të ktheheni në shtëpi nga blerjet."
+  },
+  "mealPlan": {
+    "welcome": "Planifikoni vaktet tuaja për javën dhe qëndroni të organizuar!",
+    "calendarView": "Shikoni planin tuaj të vakteve në formatin e kalendarit javor.",
+    "addMeal": "Klikoni në çdo hapësirë vakti për të shtuar një recetë nga koleksioni juaj.",
+    "markCooked": "Shënoni vaktet si të gatuara për të ndjekur atë që keni përgatitur dhe për të përditësuar inventarin e kambaresë."
+  },
+  "settings": {
+    "welcome": "Personalizoni përvojën tuaj PantryButler me këto cilësime.",
+    "unitSystem": "Zgjidhni sistemin tuaj të preferuar të njësive (metrike ose imperiale) për matjet e përbërësve.",
+    "theme": "Kaloni midis modalitetit të ndriçuar dhe të errët për t'u përshtatur me preferencën tuaj.",
+    "language": "Ndryshoni gjuhën e aplikacionit në opsionin tuaj të preferuar.",
+    "nutrition": "Aktivizoni ndjekjen ushqyese për të parë informacionin ushqyes të recetave tuaja.",
+    "exportData": "Eksportoni të gjitha recetat dhe të dhënat tuaja për backup ose migrim."
+  },
+  "recipeDetail": {
+    "welcome": "Mirë se vini në modalitetin e gatimit! Më lejoni t'ju tregoj veçoritë për t'ju ndihmuar të gatoni.",
+    "ingredients": "Shikoni të gjithë përbërësit e nevojshëm për këtë recetë. Shënojini ndërsa i përdorni.",
+    "timer": "Vendosni kohëmatës për hapat e gatimit duke klikuar butonin e kohëmatësit pranë udhëzimeve të ndjeshme ndaj kohës.",
+    "steps": "Ndiqni udhëzimet hap pas hapi. Rrëshqitni ose klikoni për të lundruar midis hapave.",
+    "scale": "Rregulloni madhësinë e porcionit për të shkallëzuar automatikisht të gjitha sasitë e përbërësve.",
+    "notes": "Shtoni shënime personale ose modifikime për të kujtuar herën tjetër."
+  },
+  "kitchenPantry": {
+    "welcome": "Vizualizoni paraqitjen e kuzhinës suaj dhe organizoni përbërësit tuaj sipas vendndodhjes!",
+    "addLocation": "Krijoni vendndodhje ruajtjeje të personalizuara që përputhen me paraqitjen aktuale të kuzhinës suaj.",
+    "dragDrop": "Zvarritni dhe lëshoni përbërësit për t'i organizuar sipas vendndodhjes.",
+    "visualView": "Shikoni të gjithë përbërësit tuaj të organizuar sipas vendit ku janë ruajtur në kuzhinën tuaj.",
+    "quickAccess": "Gjeni shpejt përbërësit duke klikuar në një vendndodhje për të parë çfarë është ruajtur atje."
+  },
+  "common": {
+    "back": "Prapa",
+    "close": "Mbyll",
+    "last": "Përfundo",
+    "next": "Tjetër",
+    "skip": "Kalo Tutorialin"
+  }
+}

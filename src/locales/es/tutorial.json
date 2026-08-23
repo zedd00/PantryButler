@@ -1,0 +1,79 @@
+{
+  "dashboard": {
+    "welcome": "¡Bienvenido a PantryButler! Déjame mostrarte el panel de control.",
+    "quickStats": "Aquí puedes ver estadísticas rápidas sobre tu despensa, incluidos ingredientes totales, artículos con stock bajo y artículos por vencer.",
+    "recentRecipes": "Consulta tus recetas agregadas o vistas recientemente para acceso rápido.",
+    "quickActions": "Usa estos botones de acción rápida para agregar ingredientes, crear recetas o planificar comidas."
+  },
+  "recipes": {
+    "welcome": "¡Bienvenido a PantryButler! Permíteme mostrarte la aplicación y la colección de recetas.",
+    "navRecipes": "Esta es la sección de Recetas donde puedes gestionar tu colección de recetas.",
+    "navGrocery": "Usa la Lista de Compras para planificar viajes de compras y rastrear lo que necesitas comprar.",
+    "navCalendar": "El Calendario te ayuda a planificar comidas para la semana.",
+    "navPantry": "Gestiona tus ingredientes de despensa y equipo de cocina aquí.",
+    "notifications": "Revisa las notificaciones para actualizaciones, recetas compartidas y anuncios.",
+    "userMenu": "Accede a tu perfil y configuración desde el menú de usuario.",
+    "addRecipe": "Haz clic aquí para agregar una nueva receta a tu colección.",
+    "searchRecipes": "Busca recetas por nombre o ingredientes.",
+    "filterFolder": "Organiza tus recetas en carpetas y filtra por carpeta.",
+    "filterTags": "Filtra recetas por etiquetas como \"vegetariano\", \"rápido\" o etiquetas personalizadas que crees.",
+    "recipeCard": "Haz clic en cualquier tarjeta de receta para ver detalles, comenzar a cocinar o editar la receta."
+  },
+  "ingredients": {
+    "welcome": "¡Bienvenido a tu despensa! Aquí es donde gestionas todos tus ingredientes.",
+    "addIngredient": "Haz clic aquí para agregar un nuevo ingrediente a tu despensa.",
+    "searchIngredients": "Busca ingredientes por nombre.",
+    "filterLocation": "Filtra ingredientes por su ubicación de almacenamiento (Despensa, Refrigerador, Congelador, etc.).",
+    "ingredientRow": "Cada ingrediente muestra su nombre, cantidad, unidad y ubicación. Haz clic para ver detalles.",
+    "ingredientActions": "Usa el menú de acciones para editar, eliminar o ajustar cantidades de ingredientes."
+  },
+  "equipment": {
+    "welcome": "Este es tu inventario de equipo. Rastrea todas tus herramientas y electrodomésticos de cocina aquí.",
+    "addEquipment": "Haz clic aquí para agregar nuevo equipo de cocina.",
+    "searchEquipment": "Busca equipo por nombre.",
+    "equipmentLocation": "Cambia la ubicación de almacenamiento de cada pieza de equipo usando este menú desplegable."
+  },
+  "groceryList": {
+    "welcome": "Tu lista de compras te ayuda a planificar viajes de compras y rastrear lo que necesitas comprar.",
+    "addItem": "Agrega artículos a tu lista de compras manualmente.",
+    "addFromRecipe": "Agrega ingredientes faltantes de una receta directamente a tu lista de compras.",
+    "checkItem": "Marca los artículos mientras compras. Los artículos marcados se pueden mover a tu despensa.",
+    "moveToPantry": "Mueve los artículos marcados a tu inventario de despensa cuando llegues a casa de compras."
+  },
+  "mealPlan": {
+    "welcome": "¡Planifica tus comidas para la semana y mantente organizado!",
+    "calendarView": "Ve tu plan de comidas en formato de calendario semanal.",
+    "addMeal": "Haz clic en cualquier espacio de comida para agregar una receta de tu colección.",
+    "markCooked": "Marca las comidas como cocinadas para rastrear lo que has preparado y actualizar tu inventario de despensa."
+  },
+  "settings": {
+    "welcome": "Personaliza tu experiencia de PantryButler con estas configuraciones.",
+    "unitSystem": "Elige tu sistema de unidades preferido (métrico o imperial) para las medidas de ingredientes.",
+    "theme": "Cambia entre modo claro y oscuro según tu preferencia.",
+    "language": "Cambia el idioma de la aplicación a tu opción preferida.",
+    "nutrition": "Habilita el seguimiento nutricional para ver información nutricional de tus recetas.",
+    "exportData": "Exporta todas tus recetas y datos para respaldo o migración."
+  },
+  "recipeDetail": {
+    "welcome": "¡Bienvenido al modo de cocina! Déjame mostrarte las funciones para ayudarte a cocinar.",
+    "ingredients": "Ve todos los ingredientes necesarios para esta receta. Márcalos a medida que los uses.",
+    "timer": "Configura temporizadores para pasos de cocina haciendo clic en el botón de temporizador junto a las instrucciones sensibles al tiempo.",
+    "steps": "Sigue las instrucciones paso a paso. Desliza o haz clic para navegar entre pasos.",
+    "scale": "Ajusta el tamaño de la porción para escalar automáticamente todas las cantidades de ingredientes.",
+    "notes": "Agrega notas personales o modificaciones para recordar la próxima vez."
+  },
+  "kitchenPantry": {
+    "welcome": "¡Visualiza el diseño de tu cocina y organiza tus ingredientes por ubicación!",
+    "addLocation": "Crea ubicaciones de almacenamiento personalizadas que coincidan con el diseño real de tu cocina.",
+    "dragDrop": "Arrastra y suelta ingredientes para organizarlos por ubicación.",
+    "visualView": "Ve todos tus ingredientes organizados por dónde están almacenados en tu cocina.",
+    "quickAccess": "Encuentra rápidamente ingredientes haciendo clic en una ubicación para ver qué está almacenado allí."
+  },
+  "common": {
+    "back": "Atrás",
+    "close": "Cerrar",
+    "last": "Finalizar",
+    "next": "Siguiente",
+    "skip": "Saltar Tutorial"
+  }
+}

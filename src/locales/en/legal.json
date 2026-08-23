@@ -1,0 +1,198 @@
+{
+  "attribution": {
+    "metaTitle": "Attribution & Licenses",
+    "metaDescription": "PantryButler uses open-source projects and open data. Learn about our data sources and their licenses.",
+    "title": "Attribution & Licenses",
+    "intro": "PantryButler is built on the shoulders of giants. We use several open-source projects and open data sources to provide you with the best recipe management experience.",
+    "footer": {
+      "home": "Home",
+      "privacy": "Privacy Policy"
+    },
+    "projects": {
+      "cooklang": {
+        "ariaLabel": "Visit Cooklang website",
+        "tagline": "Recipe Markup Language",
+        "description": "Cooklang is a markup language for cooking recipes. It provides a simple, human-readable format for writing recipes that can be easily parsed and displayed in various formats. PantryButler uses Cooklang-inspired syntax for ingredient parsing and recipe formatting.",
+        "websiteLabel": "Website:"
+      },
+      "gridRecipe": {
+        "ariaLabel": "Visit Grid Recipe GitHub repository",
+        "tagline": "Grid-based Recipe Visualization",
+        "description": "Grid Recipe renders recipes as a grid of steps, with arrows showing the flow of ingredients through each step. PantryButler's grid recipe feature is inspired by this open-source project.",
+        "sourceLabel": "Source:"
+      },
+      "openFoodFacts": {
+        "ariaLabel": "Visit Open Food Facts website",
+        "tagline": "Open Food Database",
+        "description": "Open Food Facts is a free, open, collaborative database of food products from around the world. It contains information about ingredients, nutrition facts, labels, and more. PantryButler may use Open Food Facts data for ingredient information and nutritional data.",
+        "websiteLabel": "Website:",
+        "licenseLabel": "License: Open Database License (ODbL)",
+        "attributionLabel": "Attribution: © Open Food Facts contributors"
+      },
+      "openNutrition": {
+        "ariaLabel": "Visit OpenNutrition website",
+        "tagline": "Comprehensive Nutrition Database",
+        "description": "OpenNutrition provides a comprehensive, open database of food and nutrition information. The dataset includes detailed nutritional information for thousands of foods, including macronutrients, micronutrients, vitamins, and minerals. PantryButler uses OpenNutrition data to display nutritional information for recipes when this feature is enabled.",
+        "websiteLabel": "Website:",
+        "licenseLabel": "License: Open Database License (ODbL) + Modified Database Contents License (DbCL)",
+        "attributionLabel": "Attribution: Data provided by OpenNutrition. Portions of this data incorporate information from Open Food Facts.",
+        "requirementsLabel": "Requirements: Attribution must be provided on every interface where nutrition data is displayed, in application store listings, on the website, and in legal/about sections."
+      }
+    },
+    "licenseCompliance": {
+      "title": "License Compliance",
+      "description": "PantryButler is committed to complying with all open data licenses. We provide proper attribution to all data sources and respect the terms of their respective licenses.",
+      "contactNote": "If you have questions about our use of these data sources or believe we are not in compliance with any license terms, please contact us."
+    }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: April 16, 2026",
+    "introduction": {
+      "title": "Introduction",
+      "text": "Welcome to PantryButler. We respect your privacy and are committed to protecting your personal data. This privacy policy explains how we collect, use, and safeguard your information when you use our application."
+    },
+    "sections": {
+      "collectInfo": {
+        "title": "Information We Collect",
+        "accountInfo": {
+          "title": "Account Information",
+          "intro": "When you create an account, we collect:",
+          "items": [
+            "Email address",
+            "Username",
+            "Full name (optional)",
+            "Profile picture (optional)"
+          ]
+        },
+        "appData": {
+          "title": "Application Data",
+          "intro": "When you use PantryButler, we store:",
+          "items": [
+            "Recipes you create or save",
+            "Pantry inventory items",
+            "Kitchen equipment records",
+            "Meal plans and calendar entries",
+            "Grocery lists",
+            "Kitchen layout designs",
+            "Comments and likes on public recipes"
+          ]
+        },
+        "usageInfo": {
+          "title": "Usage Information",
+          "intro": "We automatically collect:",
+          "items": [
+            "Device information (browser type, operating system)",
+            "Log data (access times, pages viewed)",
+            "Language preferences"
+          ]
+        }
+      },
+      "howWeUse": {
+        "title": "How We Use Your Information",
+        "intro": "We use your information to:",
+        "items": [
+          "Provide and maintain the PantryButler service",
+          "Authenticate your account and ensure security",
+          "Store and sync your recipes, pantry items, and meal plans",
+          "Enable social features like recipe sharing and comments",
+          "Improve and optimize our application",
+          "Send important service notifications",
+          "Respond to your support requests"
+        ]
+      },
+      "storageSecurity": {
+        "title": "Data Storage and Security",
+        "intro": "Your data is stored securely using encrypted transmission and industry-standard security practices. We implement security measures including:",
+        "items": [
+          "Encrypted data transmission (HTTPS/TLS)",
+          "Secure authentication with password hashing",
+          "Per-instance access control that limits data visibility to authorized members",
+          "Regular security updates and monitoring"
+        ],
+        "note": "While we strive to protect your data, no method of transmission over the internet is 100% secure. We cannot guarantee absolute security."
+      },
+      "sharing": {
+        "title": "Data Sharing and Disclosure",
+        "intro": "We do not sell your personal information. We may share your data only in these circumstances:",
+        "items": {
+          "publicRecipes": {
+            "strong": "Public Recipes:",
+            "text": " When you choose to make a recipe public, it becomes visible to all users"
+          },
+          "serviceProviders": {
+            "strong": "Service Providers:",
+            "text": " With our infrastructure providers for hosting and data storage"
+          },
+          "legalRequirements": {
+            "strong": "Legal Requirements:",
+            "text": " If required by law or to protect our rights"
+          }
+        }
+      },
+      "rights": {
+        "title": "Your Rights (GDPR Compliance)",
+        "intro": "Under the General Data Protection Regulation (GDPR), you have the following rights:",
+        "items": {
+          "access": {
+            "strong": "Right to Access:",
+            "text": " Request a copy of your personal data"
+          },
+          "rectification": {
+            "strong": "Right to Rectification:",
+            "text": " Correct inaccurate or incomplete data"
+          },
+          "erasure": {
+            "strong": "Right to Erasure:",
+            "text": " Request deletion of your personal data"
+          },
+          "restrictProcessing": {
+            "strong": "Right to Restrict Processing:",
+            "text": " Limit how we use your data"
+          },
+          "dataPortability": {
+            "strong": "Right to Data Portability:",
+            "text": " Receive your data in a structured format"
+          },
+          "object": {
+            "strong": "Right to Object:",
+            "text": " Object to certain types of data processing"
+          },
+          "withdrawConsent": {
+            "strong": "Right to Withdraw Consent:",
+            "text": " Withdraw consent at any time"
+          }
+        },
+        "note": "To exercise any of these rights, please contact us through the settings page or email us directly."
+      },
+      "cookies": {
+        "title": "Cookies and Tracking",
+        "text": "We use essential cookies and local storage to maintain your session and remember your preferences (such as language and theme settings). We do not use third-party tracking or advertising cookies."
+      },
+      "children": {
+        "title": "Children's Privacy",
+        "text": "PantryButler is not intended for children under 13 years of age. We do not knowingly collect personal information from children. If you believe we have collected information from a child, please contact us immediately."
+      },
+      "retention": {
+        "title": "Data Retention",
+        "text": "We retain your personal data for as long as your account is active or as needed to provide services. If you delete your account, we will delete your personal data within 30 days, except where we are required to retain it for legal purposes."
+      },
+      "international": {
+        "title": "International Data Transfers",
+        "text": "Your data may be transferred to and processed in countries other than your country of residence. We ensure appropriate safeguards are in place to protect your data in accordance with this privacy policy."
+      },
+      "changes": {
+        "title": "Changes to This Policy",
+        "text": "We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the \"Last updated\" date. We encourage you to review this policy periodically."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "intro": "If you have any questions about this privacy policy or our data practices, please contact us through:",
+        "items": [
+          "The Settings page in the application",
+          "Our support channels"
+        ]
+      }
+    }
+  }
+}

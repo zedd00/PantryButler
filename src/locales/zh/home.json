@@ -1,0 +1,89 @@
+{
+  "brand": "PantryButler",
+  "meta": {
+    "title": "PantryButler - 您的智能厨房伴侣",
+    "description": "在一个地方管理您的食谱、食品储藏室、购物清单和膳食计划。PantryButler帮助您组织厨房并自信地烹饪。"
+  },
+  "header": {
+    "documentation": "文档",
+    "setupKitchen": "设置厨房",
+    "ariaLabel": "主导航"
+  },
+  "hero": {
+    "title": "智能管理您的食谱和膳食计划",
+    "subtitle": "组织您的食谱，为它们添加标签，为每个步骤设置计时器，甚至添加图片，让您确切知道混合物应该是什么样子。兼容 Cooklang 格式。从 URL、Cooklang 文件或公共 PantryButler 食谱导入。公开分享您的食谱或将其嵌入您的博客。",
+    "getStarted": "开始使用",
+    "learnMore": "了解更多"
+  },
+  "features": {
+    "title": "核心功能",
+    "subtitle": "全面支持您的厨房生活",
+    "recipeManagement": {
+      "title": "食谱管理",
+      "description": "创建、编辑和组织您的食谱集合。支持详细的食材列表、带计时器的分步说明和每个步骤的图片上传"
+    },
+    "nutritionTracking": {
+      "title": "自动营养计算",
+      "description": "PantryButler使用OpenNutrition数据库自动计算您食谱的全面营养信息。获取每个食谱的详细宏量营养素、微量营养素和每日价值百分比"
+    },
+    "importRecipes": {
+      "title": "从任何地方导入",
+      "description": "从 Cooklang 文件、URL 或公共 PantryButler 食谱导入食谱。兼容 Cooklang 格式，便于食谱分享"
+    },
+    "stepTimers": {
+      "title": "分步计时器",
+      "description": "为每个烹饪步骤设置计时器。通过内置计时器通知，永远不会错过食谱中的关键时刻"
+    },
+    "mealPlanning": {
+      "title": "膳食计划",
+      "description": "使用日历视图计划每周膳食。轻松安排早餐、午餐和晚餐，保持饮食有序"
+    },
+    "smartShopping": {
+      "title": "智能购物清单",
+      "description": "从食谱和膳食计划自动生成购物清单。智能合并重复食材以优化您的购物"
+    },
+    "pantryManagement": {
+      "title": "食品储藏室管理",
+      "description": "跟踪您的食材库存和厨房设备。了解您拥有什么以避免重复购买和浪费"
+    },
+    "collaboration": {
+      "title": "协作与分享",
+      "description": "公开分享食谱或将其嵌入您的博客，或与家人和室友一起协作膳食计划"
+    },
+    "privateKitchens": {
+      "title": "私人厨房",
+      "description": "创建您自己的私人厨房空间并邀请家庭成员或室友。每个人都可以看到食品储藏室中有什么以及正在烹饪什么，使家庭膳食协调变得轻松"
+    }
+  },
+  "languages": {
+    "title": "支持多种语言",
+    "subtitle": "PantryButler支持英语、西班牙语（Español）、法语（Français）、印地语（हिन्दी）、意大利语（Italiano）、阿尔巴尼亚语（Shqip）和中文（中文）",
+    "description": "使用顶部导航中的语言选择器随时切换语言"
+  },
+  "cta": {
+    "title": "准备好开始了吗？",
+    "subtitle": "设置您的第一个厨房并开始管理食谱和计划膳食。完全免费，无需信用卡",
+    "setupKitchen": "设置厨房",
+    "viewDocs": "查看文档"
+  },
+  "support": {
+    "title": "支持PantryButler",
+    "description": "PantryButler对所有人免费开放。如果您觉得它有用，请考虑支持开发，帮助我们添加更多功能并保持服务运行。",
+    "buyMeACoffee": "请我喝杯咖啡",
+    "supportOnPatreon": "在Patreon上支持我们",
+    "coffeeAriaLabel": "在Buy Me a Coffee上支持我们（在新标签页中打开）",
+    "patreonAriaLabel": "在Patreon上支持我们（在新标签页中打开）"
+  },
+  "cooklang": {
+    "descriptionBefore": "PantryButler完全兼容",
+    "descriptionAfter": "，这是一个开源的食谱标记语言。导入您现有的Cooklang食谱，或以Cooklang格式导出您的PantryButler食谱。"
+  },
+  "footer": {
+    "copyright": "© 2026 PantryButler. 保留所有权利。",
+    "documentation": "文档",
+    "login": "登录",
+    "cooklang": "兼容 Cooklang",
+    "privacyPolicy": "隐私政策",
+    "attribution": "署名"
+  }
+}

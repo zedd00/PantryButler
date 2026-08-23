@@ -1,0 +1,178 @@
+:root {
+  color-scheme: light dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 480px;
+  margin: 0;
+  padding: 12px;
+  font: 14px/1.4 system-ui, sans-serif;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.toolbar h1 {
+  font-size: 16px;
+  margin: 0;
+  flex: 1;
+}
+
+#status {
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background: rgba(128, 128, 128, 0.12);
+}
+
+#status.error {
+  background: rgba(200, 60, 60, 0.15);
+  color: inherit;
+}
+
+#recipe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 3px;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  padding: 5px 7px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 5px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.hint {
+  font-weight: 400;
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+#actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+button {
+  padding: 6px 12px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+#btn-download {
+  background: #2f6f4f;
+  border-color: #2f6f4f;
+  color: #fff;
+}
+
+#btn-push {
+  background: #2f6f4f;
+  border-color: #2f6f4f;
+  color: #fff;
+}
+
+#connection {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  background: rgba(128, 128, 128, 0.08);
+  border: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+#connection-status {
+  padding: 6px 8px;
+  margin-bottom: 6px;
+  border-radius: 5px;
+  background: rgba(47, 111, 79, 0.12);
+  font-size: 12px;
+  word-break: break-all;
+}
+
+#connection-status.error {
+  background: rgba(200, 60, 60, 0.12);
+}
+
+#connection-status.connecting {
+  background: rgba(200, 150, 50, 0.14);
+}
+
+#connection-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#btn-connect {
+  background: #2f6f4f;
+  border-color: #2f6f4f;
+  color: #fff;
+  flex: 1;
+}
+
+#btn-disconnect {
+  flex: 1;
+}
+
+code {
+  background: rgba(128, 128, 128, 0.15);
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-size: 11px;
+}
+
+#manual {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  background: rgba(200, 150, 50, 0.12);
+}
+
+#preview {
+  margin-top: 12px;
+  max-height: 240px;
+  overflow: auto;
+  padding: 8px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  white-space: pre-wrap;
+}
+
+[hidden] {
+  display: none !important;
+}

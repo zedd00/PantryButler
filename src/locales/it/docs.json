@@ -1,0 +1,1709 @@
+{
+  "navigation": {
+    "gettingStarted": "Iniziare",
+    "coreFeatures": "Funzionalità Principali",
+    "collaboration": "Collaborazione",
+    "quickStart": "Avvio Rapido",
+    "kitchenManagement": "Gestione Cucina",
+    "recipeManagement": "Gestione Ricette",
+    "mealPlanning": "Pianificazione Pasti",
+    "shoppingLists": "Liste della Spesa",
+    "pantryEquipment": "Dispensa e Attrezzatura",
+    "sharingCollaboration": "Condivisione e Collaborazione",
+    "nutritionCostTracking": "Nutrizione e Monitoraggio Costi",
+    "accountSection": "Account e Impostazioni",
+    "accountSettingsPage": "Account, Impostazioni e Annunci",
+    "developersSection": "Sviluppatori",
+    "apiGuidelines": "Linee Guida API",
+    "administrationSection": "Amministrazione",
+    "adminFeatures": "Funzioni di Amministrazione"
+  },
+  "gettingStarted": {
+    "title": "Avvio Rapido",
+    "subtitle": "Benvenuto su PantryButler! Questa guida ti aiuterà a iniziare rapidamente e a comprendere i concetti di base e l'utilizzo.",
+    "whatIsKitchen": {
+      "title": "Cos'è una Cucina?",
+      "description": "Una cucina è uno spazio di lavoro indipendente che contiene tutte le tue ricette, piani pasto, liste della spesa e dati della dispensa. Ogni cucina è completamente isolata, adatta a diversi scenari:",
+      "familyKitchen": "Cucina Familiare: Condividi ricette e piani pasto con i membri della famiglia",
+      "personalKitchen": "Cucina Personale: Gestisci i tuoi registri di cucina personali",
+      "teamKitchen": "Cucina di Squadra: Uso collaborativo per team culinari"
+    },
+    "steps": {
+      "title": "Passaggi per Iniziare",
+      "step1": {
+        "title": "Passaggio 1: Configura la tua Cucina",
+        "description": "I nuovi utenti devono creare una nuova cucina",
+        "items": [
+          "Fai clic sul pulsante \"Configura Cucina\" nella homepage",
+          "Inserisci un nome per la cucina (ad esempio, La Mia Cucina Familiare)",
+          "Configura le informazioni dell'account amministratore (nome utente e password)",
+          "Fai clic su \"Crea\" per completare la configurazione della cucina"
+        ],
+        "alert": "L'account creato durante la configurazione della cucina diventerà automaticamente l'amministratore con autorizzazioni di gestione complete"
+      },
+      "step2": {
+        "title": "Passaggio 2: Accedi al Sistema",
+        "description": "Usa il tuo account creato per accedere",
+        "items": [
+          "Fai clic sul pulsante \"Accedi\" per accedere alla pagina di accesso",
+          "Inserisci il tuo nome utente e password",
+          "Seleziona la cucina a cui desideri accedere",
+          "Fai clic su \"Accedi\" per entrare nel sistema"
+        ]
+      },
+      "step3": {
+        "title": "Passaggio 3: Inizia a Usare",
+        "description": "Esplora le funzionalità del sistema",
+        "items": [
+          "Crea la tua prima ricetta",
+          "Pianifica i pasti di questa settimana nel calendario",
+          "Genera liste della spesa",
+          "Registra l'inventario della dispensa",
+          "Invita i membri della famiglia a unirsi alla cucina"
+        ]
+      }
+    },
+    "navigation": {
+      "title": "Navigazione del Sistema",
+      "description": "Dopo aver effettuato l'accesso, puoi accedere a tutti i moduli di funzionalità tramite la barra di navigazione sinistra:",
+      "recipes": {
+        "title": "Ricette",
+        "description": "Sfoglia, crea e gestisci la tua collezione di ricette"
+      },
+      "calendar": {
+        "title": "Calendario",
+        "description": "Pianifica i pasti giornalieri e visualizza gli orari dei pasti"
+      },
+      "shoppingList": {
+        "title": "Lista della Spesa",
+        "description": "Gestisci le liste della spesa e traccia i progressi degli acquisti"
+      },
+      "pantry": {
+        "title": "Dispensa",
+        "description": "Registra l'inventario degli ingredienti"
+      },
+      "equipment": {
+        "title": "Attrezzatura",
+        "description": "Gestisci l'elenco dell'attrezzatura da cucina"
+      }
+    },
+    "nextSteps": {
+      "title": "Prossimi Passi",
+      "description": "Ora che comprendi i concetti di base, continua a leggere la seguente documentazione per saperne di più su ogni funzionalità:",
+      "items": [
+        "Gestione Cucina: Impara a gestire cucine e utenti",
+        "Gestione Ricette: Impara a creare e organizzare ricette",
+        "Pianificazione Pasti: Padroneggia le tecniche di pianificazione dei pasti",
+        "Liste della Spesa: Gestisci efficacemente il processo di acquisto"
+      ]
+    }
+  },
+  "instanceManagement": {
+    "title": "Gestione Cucina",
+    "subtitle": "Impara a creare, configurare e gestire le tue cucine, nonché a gestire membri e permessi della cucina.",
+    "creating": {
+      "title": "Creare una Nuova Cucina",
+      "description": "Creare una cucina è il primo passo per utilizzare il sistema. Ogni cucina è uno spazio di lavoro indipendente.",
+      "stepsTitle": "Passaggi di Creazione",
+      "steps": [
+        {
+          "title": "Accedere alla Pagina di Registrazione",
+          "description": "Fai clic sul pulsante \"Configura Cucina\" nella homepage"
+        },
+        {
+          "title": "Compilare le Informazioni della Cucina",
+          "description": "Inserisci un nome per la cucina, suggerisci di usare nomi significativi come \"Cucina Familiare Smith\" o \"Studio Culinario\""
+        },
+        {
+          "title": "Configurare l'Account Amministratore",
+          "description": "Crea nome utente e password amministratore, questo account avrà permessi di gestione completi"
+        },
+        {
+          "title": "Completare la Creazione",
+          "description": "Fai clic sul pulsante \"Crea\", il sistema inizializzerà automaticamente la cucina e ti connetterà"
+        }
+      ],
+      "alert": "Dopo la creazione della cucina, i dati comuni di ingredienti e attrezzature verranno inizializzati automaticamente, e puoi iniziare a usarla immediatamente"
+    },
+    "userManagement": {
+      "title": "Gestione Utenti",
+      "description": "Gli amministratori possono aggiungere, modificare ed eliminare membri della cucina, e controllare i permessi degli utenti.",
+      "adding": {
+        "title": "Aggiungere Nuovi Utenti",
+        "description": "Invita altri a unirsi alla tua cucina",
+        "steps": [
+          "Vai alla pagina \"Gestione Utenti\"",
+          "Fai clic sul pulsante \"Aggiungi Utente\"",
+          "Compila nome utente e password iniziale",
+          "Seleziona ruolo utente (Amministratore o Membro Regolare)",
+          "Fai clic su \"Crea\" per completare l'aggiunta"
+        ],
+        "alert": "Dopo aver creato un nuovo utente, si raccomanda di informarli di cambiare la loro password iniziale"
+      },
+      "roles": {
+        "title": "Ruoli Utente",
+        "description": "Ruoli diversi hanno permessi diversi",
+        "administrator": {
+          "title": "Amministratore",
+          "permissions": [
+            "Permessi di accesso completo al sistema",
+            "Può aggiungere, modificare ed eliminare utenti",
+            "Può gestire tutte le ricette e i dati",
+            "Può modificare le impostazioni della cucina"
+          ]
+        },
+        "member": {
+          "title": "Membro Regolare",
+          "permissions": [
+            "Può creare e gestire le proprie ricette",
+            "Può visualizzare ricette condivise all'interno della cucina",
+            "Può pianificare pasti e creare liste della spesa",
+            "Può gestire dati personali della dispensa",
+            "Non può gestire altri utenti"
+          ]
+        }
+      },
+      "editing": {
+        "title": "Modificare Utenti",
+        "description": "Modificare informazioni e permessi degli utenti",
+        "steps": [
+          "Trova l'utente target nell'elenco utenti",
+          "Fai clic sul pulsante \"Modifica\"",
+          "Modifica nome utente, password o ruolo",
+          "Salva modifiche"
+        ]
+      },
+      "deleting": {
+        "title": "Eliminare Utenti",
+        "description": "Rimuovere membri della cucina",
+        "content": "Fai clic sul pulsante \"Elimina\" nell'elenco utenti per rimuovere un utente. Dopo l'eliminazione, l'utente non potrà più accedere alla cucina.",
+        "alert": "Eliminare un utente non eliminerà le ricette e i dati che hanno creato, che rimarranno nella cucina"
+      }
+    },
+    "settings": {
+      "title": "Impostazioni Cucina",
+      "description": "Gli amministratori possono configurare vari parametri della cucina nella pagina \"Impostazioni\".",
+      "optionsTitle": "Opzioni Configurabili",
+      "options": [
+        "Nome Cucina: Modificare il nome di visualizzazione della cucina",
+        "Sistema di Unità Predefinito: Scegliere unità metriche o imperiali",
+        "Valuta: seleziona la valuta utilizzata per visualizzare prezzi e costi",
+        "Monitoraggio dei costi: mostra i costi stimati nelle pagine di ricette, calendario e spesa"
+      ]
+    },
+    "bestPractices": {
+      "title": "Migliori Pratiche",
+      "items": [
+        "Scegli nomi chiari e significativi per le cucine",
+        "Rivedi regolarmente l'elenco utenti e rimuovi membri che non hanno più bisogno di accesso",
+        "Crea cucine diverse per scopi diversi per mantenere l'isolamento dei dati",
+        "Configura almeno due account amministratore per evitare punti di guasto singoli",
+        "Ricorda agli utenti di cambiare regolarmente le password per proteggere la sicurezza dell'account"
+      ]
+    }
+  },
+  "mealPlanning": {
+    "title": "Pianificazione Pasti",
+    "subtitle": "Usa la funzione calendario per pianificare i pasti quotidiani, rendendo la tua dieta più organizzata e la tua vita più regolare.",
+    "calendarView": {
+      "title": "Vista Calendario",
+      "description": "Il calendario fornisce una vista temporale intuitiva per aiutarti a pianificare e visualizzare gli arrangiamenti dei pasti.",
+      "viewModesTitle": "Modalità di Vista",
+      "viewModesDescription": "Scegli quanti giorni mostra il calendario",
+      "days7": {
+        "title": "7 giorni",
+        "description": "Una settimana compatta per decisioni rapide sui pasti"
+      },
+      "days14": {
+        "title": "14 giorni",
+        "description": "Una panoramica di due settimane che bilancia varietà e pianificazione"
+      },
+      "days30": {
+        "title": "30 giorni",
+        "description": "Un mese intero di pasti per la pianificazione a lungo termine"
+      },
+      "costTracking": {
+        "title": "Costo del pasto",
+        "description": "Quando il monitoraggio dei costi è attivo, ogni pasto pianificato mostra il costo stimato, calcolato dalla ricetta e dai prezzi della tua dispensa."
+      }
+    },
+    "addingMeals": {
+      "title": "Aggiungere Pasti",
+      "description": "Programma ricette nel calendario per pianificare i pasti quotidiani.",
+      "stepsTitle": "Passaggi di Aggiunta",
+      "steps": [
+        {
+          "title": "Selezionare Data",
+          "description": "Fai clic sulla data target nel calendario"
+        },
+        {
+          "title": "Scegliere Ora del Pasto",
+          "description": "Seleziona colazione, pranzo, cena o spuntino"
+        },
+        {
+          "title": "Aggiungere Ricetta",
+          "description": "Seleziona il piatto da preparare dalla biblioteca ricette"
+        },
+        {
+          "title": "Impostare Porzioni",
+          "description": "Regola le porzioni in base al numero di commensali"
+        },
+        {
+          "title": "Aggiungere Note",
+          "description": "Opzionale: Aggiungi istruzioni speciali o promemoria"
+        }
+      ],
+      "alert": "Un'ora di pasto può includere più ricette, adatto per preparare più piatti",
+      "unscheduledRecipes": {
+        "title": "Ricette Non Programmate",
+        "description": "Scopri quali ricette non sono ancora state pianificate",
+        "content": "Il calendario mostra un elenco \"Ricette Non Programmate\" con i piatti che non sono programmati da nessuna parte nella settimana corrente. Usalo per riempire gli spazi vuoti o bilanciare il tuo menu settimanale."
+      }
+    },
+    "managingPlans": {
+      "title": "Gestire Piani Pasti",
+      "description": "Regola e ottimizza flessibilmente i tuoi arrangiamenti dei pasti.",
+      "edit": {
+        "title": "Modificare Pasti",
+        "description": "Modificare pasti programmati",
+        "steps": [
+          "Fai clic sull'elemento pasto nel calendario",
+          "Modifica ricetta, porzioni o note",
+          "Salva modifiche"
+        ]
+      },
+      "delete": {
+        "title": "Eliminare Pasti",
+        "description": "Annullare pasti programmati",
+        "content": "Fai clic sull'elemento pasto e seleziona \"Elimina\" per rimuovere l'arrangiamento del pasto."
+      }
+    },
+    "shoppingIntegration": {
+      "title": "Integrazione con Liste della Spesa",
+      "description": "Genera automaticamente liste della spesa basate sui piani pasti.",
+      "generateTitle": "Generare Lista della Spesa",
+      "generateDescription": "Crea lista della spesa con un clic",
+      "steps": [
+        {
+          "title": "Selezionare Intervallo di Tempo",
+          "description": "Scegli l'intervallo di date per la generazione della lista della spesa, come \"Questa Settimana\" o \"Prossima Settimana\""
+        },
+        {
+          "title": "Auto-Aggregare Ingredienti",
+          "description": "Il sistema aggregherà tutti gli ingredienti necessari per i pasti"
+        },
+        {
+          "title": "Dedurre Inventario",
+          "description": "Deduce automaticamente ingredienti già nella dispensa"
+        },
+        {
+          "title": "Generare Lista",
+          "description": "Crea lista della spesa finale, pronta per l'uso"
+        }
+      ],
+      "alert": "Aggiornare regolarmente l'inventario della dispensa rende le liste della spesa più accurate"
+    },
+    "bestPractices": {
+      "title": "Migliori Pratiche",
+      "items": [
+        "Pianifica i pasti di una settimana in anticipo per evitare decisioni dell'ultimo minuto",
+        "Considera l'equilibrio nutrizionale, abbina ragionevolmente diversi tipi di piatti",
+        "Programma alcuni pasti veloci per giorni impegnativi",
+        "Lascia flessibilità, non è necessario eseguire rigorosamente ogni giorno",
+        "Usa i fine settimana per preparare piatti che richiedono lunghi tempi di cottura",
+        "Rivedi regolarmente i piani pasti per riassumere esperienza e preferenze",
+        "Condividi il calendario con la famiglia per comprendere gli arrangiamenti dei pasti di ciascuno"
+      ]
+    }
+  },
+  "groceryLists": {
+    "title": "Liste della Spesa",
+    "subtitle": "Genera e gestisci intelligentemente liste della spesa, ottimizza il processo di acquisto ed evita omissioni e acquisti duplicati.",
+    "creating": {
+      "title": "Creare Liste della Spesa",
+      "description": "Il sistema fornisce più modi per creare liste della spesa per soddisfare diverse esigenze di scenari.",
+      "fromMealPlan": {
+        "title": "Generare dal Piano Pasti",
+        "description": "Metodo di creazione più comunemente utilizzato",
+        "steps": [
+          {
+            "title": "Vai alla Pagina di Creazione Lista della Spesa",
+            "description": "Seleziona \"Lista della Spesa\" dalla barra di navigazione"
+          },
+          {
+            "title": "Selezionare Intervallo di Date",
+            "description": "Scegli il periodo di tempo per acquistare ingredienti, come \"Questa Settimana\" o \"Prossima Settimana\""
+          },
+          {
+            "title": "Selezionare Ricette",
+            "description": "Il sistema mostrerà tutti i pasti in quel periodo di tempo, può aggiungere selettivamente"
+          },
+          {
+            "title": "Auto-Aggregare",
+            "description": "Il sistema unirà gli stessi ingredienti e calcolerà le quantità totali"
+          },
+          {
+            "title": "Dedurre Inventario",
+            "description": "Deduce automaticamente ingredienti già nella dispensa"
+          },
+          {
+            "title": "Generare Lista",
+            "description": "Crea lista della spesa finale"
+          }
+        ],
+        "alert": "Il sistema unisce intelligentemente gli stessi ingredienti, ad esempio, se più ricette necessitano di \"uova\", calcolerà automaticamente la quantità totale"
+      },
+      "fromRecipe": {
+        "title": "Generare da Ricetta Singola",
+        "description": "Crea rapidamente lista per un singolo piatto",
+        "steps": [
+          "Apri pagina dettagli ricetta",
+          "Fai clic sul pulsante \"Aggiungi a Lista della Spesa\"",
+          "Seleziona lista esistente o crea nuova lista",
+          "Imposta porzioni",
+          "Conferma aggiunta"
+        ]
+      },
+      "manual": {
+        "title": "Creazione Manuale",
+        "description": "Aggiungi liberamente qualsiasi articolo",
+        "content": "Crea lista della spesa vuota e aggiungi manualmente articoli da acquistare. Adatto per rifornimento quotidiano o acquisto di articoli non correlati a ricette."
+      }
+    },
+    "managing": {
+      "title": "Gestire Liste della Spesa",
+      "description": "Aggiorna lo stato della lista in tempo reale durante gli acquisti.",
+      "view": {
+        "title": "Visualizzare Lista",
+        "description": "Lista chiara di articoli",
+        "intro": "Lista della spesa organizzata per categoria, comoda per fare acquisti per area nel supermercato:",
+        "categories": [
+          "Verdure e Frutta",
+          "Carne e Frutti di Mare",
+          "Condimenti",
+          "Alimenti Base e Cereali",
+          "Altri Articoli"
+        ]
+      },
+      "markPurchased": {
+        "title": "Contrassegnare come Acquistato",
+        "description": "Tracciare progresso acquisti",
+        "content": "Durante gli acquisti, fai clic sulla casella accanto agli articoli per contrassegnare come acquistati. Gli articoli acquistati mostreranno barrato ma rimarranno nella lista per verifica."
+      },
+      "edit": {
+        "title": "Modificare Articoli",
+        "description": "Regolare quantità o aggiungere note",
+        "actions": [
+          "Modificare quantità articolo",
+          "Cambiare unità",
+          "Aggiungere note di marca o specifica",
+          "Aggiungere suggerimenti alternativi"
+        ]
+      },
+      "addCustom": {
+        "title": "Aggiungere Articoli Personalizzati",
+        "description": "Integrare articoli fuori lista",
+        "content": "Fai clic su \"Aggiungi Articolo\" nella lista della spesa per inserire manualmente altri articoli da acquistare, come articoli di uso quotidiano, snack, ecc."
+      },
+      "delete": {
+        "title": "Eliminare Articoli",
+        "description": "Rimuovere articoli non necessari",
+        "content": "Se un articolo non deve essere acquistato (come già a casa), può essere eliminato direttamente dalla lista."
+      },
+      "costTracking": {
+        "title": "Costo stimato",
+        "description": "Comprendi il costo totale della tua lista della spesa.",
+        "content": "Quando il monitoraggio dei costi è attivo, l’intestazione della lista mostra un totale stimato calcolato dai prezzi unitari della tua dispensa.",
+        "purchasePrice": "Quando aggiungi un articolo della lista alla dispensa, puoi inserire il prezzo pagato, così le stime future restano accurate."
+      }
+    },
+    "history": {
+      "title": "Storico Liste",
+      "description": "Visualizzare e gestire liste della spesa storiche.",
+      "recordsTitle": "Registri Storici",
+      "recordsDescription": "Salvare tutte le liste della spesa",
+      "intro": "Il sistema salva tutte le liste della spesa create, puoi:",
+      "actions": [
+        "Visualizzare contenuto lista storica",
+        "Copiare liste storiche per creare nuove liste",
+        "Analizzare abitudini e frequenza di acquisto",
+        "Eliminare registri storici non necessari"
+      ]
+    },
+    "sharing": {
+      "title": "Condividere Liste",
+      "description": "Condividi liste della spesa con la famiglia per collaborare agli acquisti.",
+      "syncTitle": "Sincronizzazione in Tempo Reale",
+      "syncDescription": "Acquisti collaborativi multipersona",
+      "intro": "I membri della stessa cucina possono visualizzare e modificare congiuntamente liste della spesa:",
+      "features": [
+        "Una persona crea lista, altri membri possono visualizzare",
+        "Chiunque può contrassegnare articoli come acquistati",
+        "Aggiornamenti di sincronizzazione in tempo reale per evitare acquisti duplicati",
+        "Adatto per scenari di acquisti divisi"
+      ],
+      "alert": "Esempio: Mamma crea lista a casa, Papà può visualizzare e aggiornare in tempo reale mentre fa acquisti al supermercato"
+    },
+    "smartFeatures": {
+      "title": "Funzionalità Intelligenti",
+      "description": "Usa funzionalità intelligenti del sistema per migliorare efficienza acquisti.",
+      "unitConversion": {
+        "title": "Conversione Unità",
+        "description": "Gestire automaticamente diverse unità",
+        "content": "Il sistema converte e unisce automaticamente gli stessi ingredienti con diverse unità, come \"500g farina\" e \"1 lb farina\" saranno uniti intelligentemente."
+      },
+      "inventoryIntegration": {
+        "title": "Integrazione Inventario",
+        "description": "Collegamento con dati dispensa",
+        "content": "Deduce automaticamente inventario dispensa quando genera liste, può aggiornare dati dispensa con un clic dopo gli acquisti."
+      }
+    },
+    "bestPractices": {
+      "title": "Migliori Pratiche",
+      "items": [
+        "Aggiorna regolarmente inventario dispensa per assicurare precisione lista della spesa",
+        "Crea lista un giorno prima per avere tempo di rivedere e regolare",
+        "Riordina articoli per layout supermercato per migliorare efficienza acquisti",
+        "Aggiungi note di marca o specifica agli articoli per evitare di acquistare prodotti sbagliati",
+        "Contrassegna prontamente articoli acquistati dopo gli acquisti per mantenere lista precisa",
+        "Mantieni liste storiche per analizzare modelli di acquisto e budget",
+        "Condividi liste con famiglia per evitare acquisti duplicati"
+      ]
+    }
+  },
+  "pantryEquipment": {
+    "title": "Dispensa e Attrezzatura",
+    "subtitle": "Gestisci l'inventario degli ingredienti e l'attrezzatura da cucina per ottimizzare l'utilizzo delle risorse e ridurre gli sprechi.",
+    "pantryManagement": {
+      "title": "Gestione Dispensa",
+      "description": "Traccia l'inventario degli ingredienti, comprendi le risorse disponibili ed evita acquisti duplicati.",
+      "addIngredients": {
+        "title": "Aggiungi Ingredienti",
+        "description": "Registra ingredienti appena acquistati",
+        "steps": [
+          {
+            "title": "Vai alla Pagina Dispensa",
+            "description": "Seleziona \"Dispensa\" dalla barra di navigazione"
+          },
+          {
+            "title": "Fai Clic sul Pulsante Aggiungi",
+            "description": "Seleziona \"Aggiungi Ingrediente\""
+          },
+          {
+            "title": "Compila Informazioni Ingrediente",
+            "description": "Inserisci nome ingrediente, quantità, unità"
+          },
+          {
+            "title": "Scegli Posizione di Conservazione",
+            "description": "Segna posizione di conservazione, come frigorifero, congelatore, armadio, ecc."
+          }
+        ],
+        "alert": "Dopo gli acquisti, puoi importare ingredienti nella dispensa con un clic dalla lista della spesa"
+      },
+      "viewInventory": {
+        "title": "Visualizza Inventario",
+        "description": "Comprendi la situazione attuale degli ingredienti",
+        "intro": "La dispensa fornisce più metodi di visualizzazione:",
+        "methods": [
+          {
+            "label": "Visualizza per Categoria",
+            "description": "Verdure, carne, condimenti, ecc."
+          },
+          {
+            "label": "Visualizza per Posizione",
+            "description": "Frigorifero, congelatore, armadio, ecc."
+          },
+          {
+            "label": "Funzione di Ricerca",
+            "description": "Trova rapidamente ingredienti specifici"
+          }
+        ]
+      },
+      "ingredientFeatures": {
+        "title": "Funzionalità di Gestione degli Ingredienti",
+        "description": "Strumenti per gestire inventari di grandi dimensioni",
+        "features": [
+          "Ordina gli ingredienti per nome o posizione, in ordine crescente o decrescente",
+          "Gli elenchi sono impaginati per rendere la dispensa facile da consultare",
+          "Segna un ingrediente come fornitura illimitata così non viene mai considerato esaurito",
+          "Quando elimini un ingrediente o un'attrezzatura, il sistema verifica se è usato dalle ricette e ti avvisa prima"
+        ]
+      },
+      "updateInventory": {
+        "title": "Aggiorna Inventario",
+        "description": "Registra utilizzo ingredienti",
+        "manual": {
+          "title": "Aggiornamento Manuale",
+          "description": "Dopo aver usato ingredienti, fai clic sull'elemento ingrediente per ridurre quantità o segnare come esaurito"
+        },
+        "auto": {
+          "title": "Deduzione Automatica",
+          "description": "Quando prepari ricette, il sistema può dedurre automaticamente quantità ingredienti dalla dispensa"
+        }
+      },
+      "costTracking": {
+        "title": "Registra i prezzi",
+        "description": "Registra i prezzi di acquisto per sbloccare le stime dei costi in tutta l’app.",
+        "content": "Gli ingredienti della dispensa supportano due campi di prezzo facoltativi:",
+        "fields": [
+          {
+            "label": "Prezzo pagato",
+            "description": "l’importo totale che hai pagato per l’articolo"
+          },
+          {
+            "label": "Prezzo copre",
+            "description": "la quantità a cui si applica il prezzo (ad esempio, 500 per una confezione da 500 g). Lascia vuoto per usare la quantità attuale dell’articolo"
+          }
+        ],
+        "unitPrice": "Il prezzo unitario viene calcolato automaticamente e mostrato su ogni ingrediente, rendendo facile confrontare le dimensioni delle confezioni."
+      }
+    },
+    "equipmentManagement": {
+      "title": "Gestione Attrezzatura",
+      "description": "Registra e gestisci l'attrezzatura da cucina, comprendi gli strumenti disponibili e scegli ricette adatte.",
+      "addEquipment": {
+        "title": "Aggiungi Attrezzatura",
+        "description": "Registra la tua attrezzatura da cucina",
+        "steps": [
+          {
+            "title": "Vai alla Pagina Attrezzatura",
+            "description": "Seleziona \"Attrezzatura\" dalla barra di navigazione"
+          },
+          {
+            "title": "Seleziona Tipo di Attrezzatura",
+            "description": "Scegli dalla lista preimpostata, come wok, forno, frullatore, ecc."
+          },
+          {
+            "title": "Aggiungi Informazioni Dettagliate",
+            "description": "Opzionale: Aggiungi marca, modello, data di acquisto, ecc."
+          },
+          {
+            "title": "Imposta Stato",
+            "description": "Segna come disponibile, in riparazione o danneggiato"
+          }
+        ],
+        "alert": "L'attrezzatura comune sarà aggiunta automaticamente quando viene creata la cucina, puoi regolare in base alla situazione reale"
+      },
+      "recipeAssociation": {
+        "title": "Associazione Attrezzatura e Ricetta",
+        "description": "Filtra ricette in base all'attrezzatura",
+        "intro": "Le informazioni sull'attrezzatura si collegano al sistema ricette:",
+        "features": [
+          "Segna l'attrezzatura richiesta quando crei le ricette",
+          "Le pagine delle ricette elencano tutta l'attrezzatura necessaria per preparare il piatto"
+        ]
+      },
+      "maintenance": {
+        "title": "Registri di Manutenzione",
+        "description": "Traccia stato e manutenzione attrezzatura",
+        "content": "Aggiungi registri di manutenzione per attrezzatura, come pulizia, manutenzione, riparazioni, ecc., per estendere la durata dell'attrezzatura."
+      }
+    },
+    "integration": {
+      "title": "Integrazione con Altre Funzionalità",
+      "description": "I dati di dispensa e attrezzatura si integrano profondamente con altre funzionalità del sistema.",
+      "shoppingList": {
+        "title": "Integrazione Lista della Spesa",
+        "features": [
+          "Deduce automaticamente inventario quando genera liste della spesa",
+          "Importa ingredienti nella dispensa con un clic dopo gli acquisti"
+        ]
+      },
+      "recipeRecommendations": {
+        "title": "Raccomandazioni Ricette",
+        "features": [
+          "La pagina delle ricette evidenzia i piatti che puoi preparare con la tua dispensa attuale",
+          "Gli ingredienti con scorte insufficienti sono contrassegnati così sai cosa comprare"
+        ]
+      },
+      "mealPlanning": {
+        "title": "Pianificazione Pasti",
+        "features": [
+          "Controlla la disponibilità della dispensa quando programmi i pasti",
+          "Avvisa degli ingredienti mancanti o insufficienti",
+          "Aggiorna automaticamente l'inventario al termine del pasto"
+        ]
+      }
+    },
+    "kitchenLayout": {
+      "title": "Layout della Cucina",
+      "description": "Visualizza il layout della tua cucina e organizza ingredienti e attrezzatura per posizione per una migliore gestione dell'inventario.",
+      "createLayout": {
+        "title": "Crea Layout della Cucina",
+        "description": "Progetta il layout della tua cucina con elementi personalizzabili",
+        "steps": [
+          {
+            "title": "Accedi all'Editor di Layout",
+            "description": "Vai a Dispensa → Layout della Dispensa, quindi fai clic su 'Modifica Layout'"
+          },
+          {
+            "title": "Crea o Seleziona un Modello",
+            "description": "Crea un nuovo modello di cucina o selezionane uno esistente"
+          },
+          {
+            "title": "Imposta la Dimensione della Tela",
+            "description": "Definisci le dimensioni della tela del layout della tua cucina"
+          },
+          {
+            "title": "Salva il Layout",
+            "description": "Salva il tuo modello di cucina per usi futuri"
+          }
+        ]
+      },
+      "addElements": {
+        "title": "Aggiungi Elementi della Cucina",
+        "description": "Trascina e rilascia elementi dalla tavolozza per costruire la tua cucina",
+        "items": [
+          "Armadio Superiore - Conserva alimenti secchi e piatti",
+          "Armadio Inferiore - Conserva pentole, padelle ed elettrodomestici",
+          "Piano di Lavoro - Area di superficie di lavoro",
+          "Lavello - Area di lavaggio e preparazione",
+          "Fornello - Area di cottura",
+          "Frigorifero - Conservazione a freddo (mezza altezza)",
+          "Congelatore - Conservazione congelata (mezza altezza)",
+          "Porta - Ingresso/uscita della cucina",
+          "Dispensa - Spazio di conservazione dedicato",
+          "Tavolo - Superficie per mangiare o preparare",
+          "Finestra - Fonte di luce naturale"
+        ]
+      },
+      "organizeItems": {
+        "title": "Organizza gli Articoli per Posizione",
+        "description": "Assegna ingredienti e attrezzatura a elementi specifici della cucina",
+        "steps": [
+          {
+            "title": "Passa alla Modalità Dispensa",
+            "description": "Nella pagina Layout della Dispensa, visualizza la tua cucina con gli articoli"
+          },
+          {
+            "title": "Trascina gli Articoli sugli Elementi",
+            "description": "Trascina ingredienti o attrezzatura dal pannello destro sugli elementi della cucina"
+          },
+          {
+            "title": "Configura gli Scaffali",
+            "description": "Fai clic con il tasto destro sugli elementi per aggiungere scaffali e organizzare gli articoli verticalmente"
+          },
+          {
+            "title": "Visualizza le Posizioni degli Articoli",
+            "description": "Fai clic su qualsiasi elemento per vedere tutti gli articoli conservati in quella posizione"
+          }
+        ],
+        "alert": "Gli articoli assegnati agli elementi della cucina mostreranno la loro posizione come 'Nome del Modello\\Nome dell'Elemento' nelle pagine Ingredienti e Attrezzatura"
+      },
+      "features": {
+        "title": "Funzionalità del Layout",
+        "items": [
+          "Trascina gli elementi per riposizionarli",
+          "Ridimensiona gli elementi trascinando angoli e bordi",
+          "Aggancia alla griglia per un allineamento preciso",
+          "Rinomina gli elementi con nomi personalizzati",
+          "Personalizza i colori degli elementi",
+          "Aggiungi più scaffali per organizzare gli articoli",
+          "Elimina gli elementi con il tasto Canc o il menu contestuale",
+          "Tela reattiva che si adatta allo schermo",
+          "Supporto per la modalità scura con testo leggibile"
+        ]
+      }
+    },
+    "bestPractices": {
+      "title": "Migliori Pratiche",
+      "pantry": {
+        "title": "Gestione Dispensa",
+        "items": [
+          "Aggiorna dati dispensa prontamente dopo gli acquisti",
+          "Imposta promemoria scorte minime per ingredienti comunemente usati",
+          "Categorizza per posizione di conservazione per facile ricerca",
+          "Usa principio \"primo entrato, primo uscito\" per gestire ingredienti"
+        ]
+      },
+      "equipment": {
+        "title": "Gestione Attrezzatura",
+        "items": [
+          "Registra completamente tutta l'attrezzatura da cucina",
+          "Aggiorna stato attrezzatura prontamente",
+          "Mantieni e cura regolarmente l'attrezzatura",
+          "Segna attrezzatura richiesta per ricette",
+          "Scegli ricette adatte in base all'attrezzatura"
+        ]
+      }
+    }
+  },
+  "recipeManagement": {
+    "title": "Gestione Ricette",
+    "subtitle": "Impara come creare, modificare, organizzare e condividere la tua collezione di ricette.",
+    "creating": {
+      "title": "Creare Ricette",
+      "description": "Crea registrazioni dettagliate di ricette contenenti ingredienti, passaggi, informazioni nutrizionali e altro.",
+      "basicInfo": {
+        "title": "Informazioni di Base",
+        "description": "Compila le informazioni di base della ricetta",
+        "required": {
+          "title": "Campi Obbligatori",
+          "fields": [
+            {
+              "label": "Nome Ricetta",
+              "description": "Una descrizione chiara del piatto"
+            },
+            {
+              "label": "Descrizione",
+              "description": "Breve introduzione alle caratteristiche e sapori della ricetta"
+            },
+            {
+              "label": "Porzioni",
+              "description": "Indica la dimensione della porzione della ricetta"
+            }
+          ]
+        },
+        "optional": {
+          "title": "Campi Opzionali",
+          "fields": [
+            {
+              "label": "Tempo di Preparazione",
+              "description": "Tempo richiesto per la preparazione degli ingredienti"
+            },
+            {
+              "label": "Tempo di Cottura",
+              "description": "Tempo di cottura effettivo richiesto"
+            },
+            {
+              "label": "Immagine",
+              "description": "Carica una foto del piatto finito"
+            },
+            {
+              "label": "Tag",
+              "description": "Aggiungi tag di categoria come \"Cinese\", \"Vegetariano\", ecc."
+            }
+          ]
+        }
+      },
+      "ingredientList": {
+        "title": "Lista Ingredienti",
+        "description": "Registra ingredienti richiesti e quantità in dettaglio",
+        "steps": [
+          {
+            "title": "Aggiungi Ingredienti",
+            "description": "Clicca sul pulsante \"Aggiungi Ingrediente\" e inserisci il nome dell'ingrediente"
+          },
+          {
+            "title": "Imposta Quantità",
+            "description": "Inserisci quantità e unità, come \"200g\", \"2 pezzi\""
+          },
+          {
+            "title": "Gestione Gruppi",
+            "description": "Crea gruppi come \"Ingredienti Principali\", \"Condimenti\", ecc."
+          },
+          {
+            "title": "Aggiungi Note",
+            "description": "Aggiungi istruzioni per gli ingredienti, come \"a dadini\", \"temperatura ambiente\""
+          }
+        ],
+        "alert": "Il sistema riconoscerà automaticamente gli ingredienti comuni, e puoi anche aggiungere ingredienti personalizzati"
+      },
+      "cookingSteps": {
+        "title": "Passaggi di Cottura",
+        "description": "Registra processo di preparazione dettagliato con timer e immagini",
+        "intro": "Istruzioni chiare sui passaggi ti aiutano e aiutano gli altri a ricreare meglio il piatto:",
+        "features": [
+          "Aggiungi ogni passaggio in ordine con istruzioni dettagliate",
+          "Usa un linguaggio conciso e chiaro per descrivere le operazioni",
+          "Segna tempi e temperature chiave",
+          "Aggiungi immagini ai passaggi per mostrare i risultati attesi",
+          "Imposta timer per passaggi sensibili al tempo - non perdere mai un momento critico"
+        ],
+        "alert": "Timer dei Passaggi: Aggiungi una durata del timer a qualsiasi passaggio (es., \"Cuocere in forno per 25 minuti\"). Durante la cottura, clicca sul pulsante del timer per avviare un conto alla rovescia con notifica audio al completamento."
+      },
+      "stepImages": {
+        "title": "Immagini dei Passaggi",
+        "description": "Aggiungi guide visive ai tuoi passaggi di cottura",
+        "intro": "Carica immagini per ogni passaggio per mostrare esattamente come dovrebbero apparire gli ingredienti in diverse fasi. Questo è particolarmente utile per tecniche come \"mescolare fino a combinare\" o \"impastare fino a liscio\" dove il riferimento visivo fa una grande differenza.",
+        "features": [
+          "Clicca sull'icona dell'immagine su qualsiasi passaggio per caricare una foto",
+          "Le immagini aiutano a mostrare texture, colore e consistenza",
+          "Particolarmente utile per pasticceria e tecniche complesse"
+        ]
+      },
+      "equipment": {
+        "title": "Attrezzatura Richiesta",
+        "description": "Segna l'attrezzatura da cucina necessaria per cucinare",
+        "content": "Seleziona l'attrezzatura richiesta dall'elenco delle attrezzature, come wok, forno, frullatore, ecc. Questo aiuta con la preparazione anticipata e il controllo della disponibilità dell'attrezzatura."
+      }
+    },
+    "organizing": {
+      "title": "Organizzare Ricette",
+      "description": "Usa cartelle e tag per gestire efficacemente la tua collezione di ricette.",
+      "folders": {
+        "title": "Gestione Cartelle",
+        "description": "Crea cartelle per categorizzare e archiviare ricette",
+        "features": [
+          "Clicca su \"Nuova Cartella\" nella pagina delle ricette",
+          "Inserisci il nome della cartella, come \"Cucina Casalinga\", \"Menu delle Vacanze\"",
+          "Trascina le ricette nelle cartelle",
+          "Supporta la creazione di sottocartelle per costruire una struttura gerarchica"
+        ]
+      },
+      "tags": {
+        "title": "Sistema di Tag",
+        "description": "Usa i tag per filtrare e trovare rapidamente le ricette",
+        "intro": "I tag sono un metodo di categorizzazione flessibile, una ricetta può avere più tag:",
+        "categories": [
+          "Tag Cucina: Cinese, Occidentale, Giapponese, Coreana, ecc.",
+          "Tag Dietetici: Vegetariano, Basso Contenuto Calorico, Senza Glutine, Keto, ecc.",
+          "Tag Occasione: Pasti Veloci, Intrattenimento, Pranzo al Sacco, ecc.",
+          "Tag Sapore: Piccante, Dolce, Acido, Salato, ecc."
+        ]
+      },
+      "search": {
+        "title": "Cerca e Filtra",
+        "description": "Trova rapidamente le ricette di cui hai bisogno",
+        "features": [
+          "Cerca ricette per nome",
+          "Filtra le ricette per tag",
+          "Filtra le ricette per cartella",
+          "Filtra per tempo massimo di cottura"
+        ]
+      },
+      "cookable": {
+        "title": "Ricette che Puoi Preparare Subito",
+        "description": "Scopri quali piatti puoi cucinare con la tua dispensa attuale",
+        "content": "La pagina delle ricette controlla la tua dispensa e mostra una sezione \"Ricette che Puoi Preparare Subito\" per i piatti i cui ingredienti sono tutti disponibili. Gli ingredienti facoltativi vengono ignorati e gli articoli contrassegnati come illimitati sono sempre considerati disponibili."
+      },
+      "gridRecipes": {
+        "title": "Ricette a Griglia",
+        "description": "Ricette strutturate che fanno riferimento ai tuoi ingredienti",
+        "content": "Le ricette a griglia usano una disposizione a tabella in cui ogni passaggio fa direttamente riferimento all'elenco degli ingredienti, mostrando esattamente quali ingredienti e quantità vengono usati. Attiva la modalità griglia nell'editor delle ricette e crea passaggi collegati ai tuoi ingredienti."
+      }
+    },
+    "editing": {
+      "title": "Modificare e Eliminare",
+      "description": "Aggiorna e gestisci il contenuto delle tue ricette in qualsiasi momento.",
+      "edit": {
+        "title": "Modifica Ricetta",
+        "steps": [
+          "Apri la pagina dei dettagli della ricetta",
+          "Clicca sul pulsante \"Modifica\"",
+          "Modifica qualsiasi contenuto che necessita di aggiornamento",
+          "Salva le modifiche"
+        ],
+        "alert": "Puoi modificare solo le ricette che hai creato, gli amministratori possono modificare tutte le ricette"
+      },
+      "delete": {
+        "title": "Elimina Ricetta",
+        "content": "Clicca sul pulsante \"Elimina\" nella pagina dei dettagli della ricetta o nell'elenco. L'eliminazione è irreversibile, procedi con cautela."
+      },
+      "costTracking": {
+        "title": "Costo della ricetta",
+        "description": "Scopri quanto costa preparare una ricetta.",
+        "content": "Quando il monitoraggio dei costi è attivo, la pagina della ricetta mostra una scheda \"Costo stimato\" con il costo per porzione e per pasto, oltre a una colonna Costo accanto a ogni ingrediente. I prezzi provengono dagli articoli della tua dispensa e sono visibili solo al proprietario della ricetta."
+      }
+    },
+    "viewing": {
+      "title": "Visualizzazione e Ridimensionamento",
+      "description": "Regola le porzioni e mostra le quantità nelle unità che preferisci.",
+      "servingsScaling": {
+        "title": "Ridimensionamento delle Porzioni",
+        "description": "Cucina per qualsiasi numero di commensali",
+        "content": "Modifica il numero di porzioni nella pagina della ricetta e tutte le quantità degli ingredienti si aggiornano automaticamente. Puoi anche regolare direttamente un singolo ingrediente e tutte le altre quantità si ridimensionano in proporzione."
+      },
+      "unitDisplay": {
+        "title": "Unità Preferite",
+        "description": "Mostra le quantità nel tuo sistema di unità preferito",
+        "content": "Passa dalle unità preferite della tua cucina alle unità originali della ricetta. Le quantità vengono convertite automaticamente e la misura originale viene mostrata accanto."
+      },
+      "conversions": {
+        "title": "Conversioni di Unità",
+        "description": "Converti la quantità di qualsiasi ingrediente",
+        "content": "Apri la finestra di conversione per qualsiasi ingrediente per vedere le conversioni disponibili e passare da un'unità equivalente all'altra. Le conversioni vengono caricate per gli ingredienti comuni e applicate automaticamente quando le unità differiscono."
+      }
+    },
+    "importing": {
+      "title": "Importare ed Esportare",
+      "description": "Importa ricette da più fonti inclusi file Cooklang, URL e ricette pubbliche.",
+      "cooklang": {
+        "title": "Importa da Cooklang",
+        "description": "PantryButler è completamente compatibile con il linguaggio di markup delle ricette open-source",
+        "steps": [
+          "Clicca su \"Importa da Cooklang\" nella pagina dell'editor di ricette",
+          "Carica il tuo file .cook o incolla il testo Cooklang",
+          "Rivedi la ricetta analizzata con ingredienti, attrezzatura e istruzioni",
+          "Conferma l'importazione per aggiungere la ricetta alla tua collezione"
+        ],
+        "alert": "Il formato Cooklang preserva quantità di ingredienti, attrezzatura, timer e istruzioni passo-passo"
+      },
+      "url": {
+        "title": "Importa da URL",
+        "description": "Importa ricette direttamente da siti web di ricette",
+        "steps": [
+          "Clicca su \"Importa da URL\" nella pagina dell'editor di ricette",
+          "Incolla l'URL della pagina web della ricetta",
+          "Il sistema estrarrà automaticamente le informazioni della ricetta",
+          "Rivedi e modifica la ricetta importata secondo necessità",
+          "Salva per aggiungere la ricetta alla tua collezione"
+        ]
+      },
+      "public": {
+        "title": "Importa da Ricette Pubbliche",
+        "description": "Sfoglia e importa ricette condivise pubblicamente da altri utenti",
+        "steps": [
+          "Visita una pagina di ricetta pubblica tramite link condiviso",
+          "Clicca sul pulsante \"Importa nella Mia Cucina\"",
+          "Seleziona in quale cucina importare",
+          "La ricetta verrà aggiunta alla tua collezione con tutti i dettagli preservati"
+        ]
+      },
+      "review": {
+        "title": "Rivedere le Ricette Importate",
+        "description": "Abbina gli ingredienti e verifica i dettagli prima di salvare",
+        "content": "Prima che un'importazione venga salvata, una pagina di revisione mostra gli ingredienti analizzati e ti consente di abbinare ogni articolo alla tua dispensa o al database nutrizionale. I badge indicano corrispondenze esatte, corrispondenze simili e nuovi articoli, così puoi decidere come gestire ogni ingrediente. Le ricette importate riportano un badge che mostra la loro provenienza e quante volte sono state reimportate."
+      },
+      "export": {
+        "title": "Esportare Ricette",
+        "description": "Salva una ricetta come file Cooklang",
+        "content": "Apri qualsiasi ricetta e fai clic su \"Esporta come Cooklang\" per scaricare un file .cook. L'esportazione conserva ingredienti, passaggi, timer e attrezzature della ricetta, così può essere condivisa o importata in qualsiasi app compatibile con Cooklang."
+      }
+    },
+    "bestPractices": {
+      "title": "Migliori Pratiche",
+      "items": [
+        "Usa nomi di ricette chiari per ricerca e identificazione facili",
+        "Registra quantità di ingredienti e passaggi in dettaglio per garantire riproducibilità",
+        "Carica foto di alta qualità del piatto finito per aumentare l'attrattiva visiva",
+        "Usa i tag saggiamente per costruire un sistema di categorizzazione personale",
+        "Organizza regolarmente le cartelle per mantenere la libreria di ricette ordinata",
+        "Aggiungi note alle ricette frequentemente utilizzate per registrare suggerimenti di miglioramento"
+      ]
+    }
+  },
+  "sharing": {
+    "title": "Condivisione e Collaborazione",
+    "subtitle": "Condividi ricette con la tua famiglia, collabora sulla pianificazione dei pasti e goditi cucinare insieme.",
+    "kitchenCollaboration": {
+      "title": "Collaborazione in Cucina",
+      "description": "I membri della stessa cucina possono condividere e gestire collaborativamente tutti i dati.",
+      "sharingScope": {
+        "title": "Ambito di Condivisione",
+        "description": "Contenuto accessibile ai membri della cucina",
+        "intro": "Tutti i membri all'interno di una cucina condividono i seguenti dati:",
+        "items": [
+          {
+            "label": "Biblioteca Ricette",
+            "description": "Tutte le ricette create dai membri"
+          },
+          {
+            "label": "Piani Pasto",
+            "description": "Disposizioni pasti nel calendario"
+          },
+          {
+            "label": "Liste della Spesa",
+            "description": "Liste della spesa condivise"
+          },
+          {
+            "label": "Dispensa",
+            "description": "Informazioni inventario ingredienti"
+          },
+          {
+            "label": "Lista Attrezzature",
+            "description": "Lista attrezzature da cucina"
+          }
+        ],
+        "alert": "Questo design è adatto per uso familiare, tutti i membri possono gestire congiuntamente pasti e spesa domestici"
+      },
+      "scenarios": {
+        "title": "Scenari di Collaborazione",
+        "description": "Applicazioni tipiche di collaborazione in cucina",
+        "family": {
+          "title": "Collaborazione Familiare",
+          "items": [
+            "La mamma pianifica i pasti di questa settimana",
+            "Il papà genera la lista della spesa basata sul piano",
+            "I bambini aiutano a fare la spesa al supermercato, segnando articoli acquistati in tempo reale",
+            "Tutta la famiglia condivide ricette, tutti possono aggiungere piatti preferiti"
+          ]
+        },
+        "roommate": {
+          "title": "Collaborazione tra Coinquilini",
+          "items": [
+            "Gestire congiuntamente inventario frigorifero",
+            "Alternarsi nella pianificazione e cucina",
+            "Condividere liste della spesa",
+            "Condividere piatti speciali di ciascuno"
+          ]
+        },
+        "team": {
+          "title": "Collaborazione di Squadra",
+          "items": [
+            "Il team culinario condivide menu",
+            "Collaborare sullo sviluppo di nuovi piatti",
+            "Gestione unificata dell'approvvigionamento ingredienti",
+            "Tracciare uso e manutenzione attrezzature"
+          ]
+        }
+      },
+      "permissions": {
+        "title": "Gestione Permessi",
+        "description": "Ruoli diversi hanno permessi diversi",
+        "admin": {
+          "title": "Permessi Amministratore",
+          "items": [
+            "Gestire membri cucina (aggiungere, modificare, eliminare utenti)",
+            "Modificare impostazioni cucina",
+            "Gestire tutte le ricette e dati",
+            "Eliminare qualsiasi contenuto"
+          ]
+        },
+        "member": {
+          "title": "Permessi Membro Regolare",
+          "items": [
+            "Visualizzare tutto il contenuto condiviso",
+            "Creare e modificare proprie ricette",
+            "Partecipare alla pianificazione pasti e liste della spesa",
+            "Aggiornare informazioni dispensa e attrezzature",
+            "Non può gestire altri utenti"
+          ]
+        }
+      }
+    },
+    "shareRecipes": {
+      "title": "Condividi Ricette",
+      "description": "Condividi le tue ricette tramite link pubblici o esportale per il backup.",
+      "generateLink": {
+        "title": "Genera Link di Condivisione",
+        "description": "Crea link ricetta condivisibile",
+        "intro": "Genera link di condivisione ricetta che può essere inviato ad altri con qualsiasi metodo:",
+        "features": [
+          "Copia il link per condividerlo con chiunque",
+          "Incorpora in blog o sito web - Usa l'URL ricetta pubblica in un iframe o link"
+        ],
+        "alert": "Incorporamento Blog: Le pagine ricette pubbliche sono progettate per essere incorporabili. Usa semplicemente l'URL pubblica in un iframe o come link diretto nei tuoi post del blog. La ricetta verrà visualizzata con formattazione completa, immagini, timer e tutti i dettagli."
+      },
+      "publicSharing": {
+        "title": "Condivisione Ricetta Pubblica",
+        "description": "Condividi ricette con chiunque, anche senza account",
+        "intro": "Rendi le tue ricette pubblicamente accessibili:",
+        "steps": [
+          "Apri la ricetta che vuoi condividere",
+          "Clicca su \"Rendi Pubblica\" o attiva l'opzione di condivisione pubblica",
+          "Verrà generato un URL pubblico unico",
+          "Chiunque con il link può visualizzare la ricetta senza effettuare l'accesso",
+          "Le ricette pubbliche possono essere importate da altri utenti PantryButler"
+        ],
+        "note": "Le ricette pubbliche mostrano il tuo nome utente e nome cucina, aiutando a costruire la tua reputazione culinaria."
+      },
+      "visibility": {
+        "title": "Imposta Visibilità Ricetta",
+        "description": "Controlla ambito condivisione ricetta",
+        "intro": "Durante la creazione o modifica di ricette, puoi impostare la visibilità:",
+        "options": [
+          {
+            "label": "Privata",
+            "description": "Visibile solo a te e ai membri della tua cucina (predefinito)"
+          },
+          {
+            "label": "Pubblica",
+            "description": "Chiunque con il link pubblico può visualizzare e importare la ricetta"
+          }
+        ]
+      }
+    },
+    "notifications": {
+      "title": "Sistema Notifiche",
+      "description": "Rimani informato sulle attività di collaborazione e informazioni di condivisione.",
+      "types": {
+        "title": "Tipi di Notifiche",
+        "description": "Notifiche inviate dal sistema",
+        "items": [
+          "Notifiche condivisione ricetta",
+          "Promemoria aggiornamento piano pasto",
+          "Notifiche modifica lista della spesa",
+          "Notifiche modifica membro cucina"
+        ]
+      }
+    },
+    "bestPractices": {
+      "title": "Migliori Pratiche",
+      "kitchenCollaboration": {
+        "title": "Collaborazione in Cucina",
+        "items": [
+          "Chiarire responsabilità membri per evitare operazioni duplicate",
+          "Comunicare regolarmente su piani pasto e disposizioni spesa",
+          "Aggiornare prontamente dati condivisi per mantenere informazioni sincronizzate",
+          "Rispettare contenuto creato da altri, eliminare con cautela",
+          "Configurare più amministratori ragionevolmente per assicurare gestione ordinata cucina"
+        ]
+      },
+      "privacy": {
+        "title": "Protezione Privacy",
+        "items": [
+          "Impostare visibilità ricetta ragionevolmente",
+          "Non condividere contenuto contenente informazioni sensibili",
+          "Controlla regolarmente le tue impostazioni di condivisione"
+        ]
+      }
+    }
+  },
+  "nutrition": {
+    "title": "Nutrizione e Monitoraggio Costi",
+    "subtitle": "Comprendi il valore nutrizionale delle tue ricette e quanto costa prepararle.",
+    "overview": {
+      "title": "Panoramica",
+      "description": "PantryButler può mostrare un’etichetta nutrizionale completa per ogni ricetta e stimare i costi in base ai prezzi registrati nella tua dispensa.",
+      "what": {
+        "title": "Cosa viene monitorato",
+        "description": "Le informazioni nutrizionali e sui costi vengono calcolate automaticamente dalle ricette e dai dati della dispensa.",
+        "features": [
+          "Valori nutrizionali per porzione con % del valore giornaliero",
+          "Costo stimato per porzione e per pasto nelle pagine delle ricette",
+          "Costi dei pasti mostrati nel calendario",
+          "Totali stimati nelle liste della spesa",
+          "Prezzi unitari su ogni ingrediente della dispensa"
+        ]
+      }
+    },
+    "enabling": {
+      "title": "Attivare le Informazioni Nutrizionali",
+      "description": "Le informazioni nutrizionali vengono attivate e disattivate a livello di cucina da un amministratore.",
+      "stepsTitle": "Passaggi per attivare",
+      "steps": [
+        "Apri la pagina Impostazioni dalla navigazione",
+        "Nella sezione Visualizzazione, attiva l’interruttore Informazioni Nutrizionali",
+        "Le pagine delle ricette e delle ricette pubbliche ora mostrano l’etichetta nutrizionale"
+      ],
+      "alert": "La nutrizione è attivata per impostazione predefinita e solo gli amministratori possono modificare questa impostazione."
+    },
+    "matching": {
+      "title": "Associare gli Ingredienti ai Dati Nutrizionali",
+      "description": "Per stimare la nutrizione, gli ingredienti devono essere associati ad alimenti nel database nutrizionale.",
+      "how": {
+        "title": "Come funziona l’associazione",
+        "steps": [
+          {
+            "title": "Apri un ingrediente",
+            "description": "Vai su Dispensa → Ingredienti e modifica l’ingrediente da associare."
+          },
+          {
+            "title": "Usa la Combinazione Nutrizionale",
+            "description": "La finestra di ricerca degli ingredienti mostra suggerimenti dal database nutrizionale."
+          },
+          {
+            "title": "Accetta la combinazione",
+            "description": "Scegli l’alimento più vicino; l’ingrediente ora mostra l’indicatore \"Nutrizione associata\"."
+          },
+          {
+            "title": "Oppure aggiungi dati personalizzati",
+            "description": "Se nessun alimento corrisponde, usa \"Aggiungi Dati Nutrizionali Personalizzati\" per inserire i valori tu stesso."
+          }
+        ]
+      },
+      "custom": {
+        "title": "Dati Nutrizionali Personalizzati",
+        "description": "Quando un ingrediente non è nel database, puoi inserire i suoi valori manualmente.",
+        "fields": [
+          {
+            "label": "Dimensione della porzione",
+            "description": "la dimensione della porzione e l’unità a cui si applicano i tuoi valori"
+          },
+          {
+            "label": "Macronutrienti",
+            "description": "calorie, proteine, carboidrati e grassi totali"
+          },
+          {
+            "label": "Altri nutrienti",
+            "description": "fibre alimentari, zuccheri totali, sodio e colesterolo"
+          }
+        ],
+        "alert": "Tutti i valori personalizzati vengono inseriti per dimensione della porzione e adattati automaticamente alla ricetta."
+      }
+    },
+    "calculation": {
+      "title": "Come viene Calcolata la Nutrizione",
+      "description": "I valori sono stime prodotte dal server a partire dal database nutrizionale.",
+      "items": [
+        "Ogni ingrediente associato viene convertito in grammi usando fattori di conversione per alimento",
+        "I valori per 100 g del database vengono adattati alla quantità della ricetta",
+        "Tutti gli ingredienti vengono sommati e divisi per il numero di porzioni",
+        "L’etichetta nutrizionale mostra sia i totali che i valori per porzione"
+      ]
+    },
+    "nutritionFacts": {
+      "title": "L’Etichetta Nutrizionale",
+      "description": "Quando la nutrizione è attivata, le pagine delle ricette mostrano un’etichetta nutrizionale in stile FDA.",
+      "label": {
+        "title": "Cosa mostra l’etichetta",
+        "description": "Una ripartizione completa per 100 g e per porzione",
+        "rows": [
+          "Porzioni per ricetta e dimensione della porzione",
+          "Quantità per porzione con % del valore giornaliero",
+          "Grassi totali, colesterolo, sodio, carboidrati totali, proteine",
+          "Fibre alimentari, zuccheri totali e micronutrienti aggiunti"
+        ],
+        "alert": "I dati nutrizionali sono forniti da OpenNutrition e sono una stima basata sull’associazione degli ingredienti."
+      }
+    },
+    "costOverview": {
+      "title": "Monitoraggio Costi",
+      "description": "Stima quanto costano ricette, pasti e liste della spesa usando i prezzi della dispensa.",
+      "where": {
+        "title": "Dove compaiono i costi",
+        "items": [
+          "Pagina della ricetta — scheda Costo Stimato con costo per porzione e per pasto",
+          "Calendario dei pasti — un costo accanto a ogni pasto pianificato",
+          "Lista della spesa — un totale Costo Stimato nell’intestazione della lista",
+          "Pagina degli ingredienti — un prezzo unitario su ogni articolo con prezzo"
+        ],
+        "alert": "I dettagli dei costi di una ricetta sono visibili solo al proprietario della ricetta."
+      }
+    },
+    "pantryPrices": {
+      "title": "Aggiungere Prezzi agli Articoli della Dispensa",
+      "description": "I costi vengono calcolati dai campi di prezzo degli ingredienti della dispensa.",
+      "fields": {
+        "title": "Due campi di prezzo opzionali",
+        "description": "Disponibili quando si aggiunge o modifica un ingrediente della dispensa",
+        "list": [
+          {
+            "label": "Prezzo",
+            "description": "l’importo totale che hai pagato per l’articolo"
+          },
+          {
+            "label": "Il prezzo copre",
+            "description": "la quantità a cui si applica quel prezzo, ad esempio 500 per una confezione da 500 g. Lascia vuoto per usare la quantità attuale."
+          }
+        ],
+        "unitPrice": "Il prezzo unitario viene calcolato automaticamente e mostrato su ogni ingrediente per confrontare le dimensioni delle confezioni."
+      }
+    },
+    "costSettings": {
+      "title": "Attivare il Monitoraggio Costi",
+      "description": "Il monitoraggio costi viene attivato e disattivato a livello di cucina da un amministratore.",
+      "stepsTitle": "Passaggi per attivare",
+      "steps": [
+        {
+          "title": "Apri Impostazioni",
+          "description": "Apri la pagina Impostazioni dalla navigazione."
+        },
+        {
+          "title": "Attiva il Monitoraggio Costi",
+          "description": "Nella sezione Visualizzazione, attiva l’interruttore Monitoraggio Costi."
+        },
+        {
+          "title": "Scegli una valuta",
+          "description": "Seleziona la valuta usata per mostrare prezzi e costi dall’elenco delle valute supportate."
+        }
+      ]
+    },
+    "bestPractices": {
+      "title": "Buone Pratiche",
+      "items": [
+        "Associa gli ingredienti al database nutrizionale per etichette complete",
+        "Mantieni aggiornati i prezzi della dispensa per stime accurate",
+        "Registra il prezzo e la quantità che copre per gli articoli confezionati",
+        "Inserisci il prezzo pagato quando sposti gli articoli acquistati nella dispensa"
+      ]
+    }
+  },
+  "account": {
+    "title": "Account, Impostazioni e Annunci",
+    "subtitle": "Gestisci il nome visualizzato, la password, le preferenze personali e gli annunci della cucina.",
+    "profile": {
+      "title": "Il Tuo Profilo",
+      "description": "La pagina Profilo memorizza le tue informazioni personali mostrate agli altri membri.",
+      "info": {
+        "title": "Informazioni del profilo",
+        "fields": [
+          {
+            "label": "Nome utente",
+            "description": "il tuo indirizzo e-mail; è il tuo accesso e non può essere modificato"
+          },
+          {
+            "label": "Nome visualizzato",
+            "description": "il nome mostrato agli altri membri della cucina"
+          },
+          {
+            "label": "Avatar",
+            "description": "in arrivo in un futuro aggiornamento"
+          }
+        ],
+        "alert": "Le modifiche al nome visualizzato vengono salvate immediatamente."
+      }
+    },
+    "password": {
+      "title": "Cambiare la Password",
+      "description": "Mantieni sicuro il tuo account scegliendo una password robusta.",
+      "stepsTitle": "Passaggi",
+      "steps": [
+        "Apri la pagina Profilo",
+        "Fai clic sul pulsante Cambia Password",
+        "Inserisci la password attuale, poi quella nuova due volte",
+        "Le password devono contenere almeno 8 caratteri"
+      ]
+    },
+    "kitchenSettings": {
+      "title": "Impostazioni della Cucina",
+      "description": "Preferenze a livello di cucina controllate da un amministratore, oltre alla tua scelta personale della lingua.",
+      "units": {
+        "title": "Sistema di Unità Preferito",
+        "description": "Scegli come vengono visualizzate le quantità nell’app",
+        "options": [
+          "Metrico (g, kg, ml, L)",
+          "Pesi metrici (solo g)",
+          "Imperiale (oz, lb, cup, cucchiaio)",
+          "Volume imperiale (solo tazze)",
+          "Rapporto (percentuale)",
+          "Percentuale del panettiere"
+        ]
+      },
+      "currency": {
+        "title": "Valuta",
+        "description": "La valuta usata per mostrare prezzi e costi",
+        "content": "Seleziona la valuta usata per il monitoraggio costi dall’elenco delle valute supportate."
+      },
+      "features": {
+        "title": "Opzioni di visualizzazione",
+        "description": "Impostazioni che cambiano aspetto e comportamento dell’app",
+        "options": [
+          {
+            "label": "Modalità scura",
+            "description": "passa tra tema chiaro e scuro"
+          },
+          {
+            "label": "Modalità vibrante",
+            "description": "usa colori ad alta saturazione"
+          },
+          {
+            "label": "Informazioni Nutrizionali",
+            "description": "mostra i valori nutrizionali nelle pagine delle ricette"
+          },
+          {
+            "label": "Monitoraggio Costi",
+            "description": "mostra i costi stimati nelle pagine di ricette, calendario e spesa"
+          }
+        ],
+        "alert": "Le opzioni di visualizzazione sono impostazioni della cucina controllate da un amministratore; il selettore della lingua è personale."
+      }
+    },
+    "language": {
+      "title": "Lingua",
+      "description": "Scegli la lingua usata nell’interfaccia. È una preferenza personale applicata immediatamente.",
+      "optionsTitle": "Lingue disponibili",
+      "options": [
+        "English",
+        "Shqip",
+        "Italiano",
+        "Español",
+        "Français",
+        "中文",
+        "हिन्दी"
+      ]
+    },
+    "rights": {
+      "title": "Dati, Token e Tutorial",
+      "description": "Gestisci i tuoi dati, crea token API per le integrazioni e ottieni aiuto con i tutorial.",
+      "apiTokens": {
+        "title": "Token API",
+        "description": "Token a lunga durata per l’estensione del browser e le app mobili",
+        "content": "Crea token con autorizzazioni limitate dalla scheda Impostazioni → Token API. I token vengono mostrati una sola volta alla creazione, quindi copiali in un luogo sicuro."
+      },
+      "data": {
+        "title": "Esportazione e Backup",
+        "description": "Possiedi i tuoi dati e mantienili portabili",
+        "items": [
+          "Esporta tutte le ricette come archivio Cooklang (.cook)",
+          "Importa ricette da file Cooklang e URL",
+          "Esportazione dei dati del database nutrizionale da parte dell’amministratore"
+        ]
+      },
+      "tutorials": {
+        "title": "Tutorial",
+        "description": "Tutorial guidati che introducono ogni funzionalità",
+        "items": [
+          "Segui tutorial passo passo per ogni funzionalità principale",
+          "Tieni traccia di quanti tutorial hai completato",
+          "Reimposta tutti i tutorial dalla pagina Impostazioni per rivederli"
+        ]
+      }
+    },
+    "announcements": {
+      "title": "Annunci",
+      "description": "Gli amministratori pubblicano annunci per informare tutti i membri della cucina.",
+      "viewing": {
+        "title": "Visualizzare gli annunci",
+        "description": "Gli annunci appaiono nella pagina Annunci",
+        "items": [
+          "Vieni reindirizzato alla pagina Annunci quando c’è qualcosa di nuovo",
+          "Gli annunci non letti vengono evidenziati nelle notifiche",
+          "La lettura di un annuncio lo segna come visto"
+        ]
+      },
+      "manage": {
+        "title": "Gestire gli annunci",
+        "description": "Gli amministratori dell’istanza possono creare annunci; i superadmin possono modificarli ed eliminarli",
+        "steps": [
+          {
+            "title": "Apri la pagina Annunci",
+            "description": "Vai su Annunci e fai clic su Nuovo Annuncio."
+          },
+          {
+            "title": "Scrivi l’annuncio",
+            "description": "Dagli un titolo e un messaggio, poi pubblicalo."
+          },
+          {
+            "title": "Modifica o disattiva",
+            "description": "I superadmin possono modificare gli annunci e renderli attivi o inattivi."
+          }
+        ]
+      }
+    },
+    "bestPractices": {
+      "title": "Buone Pratiche",
+      "items": [
+        "Usa un nome visualizzato chiaro per farti riconoscere dagli altri membri",
+        "Tieni d’occhio gli annunci per gli aggiornamenti importanti della cucina",
+        "Crea token API con le autorizzazioni minime necessarie",
+        "Esegui regolarmente il backup delle ricette con Esporta"
+      ]
+    }
+  },
+  "api": {
+    "title": "Linee Guida API",
+    "subtitle": "Autenticati all’API di PantryButler con token o OAuth2, richiedi autorizzazioni limitate e integra i tuoi clienti.",
+    "overview": {
+      "title": "Panoramica",
+      "description": "L’API di PantryButler espone risorse su HTTPS e accetta JSON. Ogni richiesta deve essere autenticata.",
+      "authentication": {
+        "title": "Autenticazione",
+        "description": "Due modalità di autenticazione supportate",
+        "options": [
+          {
+            "label": "Token API",
+            "description": "token a lunga durata creati da un membro per accesso programmatico"
+          },
+          {
+            "label": "OAuth2",
+            "description": "flusso di Codice di Autorizzazione con PKCE per app interattive"
+          }
+        ]
+      }
+    },
+    "apiTokens": {
+      "title": "Token API",
+      "description": "I token API sono credenziali a lunga durata create da un membro all’interno dell’app.",
+      "properties": {
+        "title": "Proprietà del token",
+        "description": "Come si presenta ogni token API",
+        "items": [
+          {
+            "label": "Formato",
+            "description": "32 byte di entropia codificata base64url, con prefisso pb_"
+          },
+          {
+            "label": "Archiviazione",
+            "description": "solo un hash SHA-256 del token viene archiviato sul server"
+          },
+          {
+            "label": "Testo semplice",
+            "description": "il token grezzo viene restituito una sola volta alla creazione"
+          },
+          {
+            "label": "Scadenza",
+            "description": "i token usano una durata predefinita — mai, 7, 30 o 90 giorni — limitata a un anno"
+          }
+        ]
+      },
+      "create": {
+        "title": "Creare un Token",
+        "description": "I token vengono creati dalla scheda Impostazioni → Token API",
+        "steps": [
+          {
+            "title": "Dai un nome al token",
+            "description": "Dagli un nome tra 1 e 100 caratteri."
+          },
+          {
+            "title": "Scegli le autorizzazioni",
+            "description": "Seleziona le permesse necessarie o scegli tutte per l’accesso completo."
+          },
+          {
+            "title": "Imposta una scadenza",
+            "description": "Facoltativo — scegli una durata predefinita per il token."
+          },
+          {
+            "title": "Copia il testo semplice",
+            "description": "Il token in testo semplice viene mostrato una sola volta e mai più, quindi conservalo in sicurezza."
+          }
+        ],
+        "alert": "I token API vengono mostrati esattamente una volta alla creazione. Se perdi il testo semplice, revoca il token e creane uno nuovo."
+      },
+      "scopes": {
+        "title": "Autorizzazioni",
+        "description": "Le autorizzazioni limitano ciò che un token può fare sulla tua istanza.",
+        "intro": "Le autorizzazioni sono raggruppate in risorse che supportano ciascuna lettura e scrittura:",
+        "resources": [
+          "recipes — lettura/scrittura delle ricette",
+          "pantry — lettura/scrittura della dispensa",
+          "grocery — lettura/scrittura delle liste della spesa",
+          "calendar — lettura/scrittura del calendario dei pasti",
+          "nutrition — lettura/scrittura dei dati nutrizionali",
+          "kitchen — lettura/scrittura di attrezzature e layout della cucina",
+          "profile — lettura/scrittura di profilo e notifiche",
+          "settings — lettura/scrittura delle impostazioni della cucina"
+        ],
+        "readWrite": "Puoi anche richiedere una singola autorizzazione all per l’accesso completo:",
+        "all": [
+          "all — ogni permesso su questa istanza"
+        ]
+      },
+      "revoke": {
+        "title": "Revocare i Token",
+        "description": "Puoi revocare l’accesso in qualsiasi momento dalla pagina Impostazioni.",
+        "items": [
+          "Revoca un singolo token dall’elenco dei token",
+          "Revoca tutti i token dell’istanza con un’azione",
+          "Un token revocato smette di funzionare immediatamente"
+        ]
+      }
+    },
+    "oauth": {
+      "title": "OAuth2 con PKCE",
+      "description": "I client inclusi — l’estensione del browser e le app mobili — accedono con il flusso di Codice di Autorizzazione OAuth2 usando PKCE.",
+      "flow": {
+        "title": "Dettagli del flusso",
+        "description": "Requisiti imposti dal server di autorizzazione",
+        "items": [
+          "code_challenge può essere composto da 43 a 128 caratteri",
+          "code_challenge_method deve essere il valore letterale S256",
+          "L’estensione e i client mobili sono preregistrati sul server",
+          "I client di sviluppo vengono abilitati tramite la configurazione del server oauthDevClients"
+        ],
+        "alert": "Il metodo PKCE S256 è obbligatorio; non vengono accettati altri valori di code_challenge_method."
+      }
+    },
+    "bestPractices": {
+      "title": "Buone Pratiche",
+      "items": [
+        "Richiedi le autorizzazioni minime di cui la tua integrazione ha bisogno",
+        "Conserva i token in sicurezza e non registrarli mai nei log",
+        "Usa una scadenza breve per i token nei processi a lunga durata",
+        "Preferisci il flusso OAuth2 per le app interattive rivolte agli utenti",
+        "Includi il token come token Bearer nell’header Authorization"
+      ]
+    }
+  },
+  "admin": {
+    "access": {
+      "title": "Funzioni di Amministrazione",
+      "subtitle": "Strumenti a livello di server e di cucina per superadmin e amministratori di istanza.",
+      "enable": {
+        "title": "Attivare le Funzioni di Amministrazione",
+        "description": "Le funzioni di amministrazione a livello di server sono limitate da un flag di configurazione.",
+        "env": {
+          "title": "ENABLE_ADMIN_FEATURES",
+          "description": "Impostato dall’amministratore del server",
+          "content": "Imposta ENABLE_ADMIN_FEATURES=true nell’ambiente del server per esporre le pagine di amministrazione e l’API di amministrazione.",
+          "alert": "Mentre è disattivato, gli endpoint di amministrazione restituiscono un errore di accesso negato e le voci di navigazione di amministrazione restano nascoste."
+        }
+      }
+    },
+    "emailVerification": {
+      "title": "Verifica Email & SMTP",
+      "description": "Con le funzioni di amministrazione attive, i nuovi creatori verificano il proprio indirizzo email prima di poter accedere.",
+      "behavior": {
+        "title": "Come funziona",
+        "description": "Il requisito è gestito dal superadmin da Admin → Configurazione.",
+        "items": [
+          "Mentre le funzioni di amministrazione sono disattivate, la registrazione funziona come prima senza passaggio di verifica",
+          "Con le funzioni di amministrazione attive, la verifica è richiesta per impostazione predefinita (sovrascrivibile tramite la variabile d'ambiente REQUIRE_EMAIL_VERIFICATION)",
+          "La cucina viene creata solo dopo la conferma dell'email",
+          "I link di verifica scadono dopo 24 ore e possono essere reinviati"
+        ]
+      },
+      "smtp": {
+        "title": "Configurazione SMTP",
+        "description": "I dettagli SMTP vengono impostati dal superadmin da Admin → Configurazione, con ricaduta sulle variabili d'ambiente.",
+        "env": "SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, SMTP_FROM e SMTP_SECURE controllano il server di posta.",
+        "alert": "Senza un host SMTP, le email di verifica vengono registrate nella console del server invece di essere consegnate — configuralo prima di invitare utenti reali."
+      }
+    },
+    "roles": {
+      "title": "Ruoli Utente",
+      "description": "Gli utenti hanno un ruolo a livello di server o un ruolo a livello di cucina.",
+      "superadmin": {
+        "title": "Superadmin",
+        "description": "Il primo account creato durante la configurazione diventa superadmin e può gestire tutte le istanze.",
+        "permissions": [
+          "Visualizzare ed eliminare qualsiasi istanza",
+          "Creare, modificare ed eliminare annunci per qualsiasi cucina",
+          "Gestire il database nutrizionale",
+          "Accedere alle pagine di amministrazione (quando le funzioni di amministrazione sono attive)"
+        ]
+      },
+      "instanceAdmin": {
+        "title": "Amministratore di Istanza",
+        "description": "Un amministratore di una singola cucina.",
+        "permissions": [
+          "Aggiungere, modificare ed eliminare membri della cucina",
+          "Modificare le impostazioni della cucina",
+          "Creare annunci per la cucina",
+          "Gestire tutte le ricette e i dati della cucina"
+        ]
+      },
+      "member": {
+        "title": "Membro",
+        "description": "Un utente regolare di una cucina.",
+        "permissions": [
+          "Creare e gestire le proprie ricette",
+          "Visualizzare i contenuti condivisi della cucina",
+          "Pianificare pasti e creare liste della spesa",
+          "Gestire i propri dati della dispensa"
+        ]
+      }
+    },
+    "instances": {
+      "title": "Gestione delle Istanze",
+      "description": "I superadmin possono ispezionare ogni istanza di cucina ed eliminare quelle abbandonate.",
+      "view": {
+        "title": "Sfogliare le istanze",
+        "description": "La pagina Istanze di amministrazione elenca ogni cucina con il suo creatore e la sua attività",
+        "info": [
+          "Nome dell’istanza",
+          "Creatore e data di creazione",
+          "Data dell’ultimo accesso"
+        ]
+      },
+      "delete": {
+        "title": "Eliminare un’istanza",
+        "description": "Eliminare una cucina rimuove definitivamente tutti i suoi dati",
+        "intro": "I seguenti dati vengono eliminati con l’istanza:",
+        "data": [
+          "Ricette e ingredienti",
+          "Articoli della dispensa e attrezzature",
+          "Pasti del calendario e liste della spesa",
+          "Impostazioni e dati personalizzati",
+          "Tutte le appartenenze degli utenti"
+        ],
+        "alert": "L’eliminazione di un’istanza non può essere annullata. Esporta prima tutto ciò che vuoi conservare."
+      }
+    },
+    "announcements": {
+      "title": "Gestione degli Annunci",
+      "description": "Gli annunci tengono informati tutti i membri di una cucina sugli aggiornamenti.",
+      "manage": {
+        "title": "Gestire gli annunci",
+        "description": "Disponibile per amministratori di istanza e superadmin",
+        "features": [
+          "Crea annunci con un titolo e un messaggio",
+          "Modifica un annuncio dopo la pubblicazione",
+          "Attiva o disattiva un annuncio per mostrarlo o nasconderlo",
+          "Elimina definitivamente gli annunci"
+        ],
+        "alert": "Solo i superadmin possono modificare, disattivare o eliminare gli annunci; gli amministratori di istanza li creano."
+      }
+    },
+    "bestPractices": {
+      "title": "Buone Pratiche",
+      "items": [
+        "Configura almeno due account superadmin per evitare un punto di errore singolo",
+        "Attiva le funzioni di amministrazione solo quando necessario",
+        "Rivedi l’attività delle istanze e ripulisci le cucine abbandonate",
+        "Pubblica annunci per i cambiamenti importanti a livello di cucina"
+      ]
+    }
+  }
+}

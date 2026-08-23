@@ -1,0 +1,159 @@
+{
+  "title": "Redaktori i Planit të Kuzhinës",
+  "backToPantry": "Kthehu te Mbajtëse",
+  "kitchenLayout": "Plani i Kuzhinës",
+  "newLayout": "Plan i Ri",
+  "createFirstLayout": "Krijo planin tënd të parë",
+  "createFirstLayoutDescription": "Krijo një plan kuzhine 2D, shto dollape, pajisje dhe elemente të tjera, pastaj zvarrit dhe lësho përbërësit dhe pajisjet në vendet e tyre për menaxhim të lehtë.",
+  "createLayout": "Krijo Plan",
+  "editLayout": "Redakto Planin",
+  "deleteLayout": "Fshi Planin",
+  "selectLayout": "Zgjidh Planin",
+  "layoutName": "Emri i Planit",
+  "layoutDescription": "Përshkrimi",
+  "deleteConfirmTitle": "Konfirmo Fshirjen",
+  "deleteConfirmMessage": "Jeni i sigurt që dëshironi të fshini planin \"{{name}}\"? Kjo do të fshijë të gjithë elementet e lidhur dhe vendndodhjet e artikujve dhe nuk mund të zhbëhet.",
+  "createSuccess": "U krijua me sukses",
+  "updateSuccess": "U përditësua me sukses",
+  "deleteSuccess": "U fshi me sukses",
+  "createError": "Dështoi krijimi: {{message}}",
+  "updateError": "Dështoi përditësimi: {{message}}",
+  "deleteError": "Dështoi fshirja: {{message}}",
+  "loadError": "Dështoi ngarkimi i të dhënave: {{message}}",
+  "loading": "Duke ngarkuar...",
+  "kitchenElements": "Elementet e Kuzhinës",
+  "itemInventory": "Inventari i Artikujve",
+  "ingredients": "Përbërësit",
+  "equipment": "Pajisjet",
+  "searchIngredients": "Kërko përbërës...",
+  "searchEquipment": "Kërko pajisje...",
+  "noIngredients": "Asnjë përbërës",
+  "noEquipment": "Asnjë pajisje",
+  "noMatchingIngredients": "Nuk u gjetën përbërës përkatës",
+  "noMatchingEquipment": "Nuk u gjetën pajisje përkatëse",
+  "elementAdded": "Elementi u shtua",
+  "elementAddError": "Dështoi shtimi i elementit: {{message}}",
+  "itemPlaced": "{{name}} u vendos",
+  "itemPlaceError": "Dështoi vendosja: {{message}}",
+  "itemAlreadyPlaced": "Ky artikull është tashmë në këtë vendndodhje",
+  "itemRemoved": "Artikulli u hoq",
+  "itemRemoveError": "Dështoi heqja: {{message}}",
+  "elementDeleted": "Elementi u fshi",
+  "elementDeleteError": "Dështoi fshirja: {{message}}",
+  "updatePositionError": "Dështoi përditësimi i pozicionit: {{message}}",
+  "editElementName": "Redakto Emrin e Elementit",
+  "customName": "Emër i Personalizuar",
+  "customNamePlaceholder": "p.sh., Dollap i Sipërm i Kuzhinës Kryesore, Dollap i Poshtëm i Ishullit",
+  "cancel": "Anulo",
+  "save": "Ruaj",
+  "delete": "Fshi",
+  "edit": "Redakto",
+  "deleteElement": "Fshi Elementin",
+  "emptyCanvasMessage": "Zvarrit elementet nga paneli i majtë në kanavacë për të filluar dizajnimin e planit të kuzhinës suaj",
+  "elements": {
+    "upper_cabinet": "Dollap i Sipërm",
+    "lower_cabinet": "Dollap i Poshtëm",
+    "countertop": "Banak",
+    "sink": "Lavamanë",
+    "stove": "Sobë",
+    "refrigerator": "Frigorifer",
+    "freezer": "Ngrirës",
+    "pantry": "Dollap Mbajtëse",
+    "table": "Tavolinë",
+    "door": "Derë",
+    "window": "Dritare",
+    "other": "Tjetër"
+  },
+  "kitchenPantry": "Kitchen Pantry",
+  "kitchenPantryPage": {
+    "setupDialogTitle": "Konfiguro Planimetrinë e Kuzhinës tënde",
+    "setupDialogDescription": "Përpara se të organizosh artikujt e mbajtëses, duhet të krijosh një planimetri kuzhine. Dizajno kuzhinën duke shtuar dollapë, pajisje dhe elemente magazinimi."
+  },
+  "kitchenLayoutEditor": {
+    "createYourLayout": "Krijo planimetrinë tënde të kuzhinës",
+    "designDescription": "Projekto një planimetri 2D të kuzhinës tënde duke shtuar dollapë, pajisje dhe elemente magazinimi. Pasi të krijohet, mund ta përdorësh për të organizuar përbërësit dhe pajisjet e tua.",
+    "createFirstLayoutButton": "Krijo planimetrinë e parë"
+  },
+  "kitchenTutorial": {
+    "layoutEditorSteps": [
+      {
+        "title": "Mirë se erdhe në Redaktorin e Planimetrisë së Kuzhinës",
+        "content": "Krijo një paraqitje vizuale të kuzhinës tënde për të organizuar në mënyrë efikase përbërësit dhe pajisjet e tua."
+      },
+      {
+        "title": "Shtimi i Elementeve",
+        "content": "Tërhiq elementet nga paneli i majtë në kanavacë. Elementet përfshijnë dollapë, pajisje dhe njësi magazinimi."
+      },
+      {
+        "title": "Lëvizja e Elementeve",
+        "content": "Kliko dhe tërhiq elementet për t'i ripozicionuar. Elementet do të këputen në një rrjet dhe te elementet e tjera për shtrirje të lehtë."
+      },
+      {
+        "title": "Ndryshimi i Madhësisë së Elementeve",
+        "content": "Zgjidh një element për të parë dorezat e ndryshimit të madhësisë. Tërhiq dorezat për të rregulluar madhësinë. Elementet janë të kufizuar brenda kufijve të kanavacës."
+      },
+      {
+        "title": "Personalizimi i Elementeve",
+        "content": "Kliko me të djathtën mbi çdo element për ta riemërtuar, për të ndryshuar ngjyrën ose për të menaxhuar raftet. Raftet ndihmojnë në organizimin e artikujve brenda një elementi."
+      },
+      {
+        "title": "Menaxhimi i Rafeve",
+        "content": "Shto rafte te elementet për të krijuar seksione. Çdo raft mund të mbajë artikuj të ndryshëm, duke e bërë më të lehtë gjetjen e asaj që të nevojitet."
+      },
+      {
+        "title": "Gati për të Filluar!",
+        "content": "Pasi planimetria jote të përfundojë, shko te faqja e Mbajtëses së Kuzhinës për të filluar organizimin e përbërësve dhe pajisjeve të tua."
+      }
+    ],
+    "pantrySteps": [
+      {
+        "title": "Mirë se erdhe në Mbajtësen e Kuzhinës",
+        "content": "Përdor planimetrinë e kuzhinës tënde për të organizuar dhe gjurmuar se ku janë ruajtur përbërësit dhe pajisjet e tua."
+      },
+      {
+        "title": "Vendosja e Artikujve",
+        "content": "Tërhiq përbërës ose pajisje nga paneli i djathtë te elementet në planimetrinë tënde të kuzhinës. Artikujt do të ruhen në atë vendndodhje."
+      },
+      {
+        "title": "Shikimi i Artikujve",
+        "content": "Kliko mbi çdo element për të parë të gjithë artikujt e ruajtur në të. Artikujt organizohen sipas rafeve nëse i ke konfiguruar."
+      },
+      {
+        "title": "Redaktimi i Planimetrisë",
+        "content": "Duhet të ndryshosh planimetrinë? Kliko butonin \"Redakto Planimetrinë\" për t'u kthyer te redaktori dhe për të bërë rregullime."
+      },
+      {
+        "title": "Fillo Organizimin!",
+        "content": "Je gati të organizosh kuzhinën tënde! Tërhiq artikujt në vendndodhjet e tyre të ruajtjes dhe mbaj gjurmë të çdo gjëje."
+      }
+    ],
+    "stepOf": "Hapi {{current}} nga {{total}}",
+    "getStarted": "Fillo",
+    "skipTutorial": "Anashkalo Tutorialin"
+  },
+  "modelSelector": {
+    "layoutNamePlaceholder": "Emri i planimetrisë",
+    "layoutDescriptionPlaceholder": "Përshkrimi i planimetrisë"
+  },
+  "kitchenCanvas": {
+    "updateSizeError": "Dështoi përditësimi i madhësisë: {{message}}",
+    "elementUpdated": "Elementi u përditësua",
+    "elementUpdateError": "Dështoi përditësimi i elementit: {{message}}",
+    "shelvesUpdated": "Raftet u përditësuan",
+    "shelvesUpdateError": "Dështoi përditësimi i rafeve: {{message}}",
+    "deleteTooltip": "Fshi (Del)",
+    "renameAndColor": "Riemërto dhe Ngjyro",
+    "manageShelves": "Menaxho Raftet",
+    "editElementTitle": "Redakto Elementin",
+    "customNamePlaceholder": "Shkruaj një emër të personalizuar",
+    "customColor": "Ngjyrë e Personalizuar",
+    "shelfName": "Emri i Raftit",
+    "shelfNamePlaceholder": "Emri i raftit",
+    "heightPercent": "Lartësia %",
+    "addShelf": "Shto Raft",
+    "noItemsOnShelf": "Nuk ka artikuj në këtë raft",
+    "noItemsInElement": "Nuk ka artikuj në këtë element",
+    "itemCount": "{{count}} artikull",
+    "itemCount_plural": "{{count}} artikuj"
+  }
+}

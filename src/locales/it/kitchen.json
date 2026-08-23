@@ -1,0 +1,159 @@
+{
+  "title": "Editor di Layout Cucina",
+  "backToPantry": "Torna alla Dispensa",
+  "kitchenLayout": "Layout Cucina",
+  "newLayout": "Nuovo Layout",
+  "createFirstLayout": "Crea il tuo primo layout",
+  "createFirstLayoutDescription": "Crea un layout cucina 2D, aggiungi armadi, elettrodomestici e altri elementi, quindi trascina e rilascia ingredienti e attrezzature nelle loro posizioni per una facile gestione.",
+  "createLayout": "Crea Layout",
+  "editLayout": "Modifica Layout",
+  "deleteLayout": "Elimina Layout",
+  "selectLayout": "Seleziona Layout",
+  "layoutName": "Nome Layout",
+  "layoutDescription": "Descrizione",
+  "deleteConfirmTitle": "Conferma Eliminazione",
+  "deleteConfirmMessage": "Sei sicuro di voler eliminare il layout \"{{name}}\"? Questo eliminerà tutti gli elementi correlati e le posizioni degli articoli e non può essere annullato.",
+  "createSuccess": "Creato con successo",
+  "updateSuccess": "Aggiornato con successo",
+  "deleteSuccess": "Eliminato con successo",
+  "createError": "Impossibile creare: {{message}}",
+  "updateError": "Impossibile aggiornare: {{message}}",
+  "deleteError": "Impossibile eliminare: {{message}}",
+  "loadError": "Impossibile caricare i dati: {{message}}",
+  "loading": "Caricamento...",
+  "kitchenElements": "Elementi Cucina",
+  "itemInventory": "Inventario Articoli",
+  "ingredients": "Ingredienti",
+  "equipment": "Attrezzatura",
+  "searchIngredients": "Cerca ingredienti...",
+  "searchEquipment": "Cerca attrezzatura...",
+  "noIngredients": "Nessun ingrediente",
+  "noEquipment": "Nessuna attrezzatura",
+  "noMatchingIngredients": "Nessun ingrediente corrispondente trovato",
+  "noMatchingEquipment": "Nessuna attrezzatura corrispondente trovata",
+  "elementAdded": "Elemento aggiunto",
+  "elementAddError": "Impossibile aggiungere elemento: {{message}}",
+  "itemPlaced": "{{name}} posizionato",
+  "itemPlaceError": "Impossibile posizionare: {{message}}",
+  "itemAlreadyPlaced": "Questo articolo è già in questa posizione",
+  "itemRemoved": "Articolo rimosso",
+  "itemRemoveError": "Impossibile rimuovere: {{message}}",
+  "elementDeleted": "Elemento eliminato",
+  "elementDeleteError": "Impossibile eliminare: {{message}}",
+  "updatePositionError": "Impossibile aggiornare la posizione: {{message}}",
+  "editElementName": "Modifica Nome Elemento",
+  "customName": "Nome Personalizzato",
+  "customNamePlaceholder": "es., Armadio Superiore Cucina Principale, Armadio Inferiore Isola",
+  "cancel": "Annulla",
+  "save": "Salva",
+  "delete": "Elimina",
+  "edit": "Modifica",
+  "deleteElement": "Elimina Elemento",
+  "emptyCanvasMessage": "Trascina gli elementi dal pannello di sinistra sulla tela per iniziare a progettare il layout della tua cucina",
+  "elements": {
+    "upper_cabinet": "Armadio Superiore",
+    "lower_cabinet": "Armadio Inferiore",
+    "countertop": "Piano di Lavoro",
+    "sink": "Lavello",
+    "stove": "Fornello",
+    "refrigerator": "Frigorifero",
+    "freezer": "Congelatore",
+    "pantry": "Armadio Dispensa",
+    "table": "Tavolo",
+    "door": "Porta",
+    "window": "Finestra",
+    "other": "Altro"
+  },
+  "kitchenPantry": "Kitchen Pantry",
+  "kitchenPantryPage": {
+    "setupDialogTitle": "Configura la disposizione della tua cucina",
+    "setupDialogDescription": "Prima di poter organizzare gli articoli della tua dispensa, devi creare una disposizione della cucina. Progetta la tua cucina aggiungendo armadi, elettrodomestici ed elementi di stoccaggio."
+  },
+  "kitchenLayoutEditor": {
+    "createYourLayout": "Crea la tua disposizione della cucina",
+    "designDescription": "Progetta una disposizione 2D della tua cucina aggiungendo armadi, elettrodomestici ed elementi di stoccaggio. Una volta creata, puoi usarla per organizzare i tuoi ingredienti e le attrezzature.",
+    "createFirstLayoutButton": "Crea la prima disposizione"
+  },
+  "kitchenTutorial": {
+    "layoutEditorSteps": [
+      {
+        "title": "Benvenuto nell'editor della disposizione della cucina",
+        "content": "Crea una rappresentazione visiva della tua cucina per organizzare in modo efficiente ingredienti e attrezzature."
+      },
+      {
+        "title": "Aggiunta di elementi",
+        "content": "Trascina gli elementi dal pannello di sinistra sulla tela. Gli elementi includono armadi, elettrodomestici e unità di stoccaggio."
+      },
+      {
+        "title": "Spostamento degli elementi",
+        "content": "Fai clic e trascina gli elementi per riposizionarli. Gli elementi si agganciano a una griglia e ad altri elementi per un facile allineamento."
+      },
+      {
+        "title": "Ridimensionamento degli elementi",
+        "content": "Seleziona un elemento per vedere le maniglie di ridimensionamento. Trascina le maniglie per regolare la dimensione. Gli elementi sono limitati ai bordi della tela."
+      },
+      {
+        "title": "Personalizzazione degli elementi",
+        "content": "Fai clic con il pulsante destro su qualsiasi elemento per rinominarlo, cambiarne il colore o gestire i ripiani. I ripiani aiutano a organizzare gli articoli all'interno di un elemento."
+      },
+      {
+        "title": "Gestione dei ripiani",
+        "content": "Aggiungi ripiani agli elementi per creare sezioni. Ogni ripiano può contenere articoli diversi, rendendo più facile trovare ciò che ti serve."
+      },
+      {
+        "title": "Pronto per iniziare!",
+        "content": "Una volta completata la disposizione, vai alla pagina della dispensa della cucina per iniziare a organizzare ingredienti e attrezzature."
+      }
+    ],
+    "pantrySteps": [
+      {
+        "title": "Benvenuto nella dispensa della cucina",
+        "content": "Usa la disposizione della tua cucina per organizzare e tenere traccia di dove sono conservati ingredienti e attrezzature."
+      },
+      {
+        "title": "Posizionamento degli articoli",
+        "content": "Trascina ingredienti o attrezzature dal pannello destro sugli elementi della tua disposizione della cucina. Gli articoli verranno conservati in quella posizione."
+      },
+      {
+        "title": "Visualizzazione degli articoli",
+        "content": "Fai clic su qualsiasi elemento per vedere tutti gli articoli in esso contenuti. Gli articoli sono organizzati per ripiani se li hai configurati."
+      },
+      {
+        "title": "Modifica della disposizione",
+        "content": "Devi cambiare la disposizione? Fai clic sul pulsante \"Modifica disposizione\" per tornare all'editor e apportare modifiche."
+      },
+      {
+        "title": "Inizia a organizzare!",
+        "content": "Sei pronto a organizzare la tua cucina! Trascina gli articoli nelle loro posizioni di stoccaggio e tieni traccia di tutto."
+      }
+    ],
+    "stepOf": "Passaggio {{current}} di {{total}}",
+    "getStarted": "Inizia",
+    "skipTutorial": "Salta il tutorial"
+  },
+  "modelSelector": {
+    "layoutNamePlaceholder": "Nome della disposizione",
+    "layoutDescriptionPlaceholder": "Descrizione della disposizione"
+  },
+  "kitchenCanvas": {
+    "updateSizeError": "Impossibile aggiornare la dimensione: {{message}}",
+    "elementUpdated": "Elemento aggiornato",
+    "elementUpdateError": "Impossibile aggiornare l'elemento: {{message}}",
+    "shelvesUpdated": "Ripiani aggiornati",
+    "shelvesUpdateError": "Impossibile aggiornare i ripiani: {{message}}",
+    "deleteTooltip": "Elimina (Canc)",
+    "renameAndColor": "Rinomina e colore",
+    "manageShelves": "Gestisci ripiani",
+    "editElementTitle": "Modifica elemento",
+    "customNamePlaceholder": "Inserisci un nome personalizzato",
+    "customColor": "Colore personalizzato",
+    "shelfName": "Nome del ripiano",
+    "shelfNamePlaceholder": "Nome del ripiano",
+    "heightPercent": "Altezza %",
+    "addShelf": "Aggiungi ripiano",
+    "noItemsOnShelf": "Nessun articolo su questo ripiano",
+    "noItemsInElement": "Nessun articolo in questo elemento",
+    "itemCount": "{{count}} articolo",
+    "itemCount_plural": "{{count}} articoli"
+  }
+}

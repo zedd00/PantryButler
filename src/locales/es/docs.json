@@ -1,0 +1,1709 @@
+{
+  "navigation": {
+    "gettingStarted": "Comenzar",
+    "coreFeatures": "Funciones Principales",
+    "collaboration": "Colaboración",
+    "quickStart": "Inicio Rápido",
+    "kitchenManagement": "Gestión de Cocina",
+    "recipeManagement": "Gestión de Recetas",
+    "mealPlanning": "Planificación de Comidas",
+    "shoppingLists": "Listas de Compras",
+    "pantryEquipment": "Despensa y Equipo",
+    "sharingCollaboration": "Compartir y Colaborar",
+    "nutritionCostTracking": "Nutrición y Seguimiento de Costos",
+    "accountSection": "Cuenta y Configuración",
+    "accountSettingsPage": "Cuenta, Configuración y Anuncios",
+    "developersSection": "Desarrolladores",
+    "apiGuidelines": "Guía de la API",
+    "administrationSection": "Administración",
+    "adminFeatures": "Funciones de Administración"
+  },
+  "gettingStarted": {
+    "title": "Inicio Rápido",
+    "subtitle": "¡Bienvenido a PantryButler! Esta guía te ayudará a comenzar rápidamente y comprender los conceptos básicos y el uso.",
+    "whatIsKitchen": {
+      "title": "¿Qué es una Cocina?",
+      "description": "Una cocina es un espacio de trabajo independiente que contiene todas tus recetas, planes de comidas, listas de compras y datos de despensa. Cada cocina está completamente aislada, adecuada para diferentes escenarios:",
+      "familyKitchen": "Cocina Familiar: Comparte recetas y planes de comidas con miembros de la familia",
+      "personalKitchen": "Cocina Personal: Gestiona tus registros de cocina personales",
+      "teamKitchen": "Cocina de Equipo: Uso colaborativo para equipos culinarios"
+    },
+    "steps": {
+      "title": "Pasos para Comenzar",
+      "step1": {
+        "title": "Paso 1: Configura tu Cocina",
+        "description": "Los usuarios primerizos necesitan crear una nueva cocina",
+        "items": [
+          "Haz clic en el botón \"Configurar Cocina\" en la página de inicio",
+          "Ingresa un nombre de cocina (por ejemplo, Mi Cocina Familiar)",
+          "Configura la información de la cuenta de administrador (nombre de usuario y contraseña)",
+          "Haz clic en \"Crear\" para completar la configuración de la cocina"
+        ],
+        "alert": "La cuenta creada durante la configuración de la cocina se convertirá automáticamente en el administrador con permisos de gestión completos"
+      },
+      "step2": {
+        "title": "Paso 2: Inicia Sesión en el Sistema",
+        "description": "Usa tu cuenta creada para iniciar sesión",
+        "items": [
+          "Haz clic en el botón \"Iniciar Sesión\" para acceder a la página de inicio de sesión",
+          "Ingresa tu nombre de usuario y contraseña",
+          "Selecciona la cocina a la que deseas iniciar sesión",
+          "Haz clic en \"Iniciar Sesión\" para entrar al sistema"
+        ]
+      },
+      "step3": {
+        "title": "Paso 3: Comienza a Usar",
+        "description": "Explora las funciones del sistema",
+        "items": [
+          "Crea tu primera receta",
+          "Planifica las comidas de esta semana en el calendario",
+          "Genera listas de compras",
+          "Registra el inventario de la despensa",
+          "Invita a miembros de la familia a unirse a la cocina"
+        ]
+      }
+    },
+    "navigation": {
+      "title": "Navegación del Sistema",
+      "description": "Después de iniciar sesión, puedes acceder a todos los módulos de funciones a través de la barra de navegación izquierda:",
+      "recipes": {
+        "title": "Recetas",
+        "description": "Navega, crea y gestiona tu colección de recetas"
+      },
+      "calendar": {
+        "title": "Calendario",
+        "description": "Planifica comidas diarias y visualiza horarios de comidas"
+      },
+      "shoppingList": {
+        "title": "Lista de Compras",
+        "description": "Gestiona listas de compras y rastrea el progreso de compra"
+      },
+      "pantry": {
+        "title": "Despensa",
+        "description": "Registra el inventario de ingredientes"
+      },
+      "equipment": {
+        "title": "Equipo",
+        "description": "Gestiona la lista de equipo de cocina"
+      }
+    },
+    "nextSteps": {
+      "title": "Próximos Pasos",
+      "description": "Ahora que comprendes los conceptos básicos, continúa leyendo la siguiente documentación para aprender más sobre cada función:",
+      "items": [
+        "Gestión de Cocina: Aprende cómo gestionar cocinas y usuarios",
+        "Gestión de Recetas: Aprende a crear y organizar recetas",
+        "Planificación de Comidas: Domina las técnicas de planificación de comidas",
+        "Listas de Compras: Gestiona eficientemente el proceso de compra"
+      ]
+    }
+  },
+  "instanceManagement": {
+    "title": "Gestión de Cocina",
+    "subtitle": "Aprende cómo crear, configurar y gestionar tus cocinas, así como gestionar miembros y permisos de la cocina.",
+    "creating": {
+      "title": "Crear una Nueva Cocina",
+      "description": "Crear una cocina es el primer paso para usar el sistema. Cada cocina es un espacio de trabajo independiente.",
+      "stepsTitle": "Pasos de Creación",
+      "steps": [
+        {
+          "title": "Acceder a la Página de Registro",
+          "description": "Haz clic en el botón \"Configurar Cocina\" en la página de inicio"
+        },
+        {
+          "title": "Completar Información de la Cocina",
+          "description": "Ingresa un nombre de cocina, sugiere usar nombres significativos como \"Cocina Familiar Smith\" o \"Estudio Culinario\""
+        },
+        {
+          "title": "Configurar Cuenta de Administrador",
+          "description": "Crea nombre de usuario y contraseña de administrador, esta cuenta tendrá permisos de gestión completos"
+        },
+        {
+          "title": "Completar Creación",
+          "description": "Haz clic en el botón \"Crear\", el sistema inicializará automáticamente la cocina y te conectará"
+        }
+      ],
+      "alert": "Después de la creación de la cocina, los datos comunes de ingredientes y equipos se inicializarán automáticamente, y puedes comenzar a usarla de inmediato"
+    },
+    "userManagement": {
+      "title": "Gestión de Usuarios",
+      "description": "Los administradores pueden agregar, editar y eliminar miembros de la cocina, y controlar permisos de usuario.",
+      "adding": {
+        "title": "Agregar Nuevos Usuarios",
+        "description": "Invita a otros a unirse a tu cocina",
+        "steps": [
+          "Ve a la página \"Gestión de Usuarios\"",
+          "Haz clic en el botón \"Agregar Usuario\"",
+          "Completa nombre de usuario y contraseña inicial",
+          "Selecciona rol de usuario (Administrador o Miembro Regular)",
+          "Haz clic en \"Crear\" para completar la adición"
+        ],
+        "alert": "Después de crear un nuevo usuario, se recomienda notificarles que cambien su contraseña inicial"
+      },
+      "roles": {
+        "title": "Roles de Usuario",
+        "description": "Diferentes roles tienen diferentes permisos",
+        "administrator": {
+          "title": "Administrador",
+          "permissions": [
+            "Permisos de acceso completo al sistema",
+            "Puede agregar, editar y eliminar usuarios",
+            "Puede gestionar todas las recetas y datos",
+            "Puede modificar configuraciones de la cocina"
+          ]
+        },
+        "member": {
+          "title": "Miembro Regular",
+          "permissions": [
+            "Puede crear y gestionar sus propias recetas",
+            "Puede ver recetas compartidas dentro de la cocina",
+            "Puede planificar comidas y crear listas de compras",
+            "Puede gestionar datos personales de despensa",
+            "No puede gestionar otros usuarios"
+          ]
+        }
+      },
+      "editing": {
+        "title": "Editar Usuarios",
+        "description": "Modificar información y permisos de usuario",
+        "steps": [
+          "Encuentra el usuario objetivo en la lista de usuarios",
+          "Haz clic en el botón \"Editar\"",
+          "Modifica nombre de usuario, contraseña o rol",
+          "Guarda cambios"
+        ]
+      },
+      "deleting": {
+        "title": "Eliminar Usuarios",
+        "description": "Remover miembros de la cocina",
+        "content": "Haz clic en el botón \"Eliminar\" en la lista de usuarios para remover un usuario. Después de la eliminación, el usuario ya no podrá acceder a la cocina.",
+        "alert": "Eliminar un usuario no eliminará las recetas y datos que crearon, que permanecerán en la cocina"
+      }
+    },
+    "settings": {
+      "title": "Configuraciones de Cocina",
+      "description": "Los administradores pueden configurar varios parámetros de la cocina en la página \"Configuraciones\".",
+      "optionsTitle": "Opciones Configurables",
+      "options": [
+        "Nombre de Cocina: Modificar el nombre de visualización de la cocina",
+        "Sistema de Unidades Predeterminado: Elegir unidades métricas o imperiales",
+        "Moneda: seleccione la moneda que se usa para mostrar precios y costos",
+        "Seguimiento de costos: muestra costos estimados en las páginas de recetas, calendario y compras"
+      ]
+    },
+    "bestPractices": {
+      "title": "Mejores Prácticas",
+      "items": [
+        "Elige nombres claros y significativos para las cocinas",
+        "Revisa regularmente la lista de usuarios y elimina miembros que ya no necesitan acceso",
+        "Crea diferentes cocinas para diferentes propósitos para mantener el aislamiento de datos",
+        "Configura al menos dos cuentas de administrador para evitar puntos únicos de falla",
+        "Recuerda a los usuarios cambiar contraseñas regularmente para proteger la seguridad de la cuenta"
+      ]
+    }
+  },
+  "mealPlanning": {
+    "title": "Planificación de Comidas",
+    "subtitle": "Usa la función de calendario para planificar comidas diarias, haciendo tu dieta más organizada y tu vida más regular.",
+    "calendarView": {
+      "title": "Vista de Calendario",
+      "description": "El calendario proporciona una vista de tiempo intuitiva para ayudarte a planificar y ver arreglos de comidas.",
+      "viewModesTitle": "Modos de Vista",
+      "viewModesDescription": "Elija cuántos días muestra el calendario a la vez",
+      "days7": {
+        "title": "7 Días",
+        "description": "Una semana compacta para decidir comidas rápidamente"
+      },
+      "days14": {
+        "title": "14 Días",
+        "description": "Una vista de dos semanas que equilibra variedad y planificación"
+      },
+      "days30": {
+        "title": "30 Días",
+        "description": "Un mes completo de comidas para planificación a largo plazo"
+      },
+      "costTracking": {
+        "title": "Costo de la comida",
+        "description": "Cuando el seguimiento de costos está activado, cada comida planificada muestra su costo estimado, calculado a partir de la receta y los precios de su despensa."
+      }
+    },
+    "addingMeals": {
+      "title": "Agregar Comidas",
+      "description": "Programa recetas en el calendario para planificar comidas diarias.",
+      "stepsTitle": "Pasos para Agregar",
+      "steps": [
+        {
+          "title": "Seleccionar Fecha",
+          "description": "Haz clic en la fecha objetivo en el calendario"
+        },
+        {
+          "title": "Elegir Hora de Comida",
+          "description": "Selecciona desayuno, almuerzo, cena o bocadillo"
+        },
+        {
+          "title": "Agregar Receta",
+          "description": "Selecciona el plato a preparar de la biblioteca de recetas"
+        },
+        {
+          "title": "Establecer Porciones",
+          "description": "Ajusta las porciones según el número de comensales"
+        },
+        {
+          "title": "Agregar Notas",
+          "description": "Opcional: Agrega instrucciones especiales o recordatorios"
+        }
+      ],
+      "alert": "Una hora de comida puede incluir múltiples recetas, adecuado para preparar múltiples platos",
+      "unscheduledRecipes": {
+        "title": "Recetas Sin Programar",
+        "description": "Descubre qué recetas aún no has planificado",
+        "content": "El calendario muestra una lista de \"Recetas Sin Programar\" con los platos que no están programados en ninguna parte de la semana actual. Úsala para llenar espacios vacíos o equilibrar tu menú semanal."
+      }
+    },
+    "managingPlans": {
+      "title": "Gestionar Planes de Comidas",
+      "description": "Ajusta y optimiza flexiblemente tus arreglos de comidas.",
+      "edit": {
+        "title": "Editar Comidas",
+        "description": "Modificar comidas programadas",
+        "steps": [
+          "Haz clic en el elemento de comida en el calendario",
+          "Modifica receta, porciones o notas",
+          "Guarda cambios"
+        ]
+      },
+      "delete": {
+        "title": "Eliminar Comidas",
+        "description": "Cancelar comidas programadas",
+        "content": "Haz clic en el elemento de comida y selecciona \"Eliminar\" para remover el arreglo de comida."
+      }
+    },
+    "shoppingIntegration": {
+      "title": "Integración con Listas de Compras",
+      "description": "Genera automáticamente listas de compras basadas en planes de comidas.",
+      "generateTitle": "Generar Lista de Compras",
+      "generateDescription": "Crea lista de compras con un clic",
+      "steps": [
+        {
+          "title": "Seleccionar Rango de Tiempo",
+          "description": "Elige el rango de fechas para la generación de lista de compras, como \"Esta Semana\" o \"Próxima Semana\""
+        },
+        {
+          "title": "Auto-Agregar Ingredientes",
+          "description": "El sistema agregará todos los ingredientes necesarios para las comidas"
+        },
+        {
+          "title": "Deducir Inventario",
+          "description": "Deduce automáticamente ingredientes ya en despensa"
+        },
+        {
+          "title": "Generar Lista",
+          "description": "Crea lista de compras final, lista para usar"
+        }
+      ],
+      "alert": "Actualizar regularmente el inventario de despensa hace que las listas de compras sean más precisas"
+    },
+    "bestPractices": {
+      "title": "Mejores Prácticas",
+      "items": [
+        "Planifica las comidas de una semana con anticipación para evitar decisiones de último minuto",
+        "Considera el balance nutricional, combina razonablemente diferentes tipos de platos",
+        "Programa algunas comidas rápidas para días ocupados",
+        "Deja flexibilidad, no necesitas ejecutar estrictamente cada día",
+        "Usa fines de semana para preparar platos que requieren largos tiempos de cocción",
+        "Revisa regularmente planes de comidas para resumir experiencia y preferencias",
+        "Comparte calendario con familia para entender los arreglos de comidas de cada uno"
+      ]
+    }
+  },
+  "groceryLists": {
+    "title": "Listas de Compras",
+    "subtitle": "Genera y gestiona inteligentemente listas de compras, optimiza el proceso de compra y evita omisiones y compras duplicadas.",
+    "creating": {
+      "title": "Crear Listas de Compras",
+      "description": "El sistema proporciona múltiples formas de crear listas de compras para satisfacer diferentes necesidades de escenarios.",
+      "fromMealPlan": {
+        "title": "Generar desde Plan de Comidas",
+        "description": "Método de creación más comúnmente utilizado",
+        "steps": [
+          {
+            "title": "Ir a la Página de Creación de Lista de Compras",
+            "description": "Selecciona \"Lista de Compras\" de la barra de navegación"
+          },
+          {
+            "title": "Seleccionar Rango de Fechas",
+            "description": "Elige el período de tiempo para comprar ingredientes, como \"Esta Semana\" o \"Próxima Semana\""
+          },
+          {
+            "title": "Seleccionar Recetas",
+            "description": "El sistema mostrará todas las comidas en ese período de tiempo, puede agregar selectivamente"
+          },
+          {
+            "title": "Auto-Agregar",
+            "description": "El sistema fusionará los mismos ingredientes y calculará las cantidades totales"
+          },
+          {
+            "title": "Deducir Inventario",
+            "description": "Deduce automáticamente ingredientes ya en despensa"
+          },
+          {
+            "title": "Generar Lista",
+            "description": "Crea lista de compras final"
+          }
+        ],
+        "alert": "El sistema fusiona inteligentemente los mismos ingredientes, por ejemplo, si múltiples recetas necesitan \"huevos\", calculará automáticamente la cantidad total"
+      },
+      "fromRecipe": {
+        "title": "Generar desde Receta Individual",
+        "description": "Crea rápidamente lista para un solo plato",
+        "steps": [
+          "Abre página de detalles de receta",
+          "Haz clic en el botón \"Agregar a Lista de Compras\"",
+          "Selecciona lista existente o crea nueva lista",
+          "Establece porciones",
+          "Confirma adición"
+        ]
+      },
+      "manual": {
+        "title": "Creación Manual",
+        "description": "Agrega libremente cualquier artículo",
+        "content": "Crea lista de compras en blanco y agrega manualmente artículos a comprar. Adecuado para reabastecimiento diario o compra de artículos no relacionados con recetas."
+      }
+    },
+    "managing": {
+      "title": "Gestionar Listas de Compras",
+      "description": "Actualiza el estado de la lista en tiempo real durante las compras.",
+      "view": {
+        "title": "Ver Lista",
+        "description": "Lista clara de artículos",
+        "intro": "Lista de compras organizada por categoría, conveniente para comprar por área en supermercado:",
+        "categories": [
+          "Verduras y Frutas",
+          "Carne y Mariscos",
+          "Condimentos",
+          "Alimentos Básicos y Granos",
+          "Otros Artículos"
+        ]
+      },
+      "markPurchased": {
+        "title": "Marcar como Comprado",
+        "description": "Seguir progreso de compras",
+        "content": "Mientras compras, haz clic en la casilla junto a los artículos para marcar como comprados. Los artículos comprados mostrarán tachado pero permanecerán en la lista para verificación."
+      },
+      "edit": {
+        "title": "Editar Artículos",
+        "description": "Ajustar cantidades o agregar notas",
+        "actions": [
+          "Modificar cantidad de artículo",
+          "Cambiar unidades",
+          "Agregar notas de marca o especificación",
+          "Agregar sugerencias alternativas"
+        ]
+      },
+      "addCustom": {
+        "title": "Agregar Artículos Personalizados",
+        "description": "Suplementar artículos fuera de la lista",
+        "content": "Haz clic en \"Agregar Artículo\" en la lista de compras para ingresar manualmente otros artículos a comprar, como artículos de uso diario, bocadillos, etc."
+      },
+      "delete": {
+        "title": "Eliminar Artículos",
+        "description": "Remover artículos innecesarios",
+        "content": "Si un artículo no necesita ser comprado (como ya está en casa), puede ser eliminado directamente de la lista."
+      },
+      "costTracking": {
+        "title": "Costo estimado",
+        "description": "Comprenda el costo total de su lista de compras.",
+        "content": "Cuando el seguimiento de costos está activado, el encabezado de la lista muestra un total estimado calculado a partir de los precios unitarios de su despensa.",
+        "purchasePrice": "Al agregar un artículo de la lista a su despensa, puede ingresar el precio que pagó para que las estimaciones futuras sigan siendo precisas."
+      }
+    },
+    "history": {
+      "title": "Historial de Listas",
+      "description": "Ver y gestionar listas de compras históricas.",
+      "recordsTitle": "Registros Históricos",
+      "recordsDescription": "Guardar todas las listas de compras",
+      "intro": "El sistema guarda todas las listas de compras creadas, puedes:",
+      "actions": [
+        "Ver contenido de lista histórica",
+        "Copiar listas históricas para crear nuevas listas",
+        "Analizar hábitos y frecuencia de compras",
+        "Eliminar registros históricos innecesarios"
+      ]
+    },
+    "sharing": {
+      "title": "Compartir Listas",
+      "description": "Comparte listas de compras con familia para colaborar en compras.",
+      "syncTitle": "Sincronización en Tiempo Real",
+      "syncDescription": "Compras colaborativas multipersonales",
+      "intro": "Los miembros de la misma cocina pueden ver y editar conjuntamente listas de compras:",
+      "features": [
+        "Una persona crea lista, otros miembros pueden ver",
+        "Cualquiera puede marcar artículos como comprados",
+        "Actualizaciones de sincronización en tiempo real para evitar compras duplicadas",
+        "Adecuado para escenarios de compras divididas"
+      ],
+      "alert": "Ejemplo: Mamá crea lista en casa, Papá puede ver y actualizar en tiempo real mientras compra en supermercado"
+    },
+    "smartFeatures": {
+      "title": "Funciones Inteligentes",
+      "description": "Usa funciones inteligentes del sistema para mejorar eficiencia de compras.",
+      "unitConversion": {
+        "title": "Conversión de Unidades",
+        "description": "Maneja automáticamente diferentes unidades",
+        "content": "El sistema convierte y fusiona automáticamente los mismos ingredientes con diferentes unidades, como \"500g harina\" y \"1 lb harina\" se fusionarán inteligentemente."
+      },
+      "inventoryIntegration": {
+        "title": "Integración de Inventario",
+        "description": "Enlaza con datos de despensa",
+        "content": "Deduce automáticamente inventario de despensa al generar listas, puede actualizar datos de despensa con un clic después de comprar."
+      }
+    },
+    "bestPractices": {
+      "title": "Mejores Prácticas",
+      "items": [
+        "Actualiza regularmente inventario de despensa para asegurar precisión de lista de compras",
+        "Crea lista un día antes para tener tiempo de revisar y ajustar",
+        "Reordena artículos por diseño de supermercado para mejorar eficiencia de compras",
+        "Agrega notas de marca o especificación a artículos para evitar comprar productos incorrectos",
+        "Marca artículos comprados prontamente después de comprar para mantener lista precisa",
+        "Mantén listas históricas para analizar patrones de compras y presupuesto",
+        "Comparte listas con familia para evitar compras duplicadas"
+      ]
+    }
+  },
+  "pantryEquipment": {
+    "title": "Despensa y Equipo",
+    "subtitle": "Gestiona el inventario de ingredientes y el equipo de cocina para optimizar la utilización de recursos y reducir el desperdicio.",
+    "pantryManagement": {
+      "title": "Gestión de Despensa",
+      "description": "Rastrea el inventario de ingredientes, comprende los recursos disponibles y evita compras duplicadas.",
+      "addIngredients": {
+        "title": "Agregar Ingredientes",
+        "description": "Registra ingredientes recién comprados",
+        "steps": [
+          {
+            "title": "Ir a la Página de Despensa",
+            "description": "Selecciona \"Despensa\" de la barra de navegación"
+          },
+          {
+            "title": "Hacer Clic en Botón Agregar",
+            "description": "Selecciona \"Agregar Ingrediente\""
+          },
+          {
+            "title": "Completar Información del Ingrediente",
+            "description": "Ingresa nombre del ingrediente, cantidad, unidad"
+          },
+          {
+            "title": "Elegir Ubicación de Almacenamiento",
+            "description": "Marca ubicación de almacenamiento, como refrigerador, congelador, gabinete, etc."
+          }
+        ],
+        "alert": "Después de comprar, puedes importar ingredientes a la despensa con un clic desde la lista de compras"
+      },
+      "viewInventory": {
+        "title": "Ver Inventario",
+        "description": "Comprender la situación actual de ingredientes",
+        "intro": "La despensa proporciona múltiples métodos de visualización:",
+        "methods": [
+          {
+            "label": "Ver por Categoría",
+            "description": "Verduras, carne, condimentos, etc."
+          },
+          {
+            "label": "Ver por Ubicación",
+            "description": "Refrigerador, congelador, gabinete, etc."
+          },
+          {
+            "label": "Función de Búsqueda",
+            "description": "Encuentra rápidamente ingredientes específicos"
+          }
+        ]
+      },
+      "ingredientFeatures": {
+        "title": "Funciones de Gestión de Ingredientes",
+        "description": "Herramientas para administrar inventarios grandes",
+        "features": [
+          "Ordena los ingredientes por nombre o ubicación, en orden ascendente o descendente",
+          "Las listas están paginadas para que la despensa sea fácil de explorar",
+          "Marca un ingrediente como suministro ilimitado para que nunca se cuente como agotado",
+          "Al eliminar un ingrediente o equipo, el sistema comprueba si lo usan las recetas y te avisa primero"
+        ]
+      },
+      "updateInventory": {
+        "title": "Actualizar Inventario",
+        "description": "Registrar uso de ingredientes",
+        "manual": {
+          "title": "Actualización Manual",
+          "description": "Después de usar ingredientes, haz clic en el elemento de ingrediente para reducir cantidad o marcar como agotado"
+        },
+        "auto": {
+          "title": "Deducción Automática",
+          "description": "Al hacer recetas, el sistema puede deducir automáticamente cantidades de ingredientes de la despensa"
+        }
+      },
+      "costTracking": {
+        "title": "Registrar precios",
+        "description": "Registre los precios de compra para desbloquear estimaciones de costos en toda la aplicación.",
+        "content": "Los ingredientes de la despensa admiten dos campos de precio opcionales:",
+        "fields": [
+          {
+            "label": "Precio pagado",
+            "description": "el monto total que pagó por el artículo"
+          },
+          {
+            "label": "Precio cubre",
+            "description": "la cantidad a la que se aplica el precio (por ejemplo, 500 para un paquete de 500 g). Déjelo vacío para usar la cantidad actual del artículo"
+          }
+        ],
+        "unitPrice": "El precio unitario se calcula automáticamente y se muestra en cada ingrediente, lo que facilita comparar tamaños de envase."
+      }
+    },
+    "equipmentManagement": {
+      "title": "Gestión de Equipo",
+      "description": "Registra y gestiona el equipo de cocina, comprende las herramientas disponibles y elige recetas adecuadas.",
+      "addEquipment": {
+        "title": "Agregar Equipo",
+        "description": "Registra tu equipo de cocina",
+        "steps": [
+          {
+            "title": "Ir a la Página de Equipo",
+            "description": "Selecciona \"Equipo\" de la barra de navegación"
+          },
+          {
+            "title": "Seleccionar Tipo de Equipo",
+            "description": "Elige de la lista preestablecida, como wok, horno, licuadora, etc."
+          },
+          {
+            "title": "Agregar Información Detallada",
+            "description": "Opcional: Agrega marca, modelo, fecha de compra, etc."
+          },
+          {
+            "title": "Establecer Estado",
+            "description": "Marca como disponible, en reparación o dañado"
+          }
+        ],
+        "alert": "El equipo común se agregará automáticamente cuando se cree la cocina, puedes ajustar según la situación real"
+      },
+      "recipeAssociation": {
+        "title": "Asociación de Equipo y Receta",
+        "description": "Filtrar recetas según equipo",
+        "intro": "La información del equipo se vincula con el sistema de recetas:",
+        "features": [
+          "Marca el equipamiento requerido al crear recetas",
+          "Las páginas de recetas enumeran todo el equipamiento necesario para preparar el plato"
+        ]
+      },
+      "maintenance": {
+        "title": "Registros de Mantenimiento",
+        "description": "Rastrear estado y mantenimiento del equipo",
+        "content": "Agrega registros de mantenimiento para equipo, como limpieza, mantenimiento, reparaciones, etc., para extender la vida útil del equipo."
+      }
+    },
+    "integration": {
+      "title": "Integración con Otras Funciones",
+      "description": "Los datos de despensa y equipo se integran profundamente con otras funciones del sistema.",
+      "shoppingList": {
+        "title": "Integración de Lista de Compras",
+        "features": [
+          "Deducir automáticamente inventario al generar listas de compras",
+          "Importar ingredientes a despensa con un clic después de comprar"
+        ]
+      },
+      "recipeRecommendations": {
+        "title": "Recomendaciones de Recetas",
+        "features": [
+          "La página de recetas destaca los platos que puedes preparar con tu despensa actual",
+          "Los ingredientes con stock insuficiente se marcan para que sepas qué comprar"
+        ]
+      },
+      "mealPlanning": {
+        "title": "Planificación de Comidas",
+        "features": [
+          "Comprueba la disponibilidad de la despensa al programar comidas",
+          "Advierte sobre ingredientes faltantes o insuficientes",
+          "Actualiza automáticamente el inventario al completar una comida"
+        ]
+      }
+    },
+    "kitchenLayout": {
+      "title": "Diseño de Cocina",
+      "description": "Visualiza el diseño de tu cocina y organiza ingredientes y equipo por ubicación para una mejor gestión del inventario.",
+      "createLayout": {
+        "title": "Crear Diseño de Cocina",
+        "description": "Crea el diseño de tu cocina con elementos personalizables",
+        "steps": [
+          {
+            "title": "Acceder al Editor de Diseño",
+            "description": "Navega a Despensa → Diseño de Despensa, luego haz clic en 'Editar Diseño'"
+          },
+          {
+            "title": "Crear o Seleccionar Modelo",
+            "description": "Crea un nuevo modelo de cocina o selecciona uno existente"
+          },
+          {
+            "title": "Establecer Tamaño del Lienzo",
+            "description": "Define las dimensiones del lienzo del diseño de tu cocina"
+          },
+          {
+            "title": "Guardar Diseño",
+            "description": "Guarda tu modelo de cocina para uso futuro"
+          }
+        ]
+      },
+      "addElements": {
+        "title": "Agregar Elementos de Cocina",
+        "description": "Arrastra y suelta elementos desde la paleta para construir tu cocina",
+        "items": [
+          "Gabinete Superior - Guarda alimentos secos y platos",
+          "Gabinete Inferior - Guarda ollas, sartenes y electrodomésticos",
+          "Encimera - Área de superficie de trabajo",
+          "Fregadero - Área de lavado y preparación",
+          "Estufa - Área de cocción",
+          "Refrigerador - Almacenamiento en frío (media altura)",
+          "Congelador - Almacenamiento congelado (media altura)",
+          "Puerta - Entrada/salida de la cocina",
+          "Despensa - Espacio de almacenamiento dedicado",
+          "Mesa - Superficie para comer o preparar",
+          "Ventana - Fuente de luz natural"
+        ]
+      },
+      "organizeItems": {
+        "title": "Organizar Artículos por Ubicación",
+        "description": "Asigna ingredientes y equipo a elementos específicos de la cocina",
+        "steps": [
+          {
+            "title": "Cambiar al Modo Despensa",
+            "description": "En la página Diseño de Despensa, visualiza tu cocina con artículos"
+          },
+          {
+            "title": "Arrastrar Artículos a Elementos",
+            "description": "Arrastra ingredientes o equipo desde el panel derecho hacia los elementos de la cocina"
+          },
+          {
+            "title": "Configurar Estantes",
+            "description": "Haz clic derecho en los elementos para agregar estantes y organizar artículos verticalmente"
+          },
+          {
+            "title": "Ver Ubicaciones de Artículos",
+            "description": "Haz clic en cualquier elemento para ver todos los artículos almacenados en esa ubicación"
+          }
+        ],
+        "alert": "Los artículos asignados a elementos de la cocina mostrarán su ubicación como 'Nombre del Modelo\\Nombre del Elemento' en las páginas de Ingredientes y Equipo"
+      },
+      "features": {
+        "title": "Funciones del Diseño",
+        "items": [
+          "Arrastra elementos para reposicionarlos",
+          "Cambia el tamaño de los elementos arrastrando esquinas y bordes",
+          "Ajusta a la cuadrícula para una alineación precisa",
+          "Renombra elementos con nombres personalizados",
+          "Personaliza los colores de los elementos",
+          "Agrega múltiples estantes para organizar artículos",
+          "Elimina elementos con la tecla Suprimir o el menú contextual",
+          "Lienzo responsivo que se adapta a tu pantalla",
+          "Soporte de modo oscuro con texto legible"
+        ]
+      }
+    },
+    "bestPractices": {
+      "title": "Mejores Prácticas",
+      "pantry": {
+        "title": "Gestión de Despensa",
+        "items": [
+          "Actualiza datos de despensa prontamente después de comprar",
+          "Establece recordatorios de stock mínimo para ingredientes comúnmente usados",
+          "Categoriza por ubicación de almacenamiento para fácil búsqueda",
+          "Usa principio \"primero en entrar, primero en salir\" para gestionar ingredientes"
+        ]
+      },
+      "equipment": {
+        "title": "Gestión de Equipo",
+        "items": [
+          "Registra completamente todo el equipo de cocina",
+          "Actualiza estado del equipo prontamente",
+          "Mantén y cuida regularmente el equipo",
+          "Marca equipo requerido para recetas",
+          "Elige recetas adecuadas según equipo"
+        ]
+      }
+    }
+  },
+  "recipeManagement": {
+    "title": "Gestión de Recetas",
+    "subtitle": "Aprende cómo crear, editar, organizar y compartir tu colección de recetas.",
+    "creating": {
+      "title": "Crear Recetas",
+      "description": "Crea registros detallados de recetas que contengan ingredientes, pasos, información nutricional y más.",
+      "basicInfo": {
+        "title": "Información Básica",
+        "description": "Completa la información básica de la receta",
+        "required": {
+          "title": "Campos Obligatorios",
+          "fields": [
+            {
+              "label": "Nombre de la Receta",
+              "description": "Una descripción clara del plato"
+            },
+            {
+              "label": "Descripción",
+              "description": "Breve introducción a las características y sabores de la receta"
+            },
+            {
+              "label": "Porciones",
+              "description": "Indica el tamaño de porción de la receta"
+            }
+          ]
+        },
+        "optional": {
+          "title": "Campos Opcionales",
+          "fields": [
+            {
+              "label": "Tiempo de Preparación",
+              "description": "Tiempo requerido para preparar ingredientes"
+            },
+            {
+              "label": "Tiempo de Cocción",
+              "description": "Tiempo real de cocción requerido"
+            },
+            {
+              "label": "Imagen",
+              "description": "Sube una foto del plato terminado"
+            },
+            {
+              "label": "Etiquetas",
+              "description": "Agrega etiquetas de categoría como \"China\", \"Vegetariana\", etc."
+            }
+          ]
+        }
+      },
+      "ingredientList": {
+        "title": "Lista de Ingredientes",
+        "description": "Registra ingredientes requeridos y cantidades en detalle",
+        "steps": [
+          {
+            "title": "Agregar Ingredientes",
+            "description": "Haz clic en el botón \"Agregar Ingrediente\" e ingresa el nombre del ingrediente"
+          },
+          {
+            "title": "Establecer Cantidades",
+            "description": "Ingresa cantidad y unidad, como \"200g\", \"2 piezas\""
+          },
+          {
+            "title": "Gestión de Grupos",
+            "description": "Crea grupos como \"Ingredientes Principales\", \"Condimentos\", etc."
+          },
+          {
+            "title": "Agregar Notas",
+            "description": "Agrega instrucciones para ingredientes, como \"cortado en cubos\", \"temperatura ambiente\""
+          }
+        ],
+        "alert": "El sistema reconocerá automáticamente ingredientes comunes, y también puedes agregar ingredientes personalizados"
+      },
+      "cookingSteps": {
+        "title": "Pasos de Cocción",
+        "description": "Registra proceso de preparación detallado con temporizadores e imágenes",
+        "intro": "Instrucciones claras de pasos te ayudan a ti y a otros a recrear mejor el plato:",
+        "features": [
+          "Agrega cada paso en orden con instrucciones detalladas",
+          "Usa lenguaje conciso y claro para describir operaciones",
+          "Marca tiempos y temperaturas clave",
+          "Agrega imágenes a los pasos para mostrar resultados esperados",
+          "Establece temporizadores para pasos sensibles al tiempo - nunca pierdas un momento crítico"
+        ],
+        "alert": "Temporizadores de Pasos: Agrega una duración de temporizador a cualquier paso (ej., \"Hornear durante 25 minutos\"). Al cocinar, haz clic en el botón del temporizador para iniciar una cuenta regresiva con notificación de audio al completarse."
+      },
+      "stepImages": {
+        "title": "Imágenes de Pasos",
+        "description": "Agrega guías visuales a tus pasos de cocción",
+        "intro": "Sube imágenes para cada paso para mostrar exactamente cómo deben verse los ingredientes en diferentes etapas. Esto es especialmente útil para técnicas como \"mezclar hasta combinar\" o \"amasar hasta suavizar\" donde la referencia visual hace una gran diferencia.",
+        "features": [
+          "Haz clic en el ícono de imagen en cualquier paso para subir una foto",
+          "Las imágenes ayudan a mostrar textura, color y consistencia",
+          "Particularmente útil para horneado y técnicas complejas"
+        ]
+      },
+      "equipment": {
+        "title": "Equipo Requerido",
+        "description": "Marca equipo de cocina necesario para cocinar",
+        "content": "Selecciona equipo requerido de la lista de equipos, como wok, horno, licuadora, etc. Esto ayuda con la preparación anticipada y verificación de disponibilidad de equipo."
+      }
+    },
+    "organizing": {
+      "title": "Organizar Recetas",
+      "description": "Usa carpetas y etiquetas para gestionar eficientemente tu colección de recetas.",
+      "folders": {
+        "title": "Gestión de Carpetas",
+        "description": "Crea carpetas para categorizar y almacenar recetas",
+        "features": [
+          "Haz clic en \"Nueva Carpeta\" en la página de recetas",
+          "Ingresa nombre de carpeta, como \"Cocina Casera\", \"Menús de Vacaciones\"",
+          "Arrastra recetas a carpetas",
+          "Soporta crear subcarpetas para construir estructura jerárquica"
+        ]
+      },
+      "tags": {
+        "title": "Sistema de Etiquetas",
+        "description": "Usa etiquetas para filtrar y encontrar recetas rápidamente",
+        "intro": "Las etiquetas son un método de categorización flexible, una receta puede tener múltiples etiquetas:",
+        "categories": [
+          "Etiquetas de Cocina: China, Occidental, Japonesa, Coreana, etc.",
+          "Etiquetas Dietéticas: Vegetariana, Baja en Calorías, Sin Gluten, Keto, etc.",
+          "Etiquetas de Ocasión: Comidas Rápidas, Entretenimiento, Lonchera, etc.",
+          "Etiquetas de Sabor: Picante, Dulce, Ácido, Salado, etc."
+        ]
+      },
+      "search": {
+        "title": "Buscar y Filtrar",
+        "description": "Encuentra rápidamente las recetas que necesitas",
+        "features": [
+          "Busca recetas por nombre",
+          "Filtra recetas por etiquetas",
+          "Filtra recetas por carpeta",
+          "Filtra por tiempo máximo de cocción"
+        ]
+      },
+      "cookable": {
+        "title": "Recetas que Puedes Preparar Ahora",
+        "description": "Descubre qué platos puedes cocinar con tu despensa actual",
+        "content": "La página de recetas revisa tu despensa y muestra una sección \"Recetas que Puedes Preparar Ahora\" con los platos cuyos ingredientes están todos disponibles. Se ignoran los ingredientes opcionales, y los artículos marcados como ilimitados siempre se consideran disponibles."
+      },
+      "gridRecipes": {
+        "title": "Recetas en Cuadrícula",
+        "description": "Recetas estructuradas que referencian tus ingredientes",
+        "content": "Las recetas en cuadrícula usan un diseño tipo tabla donde cada paso hace referencia directa a la lista de ingredientes, mostrando exactamente qué ingredientes y cantidades se usan. Activa el modo cuadrícula en el editor de recetas y crea pasos que enlacen con tus ingredientes."
+      }
+    },
+    "editing": {
+      "title": "Editar y Eliminar",
+      "description": "Actualiza y gestiona el contenido de tus recetas en cualquier momento.",
+      "edit": {
+        "title": "Editar Receta",
+        "steps": [
+          "Abre la página de detalles de la receta",
+          "Haz clic en el botón \"Editar\"",
+          "Modifica cualquier contenido que necesite actualización",
+          "Guarda cambios"
+        ],
+        "alert": "Solo puedes editar recetas que creaste, los administradores pueden editar todas las recetas"
+      },
+      "delete": {
+        "title": "Eliminar Receta",
+        "content": "Haz clic en el botón \"Eliminar\" en la página de detalles de la receta o en la lista. La eliminación es irreversible, procede con precaución."
+      },
+      "costTracking": {
+        "title": "Costo de la receta",
+        "description": "Vea cuánto cuesta preparar una receta.",
+        "content": "Cuando el seguimiento de costos está activado, la página de la receta muestra una tarjeta \"Costo estimado\" con el costo por porción y por comida, además de una columna de costo junto a cada ingrediente. Los precios se toman de los artículos de su despensa y solo son visibles para el propietario de la receta."
+      }
+    },
+    "viewing": {
+      "title": "Visualización y Escalado",
+      "description": "Ajusta las porciones y muestra las cantidades en las unidades que prefieras.",
+      "servingsScaling": {
+        "title": "Escalado de Raciones",
+        "description": "Cocina para cualquier número de comensales",
+        "content": "Cambia el número de raciones en la página de la receta y todas las cantidades de ingredientes se actualizarán automáticamente. También puedes ajustar un ingrediente directamente y todas las demás cantidades se escalan proporcionalmente."
+      },
+      "unitDisplay": {
+        "title": "Unidades Preferidas",
+        "description": "Muestra cantidades en tu sistema de unidades preferido",
+        "content": "Alterna entre las unidades preferidas de tu cocina y las unidades originales de la receta. Las cantidades se convierten automáticamente y la medida original se muestra junto."
+      },
+      "conversions": {
+        "title": "Conversiones de Unidades",
+        "description": "Convierte la cantidad de cualquier ingrediente",
+        "content": "Abre el diálogo de conversión de cualquier ingrediente para ver las conversiones disponibles y cambiar entre unidades equivalentes. Las conversiones se cargan para los ingredientes comunes y se aplican automáticamente cuando las unidades difieren."
+      }
+    },
+    "importing": {
+      "title": "Importar y Exportar",
+      "description": "Importa recetas de múltiples fuentes incluyendo archivos Cooklang, URLs y recetas públicas.",
+      "cooklang": {
+        "title": "Importar desde Cooklang",
+        "description": "PantryButler es totalmente compatible con el lenguaje de marcado de recetas de código abierto",
+        "steps": [
+          "Haz clic en \"Importar desde Cooklang\" en la página del editor de recetas",
+          "Sube tu archivo .cook o pega texto Cooklang",
+          "Revisa la receta analizada con ingredientes, equipo e instrucciones",
+          "Confirma importación para agregar la receta a tu colección"
+        ],
+        "alert": "El formato Cooklang preserva cantidades de ingredientes, equipo, temporizadores e instrucciones paso a paso"
+      },
+      "url": {
+        "title": "Importar desde URL",
+        "description": "Importa recetas directamente desde sitios web de recetas",
+        "steps": [
+          "Haz clic en \"Importar desde URL\" en la página del editor de recetas",
+          "Pega la URL de la página web de la receta",
+          "El sistema extraerá automáticamente información de la receta",
+          "Revisa y edita la receta importada según sea necesario",
+          "Guarda para agregar la receta a tu colección"
+        ]
+      },
+      "public": {
+        "title": "Importar desde Recetas Públicas",
+        "description": "Navega e importa recetas compartidas públicamente por otros usuarios",
+        "steps": [
+          "Visita una página de receta pública a través de enlace compartido",
+          "Haz clic en el botón \"Importar a Mi Cocina\"",
+          "Selecciona a qué cocina importar",
+          "La receta se agregará a tu colección con todos los detalles preservados"
+        ]
+      },
+      "review": {
+        "title": "Revisar Recetas Importadas",
+        "description": "Asigna ingredientes y verifica los detalles antes de guardar",
+        "content": "Antes de guardar una importación, una página de revisión muestra los ingredientes analizados y te permite vincular cada artículo con tu despensa o la base de datos de nutrición. Las insignias marcan coincidencias exactas, coincidencias similares y artículos nuevos para que decidas cómo manejar cada ingrediente. Las recetas importadas llevan una insignia que muestra de dónde provienen y cuántas veces se han reimportado."
+      },
+      "export": {
+        "title": "Exportar Recetas",
+        "description": "Guarda una receta como archivo Cooklang",
+        "content": "Abre cualquier receta y haz clic en \"Exportar como Cooklang\" para descargar un archivo .cook. La exportación conserva los ingredientes, pasos, temporizadores y equipamiento de la receta, para que puedas compartirla o importarla en cualquier aplicación compatible con Cooklang."
+      }
+    },
+    "bestPractices": {
+      "title": "Mejores Prácticas",
+      "items": [
+        "Usa nombres de recetas claros para búsqueda e identificación fácil",
+        "Registra cantidades de ingredientes y pasos en detalle para asegurar reproducibilidad",
+        "Sube fotos de alta calidad del plato terminado para aumentar atractivo visual",
+        "Usa etiquetas sabiamente para construir un sistema de categorización personal",
+        "Organiza carpetas regularmente para mantener biblioteca de recetas ordenada",
+        "Agrega notas a recetas frecuentemente usadas para registrar sugerencias de mejora"
+      ]
+    }
+  },
+  "sharing": {
+    "title": "Compartir y Colaboración",
+    "subtitle": "Comparte recetas con tu hogar, colabora en la planificación de comidas y disfruta cocinando juntos.",
+    "kitchenCollaboration": {
+      "title": "Colaboración en Cocina",
+      "description": "Los miembros de la misma cocina pueden compartir y gestionar colaborativamente todos los datos.",
+      "sharingScope": {
+        "title": "Alcance de Compartir",
+        "description": "Contenido accesible para miembros de la cocina",
+        "intro": "Todos los miembros dentro de una cocina comparten los siguientes datos:",
+        "items": [
+          {
+            "label": "Biblioteca de Recetas",
+            "description": "Todas las recetas creadas por miembros"
+          },
+          {
+            "label": "Planes de Comidas",
+            "description": "Arreglos de comidas en calendario"
+          },
+          {
+            "label": "Listas de Compras",
+            "description": "Listas de compras compartidas"
+          },
+          {
+            "label": "Despensa",
+            "description": "Información de inventario de ingredientes"
+          },
+          {
+            "label": "Lista de Equipos",
+            "description": "Lista de equipos de cocina"
+          }
+        ],
+        "alert": "Este diseño es adecuado para uso familiar, todos los miembros pueden gestionar conjuntamente comidas y compras del hogar"
+      },
+      "scenarios": {
+        "title": "Escenarios de Colaboración",
+        "description": "Aplicaciones típicas de colaboración en cocina",
+        "family": {
+          "title": "Colaboración Familiar",
+          "items": [
+            "Mamá planifica las comidas de esta semana",
+            "Papá genera lista de compras basada en el plan",
+            "Los niños ayudan a comprar en el supermercado, marcando artículos comprados en tiempo real",
+            "Toda la familia comparte recetas, todos pueden agregar platos favoritos"
+          ]
+        },
+        "roommate": {
+          "title": "Colaboración entre Compañeros de Cuarto",
+          "items": [
+            "Gestionar conjuntamente inventario del refrigerador",
+            "Turnarse para planificar y cocinar",
+            "Compartir listas de compras",
+            "Compartir platos especiales de cada uno"
+          ]
+        },
+        "team": {
+          "title": "Colaboración en Equipo",
+          "items": [
+            "Equipo culinario comparte menús",
+            "Colaborar en desarrollo de nuevos platos",
+            "Gestión unificada de adquisición de ingredientes",
+            "Rastrear uso y mantenimiento de equipos"
+          ]
+        }
+      },
+      "permissions": {
+        "title": "Gestión de Permisos",
+        "description": "Diferentes roles tienen diferentes permisos",
+        "admin": {
+          "title": "Permisos de Administrador",
+          "items": [
+            "Gestionar miembros de cocina (agregar, editar, eliminar usuarios)",
+            "Modificar configuraciones de cocina",
+            "Gestionar todas las recetas y datos",
+            "Eliminar cualquier contenido"
+          ]
+        },
+        "member": {
+          "title": "Permisos de Miembro Regular",
+          "items": [
+            "Ver todo el contenido compartido",
+            "Crear y editar propias recetas",
+            "Participar en planificación de comidas y listas de compras",
+            "Actualizar información de despensa y equipos",
+            "No puede gestionar otros usuarios"
+          ]
+        }
+      }
+    },
+    "shareRecipes": {
+      "title": "Compartir Recetas",
+      "description": "Comparte tus recetas mediante enlaces públicos o exporta para respaldo.",
+      "generateLink": {
+        "title": "Generar Enlace para Compartir",
+        "description": "Crear enlace de receta compartible",
+        "intro": "Genera enlace para compartir receta que puede enviarse a otros por cualquier método:",
+        "features": [
+          "Copiar enlace para compartir con cualquiera",
+          "Incrustar en blog o sitio web - Usa la URL de receta pública en un iframe o enlace"
+        ],
+        "alert": "Incrustación en Blog: Las páginas de recetas públicas están diseñadas para ser incrustables. Simplemente usa la URL pública en un iframe o como enlace directo en tus publicaciones de blog. La receta se mostrará con formato completo, imágenes, temporizadores y todos los detalles."
+      },
+      "publicSharing": {
+        "title": "Compartir Receta Pública",
+        "description": "Comparte recetas con cualquiera, incluso sin cuenta",
+        "intro": "Haz que tus recetas sean públicamente accesibles:",
+        "steps": [
+          "Abre la receta que deseas compartir",
+          "Haz clic en \"Hacer Pública\" o activa la opción de compartir pública",
+          "Se generará una URL pública única",
+          "Cualquiera con el enlace puede ver la receta sin iniciar sesión",
+          "Las recetas públicas pueden ser importadas por otros usuarios de PantryButler"
+        ],
+        "note": "Las recetas públicas muestran tu nombre de usuario y nombre de cocina, ayudando a construir tu reputación culinaria."
+      },
+      "visibility": {
+        "title": "Establecer Visibilidad de Receta",
+        "description": "Controlar alcance de compartir receta",
+        "intro": "Al crear o editar recetas, puedes establecer visibilidad:",
+        "options": [
+          {
+            "label": "Privada",
+            "description": "Solo visible para ti y los miembros de tu cocina (predeterminado)"
+          },
+          {
+            "label": "Pública",
+            "description": "Cualquier persona con el enlace público puede ver e importar la receta"
+          }
+        ]
+      }
+    },
+    "notifications": {
+      "title": "Sistema de Notificaciones",
+      "description": "Mantente informado sobre actividades de colaboración e información de compartir.",
+      "types": {
+        "title": "Tipos de Notificaciones",
+        "description": "Notificaciones enviadas por el sistema",
+        "items": [
+          "Notificaciones de compartir receta",
+          "Recordatorios de actualización de plan de comidas",
+          "Notificaciones de cambio de lista de compras",
+          "Notificaciones de cambio de miembro de cocina"
+        ]
+      }
+    },
+    "bestPractices": {
+      "title": "Mejores Prácticas",
+      "kitchenCollaboration": {
+        "title": "Colaboración en Cocina",
+        "items": [
+          "Aclarar responsabilidades de miembros para evitar operaciones duplicadas",
+          "Comunicarse regularmente sobre planes de comidas y arreglos de compras",
+          "Actualizar datos compartidos prontamente para mantener información sincronizada",
+          "Respetar contenido creado por otros, eliminar con precaución",
+          "Configurar múltiples administradores razonablemente para asegurar gestión ordenada de cocina"
+        ]
+      },
+      "privacy": {
+        "title": "Protección de Privacidad",
+        "items": [
+          "Establecer visibilidad de receta razonablemente",
+          "No compartir contenido que contenga información sensible",
+          "Revisa periódicamente tus ajustes de uso compartido"
+        ]
+      }
+    }
+  },
+  "nutrition": {
+    "title": "Nutrición y Seguimiento de Costos",
+    "subtitle": "Comprende el valor nutricional de tus recetas y cuánto cuesta prepararlas.",
+    "overview": {
+      "title": "Resumen",
+      "description": "PantryButler puede mostrar una etiqueta nutricional completa para cada receta y estimar los costos a partir de los precios que registras en tu despensa.",
+      "what": {
+        "title": "Qué se rastrea",
+        "description": "La información nutricional y de costos se calcula automáticamente a partir de tus recetas y datos de la despensa.",
+        "features": [
+          "Datos nutricionales por porción con % del valor diario",
+          "Costo estimado por porción y por comida en las páginas de receta",
+          "Costos de comidas mostrados en el calendario",
+          "Totales estimados en las listas de compras",
+          "Precios unitarios en cada ingrediente de la despensa"
+        ]
+      }
+    },
+    "enabling": {
+      "title": "Activar la Información Nutricional",
+      "description": "Los datos nutricionales se activan y desactivan a nivel de cocina por un administrador.",
+      "stepsTitle": "Pasos para activar",
+      "steps": [
+        "Abre la página de Configuración desde la navegación",
+        "En la sección Pantalla, activa el interruptor de Información Nutricional",
+        "Las páginas de receta y de recetas públicas ahora muestran la etiqueta de datos nutricionales"
+      ],
+      "alert": "La nutrición está activada de forma predeterminada y solo los administradores pueden cambiar esta configuración."
+    },
+    "matching": {
+      "title": "Vincular Ingredientes con los Datos Nutricionales",
+      "description": "Para estimar la nutrición, los ingredientes deben vincularse con alimentos de la base de datos nutricional.",
+      "how": {
+        "title": "Cómo funciona la vinculación",
+        "steps": [
+          {
+            "title": "Abre un ingrediente",
+            "description": "Ve a Despensa → Ingredientes y edita el ingrediente que deseas vincular."
+          },
+          {
+            "title": "Usa Coincidencia Nutricional",
+            "description": "El diálogo de búsqueda de ingredientes muestra coincidencias sugeridas de la base de datos nutricional."
+          },
+          {
+            "title": "Acepta la coincidencia",
+            "description": "Elige el alimento más cercano; el ingrediente ahora muestra el indicador \"Nutrición vinculada\"."
+          },
+          {
+            "title": "O añade datos personalizados",
+            "description": "Si ningún alimento coincide, usa \"Añadir Datos Nutricionales Personalizados\" para ingresar los valores tú mismo."
+          }
+        ]
+      },
+      "custom": {
+        "title": "Datos Nutricionales Personalizados",
+        "description": "Cuando un ingrediente no está en la base de datos, puedes ingresar sus valores manualmente.",
+        "fields": [
+          {
+            "label": "Tamaño de la Porción",
+            "description": "el tamaño de la porción y la unidad a los que se aplican tus valores"
+          },
+          {
+            "label": "Macronutrientes",
+            "description": "calorías, proteínas, carbohidratos y grasa total"
+          },
+          {
+            "label": "Otros Nutrientes",
+            "description": "fibra dietética, azúcares totales, sodio y colesterol"
+          }
+        ],
+        "alert": "Todos los valores personalizados se ingresan por tamaño de porción y se escalan a tu receta automáticamente."
+      }
+    },
+    "calculation": {
+      "title": "Cómo se Calcula la Nutrición",
+      "description": "Los valores son estimaciones generadas por el servidor a partir de la base de datos nutricional.",
+      "items": [
+        "Cada ingrediente vinculado se convierte a gramos usando factores de conversión por alimento",
+        "Los valores por 100 g de la base de datos se escalan a la cantidad de la receta",
+        "Todos los ingredientes se suman y se dividen por el número de porciones",
+        "La etiqueta nutricional muestra tanto los totales como los valores por porción"
+      ]
+    },
+    "nutritionFacts": {
+      "title": "La Etiqueta de Datos Nutricionales",
+      "description": "Cuando la nutrición está activada, las páginas de receta muestran una etiqueta nutricional de estilo FDA de EE. UU.",
+      "label": {
+        "title": "Qué muestra la etiqueta",
+        "description": "Un desglose completo por 100 g y por porción",
+        "rows": [
+          "Porciones por receta y tamaño de la porción",
+          "Cantidad por porción con % del valor diario",
+          "Grasa total, colesterol, sodio, carbohidratos totales, proteína",
+          "Fibra dietética, azúcares totales y micronutrientes añadidos"
+        ],
+        "alert": "Los datos nutricionales son proporcionados por OpenNutrition y son una estimación basada en la vinculación de ingredientes."
+      }
+    },
+    "costOverview": {
+      "title": "Seguimiento de Costos",
+      "description": "Estima cuánto cuestan tus recetas, comidas y listas de compras usando los precios de la despensa.",
+      "where": {
+        "title": "Dónde aparecen los costos",
+        "items": [
+          "Página de receta: tarjeta de costo estimado con costo por porción y por comida",
+          "Calendario de comidas: un costo junto a cada comida planificada",
+          "Lista de compras: un total de costo estimado en el encabezado de la lista",
+          "Página de ingredientes: un precio unitario en cada artículo con precio"
+        ],
+        "alert": "Los detalles de costos de una receta solo son visibles para el propietario de la receta."
+      }
+    },
+    "pantryPrices": {
+      "title": "Añadir Precios a los Artículos de la Despensa",
+      "description": "Los costos se calculan a partir de los campos de precio de tus ingredientes de la despensa.",
+      "fields": {
+        "title": "Dos campos de precio opcionales",
+        "description": "Disponibles al añadir o editar un ingrediente de la despensa",
+        "list": [
+          {
+            "label": "Precio",
+            "description": "la cantidad total que pagaste por el artículo"
+          },
+          {
+            "label": "El precio cubre",
+            "description": "la cantidad a la que se aplica ese precio, por ejemplo 500 para un paquete de 500 g. Déjalo vacío para usar la cantidad actual."
+          }
+        ],
+        "unitPrice": "El precio unitario se calcula automáticamente y se muestra en cada ingrediente para que puedas comparar tamaños de envases."
+      }
+    },
+    "costSettings": {
+      "title": "Activar el Seguimiento de Costos",
+      "description": "El seguimiento de costos se activa y desactiva a nivel de cocina por un administrador.",
+      "stepsTitle": "Pasos para activar",
+      "steps": [
+        {
+          "title": "Abre Configuración",
+          "description": "Abre la página de Configuración desde la navegación."
+        },
+        {
+          "title": "Activa el Seguimiento de Costos",
+          "description": "En la sección Pantalla, activa el interruptor de Seguimiento de Costos."
+        },
+        {
+          "title": "Elige una moneda",
+          "description": "Selecciona la moneda usada para mostrar precios y costos de la lista de monedas compatibles."
+        }
+      ]
+    },
+    "bestPractices": {
+      "title": "Buenas Prácticas",
+      "items": [
+        "Vincula los ingredientes a la base de datos nutricional para obtener etiquetas completas",
+        "Mantén los precios de la despensa actualizados para que las estimaciones sean precisas",
+        "Registra el precio y la cantidad que cubre para los artículos envasados",
+        "Ingresa el precio que pagaste al mover los artículos comprados a la despensa"
+      ]
+    }
+  },
+  "account": {
+    "title": "Cuenta, Configuración y Anuncios",
+    "subtitle": "Gestiona tu nombre visible, contraseña, preferencias personales y anuncios de la cocina.",
+    "profile": {
+      "title": "Tu Perfil",
+      "description": "La página de Perfil guarda tu información personal que se muestra a otros miembros.",
+      "info": {
+        "title": "Información del perfil",
+        "fields": [
+          {
+            "label": "Nombre de usuario",
+            "description": "tu dirección de correo; es tu inicio de sesión y no se puede cambiar"
+          },
+          {
+            "label": "Nombre visible",
+            "description": "el nombre que se muestra a otros miembros de la cocina"
+          },
+          {
+            "label": "Avatar",
+            "description": "próximamente en una actualización futura"
+          }
+        ],
+        "alert": "Los cambios en tu nombre visible se guardan de inmediato."
+      }
+    },
+    "password": {
+      "title": "Cambiar tu Contraseña",
+      "description": "Mantén tu cuenta segura eligiendo una contraseña segura.",
+      "stepsTitle": "Pasos",
+      "steps": [
+        "Abre la página de Perfil",
+        "Haz clic en el botón Cambiar Contraseña",
+        "Ingresa tu contraseña actual y luego la nueva dos veces",
+        "Las contraseñas deben tener al menos 8 caracteres"
+      ]
+    },
+    "kitchenSettings": {
+      "title": "Configuración de la Cocina",
+      "description": "Preferencias de toda la cocina controladas por un administrador, además de tu elección personal de idioma.",
+      "units": {
+        "title": "Sistema de Unidades Preferido",
+        "description": "Elige cómo se muestran las cantidades en toda la aplicación",
+        "options": [
+          "Métrico (g, kg, ml, L)",
+          "Pesos métricos (solo g)",
+          "Imperial (oz, lb, cup, cucharada)",
+          "Volumen imperial (solo tazas)",
+          "Proporción (porcentaje)",
+          "Porcentaje de panadero"
+        ]
+      },
+      "currency": {
+        "title": "Moneda",
+        "description": "La moneda usada para mostrar precios y costos",
+        "content": "Selecciona la moneda usada para el seguimiento de costos de la lista de monedas compatibles."
+      },
+      "features": {
+        "title": "Opciones de pantalla",
+        "description": "Configuración que cambia cómo se ve y se comporta la aplicación",
+        "options": [
+          {
+            "label": "Modo oscuro",
+            "description": "cambia entre temas claro y oscuro"
+          },
+          {
+            "label": "Modo vibrante",
+            "description": "usa colores de alta saturación"
+          },
+          {
+            "label": "Información Nutricional",
+            "description": "muestra datos nutricionales en las páginas de receta"
+          },
+          {
+            "label": "Seguimiento de Costos",
+            "description": "muestra costos estimados en las páginas de receta, calendario y compras"
+          }
+        ],
+        "alert": "Las opciones de pantalla son configuración de la cocina controlada por un administrador; el selector de idioma es personal."
+      }
+    },
+    "language": {
+      "title": "Idioma",
+      "description": "Elige el idioma usado en la interfaz. Es una preferencia personal que se aplica de inmediato.",
+      "optionsTitle": "Idiomas disponibles",
+      "options": [
+        "English",
+        "Shqip",
+        "Italiano",
+        "Español",
+        "Français",
+        "中文",
+        "हिन्दी"
+      ]
+    },
+    "rights": {
+      "title": "Datos, Tokens y Tutoriales",
+      "description": "Gestiona tus datos, crea tokens de API para integraciones y obtén ayuda con los tutoriales.",
+      "apiTokens": {
+        "title": "Tokens de API",
+        "description": "Tokens de larga duración para la extensión del navegador y las aplicaciones móviles",
+        "content": "Crea tokens con permisos limitados desde la tarjeta Configuración → Tokens de API. Los tokens se muestran una sola vez al crearlos, así que cópialos en un lugar seguro."
+      },
+      "data": {
+        "title": "Exportar y Respaldar",
+        "description": "Es dueño de tus datos y mantenlos portables",
+        "items": [
+          "Exporta todas las recetas como un archivo Cooklang (.cook)",
+          "Importa recetas de archivos Cooklang y URLs",
+          "Exportación de datos de la base de datos nutricional por parte del administrador"
+        ]
+      },
+      "tutorials": {
+        "title": "Tutoriales",
+        "description": "Tutoriales guiados que introducen cada función",
+        "items": [
+          "Sigue tutoriales paso a paso para cada función principal",
+          "Consulta cuántos tutoriales has completado",
+          "Reinicia todos los tutoriales desde la página de Configuración para revisarlos de nuevo"
+        ]
+      }
+    },
+    "announcements": {
+      "title": "Anuncios",
+      "description": "Los administradores publican anuncios para mantener informados a todos los miembros de la cocina.",
+      "viewing": {
+        "title": "Ver anuncios",
+        "description": "Los anuncios aparecen en la página de Anuncios",
+        "items": [
+          "Se te redirige a la página de Anuncios cuando hay algo nuevo",
+          "Los anuncios no leídos se resaltan en las notificaciones",
+          "Leer un anuncio lo marca como visto"
+        ]
+      },
+      "manage": {
+        "title": "Gestionar anuncios",
+        "description": "Los administradores de la instancia pueden crear anuncios; los superadministradores pueden editarlos y eliminarlos",
+        "steps": [
+          {
+            "title": "Abre la página de Anuncios",
+            "description": "Ve a Anuncios y haz clic en Nuevo Anuncio."
+          },
+          {
+            "title": "Escribe el anuncio",
+            "description": "Dale un título y un mensaje, luego publícalo."
+          },
+          {
+            "title": "Edita o desactiva",
+            "description": "Los superadministradores pueden editar anuncios y ponerlos activos o inactivos."
+          }
+        ]
+      }
+    },
+    "bestPractices": {
+      "title": "Buenas Prácticas",
+      "items": [
+        "Usa un nombre visible claro para que otros miembros te reconozcan",
+        "Mantente atento a los anuncios para conocer las actualizaciones importantes de la cocina",
+        "Crea tokens de API con los permisos mínimos que necesites",
+        "Respaldar tus recetas regularmente con Exportar"
+      ]
+    }
+  },
+  "api": {
+    "title": "Guía de la API",
+    "subtitle": "Autentícate contra la API de PantryButler con tokens u OAuth2, solicita permisos limitados e integra tus propios clientes.",
+    "overview": {
+      "title": "Resumen",
+      "description": "La API de PantryButler expone recursos a través de HTTPS y acepta JSON. Cada solicitud debe estar autenticada.",
+      "authentication": {
+        "title": "Autenticación",
+        "description": "Dos formas compatibles de autenticarse",
+        "options": [
+          {
+            "label": "Tokens de API",
+            "description": "tokens de larga duración creados por un miembro para acceso programático"
+          },
+          {
+            "label": "OAuth2",
+            "description": "flujo de Código de Autorización con PKCE para aplicaciones interactivas"
+          }
+        ]
+      }
+    },
+    "apiTokens": {
+      "title": "Tokens de API",
+      "description": "Los tokens de API son credenciales de larga duración creadas por un miembro dentro de la aplicación.",
+      "properties": {
+        "title": "Propiedades del token",
+        "description": "Cómo es cada token de API",
+        "items": [
+          {
+            "label": "Formato",
+            "description": "32 bytes de entropía codificada en base64url, con prefijo pb_"
+          },
+          {
+            "label": "Almacenamiento",
+            "description": "solo se almacena un hash SHA-256 del token en el servidor"
+          },
+          {
+            "label": "Texto plano",
+            "description": "el token sin procesar se devuelve una sola vez al crearlo"
+          },
+          {
+            "label": "Caducidad",
+            "description": "los tokens usan una vida útil preestablecida — nunca, 7, 30 o 90 días — con un máximo de un año"
+          }
+        ]
+      },
+      "create": {
+        "title": "Crear un Token",
+        "description": "Los tokens se crean desde la tarjeta Configuración → Tokens de API",
+        "steps": [
+          {
+            "title": "Nombra el token",
+            "description": "Dale un nombre de entre 1 y 100 caracteres."
+          },
+          {
+            "title": "Elige los alcances",
+            "description": "Selecciona los permisos que necesita el token o elige todos para acceso completo."
+          },
+          {
+            "title": "Establece una caducidad",
+            "description": "Opcional: elige una vida útil preestablecida para el token."
+          },
+          {
+            "title": "Copia el texto plano",
+            "description": "El token en texto plano se muestra una sola vez y nunca más, así que guárdalo de forma segura."
+          }
+        ],
+        "alert": "Los tokens de API se muestran exactamente una vez al crearlos. Si pierdes el texto plano, revoca el token y crea uno nuevo."
+      },
+      "scopes": {
+        "title": "Alcances",
+        "description": "Los alcances limitan lo que un token puede hacer en tu instancia.",
+        "intro": "Los alcances se agrupan en recursos que cada uno admite lectura y escritura:",
+        "resources": [
+          "recipes — lectura/escritura de recetas",
+          "pantry — lectura/escritura de la despensa",
+          "grocery — lectura/escritura de listas de compras",
+          "calendar — lectura/escritura del calendario de comidas",
+          "nutrition — lectura/escritura de datos nutricionales",
+          "kitchen — lectura/escritura de equipos y diseño de la cocina",
+          "profile — lectura/escritura de perfil y notificaciones",
+          "settings — lectura/escritura de la configuración de la cocina"
+        ],
+        "readWrite": "También puedes solicitar un solo alcance all para acceso completo:",
+        "all": [
+          "all: todos los permisos en esta instancia"
+        ]
+      },
+      "revoke": {
+        "title": "Revocar Tokens",
+        "description": "Puedes revocar el acceso en cualquier momento desde la página de Configuración.",
+        "items": [
+          "Revoca un solo token desde la lista de tokens",
+          "Revoca todos los tokens de la instancia con una acción",
+          "Un token revocado deja de funcionar de inmediato"
+        ]
+      }
+    },
+    "oauth": {
+      "title": "OAuth2 con PKCE",
+      "description": "Los clientes incluidos — la extensión del navegador y las aplicaciones móviles — inician sesión con el flujo de Código de Autorización de OAuth2 usando PKCE.",
+      "flow": {
+        "title": "Detalles del flujo",
+        "description": "Requisitos impuestos por el servidor de autorización",
+        "items": [
+          "code_challenge puede tener de 43 a 128 caracteres",
+          "code_challenge_method debe ser el valor literal S256",
+          "La extensión y los clientes móviles están pre-registrados con el servidor",
+          "Los clientes de desarrollo se habilitan mediante la configuración del servidor oauthDevClients"
+        ],
+        "alert": "El método PKCE S256 es obligatorio; no se aceptan otros valores de code_challenge_method."
+      }
+    },
+    "bestPractices": {
+      "title": "Buenas Prácticas",
+      "items": [
+        "Solicita los alcances mínimos que tu integración necesita",
+        "Almacena los tokens de forma segura y nunca los registres en registros",
+        "Usa una caducidad corta para los tokens en procesos de larga duración",
+        "Prefiere el flujo OAuth2 para aplicaciones interactivas y orientadas al usuario",
+        "Incluye el token como token Bearer en el encabezado Authorization"
+      ]
+    }
+  },
+  "admin": {
+    "access": {
+      "title": "Funciones de Administración",
+      "subtitle": "Herramientas a nivel de servidor y de cocina para superadministradores y administradores de instancia.",
+      "enable": {
+        "title": "Activar Funciones de Administración",
+        "description": "Las funciones de administración a nivel de servidor están limitadas por una marca de configuración.",
+        "env": {
+          "title": "ENABLE_ADMIN_FEATURES",
+          "description": "Establecido por el administrador del servidor",
+          "content": "Establece ENABLE_ADMIN_FEATURES=true en el entorno del servidor para exponer las páginas de Administración y la API de administración.",
+          "alert": "Mientras esté desactivado, los endpoints de administración devuelven un error de acceso denegado y los elementos de navegación de Administración permanecen ocultos."
+        }
+      }
+    },
+    "emailVerification": {
+      "title": "Verificación de Correo y SMTP",
+      "description": "Con las funciones de administración habilitadas, los nuevos creadores verifican su dirección de correo antes de poder iniciar sesión.",
+      "behavior": {
+        "title": "Cómo funciona",
+        "description": "El requisito lo gestiona el superadministrador desde Administración → Configuración.",
+        "items": [
+          "Mientras las funciones de administración están deshabilitadas, el registro funciona como antes sin paso de verificación",
+          "Con las funciones de administración habilitadas, la verificación es obligatoria por defecto (se puede anular mediante la variable de entorno REQUIRE_EMAIL_VERIFICATION)",
+          "La cocina se crea solo después de confirmar el correo",
+          "Los enlaces de verificación caducan después de 24 horas y pueden reenviarse"
+        ]
+      },
+      "smtp": {
+        "title": "Configuración de SMTP",
+        "description": "El superadministrador establece los detalles de SMTP desde Administración → Configuración, recurriendo a las variables de entorno.",
+        "env": "SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, SMTP_FROM y SMTP_SECURE controlan el servidor de correo.",
+        "alert": "Sin un host SMTP, los correos de verificación se registran en la consola del servidor en lugar de entregarse — configura uno antes de invitar a usuarios reales."
+      }
+    },
+    "roles": {
+      "title": "Roles de Usuario",
+      "description": "Los usuarios tienen un rol a nivel de servidor o un rol a nivel de cocina.",
+      "superadmin": {
+        "title": "Superadministrador",
+        "description": "La primera cuenta creada durante la configuración se convierte en superadministrador y puede gestionar todas las instancias.",
+        "permissions": [
+          "Ver y eliminar cualquier instancia",
+          "Crear, editar y eliminar anuncios de cualquier cocina",
+          "Gestionar la base de datos nutricional",
+          "Acceder a las páginas de Administración (cuando las funciones de administración están activadas)"
+        ]
+      },
+      "instanceAdmin": {
+        "title": "Administrador de Instancia",
+        "description": "Un administrador de una sola cocina.",
+        "permissions": [
+          "Añadir, editar y eliminar miembros de la cocina",
+          "Cambiar la configuración de la cocina",
+          "Crear anuncios para la cocina",
+          "Gestionar todas las recetas y datos de la cocina"
+        ]
+      },
+      "member": {
+        "title": "Miembro",
+        "description": "Un usuario habitual de una cocina.",
+        "permissions": [
+          "Crear y gestionar sus propias recetas",
+          "Ver el contenido compartido de la cocina",
+          "Planificar comidas y crear listas de compras",
+          "Gestionar los datos personales de la despensa"
+        ]
+      }
+    },
+    "instances": {
+      "title": "Gestión de Instancias",
+      "description": "Los superadministradores pueden inspeccionar cada instancia de cocina y eliminar las abandonadas.",
+      "view": {
+        "title": "Explorar instancias",
+        "description": "La página de Instancias de Administración enumera cada cocina con su creador y actividad",
+        "info": [
+          "Nombre de la instancia",
+          "Creador y fecha de creación",
+          "Fecha del último inicio de sesión"
+        ]
+      },
+      "delete": {
+        "title": "Eliminar una instancia",
+        "description": "Eliminar una cocina borra todos sus datos de forma permanente",
+        "intro": "Los siguientes datos se eliminan junto con la instancia:",
+        "data": [
+          "Recetas e ingredientes",
+          "Artículos de la despensa y equipos",
+          "Comidas del calendario y listas de compras",
+          "Configuración y datos personalizados",
+          "Todas las membresías de usuarios"
+        ],
+        "alert": "Eliminar una instancia no se puede deshacer. Exporta todo lo que quieras conservar primero."
+      }
+    },
+    "announcements": {
+      "title": "Gestión de Anuncios",
+      "description": "Los anuncios mantienen informados a todos los miembros de una cocina sobre las actualizaciones.",
+      "manage": {
+        "title": "Gestionar anuncios",
+        "description": "Disponible para administradores de instancia y superadministradores",
+        "features": [
+          "Crea anuncios con un título y un mensaje",
+          "Edita un anuncio después de publicarlo",
+          "Activa o desactiva un anuncio para mostrarlo u ocultarlo",
+          "Elimina anuncios de forma permanente"
+        ],
+        "alert": "Solo los superadministradores pueden editar, desactivar o eliminar anuncios; los administradores de instancia los crean."
+      }
+    },
+    "bestPractices": {
+      "title": "Buenas Prácticas",
+      "items": [
+        "Configura al menos dos cuentas de superadministrador para evitar un punto único de fallo",
+        "Activa las funciones de administración solo cuando las necesites",
+        "Revisa la actividad de las instancias y limpia las cocinas abandonadas",
+        "Publica anuncios para cambios importantes en toda la cocina"
+      ]
+    }
+  }
+}

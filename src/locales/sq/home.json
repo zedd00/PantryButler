@@ -1,0 +1,89 @@
+{
+  "brand": "PantryButler",
+  "meta": {
+    "title": "PantryButler - Shoqëruesi juaj Inteligjent i Kuzhinës",
+    "description": "Menaxho recetat, depon ushqimore, listat e blerjeve dhe planifikimin e vakteve të tua të gjitha në një vend. PantryButler të ndihmon të organizosh kuzhinën tënde dhe të gatuash me besim."
+  },
+  "header": {
+    "documentation": "Dokumentacioni",
+    "setupKitchen": "Konfiguro Kuzhinën",
+    "ariaLabel": "Navigimi kryesor"
+  },
+  "hero": {
+    "title": "Menaxho në Mënyrë Inteligjente Recetat dhe Planet e Ushqimit",
+    "subtitle": "Organizo recetat tuaja, etiketoji ato, vendos kohëmatës për çdo hap, madje shto imazhe për të ditur saktësisht si duhet të duket përzierja. E përputhshme me formatin Cooklang. Importo nga URL, skedarët Cooklang ose recetat publike PantryButler. Shpërnda recetat tuaja publikisht ose integroji në blogun tënd.",
+    "getStarted": "Fillo",
+    "learnMore": "Mëso Më Shumë"
+  },
+  "features": {
+    "title": "Veçoritë Kryesore",
+    "subtitle": "Mbështetje gjithëpërfshirëse për jetën tuaj në kuzhinë",
+    "recipeManagement": {
+      "title": "Menaxhimi i Recetave",
+      "description": "Krijo, ndrysho dhe organizo koleksionin tënd të recetave. Mbështetje për lista të detajuara të përbërësve, udhëzime hap pas hapi me kohëmatës dhe ngarkimin e imazheve për çdo hap"
+    },
+    "nutritionTracking": {
+      "title": "Llogaritja Automatike e Ushqimit",
+      "description": "PantryButler llogarit automatikisht informacion të plotë ushqyes për recetat tuaja duke përdorur bazën e të dhënave OpenNutrition. Merrni makronutrientë të detajuar, mikronutrientë dhe përqindje të vlerës ditore për çdo recetë"
+    },
+    "importRecipes": {
+      "title": "Importo nga Kudo",
+      "description": "Importo recetat nga skedarët Cooklang, URL ose recetat publike PantryButler. E përputhshme me formatin Cooklang për ndarje të lehtë të recetave"
+    },
+    "stepTimers": {
+      "title": "Kohëmatës Hap pas Hapi",
+      "description": "Vendos kohëmatës për çdo hap gatimi. Mos humb kurrë një moment kritik në recetën tënde me njoftime të integruara të kohëmatësit"
+    },
+    "mealPlanning": {
+      "title": "Planifikimi i Vakteve",
+      "description": "Planifiko vaktet javore duke përdorur pamjen e kalendarit. Programo lehtësisht mëngjesin, drekën dhe darkën për të mbajtur dietën tënde të organizuar"
+    },
+    "smartShopping": {
+      "title": "Lista Inteligjente të Blerjeve",
+      "description": "Gjenero automatikisht lista blerjesh nga recetat dhe planet e vakteve. Bashko inteligjentisht përbërësit e dyfishuar për të optimizuar blerjet tuaja"
+    },
+    "pantryManagement": {
+      "title": "Menaxhimi i Depos Ushqimore",
+      "description": "Gjurmo inventarin tënd të përbërësve dhe pajisjeve të kuzhinës. Dije çfarë ke për të shmangur blerjet e dyfishta dhe mbeturinat"
+    },
+    "collaboration": {
+      "title": "Bashkëpunimi dhe Shpërndarja",
+      "description": "Shpërnda recetat publikisht ose integroji në blogun tënd, ose bashkëpuno me familjen dhe bashkëbanorët në planifikimin e vakteve"
+    },
+    "privateKitchens": {
+      "title": "Kuzhina Private",
+      "description": "Krijo hapësirën tënde private të kuzhinës dhe fto anëtarët e familjes ose bashkëbanuesit. Të gjithë mund të shohin çfarë është e disponueshme në depon ushqimore dhe çfarë po gatuhet, duke e bërë koordinimin e vakteve të shtëpisë pa përpjekje"
+    }
+  },
+  "languages": {
+    "title": "Disponibël në Shumë Gjuhë",
+    "subtitle": "PantryButler është i disponueshëm në anglisht, spanjisht (Español), frëngjisht (Français), hindi (हिन्दी), italisht (Italiano), shqip (Shqip) dhe kinezisht (中文)",
+    "description": "Ndryshoni gjuhën në çdo kohë duke përdorur zgjedhësin e gjuhës në navigimin e sipërm"
+  },
+  "cta": {
+    "title": "Gati për të Filluar?",
+    "subtitle": "Konfiguro kuzhinën tënde të parë dhe fillo të menaxhosh recetat dhe të planifikosh vaktet. Plotësisht falas, nuk kërkohet kartë krediti",
+    "setupKitchen": "Konfiguro Kuzhinën",
+    "viewDocs": "Shiko Dokumentacionin"
+  },
+  "support": {
+    "title": "Mbështet PantryButler",
+    "description": "PantryButler është falas dhe i hapur për të gjithë. Nëse e sheh të dobishëm, konsidero mbështetjen e zhvillimit për të na ndihmuar të shtojmë më shumë veçori dhe ta mbajmë shërbimin në funksion.",
+    "buyMeACoffee": "Më Bli një Kafe",
+    "supportOnPatreon": "Mbështet në Patreon",
+    "coffeeAriaLabel": "Na mbështet në Buy Me a Coffee (hapet në një skedë të re)",
+    "patreonAriaLabel": "Na mbështet në Patreon (hapet në një skedë të re)"
+  },
+  "cooklang": {
+    "descriptionBefore": "PantryButler është plotësisht i përputhshëm me",
+    "descriptionAfter": ", gjuha e shënjimit të recetave me burim të hapur. Importo recetat tua ekzistuese Cooklang ose eksporto recetat tua PantryButler në formatin Cooklang."
+  },
+  "footer": {
+    "copyright": "© 2026 PantryButler. Të gjitha të drejtat e rezervuara.",
+    "documentation": "Dokumentacioni",
+    "login": "Hyr",
+    "cooklang": "E Përputhshme me Cooklang",
+    "privacyPolicy": "Politika e Privatësisë",
+    "attribution": "Atribucioni"
+  }
+}

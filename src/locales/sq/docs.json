@@ -1,0 +1,1709 @@
+{
+  "navigation": {
+    "gettingStarted": "Fillimi",
+    "coreFeatures": "Veçoritë Kryesore",
+    "collaboration": "Bashkëpunimi",
+    "quickStart": "Fillim i Shpejtë",
+    "kitchenManagement": "Menaxhimi i Kuzhinës",
+    "recipeManagement": "Menaxhimi i Recetave",
+    "mealPlanning": "Planifikimi i Vakteve",
+    "shoppingLists": "Listat e Blerjeve",
+    "pantryEquipment": "Magazina dhe Pajisjet",
+    "sharingCollaboration": "Ndarja dhe Bashkëpunimi",
+    "nutritionCostTracking": "Gjurmimi i të ushqyerit dhe kostove",
+    "accountSection": "Llogaria & Cilësimet",
+    "accountSettingsPage": "Llogaria, Cilësimet & Njoftimet",
+    "developersSection": "Zhvilluesit",
+    "apiGuidelines": "Udhëzimet API",
+    "administrationSection": "Administrata",
+    "adminFeatures": "Karakteristikat e administratorit"
+  },
+  "gettingStarted": {
+    "title": "Fillim i Shpejtë",
+    "subtitle": "Mirë se vini në PantryButler! Ky udhëzues do t'ju ndihmojë të filloni shpejt dhe të kuptoni konceptet bazë dhe përdorimin.",
+    "whatIsKitchen": {
+      "title": "Çfarë është një Kuzhinë?",
+      "description": "Një kuzhinë është një hapësirë pune e pavarur që përmban të gjitha recetat tuaja, planet e vakteve, listat e blerjeve dhe të dhënat e magazinës. Çdo kuzhinë është plotësisht e izoluar, e përshtatshme për skenarë të ndryshëm:",
+      "familyKitchen": "Kuzhinë Familjare: Ndani recetat dhe planet e vakteve me anëtarët e familjes",
+      "personalKitchen": "Kuzhinë Personale: Menaxhoni regjistrimet tuaja personale të gatimit",
+      "teamKitchen": "Kuzhinë Ekipi: Përdorim bashkëpunues për ekipet kulinare"
+    },
+    "steps": {
+      "title": "Hapat për të Filluar",
+      "step1": {
+        "title": "Hapi 1: Konfiguroni Kuzhinën Tuaj",
+        "description": "Përdoruesit e rinj duhet të krijojnë një kuzhinë të re",
+        "items": [
+          "Klikoni butonin \"Konfiguro Kuzhinën\" në faqen kryesore",
+          "Vendosni një emër kuzhinë (për shembull, Kuzhina Ime Familjare)",
+          "Konfiguroni informacionin e llogarisë së administratorit (emri i përdoruesit dhe fjalëkalimi)",
+          "Klikoni \"Krijo\" për të përfunduar konfigurimin e kuzhinës"
+        ],
+        "alert": "Llogaria e krijuar gjatë konfigurimit të kuzhinës do të bëhet automatikisht administratori me leje të plota menaxhimi"
+      },
+      "step2": {
+        "title": "Hapi 2: Hyni në Sistem",
+        "description": "Përdorni llogarinë tuaj të krijuar për të hyrë",
+        "items": [
+          "Klikoni butonin \"Hyrje\" për të hyrë në faqen e hyrjes",
+          "Vendosni emrin tuaj të përdoruesit dhe fjalëkalimin",
+          "Zgjidhni kuzhinën në të cilën dëshironi të hyni",
+          "Klikoni \"Hyrje\" për të hyrë në sistem"
+        ]
+      },
+      "step3": {
+        "title": "Hapi 3: Filloni të Përdorni",
+        "description": "Eksploroni veçoritë e sistemit",
+        "items": [
+          "Krijoni recetën tuaj të parë",
+          "Planifikoni vaktet e kësaj jave në kalendar",
+          "Gjeneroni lista blerjesh",
+          "Regjistroni inventarin e magazinës",
+          "Ftoni anëtarët e familjes të bashkohen me kuzhinën"
+        ]
+      }
+    },
+    "navigation": {
+      "title": "Navigimi i Sistemit",
+      "description": "Pasi të hyni, mund të hyni në të gjitha modulet e veçorive përmes shtyllës së navigimit të majtë:",
+      "recipes": {
+        "title": "Recetat",
+        "description": "Shfletoni, krijoni dhe menaxhoni koleksionin tuaj të recetave"
+      },
+      "calendar": {
+        "title": "Kalendari",
+        "description": "Planifikoni vaktet ditore dhe shikoni oraret e vakteve"
+      },
+      "shoppingList": {
+        "title": "Lista e Blerjeve",
+        "description": "Menaxhoni listat e blerjeve dhe ndiqni progresin e blerjes"
+      },
+      "pantry": {
+        "title": "Magazina",
+        "description": "Regjistroni inventarin e përbërësve"
+      },
+      "equipment": {
+        "title": "Pajisjet",
+        "description": "Menaxhoni listën e pajisjeve të kuzhinës"
+      }
+    },
+    "nextSteps": {
+      "title": "Hapat e Ardhshëm",
+      "description": "Tani që kuptoni konceptet bazë, vazhdoni të lexoni dokumentacionin e mëposhtëm për të mësuar më shumë rreth çdo veçorie:",
+      "items": [
+        "Menaxhimi i Kuzhinës: Mësoni se si të menaxhoni kuzhinat dhe përdoruesit",
+        "Menaxhimi i Recetave: Mësoni të krijoni dhe organizoni recetat",
+        "Planifikimi i Vakteve: Zotëroni teknikat e planifikimit të vakteve",
+        "Listat e Blerjeve: Menaxhoni në mënyrë efikase procesin e blerjes"
+      ]
+    }
+  },
+  "instanceManagement": {
+    "title": "Menaxhimi i Kuzhinës",
+    "subtitle": "Mësoni se si të krijoni, konfiguroni dhe menaxhoni kuzhinat tuaja, si dhe të menaxhoni anëtarët dhe lejet e kuzhinës.",
+    "creating": {
+      "title": "Krijoni një Kuzhinë të Re",
+      "description": "Krijimi i një kuzhinë është hapi i parë në përdorimin e sistemit. Çdo kuzhinë është një hapësirë pune e pavarur.",
+      "stepsTitle": "Hapat e Krijimit",
+      "steps": [
+        {
+          "title": "Hyni në Faqen e Regjistrimit",
+          "description": "Klikoni butonin \"Konfiguro Kuzhinën\" në faqen kryesore"
+        },
+        {
+          "title": "Plotësoni Informacionin e Kuzhinës",
+          "description": "Vendosni një emër kuzhinë, sugjeroni të përdorni emra kuptimplotë si \"Kuzhina Familjare Smith\" ose \"Studio Kulinare\""
+        },
+        {
+          "title": "Konfiguroni Llogarinë e Administratorit",
+          "description": "Krijoni emrin e përdoruesit dhe fjalëkalimin e administratorit, kjo llogari do të ketë leje të plota menaxhimi"
+        },
+        {
+          "title": "Përfundoni Krijimin",
+          "description": "Klikoni butonin \"Krijo\", sistemi do të inicializojë automatikisht kuzhinën dhe do t'ju kyçë"
+        }
+      ],
+      "alert": "Pas krijimit të kuzhinës, të dhënat e zakonshme të përbërësve dhe pajisjeve do të inicializohen automatikisht, dhe mund të filloni ta përdorni menjëherë"
+    },
+    "userManagement": {
+      "title": "Menaxhimi i Përdoruesve",
+      "description": "Administratorët mund të shtojnë, modifikojnë dhe fshijnë anëtarët e kuzhinës, dhe të kontrollojnë lejet e përdoruesve.",
+      "adding": {
+        "title": "Shtoni Përdorues të Rinj",
+        "description": "Ftoni të tjerët të bashkohen me kuzhinën tuaj",
+        "steps": [
+          "Shkoni në faqen \"Menaxhimi i Përdoruesve\"",
+          "Klikoni butonin \"Shto Përdorues\"",
+          "Plotësoni emrin e përdoruesit dhe fjalëkalimin fillestar",
+          "Zgjidhni rolin e përdoruesit (Administratori ose Anëtari i Rregullt)",
+          "Klikoni \"Krijo\" për të përfunduar shtimin"
+        ],
+        "alert": "Pas krijimit të një përdoruesi të ri, rekomandohet t'i njoftoni ata të ndryshojnë fjalëkalimin e tyre fillestar"
+      },
+      "roles": {
+        "title": "Rolet e Përdoruesve",
+        "description": "Role të ndryshme kanë leje të ndryshme",
+        "administrator": {
+          "title": "Administratori",
+          "permissions": [
+            "Leje të plota hyrjeje në sistem",
+            "Mund të shtojë, modifikojë dhe fshijë përdorues",
+            "Mund të menaxhojë të gjitha recetat dhe të dhënat",
+            "Mund të modifikojë cilësimet e kuzhinës"
+          ]
+        },
+        "member": {
+          "title": "Anëtari i Rregullt",
+          "permissions": [
+            "Mund të krijojë dhe menaxhojë recetat e tyre",
+            "Mund të shohë recetat e ndara brenda kuzhinës",
+            "Mund të planifikojë vaktet dhe të krijojë lista blerjesh",
+            "Mund të menaxhojë të dhënat personale të magazinës",
+            "Nuk mund të menaxhojë përdorues të tjerë"
+          ]
+        }
+      },
+      "editing": {
+        "title": "Modifikoni Përdoruesit",
+        "description": "Modifikoni informacionin dhe lejet e përdoruesve",
+        "steps": [
+          "Gjeni përdoruesin e synuar në listën e përdoruesve",
+          "Klikoni butonin \"Modifiko\"",
+          "Modifikoni emrin e përdoruesit, fjalëkalimin ose rolin",
+          "Ruani ndryshimet"
+        ]
+      },
+      "deleting": {
+        "title": "Fshini Përdoruesit",
+        "description": "Hiqni anëtarët e kuzhinës",
+        "content": "Klikoni butonin \"Fshi\" në listën e përdoruesve për të hequr një përdorues. Pas fshirjes, përdoruesi nuk do të mund të hyjë më në kuzhinë.",
+        "alert": "Fshirja e një përdoruesi nuk do të fshijë recetat dhe të dhënat që ata kanë krijuar, të cilat do të mbeten në kuzhinë"
+      }
+    },
+    "settings": {
+      "title": "Cilësimet e Kuzhinës",
+      "description": "Administratorët mund të konfigur ojnë parametra të ndryshëm të kuzhinës në faqen \"Cilësimet\".",
+      "optionsTitle": "Opsionet e Konfigurueshme",
+      "options": [
+        "Emri i Kuzhinës: Modifikoni emrin e shfaqjes së kuzhinës",
+        "Sistemi i Njësive të Paracaktuar: Zgjidhni njësi metrike ose imperiale",
+        "Valuta: zgjidhni valutën që përdoret për të shfaqur çmimet dhe kostot",
+        "Gjurmimi i kostove: shfaq kostot e vlerësuara në faqet e recetave, kalendarit dhe blerjeve"
+      ]
+    },
+    "bestPractices": {
+      "title": "Praktikat më të Mira",
+      "items": [
+        "Zgjidhni emra të qartë dhe kuptimplotë për kuzhinat",
+        "Rishikoni rregullisht listën e përdoruesve dhe hiqni anëtarët që nuk kanë më nevojë për hyrje",
+        "Krijoni kuzhina të ndryshme për qëllime të ndryshme për të ruajtur izolimin e të dhënave",
+        "Konfiguroni të paktën dy llogari administratori për të shmangur pikat e vetme të dështimit",
+        "Kujtojini përdoruesit të ndryshojnë fjalëkalimet rregullisht për të mbrojtur sigurinë e llogarisë"
+      ]
+    }
+  },
+  "mealPlanning": {
+    "title": "Planifikimi i Vakteve",
+    "subtitle": "Përdorni funksionin e kalendarit për të planifikuar vaktet ditore, duke e bërë dietën tuaj më të organizuar dhe jetën tuaj më të rregullt.",
+    "calendarView": {
+      "title": "Pamja e Kalendarit",
+      "description": "Kalendari ofron një pamje kohore intuitive për t'ju ndihmuar të planifikoni dhe të shikoni rregullimet e vakteve.",
+      "viewModesTitle": "Mënyrat e Pamjes",
+      "viewModesDescription": "Zgjidhni sa ditë shfaq kalendari njëherësh",
+      "days7": {
+        "title": "7 Ditë",
+        "description": "Një javë kompakte për vendime të shpejta për ushqimet"
+      },
+      "days14": {
+        "title": "14 Ditë",
+        "description": "Një pasqyrë dyjavore që balancon shumëllojshmërinë dhe planifikimin"
+      },
+      "days30": {
+        "title": "30 Ditë",
+        "description": "Një muaj i plotë vaktesh për planifikim afatgjatë"
+      },
+      "costTracking": {
+        "title": "Kostoja e vaktit",
+        "description": "Kur gjurmimi i kostove është i aktivizuar, çdo vakt i planifikuar tregon koston e tij të vlerësuar, të llogaritur nga receta dhe çmimet e qilarit tuaj."
+      }
+    },
+    "addingMeals": {
+      "title": "Shtoni Vakte",
+      "description": "Planifikoni receta në kalendar për të planifikuar vaktet ditore.",
+      "stepsTitle": "Hapat e Shtimit",
+      "steps": [
+        {
+          "title": "Zgjidhni Datën",
+          "description": "Klikoni datën e synuar në kalendar"
+        },
+        {
+          "title": "Zgjidhni Kohën e Vaktit",
+          "description": "Zgjidhni mëngjesin, drekën, darkën ose ushqimin e lehtë"
+        },
+        {
+          "title": "Shtoni Recetë",
+          "description": "Zgjidhni pjatën për t'u përgatitur nga biblioteka e recetave"
+        },
+        {
+          "title": "Vendosni Porcionet",
+          "description": "Rregulloni porcionet bazuar në numrin e ngrënësve"
+        },
+        {
+          "title": "Shtoni Shënime",
+          "description": "Opsionale: Shtoni udhëzime të veçanta ose kujtues"
+        }
+      ],
+      "alert": "Një kohë vakti mund të përfshijë receta të shumta, e përshtatshme për përgatitjen e pjatave të shumta",
+      "unscheduledRecipes": {
+        "title": "Receta të Paplanifikuara",
+        "description": "Shihni cilat receta nuk janë planifikuar ende",
+        "content": "Kalendari shfaq një listë \"Receta të Paplanifikuara\" me pjatat që nuk janë të planifikuara askund në javën aktuale. Përdoreni për të mbushur vendet bosh ose për të balancuar menunë tuaj javore."
+      }
+    },
+    "managingPlans": {
+      "title": "Menaxhoni Planet e Vakteve",
+      "description": "Rregulloni dhe optimizoni në mënyrë fleksibël rregullimet tuaja të vakteve.",
+      "edit": {
+        "title": "Modifikoni Vaktet",
+        "description": "Modifikoni vaktet e planifikuara",
+        "steps": [
+          "Klikoni artikullin e vaktit në kalendar",
+          "Modifikoni recetën, porcionet ose shënimet",
+          "Ruani ndryshimet"
+        ]
+      },
+      "delete": {
+        "title": "Fshini Vaktet",
+        "description": "Anuloni vaktet e planifikuara",
+        "content": "Klikoni artikullin e vaktit dhe zgjidhni \"Fshi\" për të hequr rregullimin e vaktit."
+      }
+    },
+    "shoppingIntegration": {
+      "title": "Integrimi me Listat e Blerjeve",
+      "description": "Gjeneroni automatikisht lista blerjesh bazuar në planet e vakteve.",
+      "generateTitle": "Gjeneroni Listën e Blerjeve",
+      "generateDescription": "Krijoni listën e blerjeve me një klikim",
+      "steps": [
+        {
+          "title": "Zgjidhni Gamën Kohore",
+          "description": "Zgjidhni gamën e datave për gjenerimin e listës së blerjeve, si【Këtë Javë】ose【Javën e Ardhshme】"
+        },
+        {
+          "title": "Auto-Agreg oni Përbërësit",
+          "description": "Sistemi do të agregojë të gjithë përbërësit e nevojshëm për vaktet"
+        },
+        {
+          "title": "Zbritni Inventarin",
+          "description": "Zbritni automatikisht përbërësit që janë tashmë në magazinë"
+        },
+        {
+          "title": "Gjeneroni Listën",
+          "description": "Krijoni listën përfundimtare të blerjeve, gati për përdorim"
+        }
+      ],
+      "alert": "Përditësimi i rregullt i inventarit të magazinës bën listat e blerjeve më të sakta"
+    },
+    "bestPractices": {
+      "title": "Praktikat më të Mira",
+      "items": [
+        "Planifikoni vaktet e një jave paraprakisht për të shmangur vendimet e minutës së fundit",
+        "Konsideroni ekuilibrin ushqyes, kombinoni në mënyrë të arsyeshme lloje të ndryshme pjatash",
+        "Planifikoni disa vakte të shpejta për ditët e ngarkuara",
+        "Lini fleksibilitet, nuk ka nevojë të ekzekutoni rreptësisht çdo ditë",
+        "Përdorni fundjavat për të përgatitur pjata që kërkojnë kohë të gjata gatimi",
+        "Rishikoni rregullisht planet e vakteve për të përmbledhur përvojën dhe preferencat",
+        "Ndani kalendarin me familjen për të kuptuar rregullimet e vakteve të njëri-tjetrit"
+      ]
+    }
+  },
+  "groceryLists": {
+    "title": "Listat e Blerjeve",
+    "subtitle": "Gjeneroni dhe menaxhoni në mënyrë inteligjente listat e blerjeve, optimizoni procesin e blerjeve dhe shmangni omitimet dhe blerjet e dyfishta.",
+    "creating": {
+      "title": "Krijimi i Listave të Blerjeve",
+      "description": "Sistemi ofron mënyra të shumta për të krijuar lista blerjesh për të plotësuar nevojat e skenarëve të ndryshëm.",
+      "fromMealPlan": {
+        "title": "Gjeneroni nga Plani i Vakteve",
+        "description": "Metoda e krijimit më e përdorur",
+        "steps": [
+          {
+            "title": "Shkoni te Faqja e Krijimit të Listës së Blerjeve",
+            "description": "Zgjidhni【Listën e Blerjeve】nga shiriti i navigimit"
+          },
+          {
+            "title": "Zgjidhni Gamën e Datave",
+            "description": "Zgjidhni periudhën kohore për blerjen e përbërësve, si【Këtë Javë】ose【Javën e Ardhshme】"
+          },
+          {
+            "title": "Zgjidhni Recetat",
+            "description": "Sistemi do të shfaqë të gjitha vaktet në atë periudhë kohore, mund të shtoni në mënyrë selektive"
+          },
+          {
+            "title": "Auto-Agregoni",
+            "description": "Sistemi do të bashkojë përbërësit e njëjtë dhe do të llogarisë sasitë totale"
+          },
+          {
+            "title": "Zbritni Inventarin",
+            "description": "Zbritni automatikisht përbërësit që janë tashmë në magazinë"
+          },
+          {
+            "title": "Gjeneroni Listën",
+            "description": "Krijoni listën përfundimtare të blerjeve"
+          }
+        ],
+        "alert": "Sistemi bashkon në mënyrë inteligjente përbërësit e njëjtë, për shembull, nëse receta të shumta kanë nevojë për【vezë】, do të llogarisë automatikisht sasinë totale"
+      },
+      "fromRecipe": {
+        "title": "Gjeneroni nga Receta e Vetme",
+        "description": "Krijoni shpejt listë për një pjatë të vetme",
+        "steps": [
+          "Hapni faqen e detajeve të recetës",
+          "Klikoni butonin【Shto në Listën e Blerjeve】",
+          "Zgjidhni listën ekzistuese ose krijoni listë të re",
+          "Vendosni porcionet",
+          "Konfirmoni shtimin"
+        ]
+      },
+      "manual": {
+        "title": "Krijimi Manual",
+        "description": "Shtoni lirisht çdo artikull",
+        "content": "Krijoni listë të zbrazët blerjesh dhe shtoni manualisht artikuj për të blerë. E përshtatshme për rifurnizim ditor ose blerje artikujsh jo të lidhur me recetat."
+      }
+    },
+    "managing": {
+      "title": "Menaxhimi i Listave të Blerjeve",
+      "description": "Përditësoni statusin e listës në kohë reale gjatë blerjeve.",
+      "view": {
+        "title": "Shikoni Listën",
+        "description": "Listë e qartë artikujsh",
+        "intro": "Lista e blerjeve e organizuar sipas kategorisë, e përshtatshme për blerje sipas zonës në supermarket:",
+        "categories": [
+          "Perime dhe Fruta",
+          "Mish dhe Fruta Deti",
+          "Erëza",
+          "Ushqime Bazë dhe Drithëra",
+          "Artikuj të Tjerë"
+        ]
+      },
+      "markPurchased": {
+        "title": "Shënoni si të Blerë",
+        "description": "Ndiqni progresin e blerjeve",
+        "content": "Gjatë blerjeve, klikoni kutinë e kontrollit pranë artikujve për t'i shënuar si të blerë. Artikujt e blerë do të shfaqin vijë nëpër mes por do të mbeten në listë për verifikim."
+      },
+      "edit": {
+        "title": "Modifikoni Artikujt",
+        "description": "Rregulloni sasitë ose shtoni shënime",
+        "actions": [
+          "Modifikoni sasinë e artikullit",
+          "Ndryshoni njësitë",
+          "Shtoni shënime të markës ose specifikimit",
+          "Shtoni sugjerime alternative"
+        ]
+      },
+      "addCustom": {
+        "title": "Shtoni Artikuj të Personalizuar",
+        "description": "Plotësoni artikuj jashtë listës",
+        "content": "Klikoni【Shto Artikull】në listën e blerjeve për të futur manualisht artikuj të tjerë për të blerë, si artikuj të nevojshëm ditorë, ushqime të lehta, etj."
+      },
+      "delete": {
+        "title": "Fshini Artikujt",
+        "description": "Hiqni artikuj të panevojshëm",
+        "content": "Nëse një artikull nuk ka nevojë të blihet (si tashmë në shtëpi), mund të fshihet drejtpërdrejt nga lista."
+      },
+      "costTracking": {
+        "title": "Kosto e vlerësuar",
+        "description": "Kuptoni koston totale të listës suaj të blerjeve.",
+        "content": "Kur gjurmimi i kostove është i aktivizuar, kreu i listës tregon një total të vlerësuar të llogaritur nga çmimet për njësi të qilarit tuaj.",
+        "purchasePrice": "Kur shtoni një artikull të listës në qilar, mund të vendosni çmimin që paguat, që vlerësimet e ardhshme të mbeten të sakta."
+      }
+    },
+    "history": {
+      "title": "Historiku i Listave",
+      "description": "Shikoni dhe menaxhoni listat historike të blerjeve.",
+      "recordsTitle": "Regjistrat Historikë",
+      "recordsDescription": "Ruani të gjitha listat e blerjeve",
+      "intro": "Sistemi ruan të gjitha listat e blerjeve të krijuara, mund të:",
+      "actions": [
+        "Shikoni përmbajtjen e listës historike",
+        "Kopjoni listat historike për të krijuar lista të reja",
+        "Analizoni zakonet dhe frekuencën e blerjeve",
+        "Fshini regjistrat historikë të panevojshëm"
+      ]
+    },
+    "sharing": {
+      "title": "Ndani Listat",
+      "description": "Ndani listat e blerjeve me familjen për të bashkëpunuar në blerje.",
+      "syncTitle": "Sinkronizimi në Kohë Reale",
+      "syncDescription": "Blerje bashkëpunuese shumë-personëshe",
+      "intro": "Anëtarët e së njëjtës kuzhinë mund të shohin dhe modifikojnë së bashku listat e blerjeve:",
+      "features": [
+        "Një person krijon listën, anëtarët e tjerë mund të shohin",
+        "Kushdo mund të shënojë artikujt si të blerë",
+        "Përditësimet e sinkronizimit në kohë reale për të shmangur blerjet e dyfishta",
+        "E përshtatshme për skenarë blerjesh të ndara"
+      ],
+      "alert": "Shembull: Nëna krijon listën në shtëpi, Babai mund të shohë dhe përditësojë në kohë reale ndërsa blen në supermarket"
+    },
+    "smartFeatures": {
+      "title": "Veçoritë Inteligjente",
+      "description": "Përdorni veçoritë inteligjente të sistemit për të përmirësuar efikasitetin e blerjeve.",
+      "unitConversion": {
+        "title": "Konvertimi i Njësive",
+        "description": "Trajtoni automatikisht njësi të ndryshme",
+        "content": "Sistemi konverton dhe bashkon automatikisht përbërësit e njëjtë me njësi të ndryshme, si【500g miell】dhe【1 lb miell】do të bashkohen në mënyrë inteligjente."
+      },
+      "inventoryIntegration": {
+        "title": "Integrimi i Inventarit",
+        "description": "Lidhje me të dhënat e magazinës",
+        "content": "Zbritni automatikisht inventarin e magazinës kur gjeneroni lista, mund të përditësoni të dhënat e magazinës me një klikim pas blerjeve."
+      }
+    },
+    "bestPractices": {
+      "title": "Praktikat më të Mira",
+      "items": [
+        "Përditësoni rregullisht inventarin e magazinës për të siguruar saktësinë e listës së blerjeve",
+        "Krijoni listën një ditë përpara për të pasur kohë për të rishikuar dhe rregulluar",
+        "Rirenditni artikujt sipas paraqitjes së supermarketit për të përmirësuar efikasitetin e blerjeve",
+        "Shtoni shënime të markës ose specifikimit te artikujt për të shmangur blerjen e produkteve të gabuara",
+        "Shënoni menjëherë artikujt e blerë pas blerjeve për të mbajtur listën të saktë",
+        "Mbani listat historike për të analizuar modelet e blerjeve dhe buxhetin",
+        "Ndani listat me familjen për të shmangur blerjet e dyfishta"
+      ]
+    }
+  },
+  "pantryEquipment": {
+    "title": "Magazina dhe Pajisje",
+    "subtitle": "Menaxhoni inventarin e përbërësve dhe pajisjet e kuzhinës për të optimizuar përdorimin e burimeve dhe për të reduktuar mbeturinat.",
+    "pantryManagement": {
+      "title": "Menaxhimi i Magazinës",
+      "description": "Ndiqni inventarin e përbërësve, kuptoni burimet e disponueshme dhe shmangni blerjet e dyfishta.",
+      "addIngredients": {
+        "title": "Shto Përbërës",
+        "description": "Regjistro përbërësit e sapo blerë",
+        "steps": [
+          {
+            "title": "Shko te Faqja e Magazinës",
+            "description": "Zgjidh【Magazinë】nga shiriti i navigimit"
+          },
+          {
+            "title": "Kliko Butonin Shto",
+            "description": "Zgjidh【Shto Përbërës】"
+          },
+          {
+            "title": "Plotëso Informacionin e Përbërësit",
+            "description": "Fut emrin e përbërësit, sasinë, njësinë"
+          },
+          {
+            "title": "Zgjidh Vendndodhjen e Ruajtjes",
+            "description": "Shëno vendndodhjen e ruajtjes, si frigorifer, ngrirës, dollap, etj."
+          }
+        ],
+        "alert": "Pas blerjeve, mund të importosh përbërësit në magazinë me një klikim nga lista e blerjeve"
+      },
+      "viewInventory": {
+        "title": "Shiko Inventarin",
+        "description": "Kuptoni situatën aktuale të përbërësve",
+        "intro": "Magazina ofron metoda të shumta shikimi:",
+        "methods": [
+          {
+            "label": "Shiko sipas Kategorisë",
+            "description": "Perime, mish, erëza, etj."
+          },
+          {
+            "label": "Shiko sipas Vendndodhjes",
+            "description": "Frigorifer, ngrirës, dollap, etj."
+          },
+          {
+            "label": "Funksioni i Kërkimit",
+            "description": "Gjej shpejt përbërës specifik"
+          }
+        ]
+      },
+      "ingredientFeatures": {
+        "title": "Funksione të Menaxhimit të Përbërësve",
+        "description": "Mjete për menaxhimin e inventarëve të mëdhenj",
+        "features": [
+          "Renditni përbërësit sipas emrit ose vendndodhjes, në rend rritës ose zbritës",
+          "Listat paginohen për ta bërë qilarin të lehtë për t'u shfletuar",
+          "Shënoni një përbërës si furnizim i pakufizuar që të mos numërohet kurrë si i mbaruar",
+          "Kur fshini një përbërës ose pajisje, sistemi kontrollon nëse përdoret nga recetat dhe ju paralajmëron së pari"
+        ]
+      },
+      "updateInventory": {
+        "title": "Përditëso Inventarin",
+        "description": "Regjistro përdorimin e përbërësve",
+        "manual": {
+          "title": "Përditësim Manual",
+          "description": "Pas përdorimit të përbërësve, kliko artikullin e përbërësit për të reduktuar sasinë ose shëno si të mbaruar"
+        },
+        "auto": {
+          "title": "Zbritje Automatike",
+          "description": "Kur bën receta, sistemi mund të zbritë automatikisht sasitë e përbërësve nga magazina"
+        }
+      },
+      "costTracking": {
+        "title": "Regjistroni çmimet",
+        "description": "Regjistroni çmimet e blerjes për të zhbllokuar vlerësimet e kostove në gjithë aplikacionin.",
+        "content": "Përbërësit e qilarit mbështesin dy fusha çmimi fakultative:",
+        "fields": [
+          {
+            "label": "Çmimi i paguar",
+            "description": "shuma totale që paguat për artikullin"
+          },
+          {
+            "label": "Çmimi mbulon",
+            "description": "sasia që mbulon çmimi (për shembull, 500 për një paketim 500 g). Lëreni bosh për të përdorur sasinë aktuale të artikullit"
+          }
+        ],
+        "unitPrice": "Çmimi për njësi llogaritet automatikisht dhe shfaqet për çdo përbërës, duke e bërë të lehtë krahasimin e madhësive të paketimeve."
+      }
+    },
+    "equipmentManagement": {
+      "title": "Menaxhimi i Pajisjeve",
+      "description": "Regjistro dhe menaxho pajisjet e kuzhinës, kupto mjetet e disponueshme dhe zgjidh receta të përshtatshme.",
+      "addEquipment": {
+        "title": "Shto Pajisje",
+        "description": "Regjistro pajisjet e kuzhinës tënde",
+        "steps": [
+          {
+            "title": "Shko te Faqja e Pajisjeve",
+            "description": "Zgjidh【Pajisje】nga shiriti i navigimit"
+          },
+          {
+            "title": "Zgjidh Llojin e Pajisjes",
+            "description": "Zgjidh nga lista e paracaktuar, si wok, furrë, blender, etj."
+          },
+          {
+            "title": "Shto Informacion të Detajuar",
+            "description": "Opsionale: Shto markë, model, datë blerjeje, etj."
+          },
+          {
+            "title": "Vendos Statusin",
+            "description": "Shëno si të disponueshme, në riparim ose të dëmtuara"
+          }
+        ],
+        "alert": "Pajisjet e zakonshme do të shtohen automatikisht kur krijohet kuzhina, mund të rregullosh bazuar në situatën aktuale"
+      },
+      "recipeAssociation": {
+        "title": "Asociimi i Pajisjeve dhe Recetave",
+        "description": "Filtro recetat bazuar në pajisje",
+        "intro": "Informacioni i pajisjeve lidhet me sistemin e recetave:",
+        "features": [
+          "Shënoni pajisjet e nevojshme kur krijoni receta",
+          "Faqet e recetave listojnë të gjitha pajisjet e nevojshme për të përgatitur pjatën"
+        ]
+      },
+      "maintenance": {
+        "title": "Regjistrat e Mirëmbajtjes",
+        "description": "Ndiq statusin dhe mirëmbajtjen e pajisjeve",
+        "content": "Shto regjistrat e mirëmbajtjes për pajisjet, si pastrimi, mirëmbajtja, riparimet, etj., për të zgjatur jetëgjatësinë e pajisjeve."
+      }
+    },
+    "integration": {
+      "title": "Integrimi me Veçori të Tjera",
+      "description": "Të dhënat e magazinës dhe pajisjeve integrohen thellë me veçori të tjera të sistemit.",
+      "shoppingList": {
+        "title": "Integrimi i Listës së Blerjeve",
+        "features": [
+          "Zbritni automatikisht inventarin kur gjeneroni lista blerjesh",
+          "Importo përbërësit në magazinë me një klikim pas blerjeve"
+        ]
+      },
+      "recipeRecommendations": {
+        "title": "Rekomandimet e Recetave",
+        "features": [
+          "Faqja e recetave thekson pjatat që mund të përgatisni me qilarin tuaj aktual",
+          "Përbërësit me stok të pamjaftueshëm shënohen që të dini çfarë të blini"
+        ]
+      },
+      "mealPlanning": {
+        "title": "Planifikimi i Vakteve",
+        "features": [
+          "Kontrolloni disponueshmërinë e qilarit kur planifikoni vaktet",
+          "Paralajmëroni për përbërës të munguar ose të pamjaftueshëm",
+          "Përditësoni automatikisht inventarin pas përfundimit të vaktit"
+        ]
+      }
+    },
+    "kitchenLayout": {
+      "title": "Paraqitja e Kuzhinës",
+      "description": "Vizualizoni paraqitjen e kuzhinës suaj dhe organizoni përbërësit dhe pajisjet sipas vendndodhjes për menaxhim më të mirë të inventarit.",
+      "createLayout": {
+        "title": "Krijo Paraqitjen e Kuzhinës",
+        "description": "Dizajnoni paraqitjen e kuzhinës suaj me elementë të personalizueshëm",
+        "steps": [
+          {
+            "title": "Hyni te Redaktori i Paraqitjes",
+            "description": "Navigoni te Magazina → Paraqitja e Magazinës, pastaj klikoni 'Ndrysho Paraqitjen'"
+          },
+          {
+            "title": "Krijo ose Zgjidh Modelin",
+            "description": "Krijo një model të ri kuzhine ose zgjidh një ekzistues"
+          },
+          {
+            "title": "Vendos Madhësinë e Kanavacës",
+            "description": "Përcaktoni dimensionet e kanavacës së paraqitjes së kuzhinës suaj"
+          },
+          {
+            "title": "Ruaj Paraqitjen",
+            "description": "Ruani modelin e kuzhinës suaj për përdorim në të ardhmen"
+          }
+        ]
+      },
+      "addElements": {
+        "title": "Shto Elementë Kuzhine",
+        "description": "Zvarritni dhe lëshoni elementë nga paleta për të ndërtuar kuzhinën tuaj",
+        "items": [
+          "Dollap i Lartë - Ruani ushqimet e thata dhe enët",
+          "Dollap i Ulët - Ruani tenxheret, tiganët dhe pajisjet",
+          "Banak - Sipërfaqe pune",
+          "Lavaman - Zonë larjeje dhe përgatitjeje",
+          "Sobë - Zonë gatimi",
+          "Frigorifer - Ruajtje e ftohtë (gjysmë lartësi)",
+          "Ngrirës - Ruajtje e ngrirë (gjysmë lartësi)",
+          "Derë - Hyrja/dalja e kuzhinës",
+          "Magazina - Hapësirë e dedikuar ruajtjeje",
+          "Tavolinë - Sipërfaqe për të ngrënë ose përgatitur",
+          "Dritare - Burim drite natyrale"
+        ]
+      },
+      "organizeItems": {
+        "title": "Organizo Artikujt sipas Vendndodhjes",
+        "description": "Cakto përbërës dhe pajisje për elementë specifikë të kuzhinës",
+        "steps": [
+          {
+            "title": "Kalo te Modaliteti i Magazinës",
+            "description": "Në faqen Paraqitja e Magazinës, shikoni kuzhinën tuaj me artikuj"
+          },
+          {
+            "title": "Zvarrit Artikujt te Elementët",
+            "description": "Zvarrit përbërësit ose pajisjet nga paneli i djathtë mbi elementët e kuzhinës"
+          },
+          {
+            "title": "Konfiguro Raftet",
+            "description": "Klikoni me të djathtën elementët për të shtuar rafte dhe për të organizuar artikujt vertikalisht"
+          },
+          {
+            "title": "Shiko Vendndodhjet e Artikujve",
+            "description": "Klikoni çdo element për të parë të gjithë artikujt e ruajtur në atë vendndodhje"
+          }
+        ],
+        "alert": "Artikujt e caktuar për elementët e kuzhinës do të shfaqin vendndodhjen e tyre si 'Emri i Modelit\\Emri i Elementit' në faqet e Përbërësve dhe Pajisjeve"
+      },
+      "features": {
+        "title": "Veçoritë e Paraqitjes",
+        "items": [
+          "Zvarrit elementët për t'i ripozicionuar",
+          "Ndrysho madhësinë e elementëve duke zvarritur cepat dhe skajet",
+          "Rreshto në rrjet për shtrirje të saktë",
+          "Riemërto elementët me emra të personalizuar",
+          "Personalizo ngjyrat e elementëve",
+          "Shto rafte të shumtë për të organizuar artikujt",
+          "Fshi elementët me tastin Delete ose menunë e kontekstit",
+          "Kanavacë përgjegjëse që përshtatet me ekranin tuaj",
+          "Mbështetje për modalitetin e errët me tekst të lexueshëm"
+        ]
+      }
+    },
+    "bestPractices": {
+      "title": "Praktikat më të Mira",
+      "pantry": {
+        "title": "Menaxhimi i Magazinës",
+        "items": [
+          "Përditëso të dhënat e magazinës menjëherë pas blerjeve",
+          "Vendos kujtues stoku minimal për përbërësit e përdorur zakonisht",
+          "Kategorizoni sipas vendndodhjes së ruajtjes për gjetje të lehtë",
+          "Përdor parimin【i pari hyn, i pari del】për të menaxhuar përbërësit"
+        ]
+      },
+      "equipment": {
+        "title": "Menaxhimi i Pajisjeve",
+        "items": [
+          "Regjistro plotësisht të gjitha pajisjet e kuzhinës",
+          "Përditëso statusin e pajisjeve menjëherë",
+          "Mirëmbaj dhe kujdes rregullisht pajisjet",
+          "Shëno pajisjet e nevojshme për recetat",
+          "Zgjidh receta të përshtatshme bazuar në pajisje"
+        ]
+      }
+    }
+  },
+  "recipeManagement": {
+    "title": "Menaxhimi i Recetave",
+    "subtitle": "Mësoni se si të krijoni, modifikoni, organizoni dhe ndani koleksionin tuaj të recetave.",
+    "creating": {
+      "title": "Krijimi i Recetave",
+      "description": "Krijoni regjistrime të detajuara të recetave që përmbajnë përbërës, hapa, informacion ushqyes dhe më shumë.",
+      "basicInfo": {
+        "title": "Informacioni Bazë",
+        "description": "Plotësoni informacionin bazë të recetës",
+        "required": {
+          "title": "Fusha të Detyrueshme",
+          "fields": [
+            {
+              "label": "Emri i Recetës",
+              "description": "Një përshkrim i qartë i pjatës"
+            },
+            {
+              "label": "Përshkrimi",
+              "description": "Hyrje e shkurtër në karakteristikat dhe shijen e recetës"
+            },
+            {
+              "label": "Porcionet",
+              "description": "Tregoni madhësinë e porcionit të recetës"
+            }
+          ]
+        },
+        "optional": {
+          "title": "Fusha Opsionale",
+          "fields": [
+            {
+              "label": "Koha e Përgatitjes",
+              "description": "Koha e kërkuar për përgatitjen e përbërësve"
+            },
+            {
+              "label": "Koha e Gatimit",
+              "description": "Koha aktuale e gatimit e kërkuar"
+            },
+            {
+              "label": "Imazhi",
+              "description": "Ngarkoni një foto të pjatës së përfunduar"
+            },
+            {
+              "label": "Etiketat",
+              "description": "Shtoni etiketa kategorie si \"Kineze\", \"Vegjetariane\", etj."
+            }
+          ]
+        }
+      },
+      "ingredientList": {
+        "title": "Lista e Përbërësve",
+        "description": "Regjistroni përbërësit e kërkuar dhe sasitë në detaje",
+        "steps": [
+          {
+            "title": "Shtoni Përbërës",
+            "description": "Klikoni butonin \"Shto Përbërës\" dhe futni emrin e përbërësit"
+          },
+          {
+            "title": "Vendosni Sasitë",
+            "description": "Futni sasinë dhe njësinë, si \"200g\", \"2 copë\""
+          },
+          {
+            "title": "Menaxhimi i Grupeve",
+            "description": "Krijoni grupe si \"Përbërës Kryesorë\", \"Erëza\", etj."
+          },
+          {
+            "title": "Shtoni Shënime",
+            "description": "Shtoni udhëzime për përbërësit, si \"të prerë në kube\", \"në temperaturë dhome\""
+          }
+        ],
+        "alert": "Sistemi do të njohë automatikisht përbërësit e zakonshëm, dhe ju gjithashtu mund të shtoni përbërës të personalizuar"
+      },
+      "cookingSteps": {
+        "title": "Hapat e Gatimit",
+        "description": "Regjistroni procesin e detajuar të përgatitjes me kohëmatës dhe imazhe",
+        "intro": "Udhëzimet e qarta të hapave ju ndihmojnë ju dhe të tjerët të rikrijojnë më mirë pjatën:",
+        "features": [
+          "Shtoni çdo hap në rend me udhëzime të detajuara",
+          "Përdorni gjuhë koncize dhe të qartë për të përshkruar operacionet",
+          "Shënoni kohët dhe temperaturat kryesore",
+          "Shtoni imazhe në hapa për të treguar rezultatet e pritura",
+          "Vendosni kohëmatës për hapat e ndjeshëm ndaj kohës - mos humbisni kurrë një moment kritik"
+        ],
+        "alert": "Kohëmatësit e Hapave: Shtoni një kohëzgjatje kohëmatësi në çdo hap (p.sh., \"Piqni për 25 minuta\"). Gjatë gatimit, klikoni butonin e kohëmatësit për të filluar një numërim mbrapsht me njoftim audio kur të përfundojë."
+      },
+      "stepImages": {
+        "title": "Imazhet e Hapave",
+        "description": "Shtoni udhëzues vizualë në hapat tuaj të gatimit",
+        "intro": "Ngarkoni imazhe për çdo hap për të treguar saktësisht se si duhet të duken përbërësit në faza të ndryshme. Kjo është veçanërisht e dobishme për teknika si \"përzieni derisa të kombinohen\" ose \"brumosni derisa të bëhet i lëmuar\" ku referenca vizuale bën një ndryshim të madh.",
+        "features": [
+          "Klikoni ikonën e imazhit në çdo hap për të ngarkuar një foto",
+          "Imazhet ndihmojnë për të treguar teksturën, ngjyrën dhe konsistencën",
+          "Veçanërisht e dobishme për pjekje dhe teknika komplekse"
+        ]
+      },
+      "equipment": {
+        "title": "Pajisjet e Kërkuara",
+        "description": "Shënoni pajisjet e kuzhinës të nevojshme për gatim",
+        "content": "Zgjidhni pajisjet e kërkuara nga lista e pajisjeve, si wok, furrë, blender, etj. Kjo ndihmon me përgatitjen paraprake dhe kontrollin e disponueshmërisë së pajisjeve."
+      }
+    },
+    "organizing": {
+      "title": "Organizimi i Recetave",
+      "description": "Përdorni dosje dhe etiketa për të menaxhuar në mënyrë efikase koleksionin tuaj të recetave.",
+      "folders": {
+        "title": "Menaxhimi i Dosjeve",
+        "description": "Krijoni dosje për të kategorizuar dhe ruajtur recetat",
+        "features": [
+          "Klikoni \"Dosje e Re\" në faqen e recetave",
+          "Futni emrin e dosjes, si \"Gatim Shtëpiak\", \"Menutë e Festave\"",
+          "Zvarritni recetat në dosje",
+          "Mbështet krijimin e nëndosjeve për të ndërtuar strukturë hierarkike"
+        ]
+      },
+      "tags": {
+        "title": "Sistemi i Etiketave",
+        "description": "Përdorni etiketa për të filtruar dhe gjetur shpejt recetat",
+        "intro": "Etiketat janë një metodë e fleksibël kategorizimi, një recetë mund të ketë etiketa të shumta:",
+        "categories": [
+          "Etiketa Kuzhinë: Kineze, Perëndimore, Japoneze, Koreane, etj.",
+          "Etiketa Dietike: Vegjetariane, Me Kalori të Ulëta, Pa Gluten, Keto, etj.",
+          "Etiketa Rasti: Vakte të Shpejta, Argëtim, Kuti Dreke, etj.",
+          "Etiketa Shije: Pikante, E Ëmbël, Acide, E Kripur, etj."
+        ]
+      },
+      "search": {
+        "title": "Kërkoni dhe Filtroni",
+        "description": "Gjeni shpejt recetat që ju nevojiten",
+        "features": [
+          "Kërkoni receta sipas emrit",
+          "Filtroni recetat sipas etiketave",
+          "Filtroni recetat sipas dosjeve",
+          "Filtroni sipas kohës maksimale të gatimit"
+        ]
+      },
+      "cookable": {
+        "title": "Receta që Mund T'i Përgatisni Tani",
+        "description": "Shihni cilat pjata mund të gatuani me qilarin tuaj aktual",
+        "content": "Faqja e recetave kontrollon qilarin tuaj dhe shfaq një seksion \"Receta që Mund T'i Përgatisni Tani\" për pjatat, të gjithë përbërësit e të cilave janë në magazinë. Përbërësit opsionalë injorohen dhe artikujt e shënuar si të pakufizuar konsiderohen gjithmonë të disponueshëm."
+      },
+      "gridRecipes": {
+        "title": "Receta në Formë Tabele",
+        "description": "Receta të strukturuara që i referohen përbërësve tuaj",
+        "content": "Recetat në formë tabele përdorin një paraqitje stili tabele ku çdo hap i referohet drejtpërdrejt listës së përbërësve, duke treguar saktësisht se cilët përbërës dhe sasi përdoren. Aktivizoni modalitetin tabelë në redaktuesin e recetave dhe ndërtoni hapa që lidhen me përbërësit tuaj."
+      }
+    },
+    "editing": {
+      "title": "Modifikimi dhe Fshirja",
+      "description": "Përditësoni dhe menaxhoni përmbajtjen e recetave tuaja në çdo kohë.",
+      "edit": {
+        "title": "Modifikoni Recetën",
+        "steps": [
+          "Hapni faqen e detajeve të recetës",
+          "Klikoni butonin \"Modifiko\"",
+          "Modifikoni çdo përmbajtje që ka nevojë për përditësim",
+          "Ruani ndryshimet"
+        ],
+        "alert": "Ju mund të modifikoni vetëm recetat që keni krijuar, administratorët mund të modifikojnë të gjitha recetat"
+      },
+      "delete": {
+        "title": "Fshini Recetën",
+        "content": "Klikoni butonin \"Fshi\" në faqen e detajeve të recetës ose në listë. Fshirja është e pakthyeshme, vazhdoni me kujdes."
+      },
+      "costTracking": {
+        "title": "Kostoja e recetës",
+        "description": "Shihni sa kushton përgatitja e një recete.",
+        "content": "Kur gjurmimi i kostove është i aktivizuar, faqja e recetës tregon një kartelë \"Kosto e vlerësuar\" me koston për porcion dhe për vakt, plus një kolonë Kostos pranë çdo përbërësi. Çmimet merren nga artikujt e qilarit tuaj dhe janë të dukshme vetëm për pronarin e recetës."
+      }
+    },
+    "viewing": {
+      "title": "Shikimi dhe Shkallëzimi",
+      "description": "Rregulloni porcionet dhe shfaqni sasitë në njësitë që preferoni.",
+      "servingsScaling": {
+        "title": "Shkallëzimi i Porcioneve",
+        "description": "Gatuani për çdo numër njerëzish",
+        "content": "Ndryshoni numrin e porcioneve në faqen e recetës dhe çdo sasi përbërësi përditësohet automatikisht. Mund të rregulloni gjithashtu drejtpërdrejt një përbërës dhe të gjitha sasitë e tjera shkallëzohen në mënyrë proporcionale."
+      },
+      "unitDisplay": {
+        "title": "Njësi të Preferuara",
+        "description": "Shfaqni sasitë në sistemin tuaj të preferuar të njësive",
+        "content": "Kaloni ndërmjet njësive të preferuara të kuzhinës suaj dhe njësive origjinale të recetës. Sasitë konvertohen automatikisht dhe matja origjinale shfaqet pranë."
+      },
+      "conversions": {
+        "title": "Konvertime Njësish",
+        "description": "Konvertoni sasinë e çdo përbërësi",
+        "content": "Hapni dialogun e konvertimit për çdo përbërës për të parë konvertimet e disponueshme dhe për të kaluar ndërmjet njësive ekuivalente. Konvertimet ngarkohen për përbërësit e zakonshëm dhe aplikohen automatikisht kur njësitë ndryshojnë."
+      }
+    },
+    "importing": {
+      "title": "Importimi dhe Eksportimi",
+      "description": "Importoni receta nga burime të shumta duke përfshirë skedarë Cooklang, URL dhe receta publike.",
+      "cooklang": {
+        "title": "Importoni nga Cooklang",
+        "description": "PantryButler është plotësisht i pajtueshëm me gjuhën e shënimit të recetave me burim të hapur",
+        "steps": [
+          "Klikoni \"Importo nga Cooklang\" në faqen e redaktorit të recetave",
+          "Ngarkoni skedarin tuaj .cook ose ngjisni tekstin Cooklang",
+          "Rishikoni recetën e analizuar me përbërës, pajisje dhe udhëzime",
+          "Konfirmoni importimin për të shtuar recetën në koleksionin tuaj"
+        ],
+        "alert": "Formati Cooklang ruan sasitë e përbërësve, pajisjet, kohëmatësit dhe udhëzimet hap pas hapi"
+      },
+      "url": {
+        "title": "Importoni nga URL",
+        "description": "Importoni receta drejtpërdrejt nga faqet e internetit të recetave",
+        "steps": [
+          "Klikoni \"Importo nga URL\" në faqen e redaktorit të recetave",
+          "Ngjisni URL-në e faqes së internetit të recetës",
+          "Sistemi do të nxjerrë automatikisht informacionin e recetës",
+          "Rishikoni dhe modifikoni recetën e importuar sipas nevojës",
+          "Ruani për të shtuar recetën në koleksionin tuaj"
+        ]
+      },
+      "public": {
+        "title": "Importoni nga Recetat Publike",
+        "description": "Shfletoni dhe importoni receta të ndara publikisht nga përdorues të tjerë",
+        "steps": [
+          "Vizitoni një faqe recete publike përmes lidhjes së ndarë",
+          "Klikoni butonin \"Importo në Kuzhinën Time\"",
+          "Zgjidhni në cilën kuzhinë të importoni",
+          "Receta do të shtohet në koleksionin tuaj me të gjitha detajet e ruajtura"
+        ]
+      },
+      "review": {
+        "title": "Shqyrtimi i Recetave të Importuara",
+        "description": "Lidhni përbërësit dhe verifikoni detajet përpara se të ruani",
+        "content": "Përpara se një import të ruhet, një faqe shqyrtimi tregon përbërësit e analizuar dhe ju lejon të lidhni çdo artikull me qilarin tuaj ose me bazën e të dhënave ushqyese. Shenjat shënojnë përputhje të sakta, përputhje të ngjashme dhe artikuj të rinj, që të vendosni se si të trajtohet çdo përbërës. Recetat e importuara mbajnë një shenjë që tregon nga kanë ardhur dhe sa herë janë riimportuar."
+      },
+      "export": {
+        "title": "Eksportoni Receta",
+        "description": "Ruani një recetë si skedar Cooklang",
+        "content": "Hapni çdo recetë dhe klikoni \"Eksporto si Cooklang\" për të shkarkuar një skedar .cook. Eksporti ruan përbërësit, hapat, kohëmatësit dhe pajisjet e recetës, kështu që ajo mund të ndahet ose importohet në çdo aplikacion të pajtueshëm me Cooklang."
+      }
+    },
+    "bestPractices": {
+      "title": "Praktikat më të Mira",
+      "items": [
+        "Përdorni emra të qartë recetash për kërkim dhe identifikim të lehtë",
+        "Regjistroni sasitë e përbërësve dhe hapat në detaje për të siguruar riprodhueshmëri",
+        "Ngarkoni foto me cilësi të lartë të pjatës së përfunduar për të rritur tërheqjen vizuale",
+        "Përdorni etiketat me mençuri për të ndërtuar një sistem kategorizimi personal",
+        "Organizoni rregullisht dosjet për të mbajtur bibliotekën e recetave të rregullt",
+        "Shtoni shënime në recetat e përdorura shpesh për të regjistruar sugjerime përmirësimi"
+      ]
+    }
+  },
+  "sharing": {
+    "title": "Ndarja dhe Bashkëpunimi",
+    "subtitle": "Ndani receta me familjen tuaj, bashkëpunoni në planifikimin e vakteve dhe shijoni gatimin së bashku.",
+    "kitchenCollaboration": {
+      "title": "Bashkëpunimi në Kuzhinë",
+      "description": "Anëtarët e së njëjtës kuzhinë mund të ndajnë dhe menaxhojnë bashkërisht të gjitha të dhënat.",
+      "sharingScope": {
+        "title": "Fushëveprimi i Ndarjes",
+        "description": "Përmbajtje e aksesueshme për anëtarët e kuzhinës",
+        "intro": "Të gjithë anëtarët brenda një kuzhinë ndajnë të dhënat e mëposhtme:",
+        "items": [
+          {
+            "label": "Biblioteka e Recetave",
+            "description": "Të gjitha recetat e krijuara nga anëtarët"
+          },
+          {
+            "label": "Planet e Vakteve",
+            "description": "Rregullimet e vakteve në kalendar"
+          },
+          {
+            "label": "Listat e Blerjeve",
+            "description": "Listat e blerjeve të ndara"
+          },
+          {
+            "label": "Magazina",
+            "description": "Informacioni i inventarit të përbërësve"
+          },
+          {
+            "label": "Lista e Pajisjeve",
+            "description": "Lista e pajisjeve të kuzhinës"
+          }
+        ],
+        "alert": "Ky dizajn është i përshtatshëm për përdorim familjar, të gjithë anëtarët mund të menaxhojnë së bashku vaktet dhe blerjet e shtëpisë"
+      },
+      "scenarios": {
+        "title": "Skenarët e Bashkëpunimit",
+        "description": "Aplikime tipike të bashkëpunimit në kuzhinë",
+        "family": {
+          "title": "Bashkëpunimi Familjar",
+          "items": [
+            "Nëna planifikon vaktet e kësaj jave",
+            "Babai gjeneron listën e blerjeve bazuar në plan",
+            "Fëmijët ndihmojnë në blerje në supermarket, duke shënuar artikujt e blerë në kohë reale",
+            "E gjithë familja ndan receta, të gjithë mund të shtojnë pjatat e preferuara"
+          ]
+        },
+        "roommate": {
+          "title": "Bashkëpunimi midis Bashkëbanuesve",
+          "items": [
+            "Menaxhoni së bashku inventarin e frigoriferit",
+            "Ndërrohuni për të planifikuar dhe gatuar",
+            "Ndani listat e blerjeve",
+            "Ndani pjatat speciale të njëri-tjetrit"
+          ]
+        },
+        "team": {
+          "title": "Bashkëpunimi i Ekipit",
+          "items": [
+            "Ekipi kulinar ndan menutë",
+            "Bashkëpunoni në zhvillimin e pjatave të reja",
+            "Menaxhimi i unifikuar i prokurimit të përbërësve",
+            "Gjurmoni përdorimin dhe mirëmbajtjen e pajisjeve"
+          ]
+        }
+      },
+      "permissions": {
+        "title": "Menaxhimi i Lejeve",
+        "description": "Role të ndryshme kanë leje të ndryshme",
+        "admin": {
+          "title": "Lejet e Administratorit",
+          "items": [
+            "Menaxhoni anëtarët e kuzhinës (shtoni, modifikoni, fshini përdorues)",
+            "Modifikoni cilësimet e kuzhinës",
+            "Menaxhoni të gjitha recetat dhe të dhënat",
+            "Fshini çdo përmbajtje"
+          ]
+        },
+        "member": {
+          "title": "Lejet e Anëtarit të Rregullt",
+          "items": [
+            "Shikoni të gjithë përmbajtjen e ndarë",
+            "Krijoni dhe modifikoni recetat tuaja",
+            "Merrni pjesë në planifikimin e vakteve dhe listat e blerjeve",
+            "Përditësoni informacionin e magazinës dhe pajisjeve",
+            "Nuk mund të menaxhojë përdorues të tjerë"
+          ]
+        }
+      }
+    },
+    "shareRecipes": {
+      "title": "Ndani Receta",
+      "description": "Ndani recetat tuaja përmes lidhjeve publike ose eksportoni për kopje rezervë.",
+      "generateLink": {
+        "title": "Gjeneroni Lidhje Ndarja",
+        "description": "Krijoni lidhje recete të ndarë",
+        "intro": "Gjeneroni lidhje ndarja recete që mund të dërgohet te të tjerët me çdo metodë:",
+        "features": [
+          "Kopjoni lidhjen për ta ndarë me këdo",
+          "Integroni në blog ose faqe interneti - Përdorni URL-në e recetës publike në një iframe ose lidhje"
+        ],
+        "alert": "Integrimi i Blogut: Faqet e recetave publike janë dizajnuar për t'u integruar. Thjesht përdorni URL-në publike në një iframe ose si lidhje direkte në postimet tuaja të blogut. Receta do të shfaqet me formatim të plotë, imazhe, kohëmatës dhe të gjitha detajet."
+      },
+      "publicSharing": {
+        "title": "Ndarja e Recetës Publike",
+        "description": "Ndani receta me këdo, edhe pa llogari",
+        "intro": "Bëni recetat tuaja të aksesueshme publikisht:",
+        "steps": [
+          "Hapni recetën që dëshironi të ndani",
+          "Klikoni \"Bëje Publike\" ose aktivizoni opsionin e ndarjes publike",
+          "Do të gjenerohet një URL publike unike",
+          "Kushdo me lidhjen mund të shikojë recetën pa u identifikuar",
+          "Recetat publike mund të importohen nga përdorues të tjerë të PantryButler"
+        ],
+        "note": "Recetat publike shfaqin emrin tuaj të përdoruesit dhe emrin e kuzhinës, duke ndihmuar në ndërtimin e reputacionit tuaj kulinar."
+      },
+      "visibility": {
+        "title": "Vendosni Dukshmërinë e Recetës",
+        "description": "Kontrolloni fushëveprimin e ndarjes së recetës",
+        "intro": "Kur krijoni ose modifikoni receta, mund të vendosni dukshmërinë:",
+        "options": [
+          {
+            "label": "Private",
+            "description": "E dukshme vetëm për ju dhe anëtarët e kuzhinës tuaj (parazgjedhur)"
+          },
+          {
+            "label": "Publike",
+            "description": "Kushdo me lidhjen publike mund ta shohë dhe ta importojë recetën"
+          }
+        ]
+      }
+    },
+    "notifications": {
+      "title": "Sistemi i Njoftimeve",
+      "description": "Qëndroni të informuar për aktivitetet e bashkëpunimit dhe informacionin e ndarjes.",
+      "types": {
+        "title": "Llojet e Njoftimeve",
+        "description": "Njoftime të dërguara nga sistemi",
+        "items": [
+          "Njoftime ndarja recete",
+          "Kujtues përditësimi plani vaktesh",
+          "Njoftime ndryshimi liste blerjesh",
+          "Njoftime ndryshimi anëtari kuzhinë"
+        ]
+      }
+    },
+    "bestPractices": {
+      "title": "Praktikat më të Mira",
+      "kitchenCollaboration": {
+        "title": "Bashkëpunimi në Kuzhinë",
+        "items": [
+          "Sqaroni përgjegjësitë e anëtarëve për të shmangur operacionet e dyfishta",
+          "Komunikoni rregullisht për planet e vakteve dhe rregullimet e blerjeve",
+          "Përditësoni të dhënat e ndara menjëherë për të mbajtur informacionin të sinkronizuar",
+          "Respektoni përmbajtjen e krijuar nga të tjerët, fshini me kujdes",
+          "Vendosni administratorë të shumtë në mënyrë të arsyeshme për të siguruar menaxhim të rregullt të kuzhinës"
+        ]
+      },
+      "privacy": {
+        "title": "Mbrojtja e Privatësisë",
+        "items": [
+          "Vendosni dukshmërinë e recetës në mënyrë të arsyeshme",
+          "Mos ndani përmbajtje që përmban informacion të ndjeshëm",
+          "Kontrolloni rregullisht cilësimet tuaja të ndarjes"
+        ]
+      }
+    }
+  },
+  "nutrition": {
+    "title": "Gjurmimi i të ushqyerit dhe kostove",
+    "subtitle": "Kuptoni vlerën ushqyese të recetave tuaja dhe sa kushton t&apos;i bëni ato.",
+    "overview": {
+      "title": "Përmbledhje",
+      "description": "PantryButler mund të tregojë një etiketë të plotë ushqyese për çdo recetë dhe të vlerësojë kostot nga çmimet e regjistruara në qilarin tuaj.",
+      "what": {
+        "title": "Çfarë gjurmohet",
+        "description": "Informacioni për të ushqyerit dhe kostot llogaritet automatikisht nga recetat dhe të dhënat e qilarit tuaj.",
+        "features": [
+          "Faktet ushqyese për porcion me % të vlerës ditore",
+          "Kostoja e vlerësuar për porcion dhe per pjatë në faqet e recetave",
+          "Kostot e vakteve të shfaqura në kalendar",
+          "Totalet e vlerësuara në listat e blerjeve",
+          "Çmimi për njësi për çdo artikull qilari"
+        ]
+      }
+    },
+    "enabling": {
+      "title": "Aktivizimi i informacionit ushqyes",
+      "description": "Faktet ushqyese ndizen dhe fiken në nivel kuzhine nga një administrator.",
+      "stepsTitle": "Hapat për aktivizim",
+      "steps": [
+        "Hapni faqen e Cilësimeve nga navigimi",
+        "Nën Seksionin e Pamjes, aktivizo çelësin &quot;Informacioni ushqyes&quot;",
+        "Recetat dhe faqet publike të recetave tani shfaqin etiketat e fakteve ushqyese"
+      ],
+      "alert": "Ushqimi është i aktivizuar si parazgjedhje dhe vetëm administratorët mund të ndryshojnë këtë cilësim."
+    },
+    "matching": {
+      "title": "Përputhja e përbërësve me të dhënat ushqyese",
+      "description": "Për të vlerësuar ushqimin, përbërësit duhet të përputhen me ushqimet në bazën e të dhënave ushqyese.",
+      "how": {
+        "title": "Si funksionon përputhja",
+        "steps": [
+          {
+            "title": "Hapni një përbërës",
+            "description": "Shkoni te Qilari → Përbërësit dhe redaktoni përbërësin që dëshironi të përputhni."
+          },
+          {
+            "title": "Përdorni përputhjen ushqyese",
+            "description": "Dialogu i kërkimit të ushqimeve sugjeron përputhje nga baza e të dhënave ushqyese."
+          },
+          {
+            "title": "Prano përputhjen",
+            "description": "Zgjidhni ushqimin më të afërt; përbërësi tani tregon një tregues \"Ushqimi i lidhur\"."
+          },
+          {
+            "title": "Ose shto të dhëna të personalizuara",
+            "description": "Nëse asnjë ushqim nuk përputhet, përdorni \"Shto të dhëna ushqyese të personalizuara\" për të futuar vlerat me dorë."
+          }
+        ]
+      },
+      "custom": {
+        "title": "Të dhënat ushqyese të personalizuara",
+        "description": "Kur një përbërës nuk është në bazën e të dhënave, mund të futni vlerat e tij manualisht.",
+        "fields": [
+          {
+            "label": "Madhësia e porcionit",
+            "description": "Madhësia dhe njësia e porcionit që zbatohet për vlerat tuaja"
+          },
+          {
+            "label": "Makronutrientët",
+            "description": "Kaloritë, proteina, karbohidratet dhe yndyra totale"
+          },
+          {
+            "label": "Lëndë të tjera ushqyese",
+            "description": "Fibra dietike, sheqerna totale, natrium dhe kolesterol"
+          }
+        ],
+        "alert": "Të gjitha vlerat e personalizuara futen për porcion dhe rregullohen automatikisht për recetën tuaj."
+      }
+    },
+    "calculation": {
+      "title": "Si llogaritet ushqimi",
+      "description": "Vlerat janë vlerësime të krijuara nga serveri nga baza e të dhënave ushqyese.",
+      "items": [
+        "Çdo përbërës i përputhur konvertohet në gram duke përdorur faktorët e konvertimit",
+        "Vlerat për 100 g zgjerohen në sasinë e recetës",
+        "Të gjithë përbërësit mblidhen dhe ndahen me numrin e porcioneve",
+        "Etiketa ushqyese tregon si totalin ashtu edhe për porcion"
+      ]
+    },
+    "nutritionFacts": {
+      "title": "Etiketa e fakteve ushqyese",
+      "description": "Kur ushqimi është i aktivizuar, faqet e recetave shfaqin një etiketë ushqyese të stilit FDA.",
+      "label": {
+        "title": "Çfarë tregon etiketa",
+        "description": "Zbërthim i plotë në për 100 g dhe për porcion",
+        "rows": [
+          "Porcionet për recetë dhe madhësia e porcionit",
+          "Shumat për porcion me % të vlerës ditore",
+          "Yndyra totale, kolesteroli, natriumi, karbohidratet totale, proteinat",
+          "Fibra dietike, sheqerna totale dhe mikronutrientët e shtuar"
+        ],
+        "alert": "Të dhënat ushqyese ofrohen nga OpenNutrition dhe janë vlerësime të bazuara në përputhjen e përbërësve."
+      }
+    },
+    "costOverview": {
+      "title": "Gjurmimi i kostove",
+      "description": "Vlerësoni kostot e recetave, vakteve dhe listave të blerjeve tuaja duke përdorur çmimet e qilarit.",
+      "where": {
+        "title": "Ku shfaqen kostot",
+        "items": [
+          "Faqja e recetës — karta e kostos së vlerësuar me kostot për porcion dhe për pjatë",
+          "Kalendari i vakteve — kostot pranë çdo vakti të planifikuar",
+          "Lista e blerjeve — totali i kostos së vlerësuar në kokën e listës",
+          "Faqja e përbërësve — çmimi për njësi për çdo artikull me çmim"
+        ],
+        "alert": "Detajet e kostos së recetës janë të dukshme vetëm për pronarin e recetës."
+      }
+    },
+    "pantryPrices": {
+      "title": "Shtimi i çmimeve në artikujt e qilarit",
+      "description": "Kostot llogariten nga fushat e çmimeve të përbërësve tuaj të qilarit.",
+      "fields": {
+        "title": "Dy fusha çmimi opsionale",
+        "description": "E disponueshme kur shtoni ose redaktoni përbërësit e qilarit",
+        "list": [
+          {
+            "label": "Çmimi",
+            "description": "Shuma totale që paguani për artikullin"
+          },
+          {
+            "label": "Çmimi mbulon",
+            "description": "Sasia për të cilën zbatohet ai çmim, p.sh. 500 për një paketë 500 g. Lëreni bosh për të përdorur sasinë aktuale."
+          }
+        ],
+        "unitPrice": "Çmimi për njësi llogaritet automatikisht dhe shfaqet në çdo përbërës në mënyrë që të krahasoni madhësitë e paketave."
+      }
+    },
+    "costSettings": {
+      "title": "Aktivizimi i gjurmimit të kostove",
+      "description": "Gjurmimi i kostove ndizet dhe fiket në nivel kuzhine nga një administrator.",
+      "stepsTitle": "Hapat për aktivizim",
+      "steps": [
+        {
+          "title": "Hapni cilësimet",
+          "description": "Hapni faqen e Cilësimeve nga navigimi."
+        },
+        {
+          "title": "Aktivizo gjurmimin e kostove",
+          "description": "Nën Seksionin e Pamjes, aktivizo çelësin \"Gjurmimi i kostove\"."
+        },
+        {
+          "title": "Zgjidhni një monedhë",
+          "description": "Zgjidhni një monedhë nga lista e monedhave të mbështetura për çmimet dhe kostot."
+        }
+      ]
+    },
+    "bestPractices": {
+      "title": "Praktikat më të mira",
+      "items": [
+        "Përputhni përbërësit me bazën e të dhënave ushqyese për etiketa të plota",
+        "Mbani çmimet e qilarit të përditësuara për vlerësime të sakta",
+        "Futni çmimin dhe sasinë e mbuluar për artikujt e paketuar",
+        "Regjistroni çmimin e paguar kur zhvendosni artikujt e blerë në qilar"
+      ]
+    }
+  },
+  "account": {
+    "title": "Llogaria, Cilësimet & Njoftimet",
+    "subtitle": "Menaxhoni emrin e shfaqur, fjalëkalimin, preferencat personale dhe njoftimet e kuzhinës.",
+    "profile": {
+      "title": "Profili juaj",
+      "description": "Faqja e profilit ruan informacionin tuaj personal të dukshëm për anëtarët e tjerë.",
+      "info": {
+        "title": "Informacioni i profilit",
+        "fields": [
+          {
+            "label": "Emri i përdoruesit",
+            "description": "Adresa juaj e emailit; ky është identifikimi juaj dhe nuk mund të ndryshohet"
+          },
+          {
+            "label": "Emri i shfaqur",
+            "description": "Emri i shfaqur për anëtarët e tjerë të kuzhinës"
+          },
+          {
+            "label": "Avatar",
+            "description": "Vjen në përditësimet e ardhshme"
+          }
+        ],
+        "alert": "Ndryshimet në emrin tuaj të shfaqur ruhen menjëherë."
+      }
+    },
+    "password": {
+      "title": "Ndryshimi i fjalëkalimit tuaj",
+      "description": "Mbani të sigurt llogarinë tuaj duke zgjedhur një fjalëkalim të fortë.",
+      "stepsTitle": "Hapat",
+      "steps": [
+        "Hapni faqen e Profilit",
+        "Klikoni butonin \"Ndrysho fjalëkalimin\"",
+        "Fusni fjalëkalimin aktual, pastaj fjalëkalimin e ri dy herë",
+        "Fjalëkalimi duhet të jetë të paktën 8 karaktere"
+      ]
+    },
+    "kitchenSettings": {
+      "title": "Cilësimet e kuzhinës",
+      "description": "Preferencat në nivel kuzhine të kontrolluara nga një administrator, plus zgjedhja juaj personale e gjuhës.",
+      "units": {
+        "title": "Sistemi i njësive të preferuara",
+        "description": "Zgjidhni se si shfaqen sasitë në aplikacion",
+        "options": [
+          "Metrik (g, kg, ml, L)",
+          "Pesha metrike (vetëm g)",
+          "Imperiale (oz, lb, cup, lugë)",
+          "Vëllimi imperial (vetëm gota)",
+          "Raportet (përqindjet)",
+          "Përqindjet e bukëpjekës"
+        ]
+      },
+      "currency": {
+        "title": "Monedha",
+        "description": "Monedha e përdorur për të shfaqur çmimet dhe kostot",
+        "content": "Zgjidhni një monedhë nga lista e monedhave të mbështetura për gjurmimin e kostove."
+      },
+      "features": {
+        "title": "Opsionet e pamjes",
+        "description": "Cilësimet që ndryshojnë pamjen dhe sjelljen e aplikacionit",
+        "options": [
+          {
+            "label": "Modaliteti i errët",
+            "description": "Kalo mes temave të çelëta dhe të errëta"
+          },
+          {
+            "label": "Modaliteti i gjallë",
+            "description": "Përdor ngjyra me ngopje të lartë"
+          },
+          {
+            "label": "Informacioni ushqyes",
+            "description": "Shfaq faktet ushqyese në faqet e recetave"
+          },
+          {
+            "label": "Gjurmimi i kostove",
+            "description": "Shfaq kostot e vlerësuara në faqet e recetave, kalendarit dhe blerjeve"
+          }
+        ],
+        "alert": "Opsionet e pamjes janë cilësime të kuzhinës të kontrolluara nga një administrator; zgjedhja e gjuhës është personale."
+      }
+    },
+    "language": {
+      "title": "Gjuha",
+      "description": "Zgjidhni gjuhën e përdorur në ndërfaqe. Është një preferencë personale që zbatohet menjëherë.",
+      "optionsTitle": "Gjuhët e disponueshme",
+      "options": [
+        "English",
+        "Shqip",
+        "Italiano",
+        "Español",
+        "Français",
+        "中文",
+        "हिन्दी"
+      ]
+    },
+    "rights": {
+      "title": "Të dhënat, tokenat dhe mësimoret",
+      "description": "Menaxhoni të dhënat tuaja, krijoni tokena API për integrimet dhe gjeni ndihmë nga mësimoret.",
+      "apiTokens": {
+        "title": "Tokenat API",
+        "description": "Tokena afatgjatë për zgjerimet e shfletuesit dhe aplikacionet celulare",
+        "content": "Krijoni tokena me leje të kufizuara nga karta \"Tokenat API\" te Cilësimet. Tokenat shfaqen vetëm një herë kur krijohen, ndaj kopjojini në një vend të sigurt."
+      },
+      "data": {
+        "title": "Eksportet dhe kopjet rezervë",
+        "description": "Zotëroni të dhënat tuaja dhe mbajini ato të transferueshme",
+        "items": [
+          "Eksportoni të gjitha recetat si një arkiv Cooklang (.cook)",
+          "Importoni receta nga skedarët Cooklang, URL-të dhe recetat publike",
+          "Eksporti i të dhënave të bazës ushqyese nga administratorët"
+        ]
+      },
+      "tutorials": {
+        "title": "Mësimoret",
+        "description": "Mësimore të udhëzuara që ju njohin me çdo veçori",
+        "items": [
+          "Ndiqni mësimoret hap pas hapi për çdo veçori kryesore",
+          "Gjurmoni sa mësimore keni përfunduar",
+          "Rivendosni të gjitha mësimoret nga faqja e Cilësimeve për t&apos;i parë ato përsëri"
+        ]
+      }
+    },
+    "announcements": {
+      "title": "Njoftimet",
+      "description": "Administratorët postojnë njoftime për të mbajtur informuar çdo anëtar të kuzhinës.",
+      "viewing": {
+        "title": "Shikimi i njoftimeve",
+        "description": "Njoftimet shfaqen në faqen e Njoftimeve",
+        "items": [
+          "Ridrejtoheni në faqen e Njoftimeve kur ka diçka të re",
+          "Njoftimet e palexuara theksohen në njoftimet tuaja",
+          "Një njoftim shënohet si i parë kur e lexoni"
+        ]
+      },
+      "manage": {
+        "title": "Menaxhimi i njoftimeve",
+        "description": "Administratorët e instancës mund të krijojnë njoftime; superadministratorët i modifikojnë dhe fshijnë ato",
+        "steps": [
+          {
+            "title": "Hapni faqen e Njoftimeve",
+            "description": "Shkoni te Njoftimet dhe klikoni \"Njoftim i ri\"."
+          },
+          {
+            "title": "Shkruani njoftimin",
+            "description": "Jepni një titull dhe një mesazh, pastaj publikoje."
+          },
+          {
+            "title": "Modifikoni ose çaktivizoni",
+            "description": "Superadministratorët mund të modifikojnë njoftimet dhe t&apos;i bëjnë ato aktive ose joaktive."
+          }
+        ]
+      }
+    },
+    "bestPractices": {
+      "title": "Praktikat më të mira",
+      "items": [
+        "Mbani një emër të qartë të shfaqur në mënyrë që anëtarët e tjerë t&apos;ju njohin",
+        "Ndiqni njoftimet për përditësime të rëndësishme të kuzhinës",
+        "Krijoni tokena API me lejet minimale të kërkuara",
+        "Krijoni kopje rezervë rregullisht të recetave tuaja me eksportet"
+      ]
+    }
+  },
+  "api": {
+    "title": "Udhëzimet API",
+    "subtitle": "Autentikohuni me PantryButler API me tokena ose OAuth2, kërkoni leje të kufizuara dhe integroni klientët tuaj.",
+    "overview": {
+      "title": "Përmbledhje",
+      "description": "API-ja e PantryButler ekspozon burime mbi HTTPS dhe pranon JSON. Çdo kërkesë duhet të autentikohet.",
+      "authentication": {
+        "title": "Autentikimi",
+        "description": "Dy mënyra të mbështetura për autentikim",
+        "options": [
+          {
+            "label": "Tokenat API",
+            "description": "Tokena afatgjatë të krijuar nga një anëtar për qasje programatike"
+          },
+          {
+            "label": "OAuth2",
+            "description": "Rrjedha e kodit të autorizimit me PKCE për aplikacionet interaktive"
+          }
+        ]
+      }
+    },
+    "apiTokens": {
+      "title": "Tokenat API",
+      "description": "Tokenat API janë kredenciale afatgjatë të krijuara nga një anëtar brenda aplikacionit.",
+      "properties": {
+        "title": "Karakteristikat e tokenave",
+        "description": "Si duket çdo token API",
+        "items": [
+          {
+            "label": "Formati",
+            "description": "32 bajt entropie të koduar në base64url, me prefiks pb_"
+          },
+          {
+            "label": "Ruajtja",
+            "description": "Vetëm hash-i SHA-256 i tokenit ruhet në server"
+          },
+          {
+            "label": "Teksti i thjeshtë",
+            "description": "Tokeni i papërpunuar kthehet një herë në krijim"
+          },
+          {
+            "label": "Skadimi",
+            "description": "Tokenat kanë një jetëgjatësi — asnjëherë, 7, 30 ose 90 ditë — të kufizuar në një vit"
+          }
+        ]
+      },
+      "create": {
+        "title": "Krijimi i tokenave",
+        "description": "Tokenat krijohen nga karta \"Tokenat API\" te Cilësimet",
+        "steps": [
+          {
+            "title": "Emërtoni tokenin",
+            "description": "Jepini një emër midis 1 dhe 100 karaktere."
+          },
+          {
+            "title": "Zgjidhni lejet",
+            "description": "Zgjidhni lejet që ju nevojiten ose zgjidhni \"të gjitha\" për qasje të plotë."
+          },
+          {
+            "title": "Vendosni një skadim",
+            "description": "Opsionale — zgjidhni një jetëgjatësi për tokenin."
+          },
+          {
+            "title": "Kopjoni tekstin e thjeshtë",
+            "description": "Tokeni i thjeshtë shfaqet vetëm një herë dhe asnjëherë më pas, ndaj ruajeni me siguri."
+          }
+        ],
+        "alert": "Tokenat API shfaqen vetëm një herë në krijim. Nëse humbni tekstin e thjeshtë, revokoni tokenin dhe krijoni një të ri."
+      },
+      "scopes": {
+        "title": "Lejet",
+        "description": "Lejet kufizojnë se çfarë mund të bëjë një token në instancën tuaj.",
+        "intro": "Lejet grupohen në burime, secila me mbështetje për të lexuar dhe shkruar:",
+        "resources": [
+          "recipes — lexo/shkruaj recetat",
+          "pantry — lexo/shkruaj qilarin",
+          "grocery — lexo/shkruaj listat e blerjeve",
+          "calendar — lexo/shkruaj kalendarin e vakteve",
+          "nutrition — lexo/shkruaj të dhënat ushqyese",
+          "kitchen — lexo/shkruaj pajisjet dhe paraqitjen e kuzhinës",
+          "profile — lexo/shkruaj profilin dhe njoftimet",
+          "settings — lexo/shkruaj cilësimet e kuzhinës"
+        ],
+        "readWrite": "Ju gjithashtu mund të kërkoni një leje të vetme \"all\" për qasje të plotë:",
+        "all": [
+          "all — çdo leje në këtë instancë"
+        ]
+      },
+      "revoke": {
+        "title": "Revokimi i tokenave",
+        "description": "Mund të revokoni qasjen në çdo kohë nga faqja e Cilësimeve.",
+        "items": [
+          "Revokoni një token të vetëm nga lista e tokenave",
+          "Revokoni të gjithë tokenat e instancës me një veprim",
+          "Një token i revokuar ndalon menjëherë së punuari"
+        ]
+      }
+    },
+    "oauth": {
+      "title": "OAuth2 me PKCE",
+      "description": "Klientët e përfshirë — zgjerimet e shfletuesit dhe aplikacionet celulare — identifikohen me rrjedhën e kodit të autorizimit OAuth2 me PKCE.",
+      "flow": {
+        "title": "Faktet e rrjedhës",
+        "description": "Kërkesat e zbatuara nga serveri i autorizimit",
+        "items": [
+          "code_challenge mund të jetë 43–128 karaktere",
+          "code_challenge_method duhet të jetë fjalë për fjalë S256",
+          "Zgjerimet dhe klientët celularë janë të regjistruar paraprakisht në server",
+          "Klientët e zhvillimit aktivizohen përmes konfigurimit të serverit oauthDevClients"
+        ],
+        "alert": "Metoda S256 PKCE është e detyrueshme; asnjë vlerë tjetër e code_challenge_method nuk pranohet."
+      }
+    },
+    "bestPractices": {
+      "title": "Praktikat më të mira",
+      "items": [
+        "Kërkoni lejet minimale që i duhen integrimit tuaj",
+        "Ruani tokenat në mënyrë të sigurt dhe mos i logoni kurrë",
+        "Përdorni skadime më të shkurtra për tokenat në proceset afatgjata",
+        "Preferoni rrjedhën OAuth2 për aplikacionet interaktive që hasin përdoruesit",
+        "Dërgoni tokenat në kokën Authorization si Bearer token"
+      ]
+    }
+  },
+  "admin": {
+    "access": {
+      "title": "Karakteristikat e administratorit",
+      "subtitle": "Mjetet në nivel serveri dhe kuzhine për superadministratorët dhe administratorët e instancës.",
+      "enable": {
+        "title": "Aktivizimi i veçorive të administratorit",
+        "description": "Veçoritë e administratorit në nivel serveri mbrohen nga një flamur konfigurimi.",
+        "env": {
+          "title": "ENABLE_ADMIN_FEATURES",
+          "description": "Vendosur nga administratori i serverit",
+          "content": "Vendosni ENABLE_ADMIN_FEATURES=true në mjedisin e serverit për të ekspozuar faqet dhe API-në e administratorit.",
+          "alert": "Kur është i fikur, pikat fundore të administratorit kthejnë një gabim qasjeje të mohuar dhe artikujt e navigimit të administratorit fshihen."
+        }
+      }
+    },
+    "emailVerification": {
+      "title": "Verifikimi i Email-it dhe SMTP",
+      "description": "Me veçoritë e administratorit të aktivizuara, krijuesit e rinj verifikojnë adresën e tyre të email-it përpara se të mund të hyjnë.",
+      "behavior": {
+        "title": "Si funksionon",
+        "description": "Kërkesa menaxhohet nga superadmini nga Admin → Configuration.",
+        "items": [
+          "Ndërsa veçoritë e administratorit janë të çaktivizuara, regjistrimi funksionon si më parë pa asnjë hap verifikimi",
+          "Me veçoritë e administratorit të aktivizuara, verifikimi kërkohet si parazgjedhje (i ndryshueshëm përmes ndryshores REQUIRE_EMAIL_VERIFICATION)",
+          "Kuzhina krijohet vetëm pasi email-i të jetë konfirmuar",
+          "Lidhjet e verifikimit skadojnë pas 24 orësh dhe mund të ridërgohen"
+        ]
+      },
+      "smtp": {
+        "title": "Konfigurimi SMTP",
+        "description": "Detajet SMTP caktohen nga superadmini nga Admin → Configuration, duke u mbështetur te ndryshoret e mjedisit.",
+        "env": "SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, SMTP_FROM dhe SMTP_SECURE kontrollojnë serverin e mail-it.",
+        "alert": "Pa një host SMTP, email-et e verifikimit regjistrohen në konsolën e serverit në vend që të dërgohen — konfiguro një përpara se të ftoni përdorues të vërtetë."
+      }
+    },
+    "roles": {
+      "title": "Rolet e përdoruesve",
+      "description": "Përdoruesit kanë ose një rol në nivel serveri ose një rol në nivel kuzhine.",
+      "superadmin": {
+        "title": "Superadministratori",
+        "description": "Llogaria e parë e krijuar gjatë konfigurimit bëhet superadministrator dhe mund të menaxhojë çdo instancë.",
+        "permissions": [
+          "Shikoni dhe fshini çdo instancë",
+          "Krijoni, modifikoni dhe fshini njoftime për çdo kuzhinë",
+          "Menaxhoni bazën e të dhënave ushqyese",
+          "Qasuni faqeve të administratorit (kur aktivizohen veçoritë e administratorit)"
+        ]
+      },
+      "instanceAdmin": {
+        "title": "Administratori i instancës",
+        "description": "Administrator i një kuzhine të vetme.",
+        "permissions": [
+          "Shtoni, modifikoni dhe fshini anëtarët e kuzhinës",
+          "Ndryshoni cilësimet e kuzhinës",
+          "Krijoni njoftime për kuzhinën",
+          "Menaxhoni të gjitha recetat dhe të dhënat e kuzhinës"
+        ]
+      },
+      "member": {
+        "title": "Anëtari",
+        "description": "Një përdorues i rregullt i një kuzhine.",
+        "permissions": [
+          "Krijoni dhe menaxhoni recetat e veta",
+          "Shikoni artikujt e kuzhinës të përbashkëta",
+          "Planifikoni vakte dhe krijoni lista blerjesh",
+          "Menaxhoni të dhënat personale të qilarit"
+        ]
+      }
+    },
+    "instances": {
+      "title": "Menaxhimi i instancave",
+      "description": "Superadministratorët mund të inspektojnë çdo instancë kuzhine dhe të fshijnë instancat e braktisura.",
+      "view": {
+        "title": "Shfletimi i instancave",
+        "description": "Faqja e instancave të administratorit liston çdo kuzhinë me krijuesin dhe aktivitetin e saj",
+        "info": [
+          "Emri i instancës",
+          "Krijuesi dhe data e krijimit",
+          "Data e fundit e identifikimit"
+        ]
+      },
+      "delete": {
+        "title": "Fshirja e një instance",
+        "description": "Fshirja e një kuzhine heq përgjithmonë të gjitha të dhënat e saj",
+        "intro": "Të dhënat e mëposhtme fshihen së bashku me instancën:",
+        "data": [
+          "Recetat dhe përbërësit",
+          "Artikujt dhe pajisjet e qilarit",
+          "Vaktet e kalendarit dhe listat e blerjeve",
+          "Cilësimet dhe të dhënat e personalizuara",
+          "Të gjitha anëtarësimet e përdoruesve"
+        ],
+        "alert": "Fshirja e një instance nuk mund të zhbëhet. Eksportoni çfarë të doni nga secila të mbash."
+      }
+    },
+    "announcements": {
+      "title": "Menaxhimi i njoftimeve",
+      "description": "Njoftimet i mbajnë të gjithë anëtarët e kuzhinës të informuar për përditësimet.",
+      "manage": {
+        "title": "Menaxhimi i njoftimeve",
+        "description": "Në dispozicion për administratorët e instancës dhe superadministratorët",
+        "features": [
+          "Krijoni njoftime me titull dhe mesazh",
+          "Modifikoni një njoftim pas publikimit",
+          "Bëni një njoftim aktiv ose joaktiv për ta shfaqur ose fshehur",
+          "Fshini njoftimet përgjithmonë"
+        ],
+        "alert": "Vetëm superadministratorët mund të modifikojnë, çaktivizojnë ose fshijnë njoftimet; administratorët e instancës i krijojnë ato."
+      }
+    },
+    "bestPractices": {
+      "title": "Praktikat më të mira",
+      "items": [
+        "Konfiguroni të paktën dy llogari superadministratorësh për të shmangur një pikë të vetme dështimi",
+        "Aktivizoni veçoritë e administratorit vetëm kur nevojiten",
+        "Rishikoni aktivitetin e instancave dhe pastroni kuzhinat e braktisura",
+        "Postoni njoftime për ndryshime të rëndësishme në nivel kuzhine"
+      ]
+    }
+  }
+}

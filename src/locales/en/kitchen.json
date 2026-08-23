@@ -1,0 +1,159 @@
+{
+  "title": "Kitchen Layout Editor",
+  "backToPantry": "Back to Pantry",
+  "kitchenLayout": "Kitchen Layout",
+  "newLayout": "New Layout",
+  "createFirstLayout": "Create your first layout",
+  "createFirstLayoutDescription": "Create a 2D kitchen layout, add cabinets, appliances, and other elements, then drag and drop ingredients and equipment to their locations for easy management.",
+  "createLayout": "Create Layout",
+  "editLayout": "Edit Layout",
+  "deleteLayout": "Delete Layout",
+  "selectLayout": "Select Layout",
+  "layoutName": "Layout Name",
+  "layoutDescription": "Description",
+  "deleteConfirmTitle": "Confirm Delete",
+  "deleteConfirmMessage": "Are you sure you want to delete layout \"{{name}}\"? This will delete all related elements and item placements and cannot be undone.",
+  "createSuccess": "Created successfully",
+  "updateSuccess": "Updated successfully",
+  "deleteSuccess": "Deleted successfully",
+  "createError": "Failed to create: {{message}}",
+  "updateError": "Failed to update: {{message}}",
+  "deleteError": "Failed to delete: {{message}}",
+  "loadError": "Failed to load data: {{message}}",
+  "loading": "Loading...",
+  "kitchenElements": "Kitchen Elements",
+  "itemInventory": "Item Inventory",
+  "ingredients": "Ingredients",
+  "equipment": "Equipment",
+  "searchIngredients": "Search ingredients...",
+  "searchEquipment": "Search equipment...",
+  "noIngredients": "No ingredients",
+  "noEquipment": "No equipment",
+  "noMatchingIngredients": "No matching ingredients found",
+  "noMatchingEquipment": "No matching equipment found",
+  "elementAdded": "Element added",
+  "elementAddError": "Failed to add element: {{message}}",
+  "itemPlaced": "{{name}} placed",
+  "itemPlaceError": "Failed to place: {{message}}",
+  "itemAlreadyPlaced": "This item is already in this location",
+  "itemRemoved": "Item removed",
+  "itemRemoveError": "Failed to remove: {{message}}",
+  "elementDeleted": "Element deleted",
+  "elementDeleteError": "Failed to delete: {{message}}",
+  "updatePositionError": "Failed to update position: {{message}}",
+  "editElementName": "Edit Element Name",
+  "customName": "Custom Name",
+  "customNamePlaceholder": "e.g., Main Kitchen Upper Cabinet, Island Lower Cabinet",
+  "cancel": "Cancel",
+  "save": "Save",
+  "delete": "Delete",
+  "edit": "Edit",
+  "deleteElement": "Delete Element",
+  "emptyCanvasMessage": "Drag elements from the left panel onto the canvas to start designing your kitchen layout",
+  "elements": {
+    "upper_cabinet": "Upper Cabinet",
+    "lower_cabinet": "Lower Cabinet",
+    "countertop": "Countertop",
+    "sink": "Sink",
+    "stove": "Stove",
+    "refrigerator": "Refrigerator",
+    "freezer": "Freezer",
+    "pantry": "Pantry Cabinet",
+    "table": "Table",
+    "door": "Door",
+    "window": "Window",
+    "other": "Other"
+  },
+  "kitchenPantry": "Kitchen Pantry",
+  "kitchenPantryPage": {
+    "setupDialogTitle": "Set Up Your Kitchen Layout",
+    "setupDialogDescription": "Before you can organize your pantry items, you need to create a kitchen layout. Design your kitchen by adding cabinets, appliances, and storage elements."
+  },
+  "kitchenLayoutEditor": {
+    "createYourLayout": "Create Your Kitchen Layout",
+    "designDescription": "Design a 2D layout of your kitchen by adding cabinets, appliances, and storage elements. Once created, you can use it to organize your ingredients and equipment.",
+    "createFirstLayoutButton": "Create First Layout"
+  },
+  "kitchenTutorial": {
+    "layoutEditorSteps": [
+      {
+        "title": "Welcome to Kitchen Layout Editor",
+        "content": "Create a visual representation of your kitchen to organize your ingredients and equipment efficiently."
+      },
+      {
+        "title": "Adding Elements",
+        "content": "Drag elements from the left panel onto the canvas. Elements include cabinets, appliances, and storage units."
+      },
+      {
+        "title": "Moving Elements",
+        "content": "Click and drag elements to reposition them. Elements will snap to a grid and to other elements for easy alignment."
+      },
+      {
+        "title": "Resizing Elements",
+        "content": "Select an element to see resize handles. Drag the handles to adjust the size. Elements are constrained to the canvas boundaries."
+      },
+      {
+        "title": "Customizing Elements",
+        "content": "Right-click on any element to rename it, change its color, or manage shelves. Shelves help organize items within an element."
+      },
+      {
+        "title": "Managing Shelves",
+        "content": "Add shelves to elements to create sections. Each shelf can store different items, making it easier to find what you need."
+      },
+      {
+        "title": "Ready to Start!",
+        "content": "Once your layout is complete, go to the Kitchen Pantry page to start organizing your ingredients and equipment."
+      }
+    ],
+    "pantrySteps": [
+      {
+        "title": "Welcome to Kitchen Pantry",
+        "content": "Use your kitchen layout to organize and track where your ingredients and equipment are stored."
+      },
+      {
+        "title": "Placing Items",
+        "content": "Drag ingredients or equipment from the right panel onto elements in your kitchen layout. Items will be stored in that location."
+      },
+      {
+        "title": "Viewing Items",
+        "content": "Click on any element to see all items stored in it. Items are organized by shelves if you've configured them."
+      },
+      {
+        "title": "Editing Layout",
+        "content": "Need to change your layout? Click the \"Edit Layout\" button to go back to the editor and make adjustments."
+      },
+      {
+        "title": "Start Organizing!",
+        "content": "You're ready to organize your kitchen! Drag items to their storage locations and keep track of everything."
+      }
+    ],
+    "stepOf": "Step {{current}} of {{total}}",
+    "getStarted": "Get Started",
+    "skipTutorial": "Skip Tutorial"
+  },
+  "modelSelector": {
+    "layoutNamePlaceholder": "Layout name",
+    "layoutDescriptionPlaceholder": "Layout description"
+  },
+  "kitchenCanvas": {
+    "updateSizeError": "Failed to update size: {{message}}",
+    "elementUpdated": "Element updated",
+    "elementUpdateError": "Failed to update element: {{message}}",
+    "shelvesUpdated": "Shelves updated",
+    "shelvesUpdateError": "Failed to update shelves: {{message}}",
+    "deleteTooltip": "Delete (Del)",
+    "renameAndColor": "Rename & Color",
+    "manageShelves": "Manage Shelves",
+    "editElementTitle": "Edit Element",
+    "customNamePlaceholder": "Enter custom name",
+    "customColor": "Custom Color",
+    "shelfName": "Shelf Name",
+    "shelfNamePlaceholder": "Shelf name",
+    "heightPercent": "Height %",
+    "addShelf": "Add Shelf",
+    "noItemsOnShelf": "No items on this shelf",
+    "noItemsInElement": "No items in this element",
+    "itemCount": "{{count}} item",
+    "itemCount_plural": "{{count}} items"
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "announcements": {
+    "toasts": {
+      "accessDenied": "Acceso denegado: solo superadmin",
+      "verifyFailed": "Error al verificar el acceso",
+      "loadFailed": "Error al cargar los anuncios: {{error}}",
+      "titleAndMessageRequired": "Se requieren título y mensaje",
+      "updated": "Anuncio actualizado correctamente",
+      "created": "Anuncio creado correctamente",
+      "saveFailed": "Error al guardar el anuncio: {{error}}",
+      "deleted": "Anuncio eliminado correctamente",
+      "deleteFailed": "Error al eliminar el anuncio: {{error}}"
+    },
+    "headings": {
+      "management": "Gestión de Anuncios",
+      "edit": "Editar Anuncio",
+      "create": "Crear Nuevo Anuncio"
+    },
+    "text": {
+      "description": "Gestiona los anuncios de PantryButler News que se muestran a los usuarios",
+      "empty": "Aún no hay anuncios. Crea uno para comenzar.",
+      "editHint": "Actualiza los detalles del anuncio a continuación.",
+      "createHint": "Crea un nuevo anuncio para mostrarlo a todos los usuarios."
+    },
+    "buttons": {
+      "new": "Nuevo Anuncio"
+    },
+    "badges": {
+      "active": "Activo",
+      "inactive": "Inactivo"
+    },
+    "labels": {
+      "title": "Título",
+      "message": "Mensaje",
+      "active": "Activo (visible para los usuarios)"
+    },
+    "placeholders": {
+      "title": "¡Bienvenido a PantryButler!",
+      "message": "Escribe el mensaje de tu anuncio..."
+    },
+    "dialogs": {
+      "deleteTitle": "Eliminar Anuncio",
+      "deleteDescription": "¿Seguro que deseas eliminar \"{{title}}\"? Esta acción no se puede deshacer."
+    }
+  },
+  "instances": {
+    "toasts": {
+      "unauthorized": "Acceso no autorizado",
+      "loadFailed": "Error al cargar las instancias: {{error}}",
+      "deleted": "Instancia \"{{name}}\" eliminada correctamente",
+      "deleteFailed": "Error al eliminar la instancia: {{error}}"
+    },
+    "headings": {
+      "management": "Gestión de Instancias",
+      "all": "Todas las Instancias",
+      "aboutDeletion": "Acerca de la Eliminación de Instancias",
+      "deleteConfirm": "¿Eliminar Instancia?"
+    },
+    "text": {
+      "description": "Panel de administración para gestionar instancias y datos",
+      "loading": "Cargando instancias...",
+      "empty": "No se encontraron instancias",
+      "deletionWarning": "Eliminar una instancia eliminará permanentemente todos los datos asociados, incluyendo: recetas, ingredientes, artículos de despensa, equipo, comidas del calendario, listas de compras, conversiones de unidades, ubicaciones personalizadas, configuraciones y membresías de usuarios. Esta acción no se puede deshacer."
+    },
+    "table": {
+      "instanceName": "Nombre de la Instancia",
+      "creator": "Creador",
+      "created": "Creada",
+      "lastLogin": "Último Acceso",
+      "actions": "Acciones"
+    },
+    "buttons": {
+      "deleting": "Eliminando...",
+      "deleteInstance": "Eliminar Instancia"
+    },
+    "deleteDialog": {
+      "confirmText": "¿Seguro que deseas eliminar la instancia \"{{name}}\"?",
+      "permanently": "Esto eliminará permanentemente:",
+      "items": {
+        "recipes": "Todas las recetas e ingredientes",
+        "pantry": "Todos los artículos de despensa y equipo",
+        "calendar": "Todas las comidas del calendario y listas de compras",
+        "settings": "Toda la configuración y datos personalizados",
+        "memberships": "Todas las membresías de usuarios de esta instancia"
+      },
+      "cannotUndo": "Esta acción no se puede deshacer."
+    },
+    "formatDate": {
+      "never": "Nunca",
+      "invalidDate": "Fecha inválida"
+    }
+  },
+  "userManagement": {
+    "toasts": {
+      "noInstance": "No se encontró ninguna instancia",
+      "loadFailed": "Error al cargar los usuarios: {{error}}",
+      "usernamePasswordRequired": "Se requieren nombre de usuario y contraseña",
+      "created": "Usuario creado",
+      "createFailed": "Error al crear el usuario: {{error}}",
+      "cannotDemoteLastAdmin": "No se puede degradar al último administrador",
+      "roleUpdated": "Rol actualizado correctamente",
+      "roleUpdateFailed": "Error al actualizar el rol: {{error}}",
+      "permissionsUpdated": "Permisos actualizados",
+      "permissionsUpdateFailed": "Error al actualizar los permisos: {{error}}",
+      "cannotDeleteOwn": "No puedes eliminar tu propia cuenta",
+      "deleted": "Usuario eliminado",
+      "deleteFailed": "Error al eliminar el usuario: {{error}}"
+    },
+    "headings": {
+      "management": "Gestión de Usuarios",
+      "users": "Usuarios",
+      "addUser": "Añadir Usuario",
+      "editPermissions": "Editar Permisos del Usuario",
+      "deleteUser": "Eliminar Usuario"
+    },
+    "text": {
+      "description": "Gestiona las cuentas y roles de usuario",
+      "calendarPermissionHint": "Los usuarios sin permiso de calendario pueden ver pero no modificar las comidas del calendario",
+      "deleteDescription": "¿Seguro que deseas eliminar a este usuario? Sus recetas se reasignarán a una cuenta del sistema."
+    },
+    "labels": {
+      "username": "Nombre de usuario",
+      "password": "Contraseña",
+      "role": "Rol",
+      "canEditCalendar": "Puede editar el calendario"
+    },
+    "buttons": {
+      "addUser": "Añadir Usuario",
+      "saveChanges": "Guardar Cambios"
+    },
+    "roles": {
+      "user": "Usuario",
+      "admin": "Administrador"
+    },
+    "placeholders": {
+      "search": "Buscar usuarios..."
+    }
+  },
+  "dataImport": {
+    "toasts": {
+      "accessDenied": "Acceso denegado: solo superadmin",
+      "verifyFailed": "Error al verificar el acceso",
+      "parseFailed": "Error al analizar {{file}}: JSON inválido",
+      "importProgress": "Importados {{current}} de {{total}}...",
+      "imported": "Importados {{total}} alimentos nutricionales de {{fileName}}",
+      "importFailed": "Error de importación: {{error}}",
+      "loadFailed": "Error al cargar {{file}}: {{error}}"
+    },
+    "headings": {
+      "dataImport": "Importación de Datos",
+      "nutritionStatus": "Estado de la Base de Datos Nutricional",
+      "serverFiles": "Disponibles en el Servidor",
+      "uploadFromComputer": "Subir desde el Ordenador",
+      "uploadedFiles": "Archivos Subidos Listos para Importar",
+      "importResults": "Resultados de la Importación"
+    },
+    "text": {
+      "description": "Importa datos nutricionales desde archivos JSON",
+      "recordsImported": "registros importados",
+      "noDataImported": "Aún no se han importado datos",
+      "serverFilesDescription": "Archivos JSON encontrados en el directorio de configuración del contenedor",
+      "dropNutritionFileBefore": "Suelta un",
+      "dropNutritionFileAfter": "para importarlo desde tu máquina local",
+      "dropFilesHere": "Suelta los archivos aquí...",
+      "dragDrop": "Arrastra y suelta archivos JSON aquí",
+      "orClickToBrowse": "o haz clic para explorar",
+      "records": "registros"
+    },
+    "buttons": {
+      "importing": "Importando...",
+      "import": "Importar",
+      "remove": "Eliminar",
+      "importToDatabase": "Importar a la Base de Datos"
+    },
+    "table": {
+      "file": "Archivo",
+      "imported": "Importados",
+      "status": "Estado"
+    },
+    "status": {
+      "success": "Éxito"
+    },
+    "alert": {
+      "title": "Nota",
+      "description": "Los datos nutricionales se insertan o actualizan (los registros existentes con ID coincidentes se actualizan). Esto requiere privilegios de superadmin."
+    }
+  },
+  "setup": {
+    "steps": {
+      "testConnection": {
+        "title": "Probar Conexión a la Base de Datos",
+        "description": "Verifica que la base de datos esté conectada y en funcionamiento"
+      },
+      "seedNutrition": {
+        "title": "Sembrar Datos Nutricionales",
+        "description": "Importa alimentos nutricionales de la base de datos del USDA"
+      },
+      "createAdmin": {
+        "title": "Crear Usuario Administrador",
+        "description": "Crear la cuenta de administrador inicial"
+      },
+      "validate": {
+        "title": "Validar Configuración",
+        "description": "Verifica que todos los componentes estén configurados correctamente"
+      }
+    },
+    "errors": {
+      "adminEmailRequired": "El correo del administrador es obligatorio",
+      "adminPasswordRequired": "La contraseña del administrador es obligatoria",
+      "passwordsMismatch": "Las contraseñas no coinciden",
+      "passwordMinLength": "La contraseña debe tener al menos 8 caracteres",
+      "dbTestFailed": "Error en la prueba de conexión a la base de datos",
+      "unknown": "Error desconocido"
+    },
+    "status": {
+      "dbConnected": "Base de datos conectada",
+      "seeded": "Sembrados {{count}} alimentos nutricionales",
+      "superadminCreated": "Superadmin creado: {{email}}",
+      "validation": "Nutrición: {{foods}} alimentos, Usuarios: {{users}}, Instancias: {{instances}}"
+    },
+    "complete": {
+      "title": "¡Configuración Completada!",
+      "description": "PantryButler se ha configurado correctamente y está listo para usar.",
+      "importantLabel": "Importante:",
+      "securityWarning": "Por seguridad, desactiva o elimina la página de configuración después de la configuración inicial.",
+      "adminCredentials": "Credenciales de Administrador",
+      "emailLabel": "Correo:",
+      "passwordLabel": "Contraseña:",
+      "nextSteps": "Próximos Pasos",
+      "nextStepsItems": [
+        "Inicia sesión con tus credenciales de administrador",
+        "Crea tu primera instancia",
+        "Desactiva o elimina la página de configuración"
+      ],
+      "goToLogin": "Ir al Inicio de Sesión"
+    },
+    "headings": {
+      "title": "Configuración de PantryButler",
+      "adminAccount": "Cuenta de Administrador"
+    },
+    "text": {
+      "description": "Configura tu implementación de PantryButler. Este asistente configurará la base de datos, sembrará los datos iniciales y creará tu cuenta de administrador."
+    },
+    "labels": {
+      "adminEmail": "Correo del Administrador",
+      "adminPassword": "Contraseña del Administrador",
+      "confirmPassword": "Confirmar Contraseña",
+      "minCharacters": "Mínimo 8 caracteres"
+    },
+    "buttons": {
+      "startSetup": "Iniciar Configuración"
+    },
+    "placeholders": {
+      "adminEmail": "admin@example.com"
+    },
+    "progress": {
+      "label": "Progreso de la Configuración"
+    }
+  },
+  "config": {
+    "toasts": {
+      "accessDenied": "Acceso denegado: solo superadmin",
+      "verifyFailed": "Error al verificar el acceso",
+      "loadFailed": "Error al cargar la configuración: {{error}}",
+      "saved": "Configuración guardada correctamente",
+      "saveFailed": "Error al guardar la configuración: {{error}}",
+      "resetDone": "Ajustes de SMTP restablecidos a los valores predeterminados del entorno",
+      "resetFailed": "Error al restablecer los ajustes de SMTP: {{error}}"
+    },
+    "headings": {
+      "management": "Configuración de Autenticación y Correo",
+      "emailVerification": "Verificación de Correo Electrónico",
+      "smtp": "SMTP / Correo Saliente"
+    },
+    "text": {
+      "description": "Configura la verificación de correo para los creadores de instancias y el servidor de correo saliente.",
+      "emailVerificationDesc": "Cuando está habilitada, los nuevos creadores de instancias deben confirmar su dirección de correo antes de que se cree su cocina. Cuando está deshabilitada, las instancias se crean inmediatamente en el registro.",
+      "smtpDesc": "SMTP se utiliza para enviar correos de verificación. Los campos vacíos recurren a la configuración del entorno.",
+      "smtpEnvFallback": "Los campos vacíos recurren a la configuración del entorno del servidor (SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, SMTP_FROM, SMTP_SECURE). Cuando no hay un host SMTP configurado, los correos de verificación se registran en la consola del servidor en lugar de enviarse."
+    },
+    "labels": {
+      "requireEmailVerification": "Requerir verificación de correo para nuevos creadores de instancias",
+      "smtpHost": "Host SMTP",
+      "smtpPort": "Puerto SMTP",
+      "smtpUsername": "Usuario SMTP",
+      "smtpPassword": "Contraseña SMTP",
+      "smtpFrom": "Dirección del Remitente",
+      "smtpSecure": "Usar TLS implícito (SMTPS)"
+    },
+    "placeholders": {
+      "password": "Contraseña SMTP",
+      "passwordSaved": "Contraseña guardada (déjala en blanco para conservarla)"
+    },
+    "buttons": {
+      "save": "Guardar Configuración",
+      "resetSmtp": "Restablecer SMTP a los valores predeterminados"
+    },
+    "dialogs": {
+      "resetSmtpTitle": "¿Restablecer los ajustes de SMTP?",
+      "resetSmtpDescription": "Esto borra todos los cambios de SMTP almacenados en la base de datos. El servidor recurrirá a la configuración de su entorno para el correo saliente."
+    }
+  }
+}

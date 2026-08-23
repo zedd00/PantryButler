@@ -1,0 +1,198 @@
+{
+  "attribution": {
+    "metaTitle": "Atribucioni dhe Licencat",
+    "metaDescription": "PantryButler përdor projekte me burim të hapur dhe të dhëna të hapura. Mësoni për burimet tona të të dhënave dhe licencat e tyre.",
+    "title": "Atribucioni dhe Licencat",
+    "intro": "PantryButler është ndërtuar mbi supet e gjigantëve. Ne përdorim disa projekte me burim të hapur dhe burime të hapura të dhënash për t'ju ofruar përvojën më të mirë të menaxhimit të recetave.",
+    "footer": {
+      "home": "Kryefaqja",
+      "privacy": "Politika e Privatësisë"
+    },
+    "projects": {
+      "cooklang": {
+        "ariaLabel": "Vizito faqen e internetit të Cooklang",
+        "tagline": "Gjuhë Shënjimi për Recetat",
+        "description": "Cooklang është një gjuhë shënjimi për recetat e gatimit. Ai siguron një format të thjeshtë dhe të lexueshëm për shkrimin e recetave që mund të analizohen dhe shfaqen lehtësisht në formate të ndryshme. PantryButler përdor sintaksë të frymëzuar nga Cooklang për analizimin e përbërësve dhe formatimin e recetave.",
+        "websiteLabel": "Faqja e internetit:"
+      },
+      "gridRecipe": {
+        "ariaLabel": "Vizito depon GitHub të Grid Recipe",
+        "tagline": "Vizualizimi i Recetave në Rrjet",
+        "description": "Grid Recipe paraqet recetat si një rrjet hapash, me shigjeta që tregojnë rrjedhën e përbërësve nëpër çdo hap. Funksioni i recetave në rrjet i PantryButler frymëzohet nga ky projekt me burim të hapur.",
+        "sourceLabel": "Burimi:"
+      },
+      "openFoodFacts": {
+        "ariaLabel": "Vizito faqen e internetit të Open Food Facts",
+        "tagline": "Bazë e Hapur të Dhënash Ushqimore",
+        "description": "Open Food Facts është një bazë e dhënash falas, e hapur dhe bashkëpunuese e produkteve ushqimore nga e gjithë bota. Përmban informacione për përbërësit, faktet ushqyese, etiketat dhe më shumë. PantryButler mund të përdorë të dhënat e Open Food Facts për informacionin e përbërësve dhe të dhënat ushqyese.",
+        "websiteLabel": "Faqja e internetit:",
+        "licenseLabel": "Licenca: Open Database License (ODbL)",
+        "attributionLabel": "Atribucioni: © Kontribuesit e Open Food Facts"
+      },
+      "openNutrition": {
+        "ariaLabel": "Vizito faqen e internetit të OpenNutrition",
+        "tagline": "Bazë e Plotë të Dhënash Ushqyese",
+        "description": "OpenNutrition siguron një bazë të dhënash të hapur dhe gjithëpërfshirëse të informacionit ushqimor dhe ushqyes. Seti i të dhënave përfshin informacion të detajuar ushqyes për mijëra ushqime, duke përfshirë makronutrientët, mikronutrientët, vitaminat dhe mineralet. PantryButler përdor të dhënat e OpenNutrition për të shfaqur informacionin ushqyes të recetave kur ky funksion është i aktivizuar.",
+        "websiteLabel": "Faqja e internetit:",
+        "licenseLabel": "Licenca: Open Database License (ODbL) + Modified Database Contents License (DbCL)",
+        "attributionLabel": "Atribucioni: Të dhënat sigurohen nga OpenNutrition. Pjesë të këtyre të dhënave përfshijnë informacion nga Open Food Facts.",
+        "requirementsLabel": "Kërkesat: Atribucioni duhet të sigurohet në çdo ndërfaqe ku shfaqen të dhënat ushqyese, në listimet e dyqaneve të aplikacioneve, në faqen e internetit dhe në seksionet ligjore/informative."
+      }
+    },
+    "licenseCompliance": {
+      "title": "Përputhshmëria me Licencat",
+      "description": "PantryButler është i përkushtuar të respektojë të gjitha licencat e të dhënave të hapura. Ne sigurojmë atribuimin e duhur për të gjitha burimet e të dhënave dhe respektojmë kushtet e licencave të tyre përkatëse.",
+      "contactNote": "Nëse keni pyetje për përdorimin tonë të këtyre burimeve të të dhënave ose besoni se nuk jemi në përputhje me kushtet e ndonjë licence, ju lutemi na kontaktoni."
+    }
+  },
+  "privacyPolicy": {
+    "title": "Politika e Privatësisë",
+    "lastUpdated": "Përditësuar më: 16 prill 2026",
+    "introduction": {
+      "title": "Hyrje",
+      "text": "Mirë se vini në PantryButler. Ne respektojmë privatësinë tuaj dhe jemi të përkushtuar të mbrojmë të dhënat tuaja personale. Kjo politikë privatësie shpjegon se si i mbledhim, përdorim dhe mbrojmë informacionet tuaja kur përdorni aplikacionin tonë."
+    },
+    "sections": {
+      "collectInfo": {
+        "title": "Informacioni që Mbledhim",
+        "accountInfo": {
+          "title": "Informacioni i Llogarisë",
+          "intro": "Kur krijoni një llogari, ne mbledhim:",
+          "items": [
+            "Adresën e e-mailit",
+            "Emrin e përdoruesit",
+            "Emrin e plotë (opsionale)",
+            "Foton e profilit (opsionale)"
+          ]
+        },
+        "appData": {
+          "title": "Të Dhënat e Aplikacionit",
+          "intro": "Kur përdorni PantryButler, ne ruajmë:",
+          "items": [
+            "Recetat që krijoni ose ruani",
+            "Artikujt e inventarit të depove ushqimore",
+            "Regjistrat e pajisjeve të kuzhinës",
+            "Planet e vakteve dhe hyrjet e kalendarit",
+            "Listat e blerjeve",
+            "Dizajnet e paraqitjes së kuzhinës",
+            "Komentet dhe pëlqimet në recetat publike"
+          ]
+        },
+        "usageInfo": {
+          "title": "Informacioni i Përdorimit",
+          "intro": "Ne mbledhim automatikisht:",
+          "items": [
+            "Informacionin e pajisjes (lloji i shfletuesit, sistemi operativ)",
+            "Të dhënat e regjistrit (kohët e hyrjes, faqet e shikuara)",
+            "Preferencat e gjuhës"
+          ]
+        }
+      },
+      "howWeUse": {
+        "title": "Si i Përdorim Informacionet Tuaja",
+        "intro": "Ne i përdorim informacionet tuaja për të:",
+        "items": [
+          "Siguruar dhe mirëmbajtur shërbimin PantryButler",
+          "Autentikuar llogarinë tuaj dhe garantuar sigurinë",
+          "Ruajtur dhe sinkronizuar recetat, artikujt e depove dhe planet e vakteve tuaja",
+          "Aktivizuar veçoritë sociale si ndarja e recetave dhe komentet",
+          "Përmirësuar dhe optimizuar aplikacionin tonë",
+          "Dërguar njoftime të rëndësishme shërbimi",
+          "U përgjigjur kërkesave tuaja për mbështetje"
+        ]
+      },
+      "storageSecurity": {
+        "title": "Ruajtja dhe Siguria e të Dhënave",
+        "intro": "Të dhënat tuaja ruhen në mënyrë të sigurt përmes transmetimit të enkriptuar dhe praktikave të sigurisë sipas standardeve të industrisë. Ne zbatojmë masa sigurie, duke përfshirë:",
+        "items": [
+          "Transmetimin e të dhënave të kriptuara (HTTPS/TLS)",
+          "Autentikimin e sigurt me hash të fjalëkalimeve",
+          "Kontrolli i aksesit sipas instancës që kufizon dukshmërinë e të dhënave për anëtarët e autorizuar",
+          "Përditësimet e rregullta të sigurisë dhe monitorimin"
+        ],
+        "note": "Edhe pse përpiqemi të mbrojmë të dhënat tuaja, asnjë metodë transmetimi në internet nuk është 100% e sigurt. Ne nuk mund të garantojmë siguri absolute."
+      },
+      "sharing": {
+        "title": "Ndarja dhe Zbulimi i të Dhënave",
+        "intro": "Ne nuk shesim informacionet tuaja personale. Mund t'i ndajmë të dhënat tuaja vetëm në këto rrethana:",
+        "items": {
+          "publicRecipes": {
+            "strong": "Recetat Publike:",
+            "text": " Kur zgjidhni të bëni një recetë publike, ajo bëhet e dukshme për të gjithë përdoruesit"
+          },
+          "serviceProviders": {
+            "strong": "Ofruesit e Shërbimeve:",
+            "text": " Me ofruesit tanë të infrastrukturës për hostim dhe ruajtje të të dhënave"
+          },
+          "legalRequirements": {
+            "strong": "Kërkesat Ligjore:",
+            "text": " Nëse kërkohet nga ligji ose për të mbrojtur të drejtat tona"
+          }
+        }
+      },
+      "rights": {
+        "title": "Të Drejtat Tuaja (Pajtueshmëria me GDPR)",
+        "intro": "Sipas Rregullores së Përgjithshme për Mbrojtjen e të Dhënave (GDPR), ju keni këto të drejta:",
+        "items": {
+          "access": {
+            "strong": "E Drejta e Qasjes:",
+            "text": " Kërkoni një kopje të të dhënave tuaja personale"
+          },
+          "rectification": {
+            "strong": "E Drejta e Korrigjimit:",
+            "text": " Korrigjoni të dhëna të pasakta ose të paplota"
+          },
+          "erasure": {
+            "strong": "E Drejta e Fshirjes:",
+            "text": " Kërkoni fshirjen e të dhënave tuaja personale"
+          },
+          "restrictProcessing": {
+            "strong": "E Drejta për Kufizimin e Përpunimit:",
+            "text": " Kufizoni mënyrën se si i përdorim të dhënat tuaja"
+          },
+          "dataPortability": {
+            "strong": "E Drejta e Portabilitetit të të Dhënave:",
+            "text": " Merrni të dhënat tuaja në një format të strukturuar"
+          },
+          "object": {
+            "strong": "E Drejta e Kundërshtimit:",
+            "text": " Kundërshtoni disa lloje të përpunimit të të dhënave"
+          },
+          "withdrawConsent": {
+            "strong": "E Drejta e Tërheqjes së Pëlqimit:",
+            "text": " Tërhiqni pëlqimin në çdo kohë"
+          }
+        },
+        "note": "Për të ushtruar ndonjë nga këto të drejta, ju lutemi na kontaktoni përmes faqes së cilësimeve ose na dërgoni e-mail direkt."
+      },
+      "cookies": {
+        "title": "Cookies dhe Gjurmimi",
+        "text": "Ne përdorim cookies thelbësore dhe ruajtje lokale për të mbajtur sesionin tuaj dhe për të kujtuar preferencat tuaja (si cilësimet e gjuhës dhe temës). Ne nuk përdorim cookies gjurmimi të palëve të treta ose cookies reklamimi."
+      },
+      "children": {
+        "title": "Privatësia e Fëmijëve",
+        "text": "PantryButler nuk është i destinuar për fëmijë nën 13 vjeç. Ne nuk mbledhim me vetëdije informacione personale nga fëmijët. Nëse besoni se kemi mbledhur informacione nga një fëmijë, ju lutemi na kontaktoni menjëherë."
+      },
+      "retention": {
+        "title": "Mbajtja e të Dhënave",
+        "text": "Ne i mbajmë të dhënat tuaja personale për sa kohë që llogaria juaj është aktive ose sa është e nevojshme për të ofruar shërbime. Nëse fshini llogarinë tuaj, ne do t'i fshijmë të dhënat tuaja personale brenda 30 ditëve, përveçse kur kërkohet t'i mbajmë për qëllime ligjore."
+      },
+      "international": {
+        "title": "Transferimet Ndërkombëtare të të Dhënave",
+        "text": "Të dhënat tuaja mund të transferohen dhe përpunohen në vende të ndryshme nga vendi i banimit tuaj. Ne sigurojmë që të jenë në fuqi masa mbrojtëse të përshtatshme për të mbrojtur të dhënat tuaja në përputhje me këtë politikë privatësie."
+      },
+      "changes": {
+        "title": "Ndryshimet në Këtë Politikë",
+        "text": "Ne mund ta përditësojmë këtë politikë privatësie herë pas here. Ne do t'ju njoftojmë për çdo ndryshim duke publikuar politikën e re në këtë faqe dhe duke përditësuar datën e \"Përditësuar më\". Ju inkurajojmë ta rishikoni këtë politikë periodikisht."
+      },
+      "contact": {
+        "title": "Na Kontaktoni",
+        "intro": "Nëse keni ndonjë pyetje për këtë politikë privatësie ose praktikat tona të të dhënave, ju lutemi na kontaktoni përmes:",
+        "items": [
+          "Faqes së Cilësimeve në aplikacion",
+          "Kanaleve tona të mbështetjes"
+        ]
+      }
+    }
+  }
+}

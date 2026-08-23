@@ -1,0 +1,303 @@
+{
+  "announcements": {
+    "toasts": {
+      "accessDenied": "Qasja u refuzua: vetëm superadmin",
+      "verifyFailed": "Dështoi verifikimi i qasjes",
+      "loadFailed": "Dështoi ngarkimi i njoftimeve: {{error}}",
+      "titleAndMessageRequired": "Kërkohen titulli dhe mesazhi",
+      "updated": "Njoftimi u përditësua me sukses",
+      "created": "Njoftimi u krijua me sukses",
+      "saveFailed": "Dështoi ruajtja e njoftimit: {{error}}",
+      "deleted": "Njoftimi u fshi me sukses",
+      "deleteFailed": "Dështoi fshirja e njoftimit: {{error}}"
+    },
+    "headings": {
+      "management": "Menaxhimi i Njoftimeve",
+      "edit": "Ndrysho Njoftimin",
+      "create": "Krijo Njoftim të Ri"
+    },
+    "text": {
+      "description": "Menaxho njoftimet e PantryButler News që shfaqen për përdoruesit",
+      "empty": "Ende nuk ka njoftime. Krijo një për të filluar.",
+      "editHint": "Përditëso detajet e njoftimit më poshtë.",
+      "createHint": "Krijo një njoftim të ri për t'u shfaqur të gjithë përdoruesve."
+    },
+    "buttons": {
+      "new": "Njoftim i Ri"
+    },
+    "badges": {
+      "active": "Aktiv",
+      "inactive": "Joaktiv"
+    },
+    "labels": {
+      "title": "Titulli",
+      "message": "Mesazhi",
+      "active": "Aktiv (shfaqet për përdoruesit)"
+    },
+    "placeholders": {
+      "title": "Mirë se vini në PantryButler!",
+      "message": "Shkruani mesazhin e njoftimit tuaj..."
+    },
+    "dialogs": {
+      "deleteTitle": "Fshi Njoftimin",
+      "deleteDescription": "Jeni i sigurt që dëshironi të fshini \"{{title}}\"? Ky veprim nuk mund të zhbëhet."
+    }
+  },
+  "instances": {
+    "toasts": {
+      "unauthorized": "Qasje e paautorizuar",
+      "loadFailed": "Dështoi ngarkimi i instancave: {{error}}",
+      "deleted": "Instanca \"{{name}}\" u fshi me sukses",
+      "deleteFailed": "Dështoi fshirja e instancës: {{error}}"
+    },
+    "headings": {
+      "management": "Menaxhimi i Instancave",
+      "all": "Të Gjitha Instancat",
+      "aboutDeletion": "Rreth Fshirjes së Instancave",
+      "deleteConfirm": "Të Fshihet Instanca?"
+    },
+    "text": {
+      "description": "Paneli i administrimit për menaxhimin e instancave dhe të dhënave",
+      "loading": "Duke ngarkuar instancat...",
+      "empty": "Nuk u gjet asnjë instancë",
+      "deletionWarning": "Fshirja e një instance do të heqë përgjithmonë të gjitha të dhënat e lidhura, duke përfshirë: recetat, përbërësit, artikujt e depove ushqimore, pajisjet, vaktet e kalendarit, listat e blerjeve, konvertimet e njësive, vendndodhjet e personalizuara, cilësimet dhe anëtarësimet e përdoruesve. Ky veprim nuk mund të zhbëhet."
+    },
+    "table": {
+      "instanceName": "Emri i Instancës",
+      "creator": "Krijuesi",
+      "created": "E Krijuar",
+      "lastLogin": "Hyrja e Fundit",
+      "actions": "Veprimet"
+    },
+    "buttons": {
+      "deleting": "Duke fshirë...",
+      "deleteInstance": "Fshi Instancën"
+    },
+    "deleteDialog": {
+      "confirmText": "Jeni i sigurt që dëshironi të fshini instancën \"{{name}}\"?",
+      "permanently": "Kjo do të fshijë përgjithmonë:",
+      "items": {
+        "recipes": "Të gjitha recetat dhe përbërësit",
+        "pantry": "Të gjitha artikujt e depove ushqimore dhe pajisjet",
+        "calendar": "Të gjitha vaktet e kalendarit dhe listat e blerjeve",
+        "settings": "Të gjitha cilësimet dhe të dhënat e personalizuara",
+        "memberships": "Të gjitha anëtarësimet e përdoruesve për këtë instancë"
+      },
+      "cannotUndo": "Ky veprim nuk mund të zhbëhet."
+    },
+    "formatDate": {
+      "never": "Asnjëherë",
+      "invalidDate": "Datë e pavlefshme"
+    }
+  },
+  "userManagement": {
+    "toasts": {
+      "noInstance": "Nuk u gjet asnjë instancë",
+      "loadFailed": "Dështoi ngarkimi i përdoruesve: {{error}}",
+      "usernamePasswordRequired": "Kërkohen emri i përdoruesit dhe fjalëkalimi",
+      "created": "Përdoruesi u krijua",
+      "createFailed": "Dështoi krijimi i përdoruesit: {{error}}",
+      "cannotDemoteLastAdmin": "Nuk mund të ulësh administratorin e fundit",
+      "roleUpdated": "Roli u përditësua me sukses",
+      "roleUpdateFailed": "Dështoi përditësimi i rolit: {{error}}",
+      "permissionsUpdated": "Lejet u përditësuan",
+      "permissionsUpdateFailed": "Dështoi përditësimi i lejeve: {{error}}",
+      "cannotDeleteOwn": "Nuk mund të fshini llogarinë tuaj",
+      "deleted": "Përdoruesi u fshi",
+      "deleteFailed": "Dështoi fshirja e përdoruesit: {{error}}"
+    },
+    "headings": {
+      "management": "Menaxhimi i Përdoruesve",
+      "users": "Përdoruesit",
+      "addUser": "Shto Përdorues",
+      "editPermissions": "Ndrysho Lejet e Përdoruesit",
+      "deleteUser": "Fshi Përdoruesin"
+    },
+    "text": {
+      "description": "Menaxho llogaritë dhe rolet e përdoruesve",
+      "calendarPermissionHint": "Përdoruesit pa leje kalendari mund të shohin por jo të modifikojnë vaktet e kalendarit",
+      "deleteDescription": "Jeni i sigurt që dëshironi të fshini këtë përdorues? Recetat e tij do të riaftësohen në një llogari sistemi."
+    },
+    "labels": {
+      "username": "Emri i përdoruesit",
+      "password": "Fjalëkalimi",
+      "role": "Roli",
+      "canEditCalendar": "Mund të ndryshojë kalendarin"
+    },
+    "buttons": {
+      "addUser": "Shto Përdorues",
+      "saveChanges": "Ruaj Ndryshimet"
+    },
+    "roles": {
+      "user": "Përdorues",
+      "admin": "Administrator"
+    },
+    "placeholders": {
+      "search": "Kërko përdorues..."
+    }
+  },
+  "dataImport": {
+    "toasts": {
+      "accessDenied": "Qasja u refuzua: vetëm superadmin",
+      "verifyFailed": "Dështoi verifikimi i qasjes",
+      "parseFailed": "Dështoi analizimi i {{file}}: JSON i pavlefshëm",
+      "importProgress": "Importuar {{current}} nga {{total}}...",
+      "imported": "Importuar {{total}} ushqime ushqyese nga {{fileName}}",
+      "importFailed": "Importimi dështoi: {{error}}",
+      "loadFailed": "Dështoi ngarkimi i {{file}}: {{error}}"
+    },
+    "headings": {
+      "dataImport": "Importimi i të Dhënave",
+      "nutritionStatus": "Statusi i Bazës së të Dhënave Ushqyese",
+      "serverFiles": "Të Disponueshme në Server",
+      "uploadFromComputer": "Ngarko nga Kompjuteri",
+      "uploadedFiles": "Skedarët e Ngarkuar Gati për Importim",
+      "importResults": "Rezultatet e Importimit"
+    },
+    "text": {
+      "description": "Importo të dhëna ushqyese nga skedarët JSON",
+      "recordsImported": "regjistra të importuar",
+      "noDataImported": "Ende nuk ka të dhëna të importuara",
+      "serverFilesDescription": "Skedarët JSON të gjetur në dosjen e konfigurimit të kontejnerit",
+      "dropNutritionFileBefore": "Hidh një",
+      "dropNutritionFileAfter": "për ta importuar nga kompjuteri juaj lokal",
+      "dropFilesHere": "Hidh skedarët këtu...",
+      "dragDrop": "Tërhiq dhe lësho skedarët JSON këtu",
+      "orClickToBrowse": "ose kliko për të shfletuar",
+      "records": "regjistra"
+    },
+    "buttons": {
+      "importing": "Duke importuar...",
+      "import": "Importo",
+      "remove": "Hiq",
+      "importToDatabase": "Importo në Bazën e të Dhënave"
+    },
+    "table": {
+      "file": "Skedari",
+      "imported": "Të importuara",
+      "status": "Statusi"
+    },
+    "status": {
+      "success": "Sukses"
+    },
+    "alert": {
+      "title": "Shënim",
+      "description": "Të dhënat ushqyese përditësohen ose futen (regjistrat ekzistues me ID përputhëse përditësohen). Kjo kërkon privilegje superadmin."
+    }
+  },
+  "setup": {
+    "steps": {
+      "testConnection": {
+        "title": "Testo Lidhjen me Bazën e të Dhënave",
+        "description": "Verifiko që baza e të dhënave është e lidhur dhe në funksion"
+      },
+      "seedNutrition": {
+        "title": "Ngarko të Dhënat Ushqyese",
+        "description": "Importo ushqimet ushqyese nga baza e të dhënave USDA"
+      },
+      "createAdmin": {
+        "title": "Krijo Përdorues Administrator",
+        "description": "Krijo llogarinë fillestare të administratorit"
+      },
+      "validate": {
+        "title": "Vlerëso Konfigurimin",
+        "description": "Verifiko që të gjithë komponentët janë konfiguruar saktë"
+      }
+    },
+    "errors": {
+      "adminEmailRequired": "E-maili i administratorit është i detyrueshëm",
+      "adminPasswordRequired": "Fjalëkalimi i administratorit është i detyrueshëm",
+      "passwordsMismatch": "Fjalëkalimet nuk përputhen",
+      "passwordMinLength": "Fjalëkalimi duhet të ketë të paktën 8 karaktere",
+      "dbTestFailed": "Testi i lidhjes me bazën e të dhënave dështoi",
+      "unknown": "Gabim i panjohur"
+    },
+    "status": {
+      "dbConnected": "Baza e të dhënave u lidh",
+      "seeded": "U ngarkuan {{count}} ushqime ushqyese",
+      "superadminCreated": "Superadmin u krijua: {{email}}",
+      "validation": "Ushqyerja: {{foods}} ushqime, Përdoruesit: {{users}}, Instancat: {{instances}}"
+    },
+    "complete": {
+      "title": "Konfigurimi u Plotësua!",
+      "description": "PantryButler u konfigurua me sukses dhe është gati për përdorim.",
+      "importantLabel": "E rëndësishme:",
+      "securityWarning": "Për siguri, çaktivizoni ose hiqni faqen e konfigurimit pas konfigurimit fillestar.",
+      "adminCredentials": "Kredencialet e Administratorit",
+      "emailLabel": "E-mail:",
+      "passwordLabel": "Fjalëkalimi:",
+      "nextSteps": "Hapat e Radhës",
+      "nextStepsItems": [
+        "Hyni me kredencialet tuaja të administratorit",
+        "Krijoni instancën tuaj të parë",
+        "Çaktivizoni ose hiqni faqen e konfigurimit"
+      ],
+      "goToLogin": "Shko te Hyrja"
+    },
+    "headings": {
+      "title": "Konfigurimi i PantryButler",
+      "adminAccount": "Llogaria e Administratorit"
+    },
+    "text": {
+      "description": "Konfiguroni vendosjen tuaj të PantryButler. Ky magjistar do të vendosë bazën e të dhënave, do të ngarkojë të dhënat fillestare dhe do të krijojë llogarinë tuaj të administratorit."
+    },
+    "labels": {
+      "adminEmail": "E-mail i Administratorit",
+      "adminPassword": "Fjalëkalim i Administratorit",
+      "confirmPassword": "Konfirmo Fjalëkalimin",
+      "minCharacters": "Minimumi 8 karaktere"
+    },
+    "buttons": {
+      "startSetup": "Fillo Konfigurimin"
+    },
+    "placeholders": {
+      "adminEmail": "admin@example.com"
+    },
+    "progress": {
+      "label": "Ecuria e Konfigurimit"
+    }
+  },
+  "config": {
+    "toasts": {
+      "accessDenied": "Qasja u refuzua: vetëm superadmin",
+      "verifyFailed": "Dështoi verifikimi i qasjes",
+      "loadFailed": "Dështoi ngarkimi i konfigurimit: {{error}}",
+      "saved": "Konfigurimi u ruajt me sukses",
+      "saveFailed": "Dështoi ruajtja e konfigurimit: {{error}}",
+      "resetDone": "Cilësimet SMTP u rivendosën në parazgjedhjet e mjedisit",
+      "resetFailed": "Dështoi rivendosja e cilësimeve SMTP: {{error}}"
+    },
+    "headings": {
+      "management": "Konfigurimi i Autentikimit dhe Mail-it",
+      "emailVerification": "Verifikimi i Email-it",
+      "smtp": "SMTP / Mail Dalës"
+    },
+    "text": {
+      "description": "Konfiguro verifikimin e email-it për krijuesit e instancave dhe serverin e mail-it dalës.",
+      "emailVerificationDesc": "Kur aktivizohet, krijuesit e rinj të instancave duhet të konfirmojnë adresën e tyre të email-it përpara se të krijohet kuzhina e tyre. Kur çaktivizohet, instancat krijohen menjëherë në regjistrim.",
+      "smtpDesc": "SMTP përdoret për të dërguar email-et e verifikimit. Fushat boshe bien në konfigurimin e mjedisit.",
+      "smtpEnvFallback": "Fushat boshe bien te cilësimet e mjedisit të serverit (SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, SMTP_FROM, SMTP_SECURE). Kur nuk është caktuar asnjë host SMTP, email-et e verifikimit regjistrohen në konsolën e serverit në vend që të dërgohen."
+    },
+    "labels": {
+      "requireEmailVerification": "Kërko verifikimin e email-it për krijuesit e rinj të instancave",
+      "smtpHost": "Host SMTP",
+      "smtpPort": "Port SMTP",
+      "smtpUsername": "Emër Përdoruesi SMTP",
+      "smtpPassword": "Fjalëkalim SMTP",
+      "smtpFrom": "Adresa e Dërguesit",
+      "smtpSecure": "Përdor TLS të nënkuptuar (SMTPS)"
+    },
+    "placeholders": {
+      "password": "Fjalëkalimi SMTP",
+      "passwordSaved": "Fjalëkalim i ruajtur (lëre bosh për ta mbajtur)"
+    },
+    "buttons": {
+      "save": "Ruaj Konfigurimin",
+      "resetSmtp": "Rivendos SMTP-në në parazgjedhjet"
+    },
+    "dialogs": {
+      "resetSmtpTitle": "Rivendos cilësimet SMTP?",
+      "resetSmtpDescription": "Kjo pastron të gjitha mbishkrimet SMTP të ruajtura në bazën e të dhënave. Serveri do të kthehet te cilësimet e tij të mjedisit për mail-in dalës."
+    }
+  }
+}

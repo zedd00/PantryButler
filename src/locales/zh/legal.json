@@ -1,0 +1,198 @@
+{
+  "attribution": {
+    "metaTitle": "署名与许可",
+    "metaDescription": "PantryButler使用开源项目和开放数据。了解我们的数据来源及其许可。",
+    "title": "署名与许可",
+    "intro": "PantryButler站在巨人的肩膀上。我们使用多个开源项目和开放数据源，为您提供最佳的食谱管理体验。",
+    "footer": {
+      "home": "首页",
+      "privacy": "隐私政策"
+    },
+    "projects": {
+      "cooklang": {
+        "ariaLabel": "访问Cooklang网站",
+        "tagline": "食谱标记语言",
+        "description": "Cooklang是一种用于烹饪食谱的标记语言。它提供了一种简单、人类可读的格式来编写食谱，可以轻松解析并以各种格式显示。PantryButler使用受Cooklang启发的语法进行食材解析和食谱格式化。",
+        "websiteLabel": "网站："
+      },
+      "gridRecipe": {
+        "ariaLabel": "访问Grid Recipe的GitHub仓库",
+        "tagline": "网格化食谱可视化",
+        "description": "Grid Recipe将食谱呈现为步骤网格，用箭头显示食材在每个步骤中的流动。PantryButler的网格食谱功能受到这个开源项目的启发。",
+        "sourceLabel": "来源："
+      },
+      "openFoodFacts": {
+        "ariaLabel": "访问Open Food Facts网站",
+        "tagline": "开放食品数据库",
+        "description": "Open Food Facts是一个免费、开放、协作的全球食品产品数据库。它包含有关食材、营养成分、标签等信息。PantryButler可能使用Open Food Facts的数据来提供食材信息和营养数据。",
+        "websiteLabel": "网站：",
+        "licenseLabel": "许可：Open Database License (ODbL)",
+        "attributionLabel": "署名：© Open Food Facts贡献者"
+      },
+      "openNutrition": {
+        "ariaLabel": "访问OpenNutrition网站",
+        "tagline": "综合营养数据库",
+        "description": "OpenNutrition提供了一个全面、开放的食物和营养信息数据库。该数据集包含数千种食品的详细营养信息，包括宏量营养素、微量营养素、维生素和矿物质。PantryButler在启用该功能时使用OpenNutrition数据显示食谱的营养信息。",
+        "websiteLabel": "网站：",
+        "licenseLabel": "许可：Open Database License (ODbL) + Modified Database Contents License (DbCL)",
+        "attributionLabel": "署名：数据由OpenNutrition提供。其中部分数据包含来自Open Food Facts的信息。",
+        "requirementsLabel": "要求：必须在每个显示营养数据的界面、应用商店列表、网站以及法律/关于部分提供署名。"
+      }
+    },
+    "licenseCompliance": {
+      "title": "许可合规",
+      "description": "PantryButler致力于遵守所有开放数据许可。我们为所有数据来源提供适当的署名，并尊重其各自许可的条款。",
+      "contactNote": "如果您对我们使用这些数据源有疑问，或认为我们不遵守任何许可条款，请与我们联系。"
+    }
+  },
+  "privacyPolicy": {
+    "title": "隐私政策",
+    "lastUpdated": "最后更新：2026年4月16日",
+    "introduction": {
+      "title": "简介",
+      "text": "欢迎使用PantryButler。我们尊重您的隐私，并致力于保护您的个人数据。本隐私政策说明了当您使用我们的应用程序时，我们如何收集、使用和保护您的信息。"
+    },
+    "sections": {
+      "collectInfo": {
+        "title": "我们收集的信息",
+        "accountInfo": {
+          "title": "账户信息",
+          "intro": "当您创建账户时，我们会收集：",
+          "items": [
+            "电子邮件地址",
+            "用户名",
+            "全名（可选）",
+            "个人资料图片（可选）"
+          ]
+        },
+        "appData": {
+          "title": "应用程序数据",
+          "intro": "当您使用PantryButler时，我们会存储：",
+          "items": [
+            "您创建或保存的食谱",
+            "食品储藏室库存项目",
+            "厨房设备记录",
+            "膳食计划和日历条目",
+            "购物清单",
+            "厨房布局设计",
+            "公开食谱上的评论和点赞"
+          ]
+        },
+        "usageInfo": {
+          "title": "使用信息",
+          "intro": "我们自动收集：",
+          "items": [
+            "设备信息（浏览器类型、操作系统）",
+            "日志数据（访问时间、浏览的页面）",
+            "语言偏好"
+          ]
+        }
+      },
+      "howWeUse": {
+        "title": "我们如何使用您的信息",
+        "intro": "我们使用您的信息来：",
+        "items": [
+          "提供和维护PantryButler服务",
+          "验证您的账户并确保安全",
+          "存储和同步您的食谱、储藏室物品和膳食计划",
+          "启用食谱分享和评论等社交功能",
+          "改进和优化我们的应用程序",
+          "发送重要的服务通知",
+          "回应您的支持请求"
+        ]
+      },
+      "storageSecurity": {
+        "title": "数据存储与安全",
+        "intro": "您的数据通过加密传输和行业标准安全实践安全存储。我们实施的安全措施包括：",
+        "items": [
+          "加密的数据传输（HTTPS/TLS）",
+          "带密码哈希的安全身份验证",
+          "基于实例的访问控制，将数据可见性限制在授权成员范围内",
+          "定期安全更新和监控"
+        ],
+        "note": "虽然我们努力保护您的数据，但互联网上没有任何传输方法100%安全。我们无法保证绝对安全。"
+      },
+      "sharing": {
+        "title": "数据共享与披露",
+        "intro": "我们不会出售您的个人信息。我们仅在以下情况下共享您的数据：",
+        "items": {
+          "publicRecipes": {
+            "strong": "公开食谱：",
+            "text": " 当您选择将食谱公开时，它将对所有用户可见"
+          },
+          "serviceProviders": {
+            "strong": "服务提供商：",
+            "text": " 与我们的基础设施提供商合作进行托管和数据存储"
+          },
+          "legalRequirements": {
+            "strong": "法律要求：",
+            "text": " 如果法律要求或为了保护我们的权利"
+          }
+        }
+      },
+      "rights": {
+        "title": "您的权利（GDPR合规）",
+        "intro": "根据《通用数据保护条例》(GDPR)，您拥有以下权利：",
+        "items": {
+          "access": {
+            "strong": "访问权：",
+            "text": " 请求获取您的个人数据副本"
+          },
+          "rectification": {
+            "strong": "更正权：",
+            "text": " 更正不准确或不完整的数据"
+          },
+          "erasure": {
+            "strong": "删除权：",
+            "text": " 请求删除您的个人数据"
+          },
+          "restrictProcessing": {
+            "strong": "限制处理权：",
+            "text": " 限制我们使用您数据的方式"
+          },
+          "dataPortability": {
+            "strong": "数据可携权：",
+            "text": " 以结构化格式接收您的数据"
+          },
+          "object": {
+            "strong": "反对权：",
+            "text": " 反对某些类型的数据处理"
+          },
+          "withdrawConsent": {
+            "strong": "撤回同意权：",
+            "text": " 随时撤回同意"
+          }
+        },
+        "note": "要行使这些权利中的任何一项，请通过设置页面与我们联系，或直接给我们发送电子邮件。"
+      },
+      "cookies": {
+        "title": "Cookie和跟踪",
+        "text": "我们使用必要的Cookie和本地存储来维护您的会话并记住您的偏好（如语言和主题设置）。我们不使用第三方跟踪或广告Cookie。"
+      },
+      "children": {
+        "title": "儿童隐私",
+        "text": "PantryButler不适用于13岁以下的儿童。我们不会故意收集儿童的个人信息。如果您认为我们收集了儿童的信息，请立即与我们联系。"
+      },
+      "retention": {
+        "title": "数据保留",
+        "text": "只要您的账户处于活动状态或提供服务所需，我们就会保留您的个人数据。如果您删除账户，我们将在30天内删除您的个人数据，除非法律要求我们保留。"
+      },
+      "international": {
+        "title": "国际数据传输",
+        "text": "您的数据可能会被转移到您居住国以外的国家并进行处理。我们确保采取适当的保护措施，按照本隐私政策保护您的数据。"
+      },
+      "changes": {
+        "title": "本政策变更",
+        "text": "我们可能会不时更新本隐私政策。我们将通过在此页面上发布新政策并更新\"最后更新\"日期来通知您任何变更。我们建议您定期查看本政策。"
+      },
+      "contact": {
+        "title": "联系我们",
+        "intro": "如果您对本隐私政策或我们的数据处理做法有任何疑问，请通过以下方式联系我们：",
+        "items": [
+          "应用程序中的设置页面",
+          "我们的支持渠道"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1709 @@
+{
+  "navigation": {
+    "gettingStarted": "Getting Started",
+    "coreFeatures": "Core Features",
+    "collaboration": "Collaboration",
+    "quickStart": "Quick Start",
+    "kitchenManagement": "Kitchen Management",
+    "recipeManagement": "Recipe Management",
+    "mealPlanning": "Meal Planning",
+    "shoppingLists": "Shopping Lists",
+    "pantryEquipment": "Pantry & Equipment",
+    "sharingCollaboration": "Sharing & Collaboration",
+    "nutritionCostTracking": "Nutrition & Cost Tracking",
+    "accountSection": "Account & Settings",
+    "accountSettingsPage": "Account, Settings & Announcements",
+    "developersSection": "Developers",
+    "apiGuidelines": "API Guidelines",
+    "administrationSection": "Administration",
+    "adminFeatures": "Admin Features"
+  },
+  "gettingStarted": {
+    "title": "Quick Start",
+    "subtitle": "Welcome to PantryButler! This guide will help you get started quickly and understand the basic concepts and usage.",
+    "whatIsKitchen": {
+      "title": "What is a Kitchen?",
+      "description": "A kitchen is an independent workspace containing all your recipes, meal plans, shopping lists, and pantry data. Each kitchen is completely isolated, suitable for different scenarios:",
+      "familyKitchen": "Family Kitchen: Share recipes and meal plans with family members",
+      "personalKitchen": "Personal Kitchen: Manage your personal cooking records",
+      "teamKitchen": "Team Kitchen: Collaborative use for culinary teams"
+    },
+    "steps": {
+      "title": "Getting Started Steps",
+      "step1": {
+        "title": "Step 1: Setup Your Kitchen",
+        "description": "First-time users need to create a new kitchen",
+        "items": [
+          "Click the \"Setup Kitchen\" button on the homepage",
+          "Enter a kitchen name (e.g., My Family Kitchen)",
+          "Set up administrator account information (username and password)",
+          "Click \"Create\" to complete kitchen setup"
+        ],
+        "alert": "The account created during kitchen setup will automatically become the administrator with full management permissions"
+      },
+      "step2": {
+        "title": "Step 2: Login to the System",
+        "description": "Use your created account to login",
+        "items": [
+          "Click the \"Login\" button to access the login page",
+          "Enter your username and password",
+          "Select the kitchen you want to login to",
+          "Click \"Login\" to enter the system"
+        ]
+      },
+      "step3": {
+        "title": "Step 3: Start Using",
+        "description": "Explore the system's features",
+        "items": [
+          "Create your first recipe",
+          "Plan this week's meals in the calendar",
+          "Generate shopping lists",
+          "Record pantry inventory",
+          "Invite family members to join the kitchen"
+        ]
+      }
+    },
+    "navigation": {
+      "title": "System Navigation",
+      "description": "After logging in, you can access all feature modules through the left navigation bar:",
+      "recipes": {
+        "title": "Recipes",
+        "description": "Browse, create, and manage your recipe collection"
+      },
+      "calendar": {
+        "title": "Calendar",
+        "description": "Plan daily meals and view meal schedules"
+      },
+      "shoppingList": {
+        "title": "Shopping List",
+        "description": "Manage shopping lists and track purchase progress"
+      },
+      "pantry": {
+        "title": "Pantry",
+        "description": "Record ingredient inventory"
+      },
+      "equipment": {
+        "title": "Equipment",
+        "description": "Manage kitchen equipment list"
+      }
+    },
+    "nextSteps": {
+      "title": "Next Steps",
+      "description": "Now that you understand the basic concepts, continue reading the following documentation to learn more about each feature:",
+      "items": [
+        "Kitchen Management: Learn how to manage kitchens and users",
+        "Recipe Management: Learn to create and organize recipes",
+        "Meal Planning: Master meal planning techniques",
+        "Shopping Lists: Efficiently manage the shopping process"
+      ]
+    }
+  },
+  "instanceManagement": {
+    "title": "Kitchen Management",
+    "subtitle": "Learn how to create, configure, and manage your kitchens, as well as manage kitchen members and permissions.",
+    "creating": {
+      "title": "Creating a New Kitchen",
+      "description": "Creating a kitchen is the first step in using the system. Each kitchen is an independent workspace.",
+      "stepsTitle": "Creation Steps",
+      "steps": [
+        {
+          "title": "Access Registration Page",
+          "description": "Click the \"Setup Kitchen\" button on the homepage"
+        },
+        {
+          "title": "Fill in Kitchen Information",
+          "description": "Enter a kitchen name, suggest using meaningful names like \"Smith Family Kitchen\" or \"Culinary Studio\""
+        },
+        {
+          "title": "Set Up Administrator Account",
+          "description": "Create administrator username and password, this account will have full management permissions"
+        },
+        {
+          "title": "Complete Creation",
+          "description": "Click the \"Create\" button, the system will automatically initialize the kitchen and log you in"
+        }
+      ],
+      "alert": "After kitchen creation, common ingredients and equipment data will be automatically initialized, and you can start using it immediately"
+    },
+    "userManagement": {
+      "title": "User Management",
+      "description": "Administrators can add, edit, and delete kitchen members, and control user permissions.",
+      "adding": {
+        "title": "Adding New Users",
+        "description": "Invite others to join your kitchen",
+        "steps": [
+          "Go to the \"User Management\" page",
+          "Click the \"Add User\" button",
+          "Fill in username and initial password",
+          "Select user role (Administrator or Regular Member)",
+          "Click \"Create\" to complete the addition"
+        ],
+        "alert": "After creating a new user, it's recommended to notify them to change their initial password"
+      },
+      "roles": {
+        "title": "User Roles",
+        "description": "Different roles have different permissions",
+        "administrator": {
+          "title": "Administrator",
+          "permissions": [
+            "Full system access permissions",
+            "Can add, edit, and delete users",
+            "Can manage all recipes and data",
+            "Can modify kitchen settings"
+          ]
+        },
+        "member": {
+          "title": "Regular Member",
+          "permissions": [
+            "Can create and manage their own recipes",
+            "Can view shared recipes within the kitchen",
+            "Can plan meals and create shopping lists",
+            "Can manage personal pantry data",
+            "Cannot manage other users"
+          ]
+        }
+      },
+      "editing": {
+        "title": "Editing Users",
+        "description": "Modify user information and permissions",
+        "steps": [
+          "Find the target user in the user list",
+          "Click the \"Edit\" button",
+          "Modify username, password, or role",
+          "Save changes"
+        ]
+      },
+      "deleting": {
+        "title": "Deleting Users",
+        "description": "Remove kitchen members",
+        "content": "Click the \"Delete\" button in the user list to remove a user. After deletion, the user will no longer be able to access the kitchen.",
+        "alert": "Deleting a user will not delete the recipes and data they created, which will remain in the kitchen"
+      }
+    },
+    "settings": {
+      "title": "Kitchen Settings",
+      "description": "Administrators can configure various kitchen parameters on the \"Settings\" page.",
+      "optionsTitle": "Configurable Options",
+      "options": [
+        "Kitchen Name: Modify the kitchen display name",
+        "Default Unit System: Choose metric or imperial units",
+        "Currency: select the currency used to display prices and costs",
+        "Cost Tracking: show estimated costs on recipe, calendar, and grocery pages"
+      ]
+    },
+    "bestPractices": {
+      "title": "Best Practices",
+      "items": [
+        "Choose clear, meaningful names for kitchens",
+        "Regularly review the user list and remove members who no longer need access",
+        "Create different kitchens for different purposes to maintain data isolation",
+        "Set up at least two administrator accounts to avoid single points of failure",
+        "Remind users to change passwords regularly to protect account security"
+      ]
+    }
+  },
+  "mealPlanning": {
+    "title": "Meal Planning",
+    "subtitle": "Use the calendar feature to plan daily meals, making your diet more organized and your life more regular.",
+    "calendarView": {
+      "title": "Calendar View",
+      "description": "The calendar provides an intuitive time view to help you plan and view meal arrangements.",
+      "viewModesTitle": "View Modes",
+      "viewModesDescription": "Choose how many days the calendar shows at once",
+      "days7": {
+        "title": "7 Days",
+        "description": "A compact week ahead for quick meal decisions"
+      },
+      "days14": {
+        "title": "14 Days",
+        "description": "A two-week overview balancing variety and planning"
+      },
+      "days30": {
+        "title": "30 Days",
+        "description": "A full month of meals for long-term planning"
+      },
+      "costTracking": {
+        "title": "Meal Cost",
+        "description": "When cost tracking is enabled, each planned meal shows its estimated cost, calculated from the recipe and your pantry prices."
+      }
+    },
+    "addingMeals": {
+      "title": "Adding Meals",
+      "description": "Schedule recipes in the calendar to plan daily meals.",
+      "stepsTitle": "Adding Steps",
+      "steps": [
+        {
+          "title": "Select Date",
+          "description": "Click the target date in the calendar"
+        },
+        {
+          "title": "Choose Meal Time",
+          "description": "Select breakfast, lunch, dinner, or snack"
+        },
+        {
+          "title": "Add Recipe",
+          "description": "Select the dish to prepare from the recipe library"
+        },
+        {
+          "title": "Set Servings",
+          "description": "Adjust portions based on number of diners"
+        },
+        {
+          "title": "Add Notes",
+          "description": "Optional: Add special instructions or reminders"
+        }
+      ],
+      "alert": "One meal time can include multiple recipes, suitable for preparing multiple dishes",
+      "unscheduledRecipes": {
+        "title": "Unscheduled Recipes",
+        "description": "See which recipes have not been planned yet",
+        "content": "The calendar shows an \"Unscheduled Recipes\" list with dishes that are not scheduled anywhere in the current week. Use it to fill in empty meal slots or balance your weekly menu."
+      }
+    },
+    "managingPlans": {
+      "title": "Managing Meal Plans",
+      "description": "Flexibly adjust and optimize your meal arrangements.",
+      "edit": {
+        "title": "Edit Meals",
+        "description": "Modify scheduled meals",
+        "steps": [
+          "Click the meal item in the calendar",
+          "Modify recipe, servings, or notes",
+          "Save changes"
+        ]
+      },
+      "delete": {
+        "title": "Delete Meals",
+        "description": "Cancel scheduled meals",
+        "content": "Click the meal item and select \"Delete\" to remove the meal arrangement."
+      }
+    },
+    "shoppingIntegration": {
+      "title": "Integration with Shopping Lists",
+      "description": "Automatically generate shopping lists based on meal plans.",
+      "generateTitle": "Generate Shopping List",
+      "generateDescription": "Create shopping list with one click",
+      "steps": [
+        {
+          "title": "Select Time Range",
+          "description": "Choose the date range for shopping list generation, such as \"This Week\" or \"Next Week\""
+        },
+        {
+          "title": "Auto-Aggregate Ingredients",
+          "description": "System will aggregate all ingredients needed for meals"
+        },
+        {
+          "title": "Deduct Inventory",
+          "description": "Automatically deduct ingredients already in pantry"
+        },
+        {
+          "title": "Generate List",
+          "description": "Create final shopping list, ready to use"
+        }
+      ],
+      "alert": "Regularly updating pantry inventory makes shopping lists more accurate"
+    },
+    "bestPractices": {
+      "title": "Best Practices",
+      "items": [
+        "Plan a week's meals in advance to avoid last-minute decisions",
+        "Consider nutritional balance, reasonably match different types of dishes",
+        "Schedule some quick meals for busy days",
+        "Leave flexibility, no need to strictly execute every day",
+        "Use weekends to prepare dishes that require long cooking times",
+        "Regularly review meal plans to summarize experience and preferences",
+        "Share calendar with family to understand each other's meal arrangements"
+      ]
+    }
+  },
+  "groceryLists": {
+    "title": "Shopping Lists",
+    "subtitle": "Intelligently generate and manage shopping lists, optimize the shopping process, and avoid omissions and duplicate purchases.",
+    "creating": {
+      "title": "Creating Shopping Lists",
+      "description": "The system provides multiple ways to create shopping lists to meet different scenario needs.",
+      "fromMealPlan": {
+        "title": "Generate from Meal Plan",
+        "description": "Most commonly used creation method",
+        "steps": [
+          {
+            "title": "Go to Shopping List Creation Page",
+            "description": "Select \"Shopping List\" from the navigation bar"
+          },
+          {
+            "title": "Select Date Range",
+            "description": "Choose the time period for ingredient shopping, such as \"This Week\" or \"Next Week\""
+          },
+          {
+            "title": "Select Recipes",
+            "description": "System will display all meals in that time period, can selectively add"
+          },
+          {
+            "title": "Auto-Aggregate",
+            "description": "System will merge same ingredients and calculate total quantities"
+          },
+          {
+            "title": "Deduct Inventory",
+            "description": "Automatically deduct ingredients already in pantry"
+          },
+          {
+            "title": "Generate List",
+            "description": "Create final shopping list"
+          }
+        ],
+        "alert": "System intelligently merges same ingredients, for example, if multiple recipes need \"eggs\", it will automatically calculate the total quantity"
+      },
+      "fromRecipe": {
+        "title": "Generate from Single Recipe",
+        "description": "Quickly create list for a single dish",
+        "steps": [
+          "Open recipe details page",
+          "Click \"Add to Shopping List\" button",
+          "Select existing list or create new list",
+          "Set servings",
+          "Confirm addition"
+        ]
+      },
+      "manual": {
+        "title": "Manual Creation",
+        "description": "Freely add any items",
+        "content": "Create blank shopping list and manually add items to purchase. Suitable for daily restocking or purchasing non-recipe related items."
+      }
+    },
+    "managing": {
+      "title": "Managing Shopping Lists",
+      "description": "Update list status in real-time during shopping.",
+      "view": {
+        "title": "View List",
+        "description": "Clear item list",
+        "intro": "Shopping list organized by category, convenient for shopping by area in supermarket:",
+        "categories": [
+          "Vegetables & Fruits",
+          "Meat & Seafood",
+          "Seasonings",
+          "Staples & Grains",
+          "Other Items"
+        ]
+      },
+      "markPurchased": {
+        "title": "Mark as Purchased",
+        "description": "Track shopping progress",
+        "content": "While shopping, click the checkbox next to items to mark as purchased. Purchased items will show strikethrough but remain in the list for verification."
+      },
+      "edit": {
+        "title": "Edit Items",
+        "description": "Adjust quantities or add notes",
+        "actions": [
+          "Modify item quantity",
+          "Change units",
+          "Add brand or specification notes",
+          "Add alternative suggestions"
+        ]
+      },
+      "addCustom": {
+        "title": "Add Custom Items",
+        "description": "Supplement items outside the list",
+        "content": "Click \"Add Item\" in the shopping list to manually enter other items to purchase, such as daily necessities, snacks, etc."
+      },
+      "delete": {
+        "title": "Delete Items",
+        "description": "Remove unneeded items",
+        "content": "If an item doesn't need to be purchased (such as already at home), it can be directly deleted from the list."
+      },
+      "costTracking": {
+        "title": "Estimated Cost",
+        "description": "Understand the total cost of your shopping list.",
+        "content": "When cost tracking is enabled, the list header shows an estimated total calculated from your pantry unit prices.",
+        "purchasePrice": "When adding a list item to your pantry, you can enter the price you paid, so future cost estimates stay accurate."
+      }
+    },
+    "history": {
+      "title": "List History",
+      "description": "View and manage historical shopping lists.",
+      "recordsTitle": "Historical Records",
+      "recordsDescription": "Save all shopping lists",
+      "intro": "System saves all created shopping lists, you can:",
+      "actions": [
+        "View historical list content",
+        "Copy historical lists to create new lists",
+        "Analyze shopping habits and frequency",
+        "Delete unnecessary historical records"
+      ]
+    },
+    "sharing": {
+      "title": "Share Lists",
+      "description": "Share shopping lists with family to collaborate on shopping.",
+      "syncTitle": "Real-time Sync",
+      "syncDescription": "Multi-person collaborative shopping",
+      "intro": "Members of the same kitchen can jointly view and edit shopping lists:",
+      "features": [
+        "One person creates list, other members can view",
+        "Anyone can mark items as purchased",
+        "Real-time sync updates to avoid duplicate purchases",
+        "Suitable for divided shopping scenarios"
+      ],
+      "alert": "Example: Mom creates list at home, Dad can view and update in real-time while shopping at supermarket"
+    },
+    "smartFeatures": {
+      "title": "Smart Features",
+      "description": "Use system's smart features to improve shopping efficiency.",
+      "unitConversion": {
+        "title": "Unit Conversion",
+        "description": "Automatically handle different units",
+        "content": "System automatically converts and merges same ingredients with different units, such as \"500g flour\" and \"1 lb flour\" will be intelligently merged."
+      },
+      "inventoryIntegration": {
+        "title": "Inventory Integration",
+        "description": "Link with pantry data",
+        "content": "Automatically deduct pantry inventory when generating lists, can update pantry data with one click after shopping."
+      }
+    },
+    "bestPractices": {
+      "title": "Best Practices",
+      "items": [
+        "Regularly update pantry inventory to ensure shopping list accuracy",
+        "Create list one day in advance to have time for review and adjustment",
+        "Reorder items by supermarket layout to improve shopping efficiency",
+        "Add brand or specification notes to items to avoid buying wrong products",
+        "Mark purchased items promptly after shopping to keep list accurate",
+        "Keep historical lists to analyze shopping patterns and budget",
+        "Share lists with family to avoid duplicate shopping"
+      ]
+    }
+  },
+  "pantryEquipment": {
+    "title": "Pantry & Equipment",
+    "subtitle": "Manage ingredient inventory and kitchen equipment to optimize resource utilization and reduce waste.",
+    "pantryManagement": {
+      "title": "Pantry Management",
+      "description": "Track ingredient inventory, understand available resources, and avoid duplicate purchases.",
+      "addIngredients": {
+        "title": "Add Ingredients",
+        "description": "Record newly purchased ingredients",
+        "steps": [
+          {
+            "title": "Go to Pantry Page",
+            "description": "Select \"Pantry\" from the navigation bar"
+          },
+          {
+            "title": "Click Add Button",
+            "description": "Select \"Add Ingredient\""
+          },
+          {
+            "title": "Fill in Ingredient Information",
+            "description": "Enter ingredient name, quantity, unit"
+          },
+          {
+            "title": "Choose Storage Location",
+            "description": "Mark storage location, such as refrigerator, freezer, cabinet, etc."
+          }
+        ],
+        "alert": "After shopping, you can import ingredients to pantry with one click from shopping list"
+      },
+      "viewInventory": {
+        "title": "View Inventory",
+        "description": "Understand current ingredient situation",
+        "intro": "Pantry provides multiple view methods:",
+        "methods": [
+          {
+            "label": "View by Category",
+            "description": "Vegetables, meat, seasonings, etc."
+          },
+          {
+            "label": "View by Location",
+            "description": "Refrigerator, freezer, cabinet, etc."
+          },
+          {
+            "label": "Search Function",
+            "description": "Quickly find specific ingredients"
+          }
+        ]
+      },
+      "ingredientFeatures": {
+        "title": "Ingredient Management Features",
+        "description": "Tools for managing large inventories",
+        "features": [
+          "Sort ingredients by name or location, in ascending or descending order",
+          "Lists are paginated to keep the pantry easy to browse",
+          "Mark an ingredient as unlimited supply so it is never counted as out of stock",
+          "When deleting an ingredient or equipment, the system checks whether it is used by recipes and warns you first"
+        ]
+      },
+      "updateInventory": {
+        "title": "Update Inventory",
+        "description": "Record ingredient usage",
+        "manual": {
+          "title": "Manual Update",
+          "description": "After using ingredients, click ingredient item to reduce quantity or mark as used up"
+        },
+        "auto": {
+          "title": "Auto-Deduct",
+          "description": "When making recipes, system can automatically deduct ingredient quantities from pantry"
+        }
+      },
+      "costTracking": {
+        "title": "Track Prices",
+        "description": "Record purchase prices to unlock cost estimates across the app.",
+        "content": "Pantry ingredients support two optional price fields:",
+        "fields": [
+          {
+            "label": "Price Paid",
+            "description": "the total amount you paid for the item"
+          },
+          {
+            "label": "Price Covers",
+            "description": "the quantity that price applies to (for example, 500 for a 500 g package). Leave empty to use the item’s current quantity"
+          }
+        ],
+        "unitPrice": "Unit price is calculated automatically and shown on each ingredient, making it easy to compare package sizes."
+      }
+    },
+    "equipmentManagement": {
+      "title": "Equipment Management",
+      "description": "Record and manage kitchen equipment, understand available tools, and choose suitable recipes.",
+      "addEquipment": {
+        "title": "Add Equipment",
+        "description": "Record your kitchen equipment",
+        "steps": [
+          {
+            "title": "Go to Equipment Page",
+            "description": "Select \"Equipment\" from the navigation bar"
+          },
+          {
+            "title": "Select Equipment Type",
+            "description": "Choose from preset list, such as wok, oven, blender, etc."
+          },
+          {
+            "title": "Add Detailed Information",
+            "description": "Optional: Add brand, model, purchase date, etc."
+          },
+          {
+            "title": "Set Status",
+            "description": "Mark as available, under repair, or damaged"
+          }
+        ],
+        "alert": "Common equipment will be automatically added when kitchen is created, you can adjust based on actual situation"
+      },
+      "recipeAssociation": {
+        "title": "Equipment and Recipe Association",
+        "description": "Connect recipes with the equipment they need",
+        "intro": "Equipment information links with recipe system:",
+        "features": [
+          "Mark required equipment when creating recipes",
+          "Recipe pages list all the equipment needed to prepare the dish"
+        ]
+      },
+      "maintenance": {
+        "title": "Maintenance Records",
+        "description": "Track equipment status and maintenance",
+        "content": "Add maintenance records for equipment, such as cleaning, upkeep, repairs, etc., to extend equipment lifespan."
+      }
+    },
+    "integration": {
+      "title": "Integration with Other Features",
+      "description": "Pantry and equipment data deeply integrate with other system features.",
+      "shoppingList": {
+        "title": "Shopping List Integration",
+        "features": [
+          "Automatically deduct inventory when generating shopping lists",
+          "Import ingredients to pantry with one click after shopping"
+        ]
+      },
+      "recipeRecommendations": {
+        "title": "Recipes You Can Make Now",
+        "features": [
+          "The Recipes page highlights dishes you can prepare with your current pantry",
+          "Ingredients with insufficient stock are marked so you know what to shop for"
+        ]
+      },
+      "mealPlanning": {
+        "title": "Meal Planning",
+        "features": [
+          "Check pantry availability when scheduling meals",
+          "Warn about missing or insufficient ingredients",
+          "Automatically update inventory after meal completion"
+        ]
+      }
+    },
+    "kitchenLayout": {
+      "title": "Kitchen Layout",
+      "description": "Visualize your kitchen layout and organize ingredients and equipment by location for better inventory management.",
+      "createLayout": {
+        "title": "Create Kitchen Layout",
+        "description": "Design your kitchen layout with customizable elements",
+        "steps": [
+          {
+            "title": "Access Layout Editor",
+            "description": "Navigate to Pantry → Pantry Layout, then click 'Edit Layout'"
+          },
+          {
+            "title": "Create or Select Model",
+            "description": "Create a new kitchen model or select an existing one"
+          },
+          {
+            "title": "Set Canvas Size",
+            "description": "Define the dimensions of your kitchen layout canvas"
+          },
+          {
+            "title": "Save Layout",
+            "description": "Save your kitchen model for future use"
+          }
+        ]
+      },
+      "addElements": {
+        "title": "Add Kitchen Elements",
+        "description": "Drag and drop elements from the palette to build your kitchen",
+        "items": [
+          "Upper Cabinet - Store dry goods and dishes",
+          "Lower Cabinet - Store pots, pans, and appliances",
+          "Countertop - Work surface area",
+          "Sink - Washing and prep area",
+          "Stove - Cooking area",
+          "Refrigerator - Cold storage (half height)",
+          "Freezer - Frozen storage (half height)",
+          "Door - Kitchen entrance/exit",
+          "Pantry - Dedicated storage space",
+          "Table - Dining or prep surface",
+          "Window - Natural light source"
+        ]
+      },
+      "organizeItems": {
+        "title": "Organize Items by Location",
+        "description": "Assign ingredients and equipment to specific kitchen elements",
+        "steps": [
+          {
+            "title": "Switch to Pantry Mode",
+            "description": "In Pantry Layout page, view your kitchen with items"
+          },
+          {
+            "title": "Drag Items to Elements",
+            "description": "Drag ingredients or equipment from the right panel onto kitchen elements"
+          },
+          {
+            "title": "Configure Shelves",
+            "description": "Right-click elements to add shelves and organize items vertically"
+          },
+          {
+            "title": "View Item Locations",
+            "description": "Click any element to see all items stored in that location"
+          }
+        ],
+        "alert": "Items assigned to kitchen elements will show their location as 'Model Name\\Element Name' in the Ingredients and Equipment pages"
+      },
+      "features": {
+        "title": "Layout Features",
+        "items": [
+          "Drag elements to reposition them",
+          "Resize elements by dragging corners and edges",
+          "Snap to grid for precise alignment",
+          "Rename elements with custom names",
+          "Customize element colors",
+          "Add multiple shelves to organize items",
+          "Delete elements with Delete key or context menu",
+          "Responsive canvas that fits your screen",
+          "Dark mode support with readable text"
+        ]
+      }
+    },
+    "bestPractices": {
+      "title": "Best Practices",
+      "pantry": {
+        "title": "Pantry Management",
+        "items": [
+          "Update pantry data promptly after shopping",
+          "Set minimum stock reminders for commonly used ingredients",
+          "Categorize by storage location for easy finding",
+          "Use \"first in, first out\" principle to manage ingredients"
+        ]
+      },
+      "equipment": {
+        "title": "Equipment Management",
+        "items": [
+          "Completely record all kitchen equipment",
+          "Update equipment status promptly",
+          "Regularly maintain and upkeep equipment",
+          "Mark required equipment for recipes",
+          "Choose suitable recipes based on equipment"
+        ]
+      }
+    }
+  },
+  "recipeManagement": {
+    "title": "Recipe Management",
+    "subtitle": "Learn how to create, edit, organize, and share your recipe collection.",
+    "creating": {
+      "title": "Creating Recipes",
+      "description": "Create detailed recipe records containing ingredients, steps, nutritional information, and more.",
+      "basicInfo": {
+        "title": "Basic Information",
+        "description": "Fill in the recipe's basic information",
+        "required": {
+          "title": "Required Fields",
+          "fields": [
+            {
+              "label": "Recipe Name",
+              "description": "A clear description of the dish"
+            },
+            {
+              "label": "Description",
+              "description": "Brief introduction to the recipe's characteristics and flavors"
+            },
+            {
+              "label": "Servings",
+              "description": "Indicate the recipe's serving size"
+            }
+          ]
+        },
+        "optional": {
+          "title": "Optional Fields",
+          "fields": [
+            {
+              "label": "Prep Time",
+              "description": "Time required for ingredient preparation"
+            },
+            {
+              "label": "Cook Time",
+              "description": "Actual cooking time required"
+            },
+            {
+              "label": "Image",
+              "description": "Upload a photo of the finished dish"
+            },
+            {
+              "label": "Tags",
+              "description": "Add category tags like \"Chinese\", \"Vegetarian\", etc."
+            }
+          ]
+        }
+      },
+      "ingredientList": {
+        "title": "Ingredient List",
+        "description": "Record required ingredients and quantities in detail",
+        "steps": [
+          {
+            "title": "Add Ingredients",
+            "description": "Click the \"Add Ingredient\" button and enter the ingredient name"
+          },
+          {
+            "title": "Set Quantities",
+            "description": "Enter quantity and unit, such as \"200g\", \"2 pieces\""
+          },
+          {
+            "title": "Group Management",
+            "description": "Create groups like \"Main Ingredients\", \"Seasonings\", etc."
+          },
+          {
+            "title": "Add Notes",
+            "description": "Add instructions for ingredients, like \"diced\", \"room temperature\""
+          }
+        ],
+        "alert": "The system will automatically recognize common ingredients, and you can also add custom ingredients"
+      },
+      "cookingSteps": {
+        "title": "Cooking Steps",
+        "description": "Record detailed preparation process with timers and images",
+        "intro": "Clear step instructions help you and others better recreate the dish:",
+        "features": [
+          "Add each step in order with detailed instructions",
+          "Use concise and clear language to describe operations",
+          "Mark key times and temperatures",
+          "Add images to steps to show expected results",
+          "Set timers for time-sensitive steps - never miss a critical moment"
+        ],
+        "alert": "Step Timers: Add a timer duration to any step (e.g., \"Bake for 25 minutes\"). When cooking, click the timer button to start a countdown with audio notification when complete."
+      },
+      "stepImages": {
+        "title": "Step Images",
+        "description": "Add visual guides to your cooking steps",
+        "intro": "Upload images for each step to show exactly how ingredients should look at different stages. This is especially helpful for techniques like \"mix until combined\" or \"knead until smooth\" where visual reference makes a big difference.",
+        "features": [
+          "Click the image icon on any step to upload a photo",
+          "Images help show texture, color, and consistency",
+          "Particularly useful for baking and complex techniques"
+        ]
+      },
+      "equipment": {
+        "title": "Required Equipment",
+        "description": "Mark kitchen equipment needed for cooking",
+        "content": "Select required equipment from the equipment list, such as wok, oven, blender, etc. This helps with advance preparation and checking equipment availability."
+      }
+    },
+    "organizing": {
+      "title": "Organizing Recipes",
+      "description": "Use folders and tags to efficiently manage your recipe collection.",
+      "folders": {
+        "title": "Folder Management",
+        "description": "Create folders to categorize and store recipes",
+        "features": [
+          "Click \"New Folder\" on the recipes page",
+          "Enter folder name, such as \"Home Cooking\", \"Holiday Menus\"",
+          "Drag recipes into folders",
+          "Support creating subfolders to build hierarchical structure"
+        ]
+      },
+      "tags": {
+        "title": "Tag System",
+        "description": "Use tags to quickly filter and find recipes",
+        "intro": "Tags are a flexible categorization method, one recipe can have multiple tags:",
+        "categories": [
+          "Cuisine Tags: Chinese, Western, Japanese, Korean, etc.",
+          "Dietary Tags: Vegetarian, Low-Calorie, Gluten-Free, Keto, etc.",
+          "Occasion Tags: Quick Meals, Entertaining, Lunch Box, etc.",
+          "Flavor Tags: Spicy, Sweet, Sour, Salty, etc."
+        ]
+      },
+      "search": {
+        "title": "Search and Filter",
+        "description": "Quickly find the recipes you need",
+        "features": [
+          "Search recipes by name",
+          "Filter recipes by tags",
+          "Filter recipes by folder",
+          "Filter by maximum cooking time"
+        ]
+      },
+      "cookable": {
+        "title": "Recipes You Can Make Now",
+        "description": "See which dishes you can cook with your current pantry",
+        "content": "The recipes page checks your pantry and shows a \"Recipes You Can Make Now\" section for dishes whose ingredients are all in stock. Optional ingredients are ignored, and pantry items marked as unlimited always count as available."
+      },
+      "gridRecipes": {
+        "title": "Grid Recipes",
+        "description": "Structured recipes that reference your ingredients",
+        "content": "Grid recipes use a table-style layout where each step directly references the ingredient list, showing exactly which ingredients and quantities are used. Enable grid mode in the recipe editor and build steps that link to your ingredients."
+      }
+    },
+    "editing": {
+      "title": "Editing and Deleting",
+      "description": "Update and manage your recipe content at any time.",
+      "edit": {
+        "title": "Edit Recipe",
+        "steps": [
+          "Open the recipe details page",
+          "Click the \"Edit\" button",
+          "Modify any content that needs updating",
+          "Save changes"
+        ],
+        "alert": "You can only edit recipes you created, administrators can edit all recipes"
+      },
+      "delete": {
+        "title": "Delete Recipe",
+        "content": "Click the \"Delete\" button on the recipe details page or in the list. Deletion is irreversible, please proceed with caution."
+      },
+      "costTracking": {
+        "title": "Recipe Cost",
+        "description": "See how much a recipe costs to make.",
+        "content": "When cost tracking is enabled, the recipe page shows an \"Estimated Cost\" card with the cost per serving and cost per meal, plus a Cost column next to each ingredient. Prices are taken from your pantry items and are only visible to the recipe owner."
+      }
+    },
+    "viewing": {
+      "title": "Viewing and Scaling",
+      "description": "Adjust portions and display quantities in the units you prefer.",
+      "servingsScaling": {
+        "title": "Servings Scaling",
+        "description": "Cook for any number of diners",
+        "content": "Change the serving count on a recipe page and every ingredient quantity updates automatically. You can also adjust a single ingredient directly and all other quantities scale proportionally."
+      },
+      "unitDisplay": {
+        "title": "Preferred Units",
+        "description": "Show quantities in your preferred unit system",
+        "content": "Toggle between your kitchen's preferred units and the recipe's original units. Quantities are converted automatically and the original measurement is shown alongside."
+      },
+      "conversions": {
+        "title": "Unit Conversions",
+        "description": "Convert any ingredient quantity",
+        "content": "Open the conversion dialog for any ingredient to see available conversions and switch between equivalent units. Conversions are loaded for common ingredients and applied automatically when units differ."
+      }
+    },
+    "importing": {
+      "title": "Import and Export",
+      "description": "Import recipes from multiple sources including Cooklang files, URLs, and public recipes.",
+      "cooklang": {
+        "title": "Import from Cooklang",
+        "description": "PantryButler is fully compatible with Cooklang, the open-source recipe markup language",
+        "steps": [
+          "Click \"Import from Cooklang\" on the recipe editor page",
+          "Upload your .cook file or paste Cooklang text",
+          "Review the parsed recipe with ingredients, equipment, and instructions",
+          "Confirm import to add the recipe to your collection"
+        ],
+        "alert": "Cooklang format preserves ingredient quantities, equipment, timers, and step-by-step instructions"
+      },
+      "url": {
+        "title": "Import from URL",
+        "description": "Import recipes directly from recipe websites",
+        "steps": [
+          "Click \"Import from URL\" on the recipe editor page",
+          "Paste the URL of the recipe webpage",
+          "The system will automatically extract recipe information",
+          "Review and edit the imported recipe as needed",
+          "Save to add the recipe to your collection"
+        ]
+      },
+      "public": {
+        "title": "Import from Public Recipes",
+        "description": "Browse and import recipes shared publicly by other users",
+        "steps": [
+          "Visit a public recipe page via shared link",
+          "Click \"Import to My Kitchen\" button",
+          "Select which kitchen to import to",
+          "The recipe will be added to your collection with all details preserved"
+        ]
+      },
+      "review": {
+        "title": "Review Imported Recipes",
+        "description": "Map ingredients and verify details before saving",
+        "content": "Before an import is saved, a review page shows the parsed ingredients and lets you match each item to your pantry or the nutrition database. Badges mark exact matches, similar matches, and new items so you can decide how each ingredient should be handled. Imported recipes carry a badge showing where they came from and how many times they have been re-imported."
+      },
+      "export": {
+        "title": "Export Recipes",
+        "description": "Save a recipe as a Cooklang file",
+        "content": "Open any recipe and click \"Export as Cooklang\" to download a .cook file. The export keeps the recipe's ingredients, steps, timers, and equipment, so it can be shared or imported into any Cooklang-compatible app."
+      }
+    },
+    "bestPractices": {
+      "title": "Best Practices",
+      "items": [
+        "Use clear recipe names for easy searching and identification",
+        "Record ingredient quantities and steps in detail to ensure reproducibility",
+        "Upload high-quality finished dish photos to increase visual appeal",
+        "Use tags wisely to build a personal categorization system",
+        "Regularly organize folders to keep recipe library orderly",
+        "Add notes to frequently used recipes to record improvement suggestions"
+      ]
+    }
+  },
+  "sharing": {
+    "title": "Sharing & Collaboration",
+    "subtitle": "Share recipes with your household, collaborate on meal planning, and enjoy cooking together.",
+    "kitchenCollaboration": {
+      "title": "Kitchen Collaboration",
+      "description": "Members of the same kitchen can share and collaboratively manage all data.",
+      "sharingScope": {
+        "title": "Sharing Scope",
+        "description": "Content accessible to kitchen members",
+        "intro": "All members within a kitchen share the following data:",
+        "items": [
+          {
+            "label": "Recipe Library",
+            "description": "All recipes created by members"
+          },
+          {
+            "label": "Meal Plans",
+            "description": "Meal arrangements in calendar"
+          },
+          {
+            "label": "Shopping Lists",
+            "description": "Shared shopping lists"
+          },
+          {
+            "label": "Pantry",
+            "description": "Ingredient inventory information"
+          },
+          {
+            "label": "Equipment List",
+            "description": "Kitchen equipment list"
+          }
+        ],
+        "alert": "This design is suitable for family use, all members can jointly manage household meals and shopping"
+      },
+      "scenarios": {
+        "title": "Collaboration Scenarios",
+        "description": "Typical applications of kitchen collaboration",
+        "family": {
+          "title": "Family Collaboration",
+          "items": [
+            "Mom plans this week's meals",
+            "Dad generates shopping list based on plan",
+            "Kids help shop at supermarket, marking purchased items in real-time",
+            "Whole family shares recipes, everyone can add favorite dishes"
+          ]
+        },
+        "roommate": {
+          "title": "Roommate Collaboration",
+          "items": [
+            "Jointly manage refrigerator inventory",
+            "Take turns planning and cooking",
+            "Share shopping lists",
+            "Share each other's specialty dishes"
+          ]
+        },
+        "team": {
+          "title": "Team Collaboration",
+          "items": [
+            "Culinary team shares menus",
+            "Collaborate on developing new dishes",
+            "Unified ingredient procurement management",
+            "Track equipment usage and maintenance"
+          ]
+        }
+      },
+      "permissions": {
+        "title": "Permission Management",
+        "description": "Different roles have different permissions",
+        "admin": {
+          "title": "Administrator Permissions",
+          "items": [
+            "Manage kitchen members (add, edit, delete users)",
+            "Modify kitchen settings",
+            "Manage all recipes and data",
+            "Delete any content"
+          ]
+        },
+        "member": {
+          "title": "Regular Member Permissions",
+          "items": [
+            "View all shared content",
+            "Create and edit own recipes",
+            "Participate in meal planning and shopping lists",
+            "Update pantry and equipment information",
+            "Cannot manage other users"
+          ]
+        }
+      }
+    },
+    "shareRecipes": {
+      "title": "Share Recipes",
+      "description": "Share your recipes via public links or export for backup.",
+      "generateLink": {
+        "title": "Generate Share Link",
+        "description": "Create shareable recipe link",
+        "intro": "Generate recipe share link that can be sent to others through any method:",
+        "features": [
+          "Copy link to share with anyone",
+          "Embed in blog or website - Use the public recipe URL in an iframe or link"
+        ],
+        "alert": "Blog Embedding: Public recipe pages are designed to be embeddable. Simply use the public URL in an iframe or as a direct link in your blog posts. The recipe will display with full formatting, images, timers, and all details."
+      },
+      "publicSharing": {
+        "title": "Public Recipe Sharing",
+        "description": "Share recipes with anyone, even without an account",
+        "intro": "Make your recipes publicly accessible:",
+        "steps": [
+          "Open the recipe you want to share",
+          "Click \"Make Public\" or toggle the public sharing option",
+          "A unique public URL will be generated",
+          "Anyone with the link can view the recipe without logging in",
+          "Public recipes can be imported by other PantryButler users"
+        ],
+        "note": "Public recipes display your username and kitchen name, helping build your culinary reputation."
+      },
+      "visibility": {
+        "title": "Set Recipe Visibility",
+        "description": "Control recipe sharing scope",
+        "intro": "When creating or editing recipes, you can set visibility:",
+        "options": [
+          {
+            "label": "Private",
+            "description": "Only visible to you and your kitchen members (default)"
+          },
+          {
+            "label": "Public",
+            "description": "Anyone with the public link can view and import the recipe"
+          }
+        ]
+      }
+    },
+    "notifications": {
+      "title": "Notification System",
+      "description": "Stay informed about collaboration activities and sharing information.",
+      "types": {
+        "title": "Notification Types",
+        "description": "Notifications sent by the system",
+        "items": [
+          "Recipe share notifications",
+          "Meal plan update reminders",
+          "Shopping list change notifications",
+          "Kitchen member change notifications"
+        ]
+      }
+    },
+    "bestPractices": {
+      "title": "Best Practices",
+      "kitchenCollaboration": {
+        "title": "Kitchen Collaboration",
+        "items": [
+          "Clarify member responsibilities to avoid duplicate operations",
+          "Regularly communicate about meal plans and shopping arrangements",
+          "Update shared data promptly to keep information synchronized",
+          "Respect content created by others, delete cautiously",
+          "Set up multiple administrators reasonably to ensure orderly kitchen management"
+        ]
+      },
+      "privacy": {
+        "title": "Privacy Protection",
+        "items": [
+          "Set recipe visibility reasonably",
+          "Don't share content containing sensitive information",
+          "Regularly check your sharing settings"
+        ]
+      }
+    }
+  },
+  "nutrition": {
+    "title": "Nutrition & Cost Tracking",
+    "subtitle": "Understand the nutritional value of your recipes and how much they cost to make.",
+    "overview": {
+      "title": "Overview",
+      "description": "PantryButler can display a full nutrition label for every recipe and estimate costs from the prices you record in your pantry.",
+      "what": {
+        "title": "What gets tracked",
+        "description": "Nutrition and cost information is computed automatically from your recipes and pantry data.",
+        "features": [
+          "Per-serving nutrition facts with % Daily Value",
+          "Estimated cost per serving and per meal on recipe pages",
+          "Meal costs shown on the calendar",
+          "Estimated totals on grocery lists",
+          "Unit prices on every pantry ingredient"
+        ]
+      }
+    },
+    "enabling": {
+      "title": "Enabling Nutrition Information",
+      "description": "Nutrition facts are turned on and off at the kitchen level by an administrator.",
+      "stepsTitle": "Enabling steps",
+      "steps": [
+        "Open the Settings page from the navigation",
+        "In the Display section, toggle the Nutrition Information switch on",
+        "Recipe and public recipe pages now show the Nutrition Facts label"
+      ],
+      "alert": "Nutrition is enabled by default and only administrators can change this setting."
+    },
+    "matching": {
+      "title": "Matching Ingredients to Nutrition Data",
+      "description": "To estimate nutrition, ingredients must be matched with foods in the nutrition database.",
+      "how": {
+        "title": "How matching works",
+        "steps": [
+          {
+            "title": "Open an ingredient",
+            "description": "Go to Pantry → Ingredients and edit the ingredient you want to match."
+          },
+          {
+            "title": "Use Nutrition Match",
+            "description": "The Ingredient Search dialog shows suggested matches from the nutrition database."
+          },
+          {
+            "title": "Accept the match",
+            "description": "Pick the closest food; the ingredient now shows a \"Nutrition linked\" indicator."
+          },
+          {
+            "title": "Or add custom data",
+            "description": "If no food matches, use \"Add Custom Nutrition Data\" to enter values yourself."
+          }
+        ]
+      },
+      "custom": {
+        "title": "Custom Nutrition Data",
+        "description": "When an ingredient is not in the database, you can enter its values manually.",
+        "fields": [
+          {
+            "label": "Serving Size",
+            "description": "the serving size and unit your values apply to"
+          },
+          {
+            "label": "Macronutrients",
+            "description": "calories, protein, carbohydrates, and total fat"
+          },
+          {
+            "label": "Other Nutrients",
+            "description": "dietary fiber, total sugars, sodium, and cholesterol"
+          }
+        ],
+        "alert": "All custom values are entered per serving size and scaled to your recipe automatically."
+      }
+    },
+    "calculation": {
+      "title": "How Nutrition Is Calculated",
+      "description": "Values are estimates produced by the server from the nutrition database.",
+      "items": [
+        "Each matched ingredient is converted to grams using per-food conversion factors",
+        "Per-100g values from the database are scaled to the quantity in the recipe",
+        "All ingredients are summed and divided by the number of servings",
+        "The nutrition label shows both totals and per-serving values"
+      ]
+    },
+    "nutritionFacts": {
+      "title": "The Nutrition Facts Label",
+      "description": "When nutrition is enabled, recipe pages display a US-style FDA nutrition label.",
+      "label": {
+        "title": "What the label shows",
+        "description": "A complete per-100g and per-serving breakdown",
+        "rows": [
+          "Servings per recipe and serving size",
+          "Amount per serving with % Daily Value",
+          "Total Fat, Cholesterol, Sodium, Total Carbohydrate, Protein",
+          "Dietary Fiber, Total Sugars, and added micronutrients"
+        ],
+        "alert": "Nutrition data is provided by OpenNutrition and is an estimate based on ingredient matching."
+      }
+    },
+    "costOverview": {
+      "title": "Cost Tracking",
+      "description": "Estimate how much your recipes, meals, and shopping lists cost using pantry prices.",
+      "where": {
+        "title": "Where costs appear",
+        "items": [
+          "Recipe page — an Estimated Cost card with cost per serving and per meal",
+          "Meal calendar — a cost shown next to each planned meal",
+          "Grocery list — an Estimated Cost total in the list header",
+          "Ingredients page — a unit price on every priced item"
+        ],
+        "alert": "Recipe cost details are only visible to the recipe owner."
+      }
+    },
+    "pantryPrices": {
+      "title": "Adding Prices to Pantry Items",
+      "description": "Costs are computed from the price fields on your pantry ingredients.",
+      "fields": {
+        "title": "Two optional price fields",
+        "description": "Available when adding or editing a pantry ingredient",
+        "list": [
+          {
+            "label": "Price",
+            "description": "the total amount you paid for the item"
+          },
+          {
+            "label": "Price covers",
+            "description": "the quantity that price applies to, for example 500 for a 500 g package. Leave empty to use the current amount."
+          }
+        ],
+        "unitPrice": "Unit price is calculated automatically and shown on each ingredient so you can compare package sizes."
+      }
+    },
+    "costSettings": {
+      "title": "Enabling Cost Tracking",
+      "description": "Cost tracking is turned on and off at the kitchen level by an administrator.",
+      "stepsTitle": "Enabling steps",
+      "steps": [
+        {
+          "title": "Open Settings",
+          "description": "Open the Settings page from the navigation."
+        },
+        {
+          "title": "Toggle Cost Tracking",
+          "description": "In the Display section, turn the Cost Tracking switch on."
+        },
+        {
+          "title": "Choose a currency",
+          "description": "Select the currency used to display prices and costs from the list of supported currencies."
+        }
+      ]
+    },
+    "bestPractices": {
+      "title": "Best Practices",
+      "items": [
+        "Match ingredients to the nutrition database for complete labels",
+        "Keep pantry prices up to date so estimates stay accurate",
+        "Record the price and the quantity it covers for packaged items",
+        "Enter the price you paid when moving purchased items into the pantry"
+      ]
+    }
+  },
+  "account": {
+    "title": "Account, Settings & Announcements",
+    "subtitle": "Manage your display name, password, personal preferences, and kitchen announcements.",
+    "profile": {
+      "title": "Your Profile",
+      "description": "The Profile page stores your personal information shown to other members.",
+      "info": {
+        "title": "Profile information",
+        "fields": [
+          {
+            "label": "Username",
+            "description": "your email address; it is your login and cannot be changed"
+          },
+          {
+            "label": "Display Name",
+            "description": "the name shown to other members of the kitchen"
+          },
+          {
+            "label": "Avatar",
+            "description": "coming in a future update"
+          }
+        ],
+        "alert": "Changes to your display name are saved immediately."
+      }
+    },
+    "password": {
+      "title": "Changing Your Password",
+      "description": "Keep your account secure by choosing a strong password.",
+      "stepsTitle": "Steps",
+      "steps": [
+        "Open the Profile page",
+        "Click the Change Password button",
+        "Enter your current password, then the new password twice",
+        "Passwords must be at least 8 characters"
+      ]
+    },
+    "kitchenSettings": {
+      "title": "Kitchen Settings",
+      "description": "Kitchen-wide preferences controlled by an administrator, plus your personal language choice.",
+      "units": {
+        "title": "Preferred Unit System",
+        "description": "Choose how quantities are displayed across the app",
+        "options": [
+          "Metric (g, kg, ml, L)",
+          "Metric Weights (g only)",
+          "Imperial (oz, lb, cup, tbsp)",
+          "Imperial Volume (cups only)",
+          "Ratio (percentage)",
+          "Baker's Percentage"
+        ]
+      },
+      "currency": {
+        "title": "Currency",
+        "description": "The currency used to display prices and costs",
+        "content": "Select the currency used for cost tracking from the list of supported currencies."
+      },
+      "features": {
+        "title": "Display options",
+        "description": "Settings that change how the app looks and behaves",
+        "options": [
+          {
+            "label": "Dark Mode",
+            "description": "switch between light and dark themes"
+          },
+          {
+            "label": "Vibrant Mode",
+            "description": "use high-saturation colors"
+          },
+          {
+            "label": "Nutrition Information",
+            "description": "display nutrition facts on recipe pages"
+          },
+          {
+            "label": "Cost Tracking",
+            "description": "display estimated costs on recipe, calendar, and grocery pages"
+          }
+        ],
+        "alert": "Display options are kitchen settings controlled by an administrator; the language picker is personal."
+      }
+    },
+    "language": {
+      "title": "Language",
+      "description": "Choose the language used in the interface. This is a personal preference applied immediately.",
+      "optionsTitle": "Available languages",
+      "options": [
+        "English",
+        "Shqip",
+        "Italiano",
+        "Español",
+        "Français",
+        "中文",
+        "हिन्दी"
+      ]
+    },
+    "rights": {
+      "title": "Data, Tokens & Tutorials",
+      "description": "Manage your data, create API tokens for integrations, and get help with tutorials.",
+      "apiTokens": {
+        "title": "API Tokens",
+        "description": "Long-lived tokens for the browser extension and mobile apps",
+        "content": "Create tokens with scoped permissions from the Settings → API Tokens card. Tokens are shown once at creation, so copy them somewhere safe."
+      },
+      "data": {
+        "title": "Export & Backup",
+        "description": "Own your data and keep it portable",
+        "items": [
+          "Export all recipes as a Cooklang (.cook) archive",
+          "Import recipes from Cooklang files, URLs, and public recipes",
+          "Admin export of nutrition database data"
+        ]
+      },
+      "tutorials": {
+        "title": "Tutorials",
+        "description": "Guided tutorials that introduce each feature",
+        "items": [
+          "Follow step-by-step tutorials for every major feature",
+          "Track how many tutorials you have completed",
+          "Reset all tutorials from the Settings page to review them again"
+        ]
+      }
+    },
+    "announcements": {
+      "title": "Announcements",
+      "description": "Administrators post announcements to keep every kitchen member informed.",
+      "viewing": {
+        "title": "Viewing announcements",
+        "description": "Announcements appear on the Announcements page",
+        "items": [
+          "You are redirected to the Announcements page when there is something new",
+          "Unread announcements are highlighted in the notifications",
+          "Reading an announcement marks it as viewed"
+        ]
+      },
+      "manage": {
+        "title": "Managing announcements",
+        "description": "Instance administrators can create announcements; superadmins can edit and delete them",
+        "steps": [
+          {
+            "title": "Open the Announcements page",
+            "description": "Go to Announcements and click New Announcement."
+          },
+          {
+            "title": "Write the announcement",
+            "description": "Give it a title and a message, then publish."
+          },
+          {
+            "title": "Edit or deactivate",
+            "description": "Superadmins can edit announcements and set them active or inactive."
+          }
+        ]
+      }
+    },
+    "bestPractices": {
+      "title": "Best Practices",
+      "items": [
+        "Use a clear display name so other members recognize you",
+        "Keep an eye on announcements for important kitchen updates",
+        "Create API tokens with the minimum permissions you need",
+        "Back up your recipes regularly with Export"
+      ]
+    }
+  },
+  "api": {
+    "title": "API Guidelines",
+    "subtitle": "Authenticate against the PantryButler API with tokens or OAuth2, request scoped permissions, and integrate your own clients.",
+    "overview": {
+      "title": "Overview",
+      "description": "The PantryButler API exposes resources over HTTPS and accepts JSON. Every request must be authenticated.",
+      "authentication": {
+        "title": "Authentication",
+        "description": "Two supported ways to authenticate",
+        "options": [
+          {
+            "label": "API Tokens",
+            "description": "long-lived tokens minted by a member for programmatic access"
+          },
+          {
+            "label": "OAuth2",
+            "description": "Authorization Code flow with PKCE for interactive apps"
+          }
+        ]
+      }
+    },
+    "apiTokens": {
+      "title": "API Tokens",
+      "description": "API tokens are long-lived credentials created by a member inside the app.",
+      "properties": {
+        "title": "Token properties",
+        "description": "What every API token looks like",
+        "items": [
+          {
+            "label": "Format",
+            "description": "32 bytes of base64url-encoded entropy, prefixed with pb_"
+          },
+          {
+            "label": "Storage",
+            "description": "only a SHA-256 hash of the token is stored on the server"
+          },
+          {
+            "label": "Plaintext",
+            "description": "the raw token is returned a single time at creation"
+          },
+          {
+            "label": "Expires",
+            "description": "tokens use a preset lifetime — never, 7, 30, or 90 days — capped at one year"
+          }
+        ]
+      },
+      "create": {
+        "title": "Creating a Token",
+        "description": "Tokens are created from the Settings → API Tokens card",
+        "steps": [
+          {
+            "title": "Name the token",
+            "description": "Give it a name between 1 and 100 characters."
+          },
+          {
+            "title": "Choose scopes",
+            "description": "Select the permissions the token needs, or pick all for full access."
+          },
+          {
+            "title": "Set an expiry",
+            "description": "Optional — choose a preset lifetime for the token."
+          },
+          {
+            "title": "Copy the plaintext",
+            "description": "The plaintext token is shown once and never again, so store it safely."
+          }
+        ],
+        "alert": "API tokens are shown exactly once at creation. If you lose the plaintext, revoke the token and mint a new one."
+      },
+      "scopes": {
+        "title": "Scopes",
+        "description": "Scopes limit what a token can do on your instance.",
+        "intro": "Scopes are grouped into resources that each support read and write:",
+        "resources": [
+          "recipes — recipe read/write",
+          "pantry — pantry read/write",
+          "grocery — grocery list read/write",
+          "calendar — meal calendar read/write",
+          "nutrition — nutrition data read/write",
+          "kitchen — equipment and kitchen layout read/write",
+          "profile — profile and notifications read/write",
+          "settings — kitchen settings read/write"
+        ],
+        "readWrite": "You can also request a single all scope for full access:",
+        "all": [
+          "all — every permission on this instance"
+        ]
+      },
+      "revoke": {
+        "title": "Revoking Tokens",
+        "description": "You can revoke access at any time from the Settings page.",
+        "items": [
+          "Revoke a single token from the token list",
+          "Revoke every token on the instance with one action",
+          "A revoked token stops working immediately"
+        ]
+      }
+    },
+    "oauth": {
+      "title": "OAuth2 with PKCE",
+      "description": "Bundled clients — the browser extension and mobile apps — sign in with the OAuth2 Authorization Code flow using PKCE.",
+      "flow": {
+        "title": "Flow facts",
+        "description": "Requirements enforced by the authorization server",
+        "items": [
+          "code_challenge may be 43–128 characters",
+          "code_challenge_method must be the literal value S256",
+          "The extension and mobile clients are pre-registered with the server",
+          "Development clients are enabled through the oauthDevClients server configuration"
+        ],
+        "alert": "The PKCE S256 method is required; no other code_challenge_method values are accepted."
+      }
+    },
+    "bestPractices": {
+      "title": "Best Practices",
+      "items": [
+        "Request the minimum scopes your integration needs",
+        "Store tokens securely and never log them",
+        "Use a short expiry for tokens in long-running processes",
+        "Prefer the OAuth2 flow for interactive, user-facing apps",
+        "Include the token as a Bearer token in the Authorization header"
+      ]
+    }
+  },
+  "admin": {
+    "access": {
+      "title": "Admin Features",
+      "subtitle": "Server-wide and kitchen-level tools for superadmins and instance administrators.",
+      "enable": {
+        "title": "Enabling Admin Features",
+        "description": "Server-wide admin features are gated behind a configuration flag.",
+        "env": {
+          "title": "ENABLE_ADMIN_FEATURES",
+          "description": "Set by the server administrator",
+          "content": "Set ENABLE_ADMIN_FEATURES=true in the server environment to expose the Admin pages and the admin API.",
+          "alert": "While disabled, admin endpoints return an access-denied error and the Admin nav items stay hidden."
+        }
+      }
+    },
+    "emailVerification": {
+      "title": "Email Verification & SMTP",
+      "description": "With admin features enabled, new creators verify their email address before they can sign in.",
+      "behavior": {
+        "title": "How it works",
+        "description": "The requirement is managed by the superadmin from Admin → Configuration.",
+        "items": [
+          "While admin features are disabled, registration works as before with no verification step",
+          "With admin features enabled, verification is required by default (overridable via the REQUIRE_EMAIL_VERIFICATION env variable)",
+          "The kitchen is created only after the email is confirmed",
+          "Verification links expire after 24 hours and can be resent"
+        ]
+      },
+      "smtp": {
+        "title": "SMTP configuration",
+        "description": "SMTP details are set by the superadmin from Admin → Configuration, falling back to environment variables.",
+        "env": "SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, SMTP_FROM and SMTP_SECURE control the mail server.",
+        "alert": "Without an SMTP host, verification emails are logged to the server console instead of being delivered — configure one before inviting real users."
+      }
+    },
+    "roles": {
+      "title": "User Roles",
+      "description": "Users hold either a server-wide role or a kitchen-level role.",
+      "superadmin": {
+        "title": "Superadmin",
+        "description": "The first account created during setup becomes the superadmin and can manage every instance.",
+        "permissions": [
+          "View and delete any instance",
+          "Create, edit, and delete announcements for any kitchen",
+          "Manage the nutrition database",
+          "Access the Admin pages (when admin features are enabled)"
+        ]
+      },
+      "instanceAdmin": {
+        "title": "Instance Administrator",
+        "description": "An administrator of a single kitchen.",
+        "permissions": [
+          "Add, edit, and delete kitchen members",
+          "Change kitchen settings",
+          "Create announcements for the kitchen",
+          "Manage all recipes and data in the kitchen"
+        ]
+      },
+      "member": {
+        "title": "Member",
+        "description": "A regular user of one kitchen.",
+        "permissions": [
+          "Create and manage their own recipes",
+          "View shared kitchen content",
+          "Plan meals and create shopping lists",
+          "Manage personal pantry data"
+        ]
+      }
+    },
+    "instances": {
+      "title": "Instance Management",
+      "description": "Superadmins can inspect every kitchen instance and delete abandoned ones.",
+      "view": {
+        "title": "Browsing instances",
+        "description": "The Admin Instances page lists every kitchen with its creator and activity",
+        "info": [
+          "Instance name",
+          "Creator and creation date",
+          "Last login date"
+        ]
+      },
+      "delete": {
+        "title": "Deleting an instance",
+        "description": "Deleting a kitchen removes all of its data permanently",
+        "intro": "The following data is deleted with the instance:",
+        "data": [
+          "Recipes and ingredients",
+          "Pantry items and equipment",
+          "Calendar meals and grocery lists",
+          "Settings and custom data",
+          "All user memberships"
+        ],
+        "alert": "Deleting an instance cannot be undone. Export anything you want to keep first."
+      }
+    },
+    "announcements": {
+      "title": "Announcement Management",
+      "description": "Announcements keep every member of a kitchen informed about updates.",
+      "manage": {
+        "title": "Managing announcements",
+        "description": "Available to instance administrators and superadmins",
+        "features": [
+          "Create announcements with a title and message",
+          "Edit an announcement after it is published",
+          "Set an announcement active or inactive to show or hide it",
+          "Delete announcements permanently"
+        ],
+        "alert": "Only superadmins can edit, deactivate, or delete announcements; instance admins create them."
+      }
+    },
+    "bestPractices": {
+      "title": "Best Practices",
+      "items": [
+        "Set up at least two superadmin accounts to avoid a single point of failure",
+        "Enable admin features only when you need them",
+        "Review instance activity and clean up abandoned kitchens",
+        "Post announcements for important kitchen-wide changes"
+      ]
+    }
+  }
+}

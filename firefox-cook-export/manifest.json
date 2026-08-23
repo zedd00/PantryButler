@@ -1,0 +1,63 @@
+{
+  "manifest_version": 3,
+  "name": "PantryButler Cooklang Export",
+  "version": "1.1.1",
+  "description": "Export a recipe from the current page as a Cooklang .cook file, or push it straight to your Pantry Butler instance.",
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "scripting",
+    "storage"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "cook-export@pantrybutler.local",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": {
+        "required": [
+          "authenticationInfo",
+          "websiteContent"
+        ]
+      }
+    },
+    "gecko_android": {
+      "strict_min_version": "142.0"
+    }
+  },
+  "host_permissions": [
+    "http://localhost/*",
+    "https://localhost/*",
+    "http://127.0.0.1/*",
+    "https://127.0.0.1/*"
+  ],
+  "optional_host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": [
+      "src/common/oauth.js",
+      "src/background/background.js"
+    ]
+  },
+  "action": {
+    "default_title": "Export recipe (.cook)",
+    "default_popup": "src/popup/popup.html",
+    "default_icon": "icons/icon128.png"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "src/oauth/callback.html"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}

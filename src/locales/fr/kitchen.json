@@ -1,0 +1,159 @@
+{
+  "title": "Éditeur de Plan de Cuisine",
+  "backToPantry": "Retour au Garde-manger",
+  "kitchenLayout": "Plan de Cuisine",
+  "newLayout": "Nouveau Plan",
+  "createFirstLayout": "Créez votre premier plan",
+  "createFirstLayoutDescription": "Créez un plan de cuisine 2D, ajoutez des armoires, des appareils et d'autres éléments, puis faites glisser et déposez les ingrédients et l'équipement à leurs emplacements pour une gestion facile.",
+  "createLayout": "Créer un Plan",
+  "editLayout": "Modifier le Plan",
+  "deleteLayout": "Supprimer le Plan",
+  "selectLayout": "Sélectionner le Plan",
+  "layoutName": "Nom du Plan",
+  "layoutDescription": "Description",
+  "deleteConfirmTitle": "Confirmer la Suppression",
+  "deleteConfirmMessage": "Êtes-vous sûr de vouloir supprimer le plan \"{{name}}\" ? Cela supprimera tous les éléments associés et les emplacements d'articles et ne peut pas être annulé.",
+  "createSuccess": "Créé avec succès",
+  "updateSuccess": "Mis à jour avec succès",
+  "deleteSuccess": "Supprimé avec succès",
+  "createError": "Échec de la création : {{message}}",
+  "updateError": "Échec de la mise à jour : {{message}}",
+  "deleteError": "Échec de la suppression : {{message}}",
+  "loadError": "Échec du chargement des données : {{message}}",
+  "loading": "Chargement...",
+  "kitchenElements": "Éléments de Cuisine",
+  "itemInventory": "Inventaire des Articles",
+  "ingredients": "Ingrédients",
+  "equipment": "Équipement",
+  "searchIngredients": "Rechercher des ingrédients...",
+  "searchEquipment": "Rechercher de l'équipement...",
+  "noIngredients": "Aucun ingrédient",
+  "noEquipment": "Aucun équipement",
+  "noMatchingIngredients": "Aucun ingrédient correspondant trouvé",
+  "noMatchingEquipment": "Aucun équipement correspondant trouvé",
+  "elementAdded": "Élément ajouté",
+  "elementAddError": "Échec de l'ajout de l'élément : {{message}}",
+  "itemPlaced": "{{name}} placé",
+  "itemPlaceError": "Échec du placement : {{message}}",
+  "itemAlreadyPlaced": "Cet article est déjà à cet emplacement",
+  "itemRemoved": "Article retiré",
+  "itemRemoveError": "Échec du retrait : {{message}}",
+  "elementDeleted": "Élément supprimé",
+  "elementDeleteError": "Échec de la suppression : {{message}}",
+  "updatePositionError": "Échec de la mise à jour de la position : {{message}}",
+  "editElementName": "Modifier le Nom de l'Élément",
+  "customName": "Nom Personnalisé",
+  "customNamePlaceholder": "par ex., Armoire Supérieure Cuisine Principale, Armoire Inférieure Îlot",
+  "cancel": "Annuler",
+  "save": "Enregistrer",
+  "delete": "Supprimer",
+  "edit": "Modifier",
+  "deleteElement": "Supprimer l'Élément",
+  "emptyCanvasMessage": "Faites glisser des éléments depuis le panneau de gauche sur la toile pour commencer à concevoir votre plan de cuisine",
+  "elements": {
+    "upper_cabinet": "Armoire Supérieure",
+    "lower_cabinet": "Armoire Inférieure",
+    "countertop": "Plan de Travail",
+    "sink": "Évier",
+    "stove": "Cuisinière",
+    "refrigerator": "Réfrigérateur",
+    "freezer": "Congélateur",
+    "pantry": "Armoire de Garde-manger",
+    "table": "Table",
+    "door": "Porte",
+    "window": "Fenêtre",
+    "other": "Autre"
+  },
+  "kitchenPantry": "Kitchen Pantry",
+  "kitchenPantryPage": {
+    "setupDialogTitle": "Configurez votre plan de cuisine",
+    "setupDialogDescription": "Avant de pouvoir organiser vos articles du garde-manger, vous devez créer un plan de cuisine. Concevez votre cuisine en ajoutant des armoires, des appareils électroménagers et des éléments de rangement."
+  },
+  "kitchenLayoutEditor": {
+    "createYourLayout": "Créez votre plan de cuisine",
+    "designDescription": "Concevez un plan 2D de votre cuisine en ajoutant des armoires, des appareils électroménagers et des éléments de rangement. Une fois créé, vous pouvez l'utiliser pour organiser vos ingrédients et votre équipement.",
+    "createFirstLayoutButton": "Créer le premier plan"
+  },
+  "kitchenTutorial": {
+    "layoutEditorSteps": [
+      {
+        "title": "Bienvenue dans l'éditeur de plan de cuisine",
+        "content": "Créez une représentation visuelle de votre cuisine pour organiser efficacement vos ingrédients et votre équipement."
+      },
+      {
+        "title": "Ajout d'éléments",
+        "content": "Faites glisser des éléments du panneau gauche vers le canevas. Les éléments incluent des armoires, des appareils électroménagers et des unités de rangement."
+      },
+      {
+        "title": "Déplacer des éléments",
+        "content": "Cliquez et faites glisser les éléments pour les repositionner. Les éléments s'alignent sur une grille et sur d'autres éléments pour faciliter l'alignement."
+      },
+      {
+        "title": "Redimensionner des éléments",
+        "content": "Sélectionnez un élément pour voir les poignées de redimensionnement. Faites glisser les poignées pour ajuster la taille. Les éléments sont limités aux limites du canevas."
+      },
+      {
+        "title": "Personnaliser des éléments",
+        "content": "Faites un clic droit sur n'importe quel élément pour le renommer, changer sa couleur ou gérer les étagères. Les étagères aident à organiser les articles dans un élément."
+      },
+      {
+        "title": "Gérer les étagères",
+        "content": "Ajoutez des étagères aux éléments pour créer des sections. Chaque étagère peut contenir différents articles, ce qui facilite la recherche de ce dont vous avez besoin."
+      },
+      {
+        "title": "Prêt à commencer !",
+        "content": "Une fois votre plan terminé, allez sur la page Garde-manger de cuisine pour commencer à organiser vos ingrédients et votre équipement."
+      }
+    ],
+    "pantrySteps": [
+      {
+        "title": "Bienvenue dans le garde-manger de cuisine",
+        "content": "Utilisez votre plan de cuisine pour organiser et suivre où vos ingrédients et votre équipement sont stockés."
+      },
+      {
+        "title": "Placer des articles",
+        "content": "Faites glisser des ingrédients ou de l'équipement du panneau droit vers les éléments de votre plan de cuisine. Les articles seront stockés à cet endroit."
+      },
+      {
+        "title": "Voir les articles",
+        "content": "Cliquez sur n'importe quel élément pour voir tous les articles qu'il contient. Les articles sont organisés par étagères si vous les avez configurées."
+      },
+      {
+        "title": "Modifier le plan",
+        "content": "Besoin de modifier votre plan ? Cliquez sur le bouton \"Modifier le plan\" pour revenir à l'éditeur et faire des ajustements."
+      },
+      {
+        "title": "Commencez à organiser !",
+        "content": "Vous êtes prêt à organiser votre cuisine ! Faites glisser les articles vers leurs lieux de stockage et gardez tout sous contrôle."
+      }
+    ],
+    "stepOf": "Étape {{current}} sur {{total}}",
+    "getStarted": "Commencer",
+    "skipTutorial": "Ignorer le didacticiel"
+  },
+  "modelSelector": {
+    "layoutNamePlaceholder": "Nom du plan",
+    "layoutDescriptionPlaceholder": "Description du plan"
+  },
+  "kitchenCanvas": {
+    "updateSizeError": "Échec de la mise à jour de la taille : {{message}}",
+    "elementUpdated": "Élément mis à jour",
+    "elementUpdateError": "Échec de la mise à jour de l'élément : {{message}}",
+    "shelvesUpdated": "Étagères mises à jour",
+    "shelvesUpdateError": "Échec de la mise à jour des étagères : {{message}}",
+    "deleteTooltip": "Supprimer (Suppr)",
+    "renameAndColor": "Renommer et colorer",
+    "manageShelves": "Gérer les étagères",
+    "editElementTitle": "Modifier l'élément",
+    "customNamePlaceholder": "Saisir un nom personnalisé",
+    "customColor": "Couleur personnalisée",
+    "shelfName": "Nom de l'étagère",
+    "shelfNamePlaceholder": "Nom de l'étagère",
+    "heightPercent": "Hauteur %",
+    "addShelf": "Ajouter une étagère",
+    "noItemsOnShelf": "Aucun article sur cette étagère",
+    "noItemsInElement": "Aucun article dans cet élément",
+    "itemCount": "{{count}} article",
+    "itemCount_plural": "{{count}} articles"
+  }
+}

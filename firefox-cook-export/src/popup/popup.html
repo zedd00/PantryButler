@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>PantryButler Cooklang Export</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="toolbar">
+    <h1>PantryButler Cooklang Export</h1>
+    <button id="btn-extract" type="button">Extract</button>
+  </header>
+
+  <section id="connection">
+    <div id="connection-status" hidden></div>
+    <form id="connection-form">
+      <label>Pantry Butler server
+        <input id="origin" type="url" placeholder="https://pantry.example.com" />
+      </label>
+      <div class="row">
+        <button id="btn-connect" type="submit">Connect</button>
+        <button id="btn-disconnect" type="button" hidden>Disconnect</button>
+      </div>
+      <span class="hint">Connect to push this recipe to your instance. The extension
+        only requests <code>recipes:read</code> and <code>recipes:write</code>.</span>
+    </form>
+  </section>
+
+  <main>
+    <form id="recipe-form" hidden>
+      <div class="row">
+        <label>Title
+          <input id="title" type="text" />
+        </label>
+        <label>Servings
+          <input id="servings" type="number" min="0" />
+        </label>
+      </div>
+      <div class="row">
+        <label>Prep (min)
+          <input id="prep" type="number" min="0" />
+        </label>
+        <label>Cook (min)
+          <input id="cook" type="number" min="0" />
+        </label>
+        <label>Total (min)
+          <input id="total" type="number" min="0" />
+        </label>
+      </div>
+      <label>Description
+        <textarea id="description" rows="2"></textarea>
+      </label>
+      <label>Ingredients <span class="hint">one per line; a line ending in ":" becomes a group header</span>
+        <textarea id="ingredients" rows="8"></textarea>
+      </label>
+      <label>Steps <span class="hint">one step per line</span>
+        <textarea id="steps" rows="8"></textarea>
+      </label>
+      <label>Source URL
+        <input id="source" type="text" />
+      </label>
+      <label>Notes
+        <textarea id="notes" rows="2"></textarea>
+      </label>
+      <label>Tags <span class="hint">comma-separated</span>
+        <input id="tags" type="text" />
+      </label>
+    </form>
+
+    <section id="actions" hidden>
+      <button id="btn-preview" type="button">Preview .cook</button>
+      <button id="btn-download" type="button">Download .cook</button>
+      <button id="btn-copy" type="button">Copy to clipboard</button>
+      <button id="btn-push" type="button">Push to Pantry Butler</button>
+    </section>
+
+    <section id="manual" hidden>
+      <p>No recipe detected on this page. The form is empty so you can paste a
+        recipe manually and still export it.</p>
+    </section>
+
+    <pre id="preview" hidden></pre>
+
+    <section id="status"></section>
+  </main>
+
+  <script src="../common/oauth.js"></script>
+  <script src="../common/extract.js"></script>
+  <script src="../common/cooklang.js"></script>
+  <script src="../common/push-recipe.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

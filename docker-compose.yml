@@ -1,0 +1,66 @@
+name: PantryButler
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-pantrybutler}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-pb_local_9f2c4a7e_5b8d}
+      POSTGRES_DB: ${POSTGRES_DB:-pantrybutler}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./server/src/db/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    healthcheck:
+      test: pg_isready -U ${POSTGRES_USER:-pantrybutler}
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  pantrybutler:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER:-pantrybutler}:${POSTGRES_PASSWORD:-pb_local_9f2c4a7e_5b8d}@db:5432/${POSTGRES_DB:-pantrybutler}
+      JWT_SECRET: ${JWT_SECRET:-change-me-in-production}
+      PORT: 3000
+      NODE_ENV: production
+      CORS_ORIGIN: http://localhost:3000
+      PUBLIC_DIR: /app/public
+      SETUP_DIR: /app/setup
+      VITE_API_URL: ""
+      # Enabled by default for the dev/test stack: the superadmin admin API
+      # (used by scripts/smoke-test.py to delete throwaway instances) is gated
+      # behind this flag.
+      ENABLE_ADMIN_FEATURES: ${ENABLE_ADMIN_FEATURES:-true}
+      # Seeds the browser-extension OAuth client (wildcard moz-extension://
+      # redirect) so firefox-cook-export can run its live connect round-trip
+      # against this stack. Production deployments should leave it unset.
+      OAUTH_DEV_CLIENTS: ${OAUTH_DEV_CLIENTS:-false}
+      # Optional SMTP settings for email verification (see README). Empty by
+      # default, in which case verification links are logged to the console.
+      SMTP_HOST: ${SMTP_HOST:-}
+      SMTP_PORT: ${SMTP_PORT:-587}
+      SMTP_USERNAME: ${SMTP_USERNAME:-}
+      SMTP_PASSWORD: ${SMTP_PASSWORD:-}
+      SMTP_FROM: ${SMTP_FROM:-}
+      SMTP_SECURE: ${SMTP_SECURE:-false}
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - uploads:/app/uploads
+    restart: unless-stopped
+    healthcheck:
+      test: wget --no-verbose --tries=1 --spider http://localhost:3000/api/health || exit 1
+      interval: 30s
+      timeout: 5s
+      start_period: 15s
+      retries: 3
+
+volumes:
+  pgdata:
+  uploads:

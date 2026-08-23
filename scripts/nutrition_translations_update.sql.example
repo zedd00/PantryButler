@@ -1,0 +1,51 @@
+-- ============================================================================
+-- NUTRITION FOODS TRANSLATIONS UPDATE SCRIPT (SAMPLE)
+-- ============================================================================
+-- Generated: 2026-04-16T12:00:00.000000
+-- Total items: 5299
+-- Languages: es, fr, hi, it, sq, zh
+--
+-- IMPORTANT: Review this script before applying!
+-- This script updates nutrition_foods table with translated names.
+-- ============================================================================
+
+BEGIN;
+
+-- Sample UPDATE statements (actual file will contain 5,299+ statements)
+
+UPDATE nutrition_foods
+SET name_es = 'Pechuga de Pollo, Sin Hueso Sin Piel, Cocida', 
+    alternate_names_es = ARRAY['pechuga de pollo cocida sin hueso sin piel', 'pechuga de pollo sin piel sin hueso cocida', 'pechuga de pollo a la parrilla sin hueso sin piel', 'pechuga de pollo cocida sin piel', 'pollo sin hueso sin piel cocido'], 
+    name_fr = 'Poitrine de Poulet, Désossée Sans Peau, Cuite', 
+    alternate_names_fr = ARRAY['poitrine de poulet cuite désossée sans peau', 'poitrine de poulet sans peau désossée cuite', 'poitrine de poulet grillée désossée sans peau', 'poitrine de poulet cuite sans peau', 'poulet désossé sans peau cuit'], 
+    name_hi = 'चिकन ब्रेस्ट, हड्डी रहित त्वचा रहित, पकाया हुआ', 
+    alternate_names_hi = ARRAY['पकाया हुआ हड्डी रहित त्वचा रहित चिकन ब्रेस्ट', 'त्वचा रहित हड्डी रहित चिकन ब्रेस्ट पकाया हुआ', 'ग्रिल्ड चिकन ब्रेस्ट हड्डी रहित त्वचा रहित', 'पकाया हुआ चिकन ब्रेस्ट बिना त्वचा', 'हड्डी रहित त्वचा रहित पकाया हुआ चिकन'], 
+    name_it = 'Petto di Pollo, Disossato Senza Pelle, Cotto', 
+    alternate_names_it = ARRAY['petto di pollo cotto disossato senza pelle', 'petto di pollo senza pelle disossato cotto', 'petto di pollo grigliato disossato senza pelle', 'petto di pollo cotto senza pelle', 'pollo disossato senza pelle cotto'], 
+    name_sq = 'Gjoks Pule, Pa Kocka Pa Lëkurë, E Gatuar', 
+    alternate_names_sq = ARRAY['gjoks pule e gatuar pa kocka pa lëkurë', 'gjoks pule pa lëkurë pa kocka e gatuar', 'gjoks pule në skarë pa kocka pa lëkurë', 'gjoks pule e gatuar pa lëkurë', 'pule pa kocka pa lëkurë e gatuar'], 
+    name_zh = '鸡胸肉，去骨去皮，熟的', 
+    alternate_names_zh = ARRAY['熟的去骨去皮鸡胸肉', '去皮去骨鸡胸肉熟的', '烤鸡胸肉去骨去皮', '熟的鸡胸肉无皮', '去骨去皮熟鸡肉']
+WHERE id = 'fd_2dObzdqa6o2J';
+
+UPDATE nutrition_foods
+SET name_es = 'Arroz Blanco, Cocido', 
+    alternate_names_es = ARRAY['arroz blanco cocido', 'arroz cocido blanco', 'arroz blanco hervido'], 
+    name_fr = 'Riz Blanc, Cuit', 
+    alternate_names_fr = ARRAY['riz blanc cuit', 'riz cuit blanc', 'riz blanc bouilli'], 
+    name_hi = 'सफेद चावल, पकाया हुआ', 
+    alternate_names_hi = ARRAY['पकाया हुआ सफेद चावल', 'सफेद चावल पकाया हुआ', 'उबला हुआ सफेद चावल'], 
+    name_it = 'Riso Bianco, Cotto', 
+    alternate_names_it = ARRAY['riso bianco cotto', 'riso cotto bianco', 'riso bianco bollito'], 
+    name_sq = 'Oriz i Bardhë, i Gatuar', 
+    alternate_names_sq = ARRAY['oriz i bardhë i gatuar', 'oriz i gatuar i bardhë', 'oriz i bardhë i vluar'], 
+    name_zh = '白米饭，熟的', 
+    alternate_names_zh = ARRAY['熟的白米饭', '白米饭熟的', '煮熟的白米饭']
+WHERE id = 'fd_example123';
+
+-- ... (5,297 more UPDATE statements)
+
+COMMIT;
+
+-- Total UPDATE statements: 5299
+-- Completed: 2026-04-16T14:30:00.000000

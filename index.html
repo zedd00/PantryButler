@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Content Security Policy – Self‑hosted only -->
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self';
+                   script-src 'self';
+                   style-src 'self' 'unsafe-inline';
+                   img-src 'self' data: https: blob:;
+                   font-src 'self' data:;
+                   connect-src 'self' http://localhost:8000 ws://localhost:8000;
+                   base-uri 'self';
+                   form-action 'self';">
+
+    <!-- Primary Meta Tags -->
+    <title>PantryButler - Self-Hosted Recipe & Kitchen Management</title>
+    <meta name="title" content="PantryButler - Self-Hosted Recipe & Kitchen Management" />
+    <meta name="description" content="Your personal kitchen command center. Organize recipes, generate smart grocery lists with automatic unit conversions, track pantry inventory, plan meals, and share recipes across instances. Self-hosted, multi-language, and privacy-focused." />
+    <meta name="keywords" content="recipe manager, meal planning, grocery list, pantry tracker, self-hosted, kitchen organization, recipe sharing, unit conversion, cooklang" />
+    <meta name="author" content="PantryButler" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/" />
+    <meta property="og:title" content="PantryButler - Self-Hosted Recipe & Kitchen Management" />
+    <meta property="og:description" content="Your personal kitchen command center. Organize recipes, generate smart grocery lists, track pantry inventory, and plan meals. Self-hosted and privacy-focused." />
+    <meta property="og:image" content="/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="/" />
+    <meta property="twitter:title" content="PantryButler - Self-Hosted Recipe & Kitchen Management" />
+    <meta property="twitter:description" content="Your personal kitchen command center. Organize recipes, generate smart grocery lists, track pantry inventory, and plan meals. Self-hosted and privacy-focused." />
+    <meta property="twitter:image" content="/og-image.png" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,271 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Minimal Design System - Prioritizing airiness and whitespace with WCAG AA compliance */
+@layer base {
+  :root {
+    --radius: 0.25rem;
+    
+    /* Primary colors - minimal and airy with sufficient contrast */
+    --background: 0 0% 100%;
+    --foreground: 220 13% 9%;
+    
+    /* Secondary background - subtle difference with maintained contrast */
+    --card: 220 14% 97%;
+    --card-foreground: 220 13% 9%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 9%;
+    
+    /* Signal color - used for selected states and primary actions */
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary elements */
+    --secondary: 220 14% 97%;
+    --secondary-foreground: 220 13% 9%;
+    
+    /* Muted elements - enhanced contrast for WCAG AA (4.5:1 ratio) */
+    --muted: 220 14% 95%;
+    --muted-foreground: 220 13% 40%;
+    
+    /* Accent - light with sufficient contrast */
+    --accent: 221 83% 95%;
+    --accent-foreground: 220 13% 9%;
+    
+    /* Destructive - adjusted for better contrast */
+    --destructive: 0 84% 50%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Borders - subtle but visible (3:1 contrast for UI components) */
+    --border: 220 13% 85%;
+    --input: 220 13% 85%;
+    --ring: 221 83% 53%;
+    
+    /* Focus indicator - high contrast for visibility */
+    --focus-ring: 221 83% 53%;
+    
+    /* Success state */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Warning state */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 0%;
+    
+    /* Info state */
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+    
+    /* Charts - minimal, linear */
+    --chart-1: 221 83% 53%;
+    --chart-2: 220 13% 40%;
+    --chart-3: 220 13% 85%;
+    --chart-4: 220 14% 95%;
+    --chart-5: 220 13% 9%;
+    
+    /* Sidebar */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 13% 9%;
+    --sidebar-primary: 221 83% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 221 83% 95%;
+    --sidebar-accent-foreground: 220 13% 9%;
+    --sidebar-border: 220 13% 85%;
+    --sidebar-ring: 221 83% 53%;
+  }
+
+  .dark {
+    /* Dark mode - enhanced contrast for WCAG AA compliance */
+    --background: 220 13% 9%;
+    --foreground: 220 14% 97%;
+    
+    --card: 220 13% 12%;
+    --card-foreground: 220 14% 97%;
+    
+    --popover: 220 13% 9%;
+    --popover-foreground: 220 14% 97%;
+    
+    --primary: 221 83% 60%;
+    --primary-foreground: 220 13% 9%;
+    
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 220 14% 97%;
+    
+    /* Muted elements - enhanced contrast for WCAG AA (4.5:1 ratio) */
+    --muted: 220 13% 15%;
+    --muted-foreground: 220 9% 70%;
+    
+    --accent: 220 13% 15%;
+    --accent-foreground: 220 14% 97%;
+    
+    /* Destructive - adjusted for dark mode contrast */
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Borders - visible in dark mode (3:1 contrast) */
+    --border: 220 13% 25%;
+    --input: 220 13% 25%;
+    --ring: 221 83% 60%;
+    
+    /* Focus indicator */
+    --focus-ring: 221 83% 60%;
+    
+    /* Success state */
+    --success: 142 76% 45%;
+    --success-foreground: 220 13% 9%;
+    
+    /* Warning state */
+    --warning: 38 92% 60%;
+    --warning-foreground: 220 13% 9%;
+    
+    /* Info state */
+    --info: 199 89% 55%;
+    --info-foreground: 220 13% 9%;
+    
+    --chart-1: 221 83% 60%;
+    --chart-2: 220 9% 70%;
+    --chart-3: 220 13% 25%;
+    --chart-4: 220 13% 15%;
+    --chart-5: 220 14% 97%;
+    
+    --sidebar-background: 220 13% 9%;
+    --sidebar-foreground: 220 14% 97%;
+    --sidebar-primary: 221 83% 60%;
+    --sidebar-primary-foreground: 220 13% 9%;
+    --sidebar-accent: 220 13% 15%;
+    --sidebar-accent-foreground: 220 14% 97%;
+    --sidebar-border: 220 13% 25%;
+    --sidebar-ring: 221 83% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-montserrat;
+  }
+
+  /* Enhanced focus indicators for WCAG 2.1 SC 2.4.7 (Focus Visible) */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+
+  /* Ensure focus is visible on interactive elements */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible,
+  [tabindex]:not([tabindex="-1"]):focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+
+  /* Accessible scrollbar styling */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--muted-foreground)) transparent;
+  }
+
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.3);
+    border-radius: 4px;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.5);
+  }
+
+  /* Ensure sufficient contrast for selection */
+  ::selection {
+    background: hsl(var(--primary) / 0.3);
+    color: hsl(var(--foreground));
+  }
+}
+
+/* Minimal animations - linear, no bounce */
+@layer utilities {
+  .transition-minimal {
+    transition: all 0.2s linear;
+  }
+  
+  .fade-in {
+    animation: fade-in 0.5s ease-out;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Vibrant Mode - Bright and bold colors */
+  .vibrant-mode {
+    /* Main background: Purple Pain #8458B3 */
+    --background: 270 40% 52%;
+    --foreground: 0 0% 100%;
+    
+    /* Section color: #FF3503 */
+    --card: 11 100% 51%;
+    --card-foreground: 0 0% 100%;
+    
+    /* Bright Green: #beef00 */
+    --primary: 73 100% 47%;
+    --primary-foreground: 0 0% 0%;
+    
+    /* Accent */
+    --accent: 73 100% 60%;
+    --accent-foreground: 0 0% 0%;
+    
+    --secondary: 270 40% 60%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --border: 270 40% 70%;
+    --muted: 270 40% 45%;
+    --muted-foreground: 0 0% 95%;
+  }
+
+  .dark.vibrant-mode {
+    /* Main background: Purple Pain #8458B3 */
+    --background: 270 40% 20%;
+    --foreground: 0 0% 95%;
+    
+    /* Section color: #ea4200 */
+    --card: 16 100% 46%;
+    --card-foreground: 0 0% 100%;
+    
+    /* Bright Green: #beef00 */
+    --primary: 73 100% 47%;
+    --primary-foreground: 0 0% 0%;
+    
+    /* Accent */
+    --accent: 16 100% 40%;
+    --accent-foreground: 0 0% 100%;
+    
+    --secondary: 270 40% 30%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --border: 270 40% 35%;
+    --muted: 270 40% 25%;
+    --muted-foreground: 270 10% 70%;
+  }
+}

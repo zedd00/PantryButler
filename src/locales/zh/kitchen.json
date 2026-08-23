@@ -1,0 +1,159 @@
+{
+  "title": "厨房布局编辑器",
+  "backToPantry": "返回储藏室",
+  "kitchenLayout": "厨房布局",
+  "newLayout": "新建布局",
+  "createFirstLayout": "创建您的第一个布局",
+  "createFirstLayoutDescription": "创建一个2D厨房布局,添加柜子、电器和其他元素,然后将食材和设备拖放到相应位置进行管理。",
+  "createLayout": "创建布局",
+  "editLayout": "编辑布局",
+  "deleteLayout": "删除布局",
+  "selectLayout": "选择布局",
+  "layoutName": "布局名称",
+  "layoutDescription": "描述",
+  "deleteConfirmTitle": "确认删除",
+  "deleteConfirmMessage": "确定要删除布局 \"{{name}}\" 吗?此操作将删除所有相关的元素和物品放置信息,且无法撤销。",
+  "createSuccess": "创建成功",
+  "updateSuccess": "更新成功",
+  "deleteSuccess": "删除成功",
+  "createError": "创建失败: {{message}}",
+  "updateError": "更新失败: {{message}}",
+  "deleteError": "删除失败: {{message}}",
+  "loadError": "加载数据失败: {{message}}",
+  "loading": "加载中...",
+  "kitchenElements": "厨房元素",
+  "itemInventory": "物品库存",
+  "ingredients": "食材",
+  "equipment": "设备",
+  "searchIngredients": "搜索食材...",
+  "searchEquipment": "搜索设备...",
+  "noIngredients": "暂无食材",
+  "noEquipment": "暂无设备",
+  "noMatchingIngredients": "未找到匹配的食材",
+  "noMatchingEquipment": "未找到匹配的设备",
+  "elementAdded": "元素已添加",
+  "elementAddError": "添加元素失败: {{message}}",
+  "itemPlaced": "{{name}} 已放置",
+  "itemPlaceError": "放置失败: {{message}}",
+  "itemAlreadyPlaced": "该物品已在此位置",
+  "itemRemoved": "物品已移除",
+  "itemRemoveError": "移除失败: {{message}}",
+  "elementDeleted": "元素已删除",
+  "elementDeleteError": "删除失败: {{message}}",
+  "updatePositionError": "更新位置失败: {{message}}",
+  "editElementName": "编辑元素名称",
+  "customName": "自定义名称",
+  "customNamePlaceholder": "例如:主厨房上柜、岛台下柜",
+  "cancel": "取消",
+  "save": "保存",
+  "delete": "删除",
+  "edit": "编辑",
+  "deleteElement": "删除元素",
+  "emptyCanvasMessage": "从左侧拖动元素到画布上开始设计厨房布局",
+  "elements": {
+    "upper_cabinet": "上柜",
+    "lower_cabinet": "下柜",
+    "countertop": "台面",
+    "sink": "水槽",
+    "stove": "炉灶",
+    "refrigerator": "冰箱",
+    "freezer": "冷冻柜",
+    "pantry": "储藏柜",
+    "table": "桌子",
+    "door": "门",
+    "window": "窗户",
+    "other": "其他"
+  },
+  "kitchenPantry": "Kitchen Pantry",
+  "kitchenPantryPage": {
+    "setupDialogTitle": "设置您的厨房布局",
+    "setupDialogDescription": "在整理储藏室物品之前，您需要创建一个厨房布局。通过添加橱柜、电器和存储元素来设计您的厨房。"
+  },
+  "kitchenLayoutEditor": {
+    "createYourLayout": "创建您的厨房布局",
+    "designDescription": "通过添加橱柜、电器和存储元素来设计厨房的2D布局。创建后，您可以用它来整理您的食材和设备。",
+    "createFirstLayoutButton": "创建第一个布局"
+  },
+  "kitchenTutorial": {
+    "layoutEditorSteps": [
+      {
+        "title": "欢迎使用厨房布局编辑器",
+        "content": "创建您厨房的可视化表示，以便高效地整理您的食材和设备。"
+      },
+      {
+        "title": "添加元素",
+        "content": "将左侧面板中的元素拖到画布上。元素包括橱柜、电器和存储单元。"
+      },
+      {
+        "title": "移动元素",
+        "content": "单击并拖动元素以重新定位。元素将对齐到网格并与其他元素对齐，便于对齐。"
+      },
+      {
+        "title": "调整元素大小",
+        "content": "选择一个元素以查看调整大小手柄。拖动手柄以调整大小。元素被限制在画布边界内。"
+      },
+      {
+        "title": "自定义元素",
+        "content": "右键单击任意元素可重命名、更改颜色或管理层架。层架有助于整理元素内的物品。"
+      },
+      {
+        "title": "管理层架",
+        "content": "为元素添加层架以创建分区。每个层架可以存放不同的物品，让您更容易找到所需物品。"
+      },
+      {
+        "title": "准备好开始！",
+        "content": "布局完成后，前往厨房储藏室页面开始整理您的食材和设备。"
+      }
+    ],
+    "pantrySteps": [
+      {
+        "title": "欢迎使用厨房储藏室",
+        "content": "使用您的厨房布局来整理并跟踪食材和设备的存放位置。"
+      },
+      {
+        "title": "放置物品",
+        "content": "将右侧面板中的食材或设备拖到厨房布局中的元素上。物品将存储在该位置。"
+      },
+      {
+        "title": "查看物品",
+        "content": "单击任意元素可查看其中存储的所有物品。如果您配置了层架，物品将按层架组织。"
+      },
+      {
+        "title": "编辑布局",
+        "content": "需要更改布局？单击\"编辑布局\"按钮返回编辑器进行调整。"
+      },
+      {
+        "title": "开始整理！",
+        "content": "您已准备好整理厨房！将物品拖到其存储位置并跟踪所有内容。"
+      }
+    ],
+    "stepOf": "第 {{current}} 步，共 {{total}} 步",
+    "getStarted": "开始",
+    "skipTutorial": "跳过教程"
+  },
+  "modelSelector": {
+    "layoutNamePlaceholder": "布局名称",
+    "layoutDescriptionPlaceholder": "布局描述"
+  },
+  "kitchenCanvas": {
+    "updateSizeError": "更新大小失败：{{message}}",
+    "elementUpdated": "元素已更新",
+    "elementUpdateError": "更新元素失败：{{message}}",
+    "shelvesUpdated": "层架已更新",
+    "shelvesUpdateError": "更新层架失败：{{message}}",
+    "deleteTooltip": "删除 (Del)",
+    "renameAndColor": "重命名和着色",
+    "manageShelves": "管理层架",
+    "editElementTitle": "编辑元素",
+    "customNamePlaceholder": "输入自定义名称",
+    "customColor": "自定义颜色",
+    "shelfName": "层架名称",
+    "shelfNamePlaceholder": "层架名称",
+    "heightPercent": "高度 %",
+    "addShelf": "添加层架",
+    "noItemsOnShelf": "此层架上没有物品",
+    "noItemsInElement": "此元素中没有物品",
+    "itemCount": "{{count}} 个物品",
+    "itemCount_plural": "{{count}} 个物品"
+  }
+}

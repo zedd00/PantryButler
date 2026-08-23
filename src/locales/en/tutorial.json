@@ -1,0 +1,79 @@
+{
+  "dashboard": {
+    "welcome": "Welcome to PantryButler! Let me show you around the dashboard.",
+    "quickStats": "Here you can see quick stats about your pantry, including total ingredients, low stock items, and expiring items.",
+    "recentRecipes": "View your recently added or viewed recipes for quick access.",
+    "quickActions": "Use these quick action buttons to add ingredients, create recipes, or plan meals."
+  },
+  "recipes": {
+    "welcome": "Welcome to PantryButler! Let me show you around the app and the recipe collection.",
+    "navRecipes": "This is the Recipes section where you can manage your recipe collection.",
+    "navGrocery": "Use the Grocery List to plan shopping trips and track what you need to buy.",
+    "navCalendar": "The Calendar helps you plan meals for the week.",
+    "navPantry": "Manage your pantry ingredients and kitchen equipment here.",
+    "notifications": "Check notifications for updates, recipe shares, and announcements.",
+    "userMenu": "Access your profile and settings from the user menu.",
+    "addRecipe": "Click here to add a new recipe to your collection.",
+    "searchRecipes": "Search for recipes by name or ingredients.",
+    "filterFolder": "Organize your recipes into folders and filter by folder.",
+    "filterTags": "Filter recipes by tags like \"vegetarian\", \"quick\", or custom tags you create.",
+    "recipeCard": "Click on any recipe card to view details, start cooking, or edit the recipe."
+  },
+  "ingredients": {
+    "welcome": "Welcome to your pantry! This is where you manage all your ingredients.",
+    "addIngredient": "Click here to add a new ingredient to your pantry.",
+    "searchIngredients": "Search for ingredients by name.",
+    "filterLocation": "Filter ingredients by their storage location (Pantry, Refrigerator, Freezer, etc.).",
+    "ingredientRow": "Each ingredient shows its name, quantity, unit, and location. Click to view details.",
+    "ingredientActions": "Use the actions menu to edit, delete, or adjust ingredient quantities."
+  },
+  "equipment": {
+    "welcome": "This is your equipment inventory. Track all your kitchen tools and appliances here.",
+    "addEquipment": "Click here to add new kitchen equipment.",
+    "searchEquipment": "Search for equipment by name.",
+    "equipmentLocation": "Change the storage location for each piece of equipment using this dropdown."
+  },
+  "groceryList": {
+    "welcome": "Your grocery list helps you plan shopping trips and track what you need to buy.",
+    "addItem": "Add items to your grocery list manually.",
+    "addFromRecipe": "Add missing ingredients from a recipe directly to your grocery list.",
+    "checkItem": "Check off items as you shop. Checked items can be moved to your pantry.",
+    "moveToPantry": "Move checked items to your pantry inventory when you get home from shopping."
+  },
+  "mealPlan": {
+    "welcome": "Plan your meals for the week and stay organized!",
+    "calendarView": "View your meal plan in a weekly calendar format.",
+    "addMeal": "Click on any meal slot to add a recipe from your collection.",
+    "markCooked": "Mark meals as cooked to track what you've prepared and update your pantry inventory."
+  },
+  "settings": {
+    "welcome": "Customize your PantryButler experience with these settings.",
+    "unitSystem": "Choose your preferred unit system (metric or imperial) for ingredient measurements.",
+    "theme": "Switch between light and dark mode to match your preference.",
+    "language": "Change the app language to your preferred option.",
+    "nutrition": "Enable nutrition tracking to see nutritional information for your recipes.",
+    "exportData": "Export all your recipes and data for backup or migration."
+  },
+  "recipeDetail": {
+    "welcome": "Welcome to cooking mode! Let me show you the features to help you cook.",
+    "ingredients": "View all ingredients needed for this recipe. Check them off as you use them.",
+    "timer": "Set timers for cooking steps by clicking the timer button next to time-sensitive instructions.",
+    "steps": "Follow step-by-step instructions. Swipe or click to navigate between steps.",
+    "scale": "Adjust serving size to automatically scale all ingredient quantities.",
+    "notes": "Add personal notes or modifications to remember for next time."
+  },
+  "kitchenPantry": {
+    "welcome": "Visualize your kitchen layout and organize your ingredients by location!",
+    "addLocation": "Create custom storage locations that match your actual kitchen layout.",
+    "dragDrop": "Drag and drop ingredients to organize them by location.",
+    "visualView": "See all your ingredients organized by where they're stored in your kitchen.",
+    "quickAccess": "Quickly find ingredients by clicking on a location to see what's stored there."
+  },
+  "common": {
+    "back": "Back",
+    "close": "Close",
+    "last": "Finish",
+    "next": "Next",
+    "skip": "Skip Tutorial"
+  }
+}

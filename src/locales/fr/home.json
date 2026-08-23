@@ -1,0 +1,89 @@
+{
+  "brand": "PantryButler",
+  "meta": {
+    "title": "PantryButler - Votre Compagnon de Cuisine Intelligent",
+    "description": "Gérez vos recettes, votre garde-manger, vos listes de courses et la planification des repas en un seul endroit. PantryButler vous aide à organiser votre cuisine et à cuisiner en toute confiance."
+  },
+  "header": {
+    "documentation": "Documentation",
+    "setupKitchen": "Configurer la Cuisine",
+    "ariaLabel": "Navigation principale"
+  },
+  "hero": {
+    "title": "Gérez Intelligemment vos Recettes et Plans de Repas",
+    "subtitle": "Organisez vos recettes, étiquetez-les, définissez des minuteries pour chaque étape, ajoutez même des images pour savoir exactement à quoi doit ressembler le mélange. Compatible avec le format Cooklang. Importez depuis des URLs, des fichiers Cooklang ou des recettes publiques PantryButler. Partagez vos recettes publiquement ou intégrez-les dans votre blog.",
+    "getStarted": "Commencer",
+    "learnMore": "En Savoir Plus"
+  },
+  "features": {
+    "title": "Fonctionnalités Principales",
+    "subtitle": "Support complet pour votre vie de cuisine",
+    "recipeManagement": {
+      "title": "Gestion des Recettes",
+      "description": "Créez, modifiez et organisez votre collection de recettes. Support pour des listes d'ingrédients détaillées, des instructions étape par étape avec minuteries et le téléchargement d'images pour chaque étape"
+    },
+    "nutritionTracking": {
+      "title": "Calcul Automatique de la Nutrition",
+      "description": "PantryButler calcule automatiquement des informations nutritionnelles complètes pour vos recettes en utilisant la base de données OpenNutrition. Obtenez des macronutriments détaillés, des micronutriments et des pourcentages de valeur quotidienne pour chaque recette"
+    },
+    "importRecipes": {
+      "title": "Importer de N'importe Où",
+      "description": "Importez des recettes depuis des fichiers Cooklang, des URLs ou des recettes publiques PantryButler. Compatible avec le format Cooklang pour un partage facile des recettes"
+    },
+    "stepTimers": {
+      "title": "Minuteries Étape par Étape",
+      "description": "Définissez des minuteries pour chaque étape de cuisson. Ne manquez jamais un moment critique dans votre recette avec des notifications de minuterie intégrées"
+    },
+    "mealPlanning": {
+      "title": "Planification des Repas",
+      "description": "Planifiez les repas hebdomadaires en utilisant la vue calendrier. Programmez facilement le petit-déjeuner, le déjeuner et le dîner pour garder votre alimentation organisée"
+    },
+    "smartShopping": {
+      "title": "Listes de Courses Intelligentes",
+      "description": "Générez automatiquement des listes de courses à partir de recettes et de plans de repas. Fusionnez intelligemment les ingrédients en double pour optimiser vos achats"
+    },
+    "pantryManagement": {
+      "title": "Gestion du Garde-manger",
+      "description": "Suivez votre inventaire d'ingrédients et d'équipement de cuisine. Sachez ce que vous avez pour éviter les achats en double et le gaspillage"
+    },
+    "collaboration": {
+      "title": "Collaboration et Partage",
+      "description": "Partagez des recettes publiquement ou intégrez-les dans votre blog, ou collaborez avec les membres de votre foyer sur la planification des repas"
+    },
+    "privateKitchens": {
+      "title": "Cuisines Privées",
+      "description": "Créez votre propre espace de cuisine privé et invitez des membres de la famille ou des colocataires. Tout le monde peut voir ce qui est disponible dans le garde-manger et ce qui est en cours de cuisson, rendant la coordination des repas du ménage sans effort"
+    }
+  },
+  "languages": {
+    "title": "Disponible en Plusieurs Langues",
+    "subtitle": "PantryButler est disponible en anglais, espagnol (Español), français (Français), hindi (हिन्दी), italien (Italiano), albanais (Shqip) et chinois (中文)",
+    "description": "Changez de langue à tout moment en utilisant le sélecteur de langue dans la navigation supérieure"
+  },
+  "cta": {
+    "title": "Prêt à Commencer?",
+    "subtitle": "Configurez votre première cuisine et commencez à gérer les recettes et à planifier les repas. Complètement gratuit, aucune carte de crédit requise",
+    "setupKitchen": "Configurer la Cuisine",
+    "viewDocs": "Voir la Documentation"
+  },
+  "support": {
+    "title": "Soutenir PantryButler",
+    "description": "PantryButler est gratuit et ouvert à tous. Si vous le trouvez utile, envisagez de soutenir le développement pour nous aider à ajouter plus de fonctionnalités et à maintenir le service en fonctionnement.",
+    "buyMeACoffee": "Offrez-moi un Café",
+    "supportOnPatreon": "Soutenir sur Patreon",
+    "coffeeAriaLabel": "Soutenez-nous sur Buy Me a Coffee (s'ouvre dans un nouvel onglet)",
+    "patreonAriaLabel": "Soutenez-nous sur Patreon (s'ouvre dans un nouvel onglet)"
+  },
+  "cooklang": {
+    "descriptionBefore": "PantryButler est entièrement compatible avec",
+    "descriptionAfter": ", le langage de balisage de recettes open source. Importez vos recettes Cooklang existantes ou exportez vos recettes PantryButler au format Cooklang."
+  },
+  "footer": {
+    "copyright": "© 2026 PantryButler. Tous droits réservés.",
+    "documentation": "Documentation",
+    "login": "Connexion",
+    "cooklang": "Compatible Cooklang",
+    "privacyPolicy": "Politique de Confidentialité",
+    "attribution": "Attribution"
+  }
+}

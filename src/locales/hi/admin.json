@@ -1,0 +1,303 @@
+{
+  "announcements": {
+    "toasts": {
+      "accessDenied": "पहुंच अस्वीकृत: केवल सुपरएडमिन",
+      "verifyFailed": "पहुंच सत्यापित करने में विफल",
+      "loadFailed": "घोषणाएं लोड करने में विफल: {{error}}",
+      "titleAndMessageRequired": "शीर्षक और संदेश आवश्यक हैं",
+      "updated": "घोषणा सफलतापूर्वक अपडेट की गई",
+      "created": "घोषणा सफलतापूर्वक बनाई गई",
+      "saveFailed": "घोषणा सहेजने में विफल: {{error}}",
+      "deleted": "घोषणा सफलतापूर्वक हटाई गई",
+      "deleteFailed": "घोषणा हटाने में विफल: {{error}}"
+    },
+    "headings": {
+      "management": "घोषणा प्रबंधन",
+      "edit": "घोषणा संपादित करें",
+      "create": "नई घोषणा बनाएं"
+    },
+    "text": {
+      "description": "उपयोगकर्ताओं को दिखाई जाने वाली PantryButler News घोषणाओं का प्रबंधन करें",
+      "empty": "अभी तक कोई घोषणा नहीं। शुरू करने के लिए एक बनाएं।",
+      "editHint": "नीचे घोषणा का विवरण अपडेट करें।",
+      "createHint": "सभी उपयोगकर्ताओं को दिखाने के लिए एक नई घोषणा बनाएं।"
+    },
+    "buttons": {
+      "new": "नई घोषणा"
+    },
+    "badges": {
+      "active": "सक्रिय",
+      "inactive": "निष्क्रिय"
+    },
+    "labels": {
+      "title": "शीर्षक",
+      "message": "संदेश",
+      "active": "सक्रिय (उपयोगकर्ताओं को दिखाया गया)"
+    },
+    "placeholders": {
+      "title": "PantryButler में आपका स्वागत है!",
+      "message": "अपनी घोषणा का संदेश दर्ज करें..."
+    },
+    "dialogs": {
+      "deleteTitle": "घोषणा हटाएं",
+      "deleteDescription": "क्या आप वाकई \"{{title}}\" हटाना चाहते हैं? यह क्रिया पूर्ववत नहीं की जा सकती।"
+    }
+  },
+  "instances": {
+    "toasts": {
+      "unauthorized": "अनधिकृत पहुंच",
+      "loadFailed": "इंस्टेंस लोड करने में विफल: {{error}}",
+      "deleted": "इंस्टेंस \"{{name}}\" सफलतापूर्वक हटाया गया",
+      "deleteFailed": "इंस्टेंस हटाने में विफल: {{error}}"
+    },
+    "headings": {
+      "management": "इंस्टेंस प्रबंधन",
+      "all": "सभी इंस्टेंस",
+      "aboutDeletion": "इंस्टेंस विलोपन के बारे में",
+      "deleteConfirm": "इंस्टेंस हटाएं?"
+    },
+    "text": {
+      "description": "इंस्टेंस और डेटा के प्रबंधन के लिए प्रशासन पैनल",
+      "loading": "इंस्टेंस लोड हो रहे हैं...",
+      "empty": "कोई इंस्टेंस नहीं मिला",
+      "deletionWarning": "किसी इंस्टेंस को हटाने से सभी संबंधित डेटा स्थायी रूप से हट जाएंगे, जिनमें शामिल हैं: रेसिपी, सामग्री, पेंट्री आइटम, उपकरण, कैलेंडर भोजन, खरीदारी सूचियाँ, इकाई रूपांतरण, कस्टम स्थान, सेटिंग्स और उपयोगकर्ता सदस्यताएँ। यह क्रिया पूर्ववत नहीं की जा सकती।"
+    },
+    "table": {
+      "instanceName": "इंस्टेंस का नाम",
+      "creator": "निर्माता",
+      "created": "निर्मित",
+      "lastLogin": "अंतिम लॉगिन",
+      "actions": "क्रियाएँ"
+    },
+    "buttons": {
+      "deleting": "हटाया जा रहा है...",
+      "deleteInstance": "इंस्टेंस हटाएं"
+    },
+    "deleteDialog": {
+      "confirmText": "क्या आप वाकई इंस्टेंस \"{{name}}\" हटाना चाहते हैं?",
+      "permanently": "यह स्थायी रूप से हटा देगा:",
+      "items": {
+        "recipes": "सभी रेसिपी और सामग्री",
+        "pantry": "सभी पेंट्री आइटम और उपकरण",
+        "calendar": "सभी कैलेंडर भोजन और खरीदारी सूचियाँ",
+        "settings": "सभी सेटिंग्स और कस्टम डेटा",
+        "memberships": "इस इंस्टेंस के लिए सभी उपयोगकर्ता सदस्यताएँ"
+      },
+      "cannotUndo": "यह क्रिया पूर्ववत नहीं की जा सकती।"
+    },
+    "formatDate": {
+      "never": "कभी नहीं",
+      "invalidDate": "अमान्य तिथि"
+    }
+  },
+  "userManagement": {
+    "toasts": {
+      "noInstance": "कोई इंस्टेंस नहीं मिला",
+      "loadFailed": "उपयोगकर्ता लोड करने में विफल: {{error}}",
+      "usernamePasswordRequired": "उपयोगकर्ता नाम और पासवर्ड आवश्यक हैं",
+      "created": "उपयोगकर्ता बनाया गया",
+      "createFailed": "उपयोगकर्ता बनाने में विफल: {{error}}",
+      "cannotDemoteLastAdmin": "अंतिम व्यवस्थापक को पदावनत नहीं कर सकते",
+      "roleUpdated": "भूमिका सफलतापूर्वक अपडेट की गई",
+      "roleUpdateFailed": "भूमिका अपडेट करने में विफल: {{error}}",
+      "permissionsUpdated": "अनुमतियाँ अपडेट की गईं",
+      "permissionsUpdateFailed": "अनुमतियाँ अपडेट करने में विफल: {{error}}",
+      "cannotDeleteOwn": "आप अपना स्वयं का खाता नहीं हटा सकते",
+      "deleted": "उपयोगकर्ता हटाया गया",
+      "deleteFailed": "उपयोगकर्ता हटाने में विफल: {{error}}"
+    },
+    "headings": {
+      "management": "उपयोगकर्ता प्रबंधन",
+      "users": "उपयोगकर्ता",
+      "addUser": "उपयोगकर्ता जोड़ें",
+      "editPermissions": "उपयोगकर्ता अनुमतियाँ संपादित करें",
+      "deleteUser": "उपयोगकर्ता हटाएं"
+    },
+    "text": {
+      "description": "उपयोगकर्ता खातों और भूमिकाओं का प्रबंधन करें",
+      "calendarPermissionHint": "कैलेंडर अनुमति के बिना उपयोगकर्ता कैलेंडर भोजन देख सकते हैं लेकिन संशोधित नहीं कर सकते",
+      "deleteDescription": "क्या आप वाकई इस उपयोगकर्ता को हटाना चाहते हैं? उनकी रेसिपी एक सिस्टम खाते को फिर से सौंप दी जाएंगी।"
+    },
+    "labels": {
+      "username": "उपयोगकर्ता नाम",
+      "password": "पासवर्ड",
+      "role": "भूमिका",
+      "canEditCalendar": "कैलेंडर संपादित कर सकते हैं"
+    },
+    "buttons": {
+      "addUser": "उपयोगकर्ता जोड़ें",
+      "saveChanges": "परिवर्तन सहेजें"
+    },
+    "roles": {
+      "user": "उपयोगकर्ता",
+      "admin": "व्यवस्थापक"
+    },
+    "placeholders": {
+      "search": "उपयोगकर्ता खोजें..."
+    }
+  },
+  "dataImport": {
+    "toasts": {
+      "accessDenied": "पहुंच अस्वीकृत: केवल सुपरएडमिन",
+      "verifyFailed": "पहुंच सत्यापित करने में विफल",
+      "parseFailed": "{{file}} पार्स करने में विफल: अमान्य JSON",
+      "importProgress": "{{current}}/{{total}} आयात किए गए...",
+      "imported": "{{fileName}} से {{total}} पोषण संबंधी खाद्य पदार्थ आयात किए गए",
+      "importFailed": "आयात विफल: {{error}}",
+      "loadFailed": "{{file}} लोड करने में विफल: {{error}}"
+    },
+    "headings": {
+      "dataImport": "डेटा आयात",
+      "nutritionStatus": "पोषण डेटाबेस स्थिति",
+      "serverFiles": "सर्वर पर उपलब्ध",
+      "uploadFromComputer": "कंप्यूटर से अपलोड करें",
+      "uploadedFiles": "आयात के लिए तैयार अपलोड की गई फ़ाइलें",
+      "importResults": "आयात परिणाम"
+    },
+    "text": {
+      "description": "JSON फ़ाइलों से पोषण डेटा आयात करें",
+      "recordsImported": "रिकॉर्ड आयात किए गए",
+      "noDataImported": "अभी तक कोई डेटा आयात नहीं किया गया",
+      "serverFilesDescription": "कंटेनर के सेटिंग निर्देशिका में मिली JSON फ़ाइलें",
+      "dropNutritionFileBefore": "एक",
+      "dropNutritionFileAfter": "फ़ाइल को अपने स्थानीय कंप्यूटर से आयात करने के लिए यहाँ छोड़ें",
+      "dropFilesHere": "फ़ाइलें यहाँ छोड़ें...",
+      "dragDrop": "JSON फ़ाइलें यहाँ खींचें और छोड़ें",
+      "orClickToBrowse": "या ब्राउज़ करने के लिए क्लिक करें",
+      "records": "रिकॉर्ड"
+    },
+    "buttons": {
+      "importing": "आयात हो रहा है...",
+      "import": "आयात करें",
+      "remove": "हटाएं",
+      "importToDatabase": "डेटाबेस में आयात करें"
+    },
+    "table": {
+      "file": "फ़ाइल",
+      "imported": "आयातित",
+      "status": "स्थिति"
+    },
+    "status": {
+      "success": "सफल"
+    },
+    "alert": {
+      "title": "नोट",
+      "description": "पोषण डेटा अपडेट या डाला जाता है (मिलान ID वाले मौजूदा रिकॉर्ड अपडेट किए जाते हैं)। इसके लिए सुपरएडमिन विशेषाधिकारों की आवश्यकता होती है।"
+    }
+  },
+  "setup": {
+    "steps": {
+      "testConnection": {
+        "title": "डेटाबेस कनेक्शन का परीक्षण करें",
+        "description": "सत्यापित करें कि डेटाबेस कनेक्ट है और चल रहा है"
+      },
+      "seedNutrition": {
+        "title": "पोषण डेटा लोड करें",
+        "description": "USDA डेटाबेस से पोषण संबंधी खाद्य पदार्थ आयात करें"
+      },
+      "createAdmin": {
+        "title": "व्यवस्थापक उपयोगकर्ता बनाएं",
+        "description": "प्रारंभिक व्यवस्थापक खाता बनाएं"
+      },
+      "validate": {
+        "title": "कॉन्फ़िगरेशन सत्यापित करें",
+        "description": "सत्यापित करें कि सभी घटक सही ढंग से कॉन्फ़िगर किए गए हैं"
+      }
+    },
+    "errors": {
+      "adminEmailRequired": "व्यवस्थापक ईमेल आवश्यक है",
+      "adminPasswordRequired": "व्यवस्थापक पासवर्ड आवश्यक है",
+      "passwordsMismatch": "पासवर्ड मेल नहीं खाते",
+      "passwordMinLength": "पासवर्ड कम से कम 8 वर्णों का होना चाहिए",
+      "dbTestFailed": "डेटाबेस कनेक्शन परीक्षण विफल",
+      "unknown": "अज्ञात त्रुटि"
+    },
+    "status": {
+      "dbConnected": "डेटाबेस कनेक्ट हुआ",
+      "seeded": "{{count}} पोषण संबंधी खाद्य पदार्थ लोड किए गए",
+      "superadminCreated": "सुपरएडमिन बनाया गया: {{email}}",
+      "validation": "पोषण: {{foods}} खाद्य पदार्थ, उपयोगकर्ता: {{users}}, इंस्टेंस: {{instances}}"
+    },
+    "complete": {
+      "title": "सेटअप पूर्ण!",
+      "description": "PantryButler सफलतापूर्वक कॉन्फ़िगर किया गया है और उपयोग के लिए तैयार है।",
+      "importantLabel": "महत्वपूर्ण:",
+      "securityWarning": "सुरक्षा के लिए, प्रारंभिक सेटअप के बाद सेटअप पेज को अक्षम या हटा दें।",
+      "adminCredentials": "व्यवस्थापक क्रेडेंशियल",
+      "emailLabel": "ईमेल:",
+      "passwordLabel": "पासवर्ड:",
+      "nextSteps": "अगले चरण",
+      "nextStepsItems": [
+        "अपने व्यवस्थापक क्रेडेंशियल से लॉग इन करें",
+        "अपना पहला इंस्टेंस बनाएं",
+        "सेटअप पेज को अक्षम या हटा दें"
+      ],
+      "goToLogin": "लॉगिन पर जाएं"
+    },
+    "headings": {
+      "title": "PantryButler सेटअप",
+      "adminAccount": "व्यवस्थापक खाता"
+    },
+    "text": {
+      "description": "अपनी PantryButler तैनाती कॉन्फ़िगर करें। यह विज़ार्ड डेटाबेस सेट करेगा, प्रारंभिक डेटा लोड करेगा और आपका व्यवस्थापक खाता बनाएगा।"
+    },
+    "labels": {
+      "adminEmail": "व्यवस्थापक ईमेल",
+      "adminPassword": "व्यवस्थापक पासवर्ड",
+      "confirmPassword": "पासवर्ड की पुष्टि करें",
+      "minCharacters": "कम से कम 8 वर्ण"
+    },
+    "buttons": {
+      "startSetup": "सेटअप शुरू करें"
+    },
+    "placeholders": {
+      "adminEmail": "admin@example.com"
+    },
+    "progress": {
+      "label": "सेटअप प्रगति"
+    }
+  },
+  "config": {
+    "toasts": {
+      "accessDenied": "पहुंच अस्वीकृत: केवल सुपरएडमिन",
+      "verifyFailed": "पहुंच सत्यापित करने में विफल",
+      "loadFailed": "कॉन्फ़िग लोड करने में विफल: {{error}}",
+      "saved": "कॉन्फ़िग सफलतापूर्वक सहेजा गया",
+      "saveFailed": "कॉन्फ़िग सहेजने में विफल: {{error}}",
+      "resetDone": "SMTP सेटिंग्स पर्यावरण डिफ़ॉल्ट पर रीसेट कर दी गईं",
+      "resetFailed": "SMTP सेटिंग्स रीसेट करने में विफल: {{error}}"
+    },
+    "headings": {
+      "management": "प्रमाणीकरण और मेल कॉन्फ़िग",
+      "emailVerification": "ईमेल सत्यापन",
+      "smtp": "SMTP / बाहर जाने वाला मेल"
+    },
+    "text": {
+      "description": "इंस्टेंस निर्माताओं के लिए ईमेल सत्यापन और बाहर जाने वाले मेल सर्वर को कॉन्फ़िगर करें।",
+      "emailVerificationDesc": "सक्षम होने पर, नए इंस्टेंस निर्माताओं को अपनी रसोई बनने से पहले अपना ईमेल पता पुष्टि करना होगा। अक्षम होने पर, साइन अप करते ही इंस्टेंस तुरंत बनाए जाते हैं।",
+      "smtpDesc": "सत्यापन ईमेल भेजने के लिए SMTP का उपयोग किया जाता है। खाली फ़ील्ड पर्यावरण कॉन्फ़िगरेशन पर वापस चली जाती हैं।",
+      "smtpEnvFallback": "खाली फ़ील्ड सर्वर की पर्यावरण सेटिंग्स (SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, SMTP_FROM, SMTP_SECURE) पर वापस चली जाती हैं। जब कोई SMTP होस्ट सेट नहीं होता, तो सत्यापन ईमेल भेजे जाने के बजाय सर्वर कंसोल पर लॉग किए जाते हैं।"
+    },
+    "labels": {
+      "requireEmailVerification": "नए इंस्टेंस निर्माताओं के लिए ईमेल सत्यापन आवश्यक करें",
+      "smtpHost": "SMTP होस्ट",
+      "smtpPort": "SMTP पोर्ट",
+      "smtpUsername": "SMTP उपयोगकर्ता नाम",
+      "smtpPassword": "SMTP पासवर्ड",
+      "smtpFrom": "प्रेषक पता",
+      "smtpSecure": "इम्प्लिसिट TLS (SMTPS) उपयोग करें"
+    },
+    "placeholders": {
+      "password": "SMTP पासवर्ड",
+      "passwordSaved": "सहेजा गया पासवर्ड (रखने के लिए खाली छोड़ें)"
+    },
+    "buttons": {
+      "save": "कॉन्फ़िग सहेजें",
+      "resetSmtp": "SMTP को डिफ़ॉल्ट पर रीसेट करें"
+    },
+    "dialogs": {
+      "resetSmtpTitle": "SMTP सेटिंग्स रीसेट करें?",
+      "resetSmtpDescription": "यह डेटाबेस में संग्रहीत सभी SMTP ओवरराइड साफ़ करता है। सर्वर बाहर जाने वाले मेल के लिए अपनी पर्यावरण सेटिंग्स पर वापस चला जाएगा।"
+    }
+  }
+}

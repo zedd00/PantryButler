@@ -1,0 +1,159 @@
+{
+  "title": "Editor de Diseño de Cocina",
+  "backToPantry": "Volver a la Despensa",
+  "kitchenLayout": "Diseño de Cocina",
+  "newLayout": "Nuevo Diseño",
+  "createFirstLayout": "Crea tu primer diseño",
+  "createFirstLayoutDescription": "Crea un diseño de cocina 2D, agrega gabinetes, electrodomésticos y otros elementos, luego arrastra y suelta ingredientes y equipos en sus ubicaciones para una fácil gestión.",
+  "createLayout": "Crear Diseño",
+  "editLayout": "Editar Diseño",
+  "deleteLayout": "Eliminar Diseño",
+  "selectLayout": "Seleccionar Diseño",
+  "layoutName": "Nombre del Diseño",
+  "layoutDescription": "Descripción",
+  "deleteConfirmTitle": "Confirmar Eliminación",
+  "deleteConfirmMessage": "¿Estás seguro de que quieres eliminar el diseño \"{{name}}\"? Esto eliminará todos los elementos relacionados y las ubicaciones de artículos y no se puede deshacer.",
+  "createSuccess": "Creado exitosamente",
+  "updateSuccess": "Actualizado exitosamente",
+  "deleteSuccess": "Eliminado exitosamente",
+  "createError": "Error al crear: {{message}}",
+  "updateError": "Error al actualizar: {{message}}",
+  "deleteError": "Error al eliminar: {{message}}",
+  "loadError": "Error al cargar datos: {{message}}",
+  "loading": "Cargando...",
+  "kitchenElements": "Elementos de Cocina",
+  "itemInventory": "Inventario de Artículos",
+  "ingredients": "Ingredientes",
+  "equipment": "Equipo",
+  "searchIngredients": "Buscar ingredientes...",
+  "searchEquipment": "Buscar equipo...",
+  "noIngredients": "Sin ingredientes",
+  "noEquipment": "Sin equipo",
+  "noMatchingIngredients": "No se encontraron ingredientes coincidentes",
+  "noMatchingEquipment": "No se encontró equipo coincidente",
+  "elementAdded": "Elemento agregado",
+  "elementAddError": "Error al agregar elemento: {{message}}",
+  "itemPlaced": "{{name}} colocado",
+  "itemPlaceError": "Error al colocar: {{message}}",
+  "itemAlreadyPlaced": "Este artículo ya está en esta ubicación",
+  "itemRemoved": "Artículo eliminado",
+  "itemRemoveError": "Error al eliminar: {{message}}",
+  "elementDeleted": "Elemento eliminado",
+  "elementDeleteError": "Error al eliminar: {{message}}",
+  "updatePositionError": "Error al actualizar posición: {{message}}",
+  "editElementName": "Editar Nombre del Elemento",
+  "customName": "Nombre Personalizado",
+  "customNamePlaceholder": "ej., Gabinete Superior Cocina Principal, Gabinete Inferior Isla",
+  "cancel": "Cancelar",
+  "save": "Guardar",
+  "delete": "Eliminar",
+  "edit": "Editar",
+  "deleteElement": "Eliminar Elemento",
+  "emptyCanvasMessage": "Arrastra elementos desde el panel izquierdo al lienzo para comenzar a diseñar tu diseño de cocina",
+  "elements": {
+    "upper_cabinet": "Gabinete Superior",
+    "lower_cabinet": "Gabinete Inferior",
+    "countertop": "Encimera",
+    "sink": "Fregadero",
+    "stove": "Estufa",
+    "refrigerator": "Refrigerador",
+    "freezer": "Congelador",
+    "pantry": "Gabinete de Despensa",
+    "table": "Mesa",
+    "door": "Puerta",
+    "window": "Ventana",
+    "other": "Otro"
+  },
+  "kitchenPantry": "Kitchen Pantry",
+  "kitchenPantryPage": {
+    "setupDialogTitle": "Configura Tu Diseño de Cocina",
+    "setupDialogDescription": "Antes de poder organizar tus artículos de despensa, necesitas crear un diseño de cocina. Diseña tu cocina agregando gabinetes, electrodomésticos y elementos de almacenamiento."
+  },
+  "kitchenLayoutEditor": {
+    "createYourLayout": "Crea tu Diseño de Cocina",
+    "designDescription": "Diseña un diseño 2D de tu cocina agregando gabinetes, electrodomésticos y elementos de almacenamiento. Una vez creado, puedes usarlo para organizar tus ingredientes y equipo.",
+    "createFirstLayoutButton": "Crear el Primer Diseño"
+  },
+  "kitchenTutorial": {
+    "layoutEditorSteps": [
+      {
+        "title": "Bienvenido al Editor de Diseño de Cocina",
+        "content": "Crea una representación visual de tu cocina para organizar tus ingredientes y equipo de manera eficiente."
+      },
+      {
+        "title": "Agregar Elementos",
+        "content": "Arrastra elementos desde el panel izquierdo al lienzo. Los elementos incluyen gabinetes, electrodomésticos y unidades de almacenamiento."
+      },
+      {
+        "title": "Mover Elementos",
+        "content": "Haz clic y arrastra los elementos para reposicionarlos. Los elementos se alinearán a una cuadrícula y a otros elementos para facilitar la alineación."
+      },
+      {
+        "title": "Cambiar Tamaño de Elementos",
+        "content": "Selecciona un elemento para ver los controladores de tamaño. Arrastra los controladores para ajustar el tamaño. Los elementos están limitados a los límites del lienzo."
+      },
+      {
+        "title": "Personalizar Elementos",
+        "content": "Haz clic derecho en cualquier elemento para cambiarle el nombre, su color o gestionar estantes. Los estantes ayudan a organizar los artículos dentro de un elemento."
+      },
+      {
+        "title": "Gestionar Estantes",
+        "content": "Agrega estantes a los elementos para crear secciones. Cada estante puede almacenar diferentes artículos, lo que facilita encontrar lo que necesitas."
+      },
+      {
+        "title": "¡Listo para Empezar!",
+        "content": "Una vez que tu diseño esté completo, ve a la página de Despensa de Cocina para empezar a organizar tus ingredientes y equipo."
+      }
+    ],
+    "pantrySteps": [
+      {
+        "title": "Bienvenido a la Despensa de Cocina",
+        "content": "Usa tu diseño de cocina para organizar y hacer seguimiento de dónde se almacenan tus ingredientes y equipo."
+      },
+      {
+        "title": "Colocar Artículos",
+        "content": "Arrastra ingredientes o equipo desde el panel derecho hacia los elementos de tu diseño de cocina. Los artículos se almacenarán en esa ubicación."
+      },
+      {
+        "title": "Ver Artículos",
+        "content": "Haz clic en cualquier elemento para ver todos los artículos almacenados en él. Los artículos se organizan por estantes si los has configurado."
+      },
+      {
+        "title": "Editar Diseño",
+        "content": "¿Necesitas cambiar tu diseño? Haz clic en el botón \"Editar Diseño\" para volver al editor y hacer ajustes."
+      },
+      {
+        "title": "¡Empieza a Organizar!",
+        "content": "¡Estás listo para organizar tu cocina! Arrastra artículos a sus ubicaciones de almacenamiento y haz seguimiento de todo."
+      }
+    ],
+    "stepOf": "Paso {{current}} de {{total}}",
+    "getStarted": "Comenzar",
+    "skipTutorial": "Omitir Tutorial"
+  },
+  "modelSelector": {
+    "layoutNamePlaceholder": "Nombre del diseño",
+    "layoutDescriptionPlaceholder": "Descripción del diseño"
+  },
+  "kitchenCanvas": {
+    "updateSizeError": "Error al actualizar el tamaño: {{message}}",
+    "elementUpdated": "Elemento actualizado",
+    "elementUpdateError": "Error al actualizar el elemento: {{message}}",
+    "shelvesUpdated": "Estantes actualizados",
+    "shelvesUpdateError": "Error al actualizar los estantes: {{message}}",
+    "deleteTooltip": "Eliminar (Supr)",
+    "renameAndColor": "Cambiar Nombre y Color",
+    "manageShelves": "Gestionar Estantes",
+    "editElementTitle": "Editar Elemento",
+    "customNamePlaceholder": "Introduce un nombre personalizado",
+    "customColor": "Color Personalizado",
+    "shelfName": "Nombre del Estante",
+    "shelfNamePlaceholder": "Nombre del estante",
+    "heightPercent": "Altura %",
+    "addShelf": "Agregar Estante",
+    "noItemsOnShelf": "No hay artículos en este estante",
+    "noItemsInElement": "No hay artículos en este elemento",
+    "itemCount": "{{count}} artículo",
+    "itemCount_plural": "{{count}} artículos"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "dashboard": {
+    "welcome": "Bienvenue sur PantryButler ! Laissez-moi vous montrer le tableau de bord.",
+    "quickStats": "Vous pouvez voir ici des statistiques rapides sur votre garde-manger, notamment le nombre total d'ingrédients, les articles en stock bas et les articles proches de l'expiration.",
+    "recentRecipes": "Consultez vos recettes récemment ajoutées ou consultées pour un accès rapide.",
+    "quickActions": "Utilisez ces boutons d'action rapide pour ajouter des ingrédients, créer des recettes ou planifier des repas."
+  },
+  "recipes": {
+    "welcome": "Bienvenue sur PantryButler ! Laissez-moi vous montrer l'application et la collection de recettes.",
+    "navRecipes": "Voici la section Recettes où vous pouvez gérer votre collection de recettes.",
+    "navGrocery": "Utilisez la Liste de Courses pour planifier vos achats et suivre ce que vous devez acheter.",
+    "navCalendar": "Le Calendrier vous aide à planifier les repas de la semaine.",
+    "navPantry": "Gérez vos ingrédients de garde-manger et votre équipement de cuisine ici.",
+    "notifications": "Consultez les notifications pour les mises à jour, les recettes partagées et les annonces.",
+    "userMenu": "Accédez à votre profil et paramètres depuis le menu utilisateur.",
+    "addRecipe": "Cliquez ici pour ajouter une nouvelle recette à votre collection.",
+    "searchRecipes": "Recherchez des recettes par nom ou ingrédients.",
+    "filterFolder": "Organisez vos recettes dans des dossiers et filtrez par dossier.",
+    "filterTags": "Filtrez les recettes par étiquettes comme \"végétarien\", \"rapide\" ou des étiquettes personnalisées que vous créez.",
+    "recipeCard": "Cliquez sur n'importe quelle carte de recette pour voir les détails, commencer à cuisiner ou modifier la recette."
+  },
+  "ingredients": {
+    "welcome": "Bienvenue dans votre garde-manger ! C'est ici que vous gérez tous vos ingrédients.",
+    "addIngredient": "Cliquez ici pour ajouter un nouvel ingrédient à votre garde-manger.",
+    "searchIngredients": "Recherchez des ingrédients par nom.",
+    "filterLocation": "Filtrez les ingrédients par leur emplacement de stockage (Garde-manger, Réfrigérateur, Congélateur, etc.).",
+    "ingredientRow": "Chaque ingrédient affiche son nom, sa quantité, son unité et son emplacement. Cliquez pour voir les détails.",
+    "ingredientActions": "Utilisez le menu d'actions pour modifier, supprimer ou ajuster les quantités d'ingrédients."
+  },
+  "equipment": {
+    "welcome": "Voici votre inventaire d'équipement. Suivez tous vos outils et appareils de cuisine ici.",
+    "addEquipment": "Cliquez ici pour ajouter un nouvel équipement de cuisine.",
+    "searchEquipment": "Recherchez de l'équipement par nom.",
+    "equipmentLocation": "Changez l'emplacement de stockage de chaque pièce d'équipement à l'aide de ce menu déroulant."
+  },
+  "groceryList": {
+    "welcome": "Votre liste de courses vous aide à planifier vos achats et à suivre ce que vous devez acheter.",
+    "addItem": "Ajoutez des articles à votre liste de courses manuellement.",
+    "addFromRecipe": "Ajoutez les ingrédients manquants d'une recette directement à votre liste de courses.",
+    "checkItem": "Cochez les articles pendant vos achats. Les articles cochés peuvent être déplacés vers votre garde-manger.",
+    "moveToPantry": "Déplacez les articles cochés vers votre inventaire de garde-manger lorsque vous rentrez des courses."
+  },
+  "mealPlan": {
+    "welcome": "Planifiez vos repas pour la semaine et restez organisé !",
+    "calendarView": "Consultez votre plan de repas au format calendrier hebdomadaire.",
+    "addMeal": "Cliquez sur n'importe quel créneau de repas pour ajouter une recette de votre collection.",
+    "markCooked": "Marquez les repas comme cuisinés pour suivre ce que vous avez préparé et mettre à jour votre inventaire de garde-manger."
+  },
+  "settings": {
+    "welcome": "Personnalisez votre expérience PantryButler avec ces paramètres.",
+    "unitSystem": "Choisissez votre système d'unités préféré (métrique ou impérial) pour les mesures d'ingrédients.",
+    "theme": "Basculez entre le mode clair et sombre selon votre préférence.",
+    "language": "Changez la langue de l'application selon votre option préférée.",
+    "nutrition": "Activez le suivi nutritionnel pour voir les informations nutritionnelles de vos recettes.",
+    "exportData": "Exportez toutes vos recettes et données pour la sauvegarde ou la migration."
+  },
+  "recipeDetail": {
+    "welcome": "Bienvenue en mode cuisine ! Laissez-moi vous montrer les fonctionnalités pour vous aider à cuisiner.",
+    "ingredients": "Consultez tous les ingrédients nécessaires pour cette recette. Cochez-les au fur et à mesure que vous les utilisez.",
+    "timer": "Réglez des minuteries pour les étapes de cuisson en cliquant sur le bouton de minuterie à côté des instructions sensibles au temps.",
+    "steps": "Suivez les instructions étape par étape. Glissez ou cliquez pour naviguer entre les étapes.",
+    "scale": "Ajustez la taille de la portion pour mettre automatiquement à l'échelle toutes les quantités d'ingrédients.",
+    "notes": "Ajoutez des notes personnelles ou des modifications à retenir pour la prochaine fois."
+  },
+  "kitchenPantry": {
+    "welcome": "Visualisez l'agencement de votre cuisine et organisez vos ingrédients par emplacement !",
+    "addLocation": "Créez des emplacements de stockage personnalisés qui correspondent à l'agencement réel de votre cuisine.",
+    "dragDrop": "Glissez-déposez les ingrédients pour les organiser par emplacement.",
+    "visualView": "Voyez tous vos ingrédients organisés par où ils sont stockés dans votre cuisine.",
+    "quickAccess": "Trouvez rapidement des ingrédients en cliquant sur un emplacement pour voir ce qui y est stocké."
+  },
+  "common": {
+    "back": "Retour",
+    "close": "Fermer",
+    "last": "Terminer",
+    "next": "Suivant",
+    "skip": "Passer le Tutoriel"
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "attribution": {
+    "metaTitle": "Atribución y Licencias",
+    "metaDescription": "PantryButler utiliza proyectos de código abierto y datos abiertos. Conoce nuestras fuentes de datos y sus licencias.",
+    "title": "Atribución y Licencias",
+    "intro": "PantryButler se construye sobre los hombros de gigantes. Utilizamos varios proyectos de código abierto y fuentes de datos abiertos para ofrecerte la mejor experiencia de gestión de recetas.",
+    "footer": {
+      "home": "Inicio",
+      "privacy": "Política de Privacidad"
+    },
+    "projects": {
+      "cooklang": {
+        "ariaLabel": "Visitar el sitio web de Cooklang",
+        "tagline": "Lenguaje de Marcado de Recetas",
+        "description": "Cooklang es un lenguaje de marcado para recetas de cocina. Proporciona un formato simple y legible para escribir recetas que se pueden analizar y mostrar fácilmente en varios formatos. PantryButler utiliza una sintaxis inspirada en Cooklang para el análisis de ingredientes y el formato de recetas.",
+        "websiteLabel": "Sitio web:"
+      },
+      "gridRecipe": {
+        "ariaLabel": "Visitar el repositorio de GitHub de Grid Recipe",
+        "tagline": "Visualización de Recetas en Cuadrícula",
+        "description": "Grid Recipe renderiza las recetas como una cuadrícula de pasos, con flechas que muestran el flujo de ingredientes a través de cada paso. La función de recetas en cuadrícula de PantryButler se inspira en este proyecto de código abierto.",
+        "sourceLabel": "Fuente:"
+      },
+      "openFoodFacts": {
+        "ariaLabel": "Visitar el sitio web de Open Food Facts",
+        "tagline": "Base de Datos Abierta de Alimentos",
+        "description": "Open Food Facts es una base de datos colaborativa, abierta y gratuita de productos alimenticios de todo el mundo. Contiene información sobre ingredientes, datos nutricionales, etiquetas y más. PantryButler puede utilizar datos de Open Food Facts para información de ingredientes y datos nutricionales.",
+        "websiteLabel": "Sitio web:",
+        "licenseLabel": "Licencia: Open Database License (ODbL)",
+        "attributionLabel": "Atribución: © Colaboradores de Open Food Facts"
+      },
+      "openNutrition": {
+        "ariaLabel": "Visitar el sitio web de OpenNutrition",
+        "tagline": "Base de Datos Nutricional Integral",
+        "description": "OpenNutrition proporciona una base de datos abierta e integral de información alimentaria y nutricional. El conjunto de datos incluye información nutricional detallada para miles de alimentos, incluyendo macronutrientes, micronutrientes, vitaminas y minerales. PantryButler utiliza datos de OpenNutrition para mostrar información nutricional de las recetas cuando esta función está habilitada.",
+        "websiteLabel": "Sitio web:",
+        "licenseLabel": "Licencia: Open Database License (ODbL) + Modified Database Contents License (DbCL)",
+        "attributionLabel": "Atribución: Datos proporcionados por OpenNutrition. Partes de estos datos incorporan información de Open Food Facts.",
+        "requirementsLabel": "Requisitos: La atribución debe proporcionarse en cada interfaz donde se muestren datos nutricionales, en los listados de las tiendas de aplicaciones, en el sitio web y en las secciones legales/informativas."
+      }
+    },
+    "licenseCompliance": {
+      "title": "Cumplimiento de Licencias",
+      "description": "PantryButler se compromete a cumplir con todas las licencias de datos abiertos. Proporcionamos la atribución adecuada a todas las fuentes de datos y respetamos los términos de sus respectivas licencias.",
+      "contactNote": "Si tiene preguntas sobre nuestro uso de estas fuentes de datos o cree que no cumplimos con los términos de alguna licencia, por favor contáctenos."
+    }
+  },
+  "privacyPolicy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: 16 de abril de 2026",
+    "introduction": {
+      "title": "Introducción",
+      "text": "Bienvenido a PantryButler. Respetamos tu privacidad y nos comprometemos a proteger tus datos personales. Esta política de privacidad explica cómo recopilamos, utilizamos y protegemos tu información cuando utilizas nuestra aplicación."
+    },
+    "sections": {
+      "collectInfo": {
+        "title": "Información que Recopilamos",
+        "accountInfo": {
+          "title": "Información de la Cuenta",
+          "intro": "Cuando creas una cuenta, recopilamos:",
+          "items": [
+            "Dirección de correo electrónico",
+            "Nombre de usuario",
+            "Nombre completo (opcional)",
+            "Foto de perfil (opcional)"
+          ]
+        },
+        "appData": {
+          "title": "Datos de la Aplicación",
+          "intro": "Cuando utilizas PantryButler, almacenamos:",
+          "items": [
+            "Recetas que creas o guardas",
+            "Artículos del inventario de la despensa",
+            "Registros de equipo de cocina",
+            "Planes de comidas y entradas de calendario",
+            "Listas de compras",
+            "Diseños de distribución de la cocina",
+            "Comentarios y me gusta en recetas públicas"
+          ]
+        },
+        "usageInfo": {
+          "title": "Información de Uso",
+          "intro": "Recopilamos automáticamente:",
+          "items": [
+            "Información del dispositivo (tipo de navegador, sistema operativo)",
+            "Datos de registro (tiempos de acceso, páginas vistas)",
+            "Preferencias de idioma"
+          ]
+        }
+      },
+      "howWeUse": {
+        "title": "Cómo Usamos tu Información",
+        "intro": "Usamos tu información para:",
+        "items": [
+          "Proporcionar y mantener el servicio de PantryButler",
+          "Autenticar tu cuenta y garantizar la seguridad",
+          "Almacenar y sincronizar tus recetas, artículos de despensa y planes de comidas",
+          "Habilitar funciones sociales como compartir recetas y comentarios",
+          "Mejorar y optimizar nuestra aplicación",
+          "Enviar notificaciones importantes del servicio",
+          "Responder a tus solicitudes de soporte"
+        ]
+      },
+      "storageSecurity": {
+        "title": "Almacenamiento y Seguridad de Datos",
+        "intro": "Tus datos se almacenan de forma segura mediante transmisión cifrada y prácticas de seguridad estándar de la industria. Implementamos medidas de seguridad, incluyendo:",
+        "items": [
+          "Transmisión de datos cifrada (HTTPS/TLS)",
+          "Autenticación segura con hash de contraseñas",
+          "Control de acceso por instancia que limita la visibilidad de los datos a miembros autorizados",
+          "Actualizaciones de seguridad y monitoreo regulares"
+        ],
+        "note": "Si bien nos esforzamos por proteger tus datos, ningún método de transmisión por internet es 100% seguro. No podemos garantizar seguridad absoluta."
+      },
+      "sharing": {
+        "title": "Compartición y Divulgación de Datos",
+        "intro": "No vendemos tu información personal. Solo podemos compartir tus datos en estas circunstancias:",
+        "items": {
+          "publicRecipes": {
+            "strong": "Recetas Públicas:",
+            "text": " Cuando eliges hacer pública una receta, se vuelve visible para todos los usuarios"
+          },
+          "serviceProviders": {
+            "strong": "Proveedores de Servicios:",
+            "text": " Con nuestros proveedores de infraestructura para alojamiento y almacenamiento de datos"
+          },
+          "legalRequirements": {
+            "strong": "Requisitos Legales:",
+            "text": " Si así lo exige la ley o para proteger nuestros derechos"
+          }
+        }
+      },
+      "rights": {
+        "title": "Tus Derechos (Cumplimiento del GDPR)",
+        "intro": "Bajo el Reglamento General de Protección de Datos (GDPR), tienes los siguientes derechos:",
+        "items": {
+          "access": {
+            "strong": "Derecho de Acceso:",
+            "text": " Solicitar una copia de tus datos personales"
+          },
+          "rectification": {
+            "strong": "Derecho de Rectificación:",
+            "text": " Corregir datos inexactos o incompletos"
+          },
+          "erasure": {
+            "strong": "Derecho de Supresión:",
+            "text": " Solicitar la eliminación de tus datos personales"
+          },
+          "restrictProcessing": {
+            "strong": "Derecho a Restringir el Tratamiento:",
+            "text": " Limitar cómo usamos tus datos"
+          },
+          "dataPortability": {
+            "strong": "Derecho a la Portabilidad de Datos:",
+            "text": " Recibir tus datos en un formato estructurado"
+          },
+          "object": {
+            "strong": "Derecho de Oposición:",
+            "text": " Oponerte a ciertos tipos de tratamiento de datos"
+          },
+          "withdrawConsent": {
+            "strong": "Derecho a Retirar el Consentimiento:",
+            "text": " Retirar el consentimiento en cualquier momento"
+          }
+        },
+        "note": "Para ejercer cualquiera de estos derechos, contáctanos a través de la página de configuración o escríbenos directamente."
+      },
+      "cookies": {
+        "title": "Cookies y Rastreo",
+        "text": "Usamos cookies esenciales y almacenamiento local para mantener tu sesión y recordar tus preferencias (como los ajustes de idioma y tema). No usamos cookies de rastreo de terceros ni de publicidad."
+      },
+      "children": {
+        "title": "Privacidad de los Menores",
+        "text": "PantryButler no está destinado a menores de 13 años. No recopilamos a sabiendas información personal de menores. Si crees que hemos recopilado información de un menor, contáctanos de inmediato."
+      },
+      "retention": {
+        "title": "Retención de Datos",
+        "text": "Conservamos tus datos personales mientras tu cuenta esté activa o según sea necesario para prestar servicios. Si eliminas tu cuenta, eliminaremos tus datos personales en un plazo de 30 días, excepto cuando estemos obligados a conservarlos por motivos legales."
+      },
+      "international": {
+        "title": "Transferencias Internacionales de Datos",
+        "text": "Tus datos pueden transferirse y procesarse en países distintos a tu país de residencia. Garantizamos que existen salvaguardas apropiadas para proteger tus datos de acuerdo con esta política de privacidad."
+      },
+      "changes": {
+        "title": "Cambios en Esta Política",
+        "text": "Podemos actualizar esta política de privacidad de vez en cuando. Te notificaremos cualquier cambio publicando la nueva política en esta página y actualizando la fecha de \"Última actualización\". Te animamos a revisar esta política periódicamente."
+      },
+      "contact": {
+        "title": "Contáctanos",
+        "intro": "Si tienes alguna pregunta sobre esta política de privacidad o nuestras prácticas de datos, contáctanos a través de:",
+        "items": [
+          "La página de Configuración de la aplicación",
+          "Nuestros canales de soporte"
+        ]
+      }
+    }
+  }
+}

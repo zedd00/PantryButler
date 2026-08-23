@@ -1,0 +1,89 @@
+{
+  "brand": "PantryButler",
+  "meta": {
+    "title": "PantryButler - Your Smart Kitchen Companion",
+    "description": "Manage your recipes, pantry, grocery lists, and meal planning all in one place. PantryButler helps you organize your kitchen and cook with confidence."
+  },
+  "header": {
+    "documentation": "Documentation",
+    "setupKitchen": "Setup Kitchen",
+    "ariaLabel": "Main navigation"
+  },
+  "hero": {
+    "title": "Intelligently Manage Your Recipes and Meal Plans",
+    "subtitle": "Organize your recipes, tag them, set timers for each step, even add images so you know exactly how mixed something should be. Compatible with Cooklang format. Import from URLs, Cooklang files, or public PantryButler recipes. Share your recipes publicly or embed them in your blog.",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More"
+  },
+  "features": {
+    "title": "Core Features",
+    "subtitle": "Comprehensive support for your kitchen life",
+    "recipeManagement": {
+      "title": "Recipe Management",
+      "description": "Create, edit, and organize your recipe collection. Support for detailed ingredient lists, step-by-step instructions with timers, and image uploads for each step"
+    },
+    "nutritionTracking": {
+      "title": "Automatic Nutrition Calculation",
+      "description": "PantryButler automatically calculates comprehensive nutritional information for your recipes using the OpenNutrition database. Get detailed macronutrients, micronutrients, and daily value percentages for every recipe"
+    },
+    "importRecipes": {
+      "title": "Import from Anywhere",
+      "description": "Import recipes from Cooklang files, URLs, or public PantryButler recipes. Compatible with Cooklang format for easy recipe sharing"
+    },
+    "stepTimers": {
+      "title": "Step-by-Step Timers",
+      "description": "Set timers for each cooking step. Never miss a critical moment in your recipe with built-in timer notifications"
+    },
+    "mealPlanning": {
+      "title": "Meal Planning",
+      "description": "Plan weekly meals using calendar view. Easily schedule breakfast, lunch, and dinner to keep your diet organized"
+    },
+    "smartShopping": {
+      "title": "Smart Shopping Lists",
+      "description": "Automatically generate shopping lists from recipes and meal plans. Intelligently merge duplicate ingredients to optimize your shopping"
+    },
+    "pantryManagement": {
+      "title": "Pantry Management",
+      "description": "Track your ingredient inventory and kitchen equipment. Know what you have to avoid duplicate purchases and waste"
+    },
+    "collaboration": {
+      "title": "Collaboration & Sharing",
+      "description": "Share recipes publicly or embed them in your blog, or collaborate with family members and roommates on meal planning together"
+    },
+    "privateKitchens": {
+      "title": "Private Kitchens",
+      "description": "Create your own private kitchen space and invite family members or roommates. Everyone can see what's available in the pantry and what's being cooked, making household meal coordination effortless"
+    }
+  },
+  "languages": {
+    "title": "Available in Multiple Languages",
+    "subtitle": "PantryButler is available in English, Spanish (Español), French (Français), Hindi (हिन्दी), Italian (Italiano), Albanian (Shqip), and Chinese (中文)",
+    "description": "Switch languages anytime using the language selector in the top navigation"
+  },
+  "cta": {
+    "title": "Ready to Get Started?",
+    "subtitle": "Set up your first kitchen and start managing recipes and planning meals. Completely free, no credit card required",
+    "setupKitchen": "Setup Kitchen",
+    "viewDocs": "View Documentation"
+  },
+  "support": {
+    "title": "Support PantryButler",
+    "description": "PantryButler is free and open for everyone. If you find it useful, consider supporting the development to help us add more features and keep the service running.",
+    "buyMeACoffee": "Buy Me a Coffee",
+    "supportOnPatreon": "Support on Patreon",
+    "coffeeAriaLabel": "Support us on Buy Me a Coffee (opens in new tab)",
+    "patreonAriaLabel": "Support us on Patreon (opens in new tab)"
+  },
+  "cooklang": {
+    "descriptionBefore": "PantryButler is fully compatible with",
+    "descriptionAfter": ", the open-source recipe markup language. Import your existing Cooklang recipes or export your PantryButler recipes in Cooklang format."
+  },
+  "footer": {
+    "copyright": "© 2026 PantryButler. All rights reserved.",
+    "documentation": "Documentation",
+    "login": "Login",
+    "cooklang": "Cooklang Compatible",
+    "privacyPolicy": "Privacy Policy",
+    "attribution": "Attribution"
+  }
+}
