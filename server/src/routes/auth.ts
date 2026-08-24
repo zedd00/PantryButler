@@ -306,7 +306,7 @@ auth.post('/resend-verification', zValidator('json', resendVerificationSchema), 
     }
 
     const result = await query(
-      'SELECT id, email_verified_at FROM users WHERE email = $1',
+      'SELECT id, email, email_verified_at FROM users WHERE email = $1',
       [normalizedEmail]
     );
     const user = result.rows[0];
