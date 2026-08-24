@@ -4,6 +4,8 @@
 
 PantryButler is a self-hosted kitchen management application that brings together recipe management, pantry inventory, meal planning, grocery lists, and nutrition tracking in one clean, modern web app. Plan meals, shop smarter, and never lose a recipe again.
 
+🌐 **Public instance:** a hosted instance is available at [https://pantrybutler.mythologic.al](https://pantrybutler.mythologic.al) — try it instantly without installing anything, or self-host your own using the steps below.
+
 ---
 
 ## ✨ Highlights
@@ -24,7 +26,11 @@ PantryButler is a self-hosted kitchen management application that brings togethe
 
 The fastest way to run PantryButler is the one-command Docker setup. It builds the app and database containers, generates secure secrets, waits for readiness, and handles first-run setup automatically (on first boot it seeds the nutrition data and creates the initial admin account).
 
-> **Prerequisites:** [Docker Desktop](https://www.docker.com/products/docker-desktop/) (Compose v2 included).
+> **Prerequisites:**
+> - **Docker** — Engine + Compose v2. On desktop, [Docker Desktop](https://www.docker.com/products/docker-desktop/) includes both; on Linux install the `docker` engine and the `docker-compose` plugin.
+> - **Git** — used to clone the repo and by the launchers' automatic update (`git pull --ff-only`) on each run.
+> - **curl** — used by the launchers for health checks and first-run admin creation.
+> - **openssl** — used on macOS/Linux to generate secure secrets (JWT/DB). Windows PowerShell generates these natively, so openssl isn't required there.
 
 ### 🍎 macOS
 
@@ -65,15 +71,15 @@ Or double-click **`start-windows.bat`**.
 | Container status | `docker compose -p PantryButler ps` | same | same |
 | Stream logs | `docker compose -p PantryButler logs -f` | same | same |
 | Skip GitHub auto-update (local testing) | `./start-mac.sh --noupdate` | `./docker/start-standalone.sh --noupdate` | `.\start-windows.ps1 -NoUpdate` |
-| Set public URL for email links | `./start-mac.sh --url https://example.com` | `./docker/start-standalone.sh --url https://example.com` | `.\start-windows.ps1 -Url https://example.com` |
+| Set public URL for email links | `./start-mac.sh --url https://mythologic.al` | `./docker/start-standalone.sh --url https://mythologic.al` | `.\start-windows.ps1 -Url https://mythologic.al` |
 
 > **Auto-update:** on every run the launchers run `git pull --ff-only` to fetch the latest version from [github.com/zedd00/PantryButler](https://github.com/zedd00/PantryButler). Pass `--noupdate` (macOS/Linux) or `-NoUpdate` (Windows) to skip the pull — handy when testing local changes before pushing.
 
 > **Admin features & email verification:** with `--enable-admin-features`, new instance creators must verify their email before signing in (override with `REQUIRE_EMAIL_VERIFICATION=false`). Emails are sent via SMTP — configure `SMTP_HOST`, `SMTP_PORT`, `SMTP_USERNAME`, `SMTP_PASSWORD`, `SMTP_FROM` and `SMTP_SECURE` in `docker/.env.2container`, or set them later from the Admin → Configuration page. Without an SMTP host, verification links are logged to the server console instead of being delivered.
 
 > **Public URL for email links:** verification and notification emails embed an absolute link. On a deployment reached from outside localhost, set the public URL so the links point at your domain instead of `http://localhost:3000`. Three equivalent ways:
-> - Launcher flag (prompted interactively when run in a terminal): `./start-mac.sh --url https://pantrybutler.example.com`, `./docker/start-standalone.sh --url https://pantrybutler.example.com`, or `.\start-windows.ps1 -Url https://pantrybutler.example.com`. The value is saved to `docker/.env.2container` as `APP_URL`.
-> - Set `APP_URL=https://pantrybutler.example.com` directly in `docker/.env.2container`.
+> - Launcher flag (prompted interactively when run in a terminal): `./start-mac.sh --url https://pantrybutler.mythologic.al`, `./docker/start-standalone.sh --url https://pantrybutler.mythologic.al`, or `.\start-windows.ps1 -Url https://pantrybutler.mythologic.al`. The value is saved to `docker/.env.2container` as `APP_URL`.
+> - Set `APP_URL=https://pantrybutler.mythologic.al` directly in `docker/.env.2container`.
 > - Any time after first boot, from **Admin → Configuration → Public URL** (this value overrides `APP_URL`).
 >
 > If unset, the server falls back to `CORS_ORIGIN`, then `localhost`. When testing locally, if a verification email doesn't arrive, check the server console for the logged link.
@@ -225,7 +231,7 @@ If PantryButler helps you cook, plan meals, and waste less food, consider suppor
 - ☕ **Buy me a coffee:** https://buymeacoffee.com/pantrybutler
 - 🌟 **Patreon:** https://www.patreon.com/zedd00/
 
-Every contribution goes toward servers, open data licensing, and more time on new features. Thank you! 💛
+Thank you! 💛
 
 ---
 
