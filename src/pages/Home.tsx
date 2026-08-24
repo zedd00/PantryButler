@@ -60,6 +60,9 @@ export default function Home() {
       {/* Hero Section */}
       <section id="main-content" className="container mx-auto px-4 py-24 text-center" tabIndex={-1}>
         <div className="max-w-3xl mx-auto space-y-8">
+          <div className="flex justify-center">
+            <img src="/images/PantryButlerLogo_v2.png" alt="PantryButler" className="h-24 w-auto" />
+          </div>
           <h2 className="text-5xl font-bold text-foreground leading-tight text-balance">
             {t('home:hero.title')}
           </h2>

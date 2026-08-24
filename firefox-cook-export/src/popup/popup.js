@@ -331,6 +331,9 @@ const browser = (typeof globalThis.browser !== 'undefined') ? globalThis.browser
     );
   });
 
+  // Pre-fill the default Pantry Butler server so users/reviewers can connect in one click.
+  if (!originEl.value) originEl.value = 'https://pantrybutler.mythologic.al';
+
   extract();
   refreshConnection();
   // Re-check the stored connection whenever the popup becomes visible again
