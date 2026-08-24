@@ -11,7 +11,7 @@ import { clientIp } from '../utils/client-ip';
 import { logError } from '../utils/log';
 import { sha256Hex } from '../utils/tokens';
 import { sendEmail } from '../utils/mailer';
-import { isEmailVerificationRequired } from '../utils/system-config';
+import { isEmailVerificationRequired, getEffectiveAppUrl } from '../utils/system-config';
 import { requireAuth, requireJwt, requireResourceScope, type AuthVariables, type JwtPayload } from '../middleware/auth';
 
 const auth = new Hono<{ Variables: AuthVariables }>();
@@ -67,7 +67,7 @@ async function issueVerificationToken(userId: string): Promise<string> {
 }
 
 async function sendVerificationEmail(email: string, rawToken: string): Promise<void> {
-  const link = `${config.appUrl}/verify-email?token=${encodeURIComponent(rawToken)}`;
+  const link = `${await getEffectiveAppUrl()}/verify-email?token=${encodeURIComponent(rawToken)}`;
   await sendEmail({
     to: email,
     subject: 'Verify your PantryButler account',
@@ -120,14 +120,13 @@ auth.post('/register', zValidator('json', registerSchema), async (c) => {
 
     const passwordHash = await bcrypt.hash(password, 12);
 
-    // Instance creators bootstrap their own deployment: they chose this
-    // server, there is no existing instance to protect yet, and forcing an
-    // email round-trip before their instance exists leaves the deployment
-    // unusable (the initial admin could not even sign in). Mark them verified
-    // at creation instead. Email verification continues to apply to every
-    // other registration while the requirement is on.
-    const isInstanceCreator = Boolean(instance_name && instance_name.trim());
-    if ((await isEmailVerificationRequired()) && !isInstanceCreator) {
+    // When email verification is required, every new registration (including
+    // instance creators) takes the deferred path below: the account is created
+    // unverified, a verification email is sent, and instance creation is
+    // deferred until the address is confirmed (the verify-email route finalizes
+    // the instance from pending_instance_name). This matches the README and
+    // launchers, which state instance creators must verify their email too.
+    if (await isEmailVerificationRequired()) {
       const userResult = await query(
         `INSERT INTO users (email, password_hash, pending_instance_name)
          VALUES ($1, $2, $3) RETURNING id, email`,

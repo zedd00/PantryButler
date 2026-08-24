@@ -29,6 +29,10 @@ services:
       PORT: 3000
       NODE_ENV: production
       CORS_ORIGIN: http://localhost:3000
+      # Public base URL (e.g. https://pantrybutler.example.com). Used to build
+      # links in verification/notification emails. Falls back to CORS_ORIGIN,
+      # then localhost. Can also be set from the admin config page.
+      APP_URL: ${APP_URL:-}
       PUBLIC_DIR: /app/public
       SETUP_DIR: /app/setup
       VITE_API_URL: ""

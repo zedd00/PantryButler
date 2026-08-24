@@ -79,7 +79,15 @@ function runSmtpConversation(cfg: EffectiveSmtpConfig, message: EmailMessage): P
     let pendingReply: { lines: string[]; resolve: (reply: string) => void; reject: (err: Error) => void } | null = null;
     let finished = false;
 
-    const timeout = setTimeout(() => fail(new Error('SMTP connection timed out')), 20000);
+    const timeout = setTimeout(
+      () =>
+        fail(
+          new Error(
+            `SMTP connection timed out (${cfg.secure ? 'implicit TLS' : 'plaintext/STARTTLS'} ${cfg.host}:${cfg.port})`,
+          ),
+        ),
+      20000,
+    );
 
     function fail(err: Error): void {
       if (finished) return;

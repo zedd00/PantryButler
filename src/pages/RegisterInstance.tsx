@@ -110,6 +110,9 @@ export default function RegisterInstance() {
             <p className="text-sm text-muted-foreground text-center">
               {t('auth:registerInstance.verifyEmailHint')}
             </p>
+            <p className="text-xs text-muted-foreground text-center">
+              {t('auth:registerInstance.verifyEmailSpam')}
+            </p>
             <Button className="w-full" onClick={handleResend} disabled={resending}>
               {resending ? t('auth:registerInstance.resending') : t('auth:registerInstance.resendEmail')}
             </Button>

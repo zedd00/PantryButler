@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useAuth } from '@/contexts/AuthContext';
+import { getStoredToken } from '@/lib/api-client';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { CheckCircle2, XCircle, Loader2 } from 'lucide-react';
@@ -16,19 +17,39 @@ export default function VerifyEmail() {
   const [searchParams] = useSearchParams();
   const [status, setStatus] = useState<VerifyStatus>('verifying');
   const [errorCode, setErrorCode] = useState('');
+  const ranRef = useRef<string | false>(false);
 
   useEffect(() => {
     const token = searchParams.get('token');
+
+    // Guard against running twice for the same token (React StrictMode
+    // double-invokes effects in dev, and a link can be followed more than once).
+    // Verifying again with the same token would fail because the first call
+    // consumes it. A brand-new token still runs.
+    if (ranRef.current === token) return;
+
     if (!token) {
       setErrorCode('missing');
       setStatus('error');
       return;
     }
+    ranRef.current = token;
 
     completeEmailVerification(token).then(({ error }) => {
       if (error) {
         const body = (error as any)?.body;
-        setErrorCode(typeof body?.error === 'string' ? body.error : 'generic');
+        const code = typeof body?.error === 'string' ? body.error : 'generic';
+
+        // If the email is already verified (or this token was already used by a
+        // prior successful verification) and we now hold a session, treat it as
+        // success rather than showing a scary error.
+        if ((code === 'already_verified' || code === 'invalid_or_used') && getStoredToken()) {
+          setStatus('success');
+          setTimeout(() => navigate('/recipes'), 1500);
+          return;
+        }
+
+        setErrorCode(code);
         setStatus('error');
       } else {
         setStatus('success');

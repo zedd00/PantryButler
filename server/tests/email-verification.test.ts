@@ -99,14 +99,14 @@ beforeEach(() => {
 });
 
 describe('POST /api/auth/register with email verification required', () => {
-  it('marks instance creators as verified at creation and signs them in', async () => {
+  it('defers email verification for instance creators too', async () => {
     mockDb([
       verificationOverride(true),
       {
         match: (sql) => sql.includes('INSERT INTO users'),
-        result: () => row({ id: 'u1', email: 'creator@example.com', created_at: new Date(), jwt_version: 0 }),
+        result: () => row({ id: 'u1', email: 'creator@example.com' }),
       },
-      { match: (sql) => sql.includes('handle_new_user'), result: () => row({}) },
+      { match: (sql) => sql.includes('email_verification_tokens'), result: () => row({ id: 't1' }) },
     ]);
 
     const res = await buildApp().request('/api/auth/register', {
@@ -117,11 +117,15 @@ describe('POST /api/auth/register with email verification required', () => {
 
     expect(res.status).toBe(201);
     const body = await res.json();
-    // Creator bootstrap: verified immediately, session issued, no email.
-    expect(body.requiresEmailVerification).toBeUndefined();
-    expect(body.token).toBeTruthy();
-    expect(queryMock).toHaveBeenCalledWith(expect.stringContaining('handle_new_user'), expect.anything());
-    expect(sendEmailMock).not.toHaveBeenCalled();
+    // Instance creators now also verify their email (no longer auto-verified).
+    expect(body.requiresEmailVerification).toBe(true);
+    expect(body.email).toBe('creator@example.com');
+    // Instance creation stays deferred until the address is confirmed.
+    expect(queryMock).not.toHaveBeenCalledWith(expect.stringContaining('handle_new_user'), expect.anything());
+    expect(sendEmailMock).toHaveBeenCalledTimes(1);
+    expect(sendEmailMock).toHaveBeenCalledWith(
+      expect.objectContaining({ to: 'creator@example.com', subject: expect.stringContaining('Verify') })
+    );
   });
 
   it('still defers email verification for registrations without an instance', async () => {

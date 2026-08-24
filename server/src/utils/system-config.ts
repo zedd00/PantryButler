@@ -33,6 +33,17 @@ export async function isEmailVerificationRequired(): Promise<boolean> {
   return config.requireEmailVerification;
 }
 
+// Effective public/base URL used in emails and links (e.g. the verification
+// link). A superadmin-set value in system_config (external_url) wins over the
+// APP_URL / CORS_ORIGIN env defaults, which in turn default to localhost.
+export async function getEffectiveAppUrl(): Promise<string> {
+  const override = await getSystemConfigValue<string>('external_url');
+  if (override && String(override).trim()) {
+    return String(override).trim().replace(/\/+$/, '');
+  }
+  return config.appUrl;
+}
+
 export interface EffectiveSmtpConfig {
   host: string;
   port: number;

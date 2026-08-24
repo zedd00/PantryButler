@@ -6,6 +6,12 @@
 #                                   seeds nutrition, and creates the admin.
 #   ./start-mac.sh --reset-db       Optional: wipe the database volume and
 #                                   restart fresh (destroys all data!).
+#   ./start-mac.sh --noupdate       Skip the git pull auto-update (local
+#                                   testing before pushing to GitHub).
+#   ./start-mac.sh --url <url>       Public base URL for email links, e.g.
+#                                   https://pantrybutler.example.com
+#                                   (without it, prompts when interactive;
+#                                   otherwise email links use localhost).
 # ============================================================================
 set -euo pipefail
 
@@ -19,6 +25,10 @@ green()  { printf "\033[0;32m%s\033[0m\n" "$*"; }
 yellow() { printf "\033[0;33m%s\033[0m\n" "$*"; }
 red()    { printf "\033[0;31m%s\033[0m\n" "$*"; }
 step()   { printf "\n"; green "▶  $*"; }
+
+docker_volume_exists() {
+  docker volume inspect "$1" >/dev/null 2>&1
+}
 
 # ---------------------------------------------------------------------------
 # Prerequisites
@@ -38,6 +48,23 @@ check_prerequisites() {
   fi
   [[ -f "$COMPOSE_FILE" ]] || { red "❌ $COMPOSE_FILE not found. Run this script from the project root."; missing=1; }
   [[ $missing -eq 1 ]] && exit 1
+}
+
+git_pull() {
+  step "Checking for updates..."
+  if ! command -v git &>/dev/null; then
+    yellow "   ⚠️  git not found; skipping auto-update."
+    return
+  fi
+  if ! git -C "$PROJECT_ROOT" rev-parse --is-inside-work-tree &>/dev/null; then
+    yellow "   ⚠️  Not a git repository; skipping auto-update."
+    return
+  fi
+  if git -C "$PROJECT_ROOT" pull --ff-only 2>&1; then
+    green "   Update check complete."
+  else
+    yellow "   ⚠️  git pull failed (network/credentials?) — continuing with current code."
+  fi
 }
 
 # ---------------------------------------------------------------------------
@@ -76,15 +103,83 @@ setup_env() {
   # value), so rotate them to a random password like JWT_SECRET above.
   if grep -Eq '^POSTGRES_PASSWORD=(changeme|pb_local_9f2c4a7e_5b8d)$' "$ENV_FILE"; then
     step "Generating a secure POSTGRES_PASSWORD..."
-    local db_password
-    if command -v openssl &>/dev/null; then
-      db_password="$(openssl rand -hex 16)"
+    # A Postgres data volume freezes its password at first init. If one already
+    # exists, do NOT rotate: changing the env value would desync the app from the
+    # database (migrations/login fail with "password authentication failed") and
+    # the only fix would be wiping the volume. So only rotate on a fresh install
+    # (no existing volume); otherwise leave the password as-is.
+    if docker_volume_exists "PantryButler_pgdata"; then
+      yellow "   ↳ A DB volume already exists — leaving POSTGRES_PASSWORD unchanged so it stays in sync with the database."
+      yellow "   To start fresh, remove the volume (docker compose down -v) and re-run."
     else
-      db_password="$(LC_ALL=C tr -dc 'a-f0-9' </dev/urandom | head -c 32)"
+      local db_password
+      if command -v openssl &>/dev/null; then
+        db_password="$(openssl rand -hex 16)"
+      else
+        db_password="$(LC_ALL=C tr -dc 'a-f0-9' </dev/urandom | head -c 32)"
+      fi
+      sed -i '' "s|^POSTGRES_PASSWORD=.*|POSTGRES_PASSWORD=$db_password|" "$ENV_FILE" 2>/dev/null \
+        || sed -i "s|^POSTGRES_PASSWORD=.*|POSTGRES_PASSWORD=$db_password|" "$ENV_FILE"
+      green "   POSTGRES_PASSWORD generated."
     fi
-    sed -i '' "s|^POSTGRES_PASSWORD=.*|POSTGRES_PASSWORD=$db_password|" "$ENV_FILE" 2>/dev/null \
-      || sed -i "s|^POSTGRES_PASSWORD=.*|POSTGRES_PASSWORD=$db_password|" "$ENV_FILE"
-    green "   POSTGRES_PASSWORD generated."
+  fi
+}
+
+# ---------------------------------------------------------------------------
+# External / public URL (used in email verification links)
+# ---------------------------------------------------------------------------
+write_app_url() {
+  local val="$1"
+  [[ -f "$ENV_FILE" ]] || return 0
+  if grep -Eq '^APP_URL=' "$ENV_FILE"; then
+    sed -i '' "s|^APP_URL=.*|APP_URL=$val|" "$ENV_FILE" 2>/dev/null \
+      || sed -i "s|^APP_URL=.*|APP_URL=$val|" "$ENV_FILE"
+  else
+    printf 'APP_URL=%s\n' "$val" >> "$ENV_FILE"
+  fi
+}
+
+configure_external_url() {
+  local cli_url="${1:-}"
+  local url="$cli_url"
+
+  # An explicit value (--url) or existing env var wins over prompting.
+  if [[ -z "$url" && -n "${APP_URL:-}" ]]; then
+    url="$APP_URL"
+  fi
+
+  # Already pinned in the env file: respect it, no prompt.
+  if [[ -z "$url" && -f "$ENV_FILE" ]]; then
+    local existing
+    existing="$(grep -E '^APP_URL=' "$ENV_FILE" 2>/dev/null | head -n1 | cut -d= -f2-)" || true
+    if [[ -n "$existing" ]]; then
+      green "   Using APP_URL from $ENV_FILE: $existing"
+      return 0
+    fi
+  fi
+
+  if [[ -n "$url" ]]; then
+    url="$(echo "$url" | sed 's:/*$::')"
+    write_app_url "$url"
+    green "   APP_URL set to $url (saved to $ENV_FILE)."
+    return 0
+  fi
+
+  # Nothing provided: only prompt when attached to an interactive terminal.
+  if [[ ! -t 0 ]]; then
+    yellow "   ℹ️  Non-interactive run: APP_URL left unset (email links will use localhost)."
+    yellow "   Set APP_URL=https://your.domain in docker/.env.2container to fix email links."
+    return 0
+  fi
+
+  local input=""
+  read -r -p $'\033[0;33m   Public URL for email links (e.g. https://pantrybutler.example.com), or leave blank for localhost: \033[0m' input || true
+  input="$(echo "$input" | sed 's:/*$::')"
+  if [[ -n "$input" ]]; then
+    write_app_url "$input"
+    green "   APP_URL set to $input (saved to $ENV_FILE)."
+  else
+    yellow "   No public URL provided — email links will use localhost."
   fi
 }
 
@@ -128,15 +223,22 @@ show_summary() {
   green "══════════════════════════════════════════════════════"
   echo ""
   yellow "Open http://localhost:3000 and sign in (first boot creates an admin automatically)."
-  yellow "Production? Change POSTGRES_PASSWORD in docker/.env.2container and"
-  yellow "restart (docker compose -p PantryButler up -d)."
+  if grep -Eq '^POSTGRES_PASSWORD=(changeme|pb_local_9f2c4a7e_5b8d)$' "$ENV_FILE"; then
+    yellow "Production? Change POSTGRES_PASSWORD in docker/.env.2container and"
+    yellow "restart (docker compose -p PantryButler up -d)."
+  fi
 }
 
 run_setup() {
   step "Checking if setup is needed..."
 
+  # The status endpoint requires superadmin auth once any users exist, so an
+  # unauthenticated call returns non-2xx. Only a *successful* response that
+  # reports hasUsers:false means a genuine first boot; anything else (fetch
+  # failure, 403, already-set-up) is treated as "nothing to do" so we don't
+  # re-run seeding / admin creation on every update.
   local setup_status
-  setup_status="$(curl -sf http://localhost:3000/api/setup/status 2>/dev/null || echo '{"validation":{"hasUsers":false}}')"
+  setup_status="$(curl -sf http://localhost:3000/api/setup/status 2>/dev/null || true)"
 
   if echo "$setup_status" | grep -q '"hasUsers":false'; then
     green "   First boot detected — running setup..."
@@ -152,14 +254,30 @@ run_setup() {
 
     step "Creating admin user..."
     local admin_email="${ADMIN_EMAIL:-admin@pantrybutler.local}"
-    local admin_password="${ADMIN_PASSWORD:-admin123}"
+    local admin_password="${ADMIN_PASSWORD:-}"
+    # Reuse a previously generated admin password persisted in the env file, so a
+    # database-volume reset during an update does not replace it with a new,
+    # unknown password.
+    if [[ -z "$admin_password" && -f "$ENV_FILE" ]]; then
+      admin_password="$(grep -E '^ADMIN_PASSWORD=' "$ENV_FILE" | head -n1 | cut -d= -f2- || true)"
+    fi
+    if [[ -z "$admin_password" ]]; then
+      if command -v openssl &>/dev/null; then
+        admin_password="$(openssl rand -hex 12)"
+      else
+        admin_password="$(LC_ALL=C tr -dc 'a-f0-9' </dev/urandom | head -c 24)"
+      fi
+      if [[ -f "$ENV_FILE" ]] && ! grep -Eq '^ADMIN_PASSWORD=' "$ENV_FILE"; then
+        printf 'ADMIN_PASSWORD=%s\n' "$admin_password" >> "$ENV_FILE"
+      fi
+    fi
 
     local register_response
-    register_response="$(curl -sf -X POST http://localhost:3000/api/auth/register \
+    register_response="$(curl -sf -X POST http://localhost:3000/api/setup/create-admin \
       -H "Content-Type: application/json" \
       -d "{\"email\":\"$admin_email\",\"password\":\"$admin_password\",\"instance_name\":\"My Kitchen\"}" 2>/dev/null || true)"
 
-    if echo "$register_response" | grep -q '"token"'; then
+    if echo "$register_response" | grep -q '"success":true'; then
       green "   Admin user created: $admin_email"
     else
       yellow "   ⚠️  Register response: $register_response"
@@ -174,8 +292,12 @@ run_setup() {
     green "║  App URL:        http://localhost:3000"
     green "╚═══════════════════════════════════════════════════════════════╝"
     green ""
-    yellow "⚠️  CHANGE THE ADMIN PASSWORD AFTER FIRST LOGIN!"
-    yellow "⚠️  CHANGE POSTGRES_PASSWORD IN docker/.env.2container FOR PRODUCTION!"
+    if [[ ${#admin_password} -lt 12 || "$admin_password" == "admin123" ]]; then
+      yellow "⚠️  CHANGE THE ADMIN PASSWORD AFTER FIRST LOGIN!"
+    fi
+    if grep -Eq '^POSTGRES_PASSWORD=(changeme|pb_local_9f2c4a7e_5b8d)$' "$ENV_FILE"; then
+      yellow "⚠️  CHANGE POSTGRES_PASSWORD IN docker/.env.2container FOR PRODUCTION!"
+    fi
   else
     green "   Setup already complete."
   fi
@@ -185,16 +307,26 @@ main() {
   echo ""
   green "PantryButler — macOS startup"
 
-  check_prerequisites
-
-  for arg in "$@"; do
-    case "$arg" in
-      --reset-db) reset_db ;;
-      --enable-admin-features) export ENABLE_ADMIN_FEATURES=true ;;
+  local no_update=0
+  local cli_url=""
+  while [[ $# -gt 0 ]]; do
+    case "$1" in
+      --noupdate) no_update=1; shift ;;
+      --reset-db) reset_db; shift ;;
+      --enable-admin-features) export ENABLE_ADMIN_FEATURES=true; shift ;;
+      --url) cli_url="$2"; shift 2 ;;
+      --url=*) cli_url="${1#--url=}"; shift ;;
+      *) shift ;;
     esac
   done
 
+  check_prerequisites
+  if [[ $no_update -eq 0 ]]; then
+    git_pull
+  fi
+
   setup_env
+  configure_external_url "$cli_url"
   start_containers
   run_setup
   show_summary

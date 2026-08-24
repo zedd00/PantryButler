@@ -104,11 +104,12 @@ setup.post('/seed-nutrition', async (c) => {
 const createAdminSchema = z.object({
   email: z.string().email(),
   password: z.string().min(8),
+  instance_name: z.string().optional(),
 });
 
 setup.post('/create-admin', zValidator('json', createAdminSchema), async (c) => {
   try {
-    const { email, password } = c.req.valid('json');
+    const { email, password, instance_name } = c.req.valid('json');
 
     // Bootstrap is complete once any profile exists. Count profiles rather
     // than users so a dormant (registered-but-unverified, profile-less)
@@ -148,12 +149,20 @@ setup.post('/create-admin', zValidator('json', createAdminSchema), async (c) => 
         userId = userResult.rows[0].id;
       }
 
-      // Superadmin profile without an instance (can manage all instances)
-      await tx.query(
-        `INSERT INTO profiles (id, email, username, display_name, role)
-         VALUES ($1, $2, $3, $4, 'superadmin')`,
-        [userId, normalizedEmail, normalizedEmail.split('@')[0], normalizedEmail.split('@')[0]]
-      );
+      // The bootstrap admin is auto-verified (no email round-trip): a fresh
+      // install has no SMTP configured yet, and this is the initial admin. If
+      // an instance name is given, create that instance too (the first user
+      // becomes its superadmin via handle_new_user); otherwise create a global
+      // superadmin profile not bound to any instance.
+      if (instance_name && instance_name.trim()) {
+        await tx.query('SELECT handle_new_user($1, $2, $3)', [userId, normalizedEmail, instance_name.trim()]);
+      } else {
+        await tx.query(
+          `INSERT INTO profiles (id, email, username, display_name, role)
+           VALUES ($1, $2, $3, $4, 'superadmin')`,
+          [userId, normalizedEmail, normalizedEmail.split('@')[0], normalizedEmail.split('@')[0]]
+        );
+      }
     });
 
     return c.json({ success: true, message: 'Superadmin created successfully', email });

@@ -7,6 +7,12 @@
 #                                        and restart fresh (destroys all data!).
 #   .\start-windows.ps1 -EnableAdminFeatures
 #                                        Enable the superadmin-only admin pages.
+#   .\start-windows.ps1 -NoUpdate        Skip the git pull auto-update (local
+#                                        testing before pushing to GitHub).
+#   .\start-windows.ps1 -Url <url>        Public base URL for email links, e.g.
+#                                        https://pantrybutler.example.com
+#                                        (without it, prompts when interactive;
+#                                        otherwise email links use localhost).
 #
 # If execution policy blocks scripts, run once:
 #   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
@@ -14,7 +20,9 @@
 
 param(
     [switch]$ResetDb,
-    [switch]$EnableAdminFeatures
+    [switch]$EnableAdminFeatures,
+    [switch]$NoUpdate,
+    [string]$Url
 )
 
 $ErrorActionPreference = 'Stop'
@@ -44,6 +52,37 @@ function Check-Prerequisites {
     }
     if (-not (Test-Path $ComposeFile)) {
         Write-Fail "docker-compose.yml not found at $ComposeFile. Run this script from the project root."
+    }
+}
+
+function Update-Repo {
+    Write-Step "Checking for updates..."
+    if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
+        Write-Warn "git not found; skipping auto-update."
+        return
+    }
+    try {
+        $null = & git -C $ProjectRoot rev-parse --is-inside-work-tree
+        if ($LASTEXITCODE -ne 0) { Write-Warn "Not a git repository; skipping auto-update."; return }
+    } catch {
+        Write-Warn "Not a git repository; skipping auto-update."
+        return
+    }
+    try {
+        & git -C $ProjectRoot pull --ff-only 2>&1
+        Write-Ok "Update check complete."
+    } catch {
+        Write-Warn "git pull failed (network/credentials?) - continuing with current code."
+    }
+}
+
+function Test-DockerVolume {
+    param([string]$Name)
+    try {
+        & docker volume inspect $Name 2>&1 | Out-Null
+        return ($LASTEXITCODE -eq 0)
+    } catch {
+        return $false
     }
 }
 
@@ -79,13 +118,79 @@ function Setup-Env {
     # the well-known `changeme` placeholder (or the committed template value).
     if ($content -match '^POSTGRES_PASSWORD=(changeme|pb_local_9f2c4a7e_5b8d)') {
         Write-Step "Generating a secure POSTGRES_PASSWORD..."
-        $rng = [System.Security.Cryptography.RandomNumberGenerator]::Create()
-        $bytes = New-Object byte[] 16
-        $rng.GetBytes($bytes)
-        $dbPassword = [Convert]::ToHexString($bytes).ToLowerInvariant()
-        $content = $content -replace '(?m)^POSTGRES_PASSWORD=.*', "POSTGRES_PASSWORD=$dbPassword"
-        Set-Content -Path $EnvFile -Value $content -NoNewline -Encoding ascii
-        Write-Ok "POSTGRES_PASSWORD generated."
+        # A Postgres data volume freezes its password at first init. If one
+        # already exists, do NOT rotate: changing the env value would desync the
+        # app from the database (migrations/login fail with "password
+        # authentication failed") and the only fix would be wiping the volume. So
+        # only rotate on a fresh install (no existing volume); otherwise leave
+        # the password as-is.
+        if (Test-DockerVolume "PantryButler_pgdata") {
+            Write-Warn "A DB volume already exists - leaving POSTGRES_PASSWORD unchanged so it stays in sync with the database."
+            Write-Warn "To start fresh, remove the volume (docker compose down -v) and re-run."
+        } else {
+            $rng = [System.Security.Cryptography.RandomNumberGenerator]::Create()
+            $bytes = New-Object byte[] 16
+            $rng.GetBytes($bytes)
+            $dbPassword = [Convert]::ToHexString($bytes).ToLowerInvariant()
+            $content = $content -replace '(?m)^POSTGRES_PASSWORD=.*', "POSTGRES_PASSWORD=$dbPassword"
+            Set-Content -Path $EnvFile -Value $content -NoNewline -Encoding ascii
+            Write-Ok "POSTGRES_PASSWORD generated."
+        }
+    }
+}
+
+# ----------------------------------------------------------------------------
+# External / public URL (used in email verification links)
+# ----------------------------------------------------------------------------
+function Set-ExternalUrl {
+    param([string]$CliUrl)
+
+    $url = $CliUrl
+    if (-not $url -and $env:APP_URL) { $url = $env:APP_URL }
+
+    # Already pinned in the env file: respect it, no prompt.
+    if (-not $url) {
+        $c = Get-Content $EnvFile -Raw
+        $m = [regex]::Match($c, '(?m)^APP_URL=(.*)$')
+        if ($m.Success -and $m.Groups[1].Value.Trim() -ne '') {
+            Write-Ok "Using APP_URL from $EnvFile: $($m.Groups[1].Value.Trim())"
+            return
+        }
+    }
+
+    if ($url) {
+        $url = $url.TrimEnd('/')
+        $c = Get-Content $EnvFile -Raw
+        if ($c -match '(?m)^APP_URL=') {
+            $c = $c -replace '(?m)^APP_URL=.*', "APP_URL=$url"
+        } else {
+            $c = $c.TrimEnd() + "`nAPP_URL=$url`n"
+        }
+        Set-Content -Path $EnvFile -Value $c -NoNewline -Encoding ascii
+        Write-Ok "APP_URL set to $url (saved to $EnvFile)."
+        return
+    }
+
+    # Nothing provided: only prompt when attached to an interactive terminal.
+    if (-not [Environment]::UserInteractive -or [Console]::IsInputRedirected) {
+        Write-Warn "Non-interactive run: APP_URL left unset (email links will use localhost)."
+        Write-Warn "Set APP_URL=https://your.domain in docker\.env.2container to fix email links."
+        return
+    }
+
+    $inputUrl = Read-Host -Prompt "Public URL for email links (e.g. https://pantrybutler.example.com), or leave blank for localhost"
+    $inputUrl = $inputUrl.TrimEnd('/')
+    if ($inputUrl) {
+        $c = Get-Content $EnvFile -Raw
+        if ($c -match '(?m)^APP_URL=') {
+            $c = $c -replace '(?m)^APP_URL=.*', "APP_URL=$inputUrl"
+        } else {
+            $c = $c.TrimEnd() + "`nAPP_URL=$inputUrl`n"
+        }
+        Set-Content -Path $EnvFile -Value $c -NoNewline -Encoding ascii
+        Write-Ok "APP_URL set to $inputUrl (saved to $EnvFile)."
+    } else {
+        Write-Warn "No public URL provided - email links will use localhost."
     }
 }
 
@@ -136,8 +241,11 @@ function Show-Summary {
     Write-Host "======================================================" -ForegroundColor Green
     Write-Host ""
     Write-Warn "Open http://localhost:3000 and sign in (first boot creates an admin automatically)."
-    Write-Warn "Production? Change POSTGRES_PASSWORD in docker\.env.2container and"
-    Write-Warn "restart (docker compose -p PantryButler up -d)."
+    $currentContent = Get-Content $EnvFile -Raw
+    if ($currentContent -match '^POSTGRES_PASSWORD=(changeme|pb_local_9f2c4a7e_5b8d)') {
+        Write-Warn "Production? Change POSTGRES_PASSWORD in docker\.env.2container and"
+        Write-Warn "restart (docker compose -p PantryButler up -d)."
+    }
 }
 
 # ----------------------------------------------------------------------------
@@ -146,8 +254,12 @@ function Show-Summary {
 function Run-Setup {
     Write-Step "Checking if setup is needed..."
 
+    # The status endpoint requires superadmin auth once any users exist, so an
+    # unauthenticated call returns non-2xx. Only a *successful* response that
+    # reports hasUsers:false means a genuine first boot; anything else (fetch
+    # failure, 403, already-set-up) is treated as "nothing to do" so we don't
+    # re-run seeding / admin creation on every update.
     $setupStatus = (curl.exe -s -f http://localhost:3000/api/setup/status 2>$null)
-    if (-not $setupStatus) { $setupStatus = '{"validation":{"hasUsers":false}}' }
 
     if ($setupStatus -match '"hasUsers":false') {
         Write-Ok "First boot detected - running setup..."
@@ -162,15 +274,32 @@ function Run-Setup {
 
         Write-Step "Creating admin user..."
         $adminEmail = if ($env:ADMIN_EMAIL) { $env:ADMIN_EMAIL } else { "admin@pantrybutler.local" }
-        $adminPassword = if ($env:ADMIN_PASSWORD) { $env:ADMIN_PASSWORD } else { "admin123" }
+        if ($env:ADMIN_PASSWORD) {
+            $adminPassword = $env:ADMIN_PASSWORD
+        } else {
+            # Reuse a previously generated admin password persisted in the env file, so a
+            # database-volume reset during an update does not replace it with a new,
+            # unknown password.
+            $fileContent = Get-Content $EnvFile -Raw
+            $existing = ($fileContent -split "`n" | Where-Object { $_ -match '^ADMIN_PASSWORD=' } | Select-Object -First 1)
+            if ($existing) {
+                $adminPassword = ($existing -replace '^ADMIN_PASSWORD=', '').Trim()
+            } else {
+                $rng = [System.Security.Cryptography.RandomNumberGenerator]::Create()
+                $b = New-Object byte[] 18
+                $rng.GetBytes($b)
+                $adminPassword = [Convert]::ToHexString($b).ToLowerInvariant()
+                Add-Content -Path $EnvFile -Value "ADMIN_PASSWORD=$adminPassword"
+            }
+        }
 
         $body = @{ email = $adminEmail; password = $adminPassword; instance_name = "My Kitchen" } | ConvertTo-Json -Compress
-        $registerResponse = (curl.exe -s -f -X POST http://localhost:3000/api/auth/register -H "Content-Type: application/json" -d $body 2>$null)
+        $registerResponse = (curl.exe -s -f -X POST http://localhost:3000/api/setup/create-admin -H "Content-Type: application/json" -d $body 2>$null)
 
-        if ($registerResponse -match '"token"') {
+        if ($registerResponse -match '"success":true') {
             Write-Ok "Admin user created: $adminEmail"
         } else {
-            Write-Warn "Register response: $registerResponse"
+            Write-Warn "Create-admin response: $registerResponse"
         }
 
         Write-Host ""
@@ -182,8 +311,13 @@ function Run-Setup {
         Write-Host "  App URL:        http://localhost:3000" -ForegroundColor Green
         Write-Host "======================================================" -ForegroundColor Green
         Write-Host ""
-        Write-Warn "CHANGE THE ADMIN PASSWORD AFTER FIRST LOGIN!"
-        Write-Warn "CHANGE POSTGRES_PASSWORD in docker\.env.2container FOR PRODUCTION!"
+        if ($adminPassword.Length -lt 12 -or $adminPassword -eq 'admin123') {
+            Write-Warn "CHANGE THE ADMIN PASSWORD AFTER FIRST LOGIN!"
+        }
+        $currentContent = Get-Content $EnvFile -Raw
+        if ($currentContent -match '^POSTGRES_PASSWORD=(changeme|pb_local_9f2c4a7e_5b8d)') {
+            Write-Warn "CHANGE POSTGRES_PASSWORD in docker\.env.2container FOR PRODUCTION!"
+        }
     } else {
         Write-Ok "Setup already complete."
     }
@@ -194,8 +328,10 @@ Write-Host ""
 Write-Host "PantryButler - Windows startup" -ForegroundColor Green
 
 Check-Prerequisites
+if (-not $NoUpdate) { Update-Repo }
 if ($ResetDb) { Reset-Db }
 Setup-Env
+Set-ExternalUrl $Url
 Start-Containers
 Run-Setup
 Show-Summary

@@ -7,17 +7,23 @@ import { Label } from '@/components/ui/label';
 import { Switch } from '@/components/ui/switch';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from '@/components/ui/alert-dialog';
-import { Save, RotateCcw, MailCheck, KeyRound } from 'lucide-react';
-import { getAdminConfig, updateAdminConfig, isSuperAdmin, type AdminConfig } from '@/api';
+import { Save, RotateCcw, MailCheck, KeyRound, Send } from 'lucide-react';
+import { getAdminConfig, updateAdminConfig, testAdminEmail, isSuperAdmin, type AdminConfig } from '@/api';
+import { useAuth } from '@/contexts/AuthContext';
 import { toast } from 'sonner';
 import { useTranslation } from 'react-i18next';
 
 export default function AdminConfigPage() {
   const navigate = useNavigate();
   const { t } = useTranslation(['admin', 'common']);
+  const { user } = useAuth();
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [resetDialogOpen, setResetDialogOpen] = useState(false);
+  const [testRecipient, setTestRecipient] = useState('');
+  const [testingEmail, setTestingEmail] = useState(false);
+  const [testResult, setTestResult] = useState<string | null>(null);
+  const [testSuccess, setTestSuccess] = useState(false);
 
   const [requireEmailVerification, setRequireEmailVerification] = useState(false);
   const [smtpHost, setSmtpHost] = useState('');
@@ -27,6 +33,7 @@ export default function AdminConfigPage() {
   const [smtpFrom, setSmtpFrom] = useState('');
   const [smtpSecure, setSmtpSecure] = useState(false);
   const [passwordSet, setPasswordSet] = useState(false);
+  const [externalUrl, setExternalUrl] = useState('');
 
   useEffect(() => {
     checkAdminAccess();
@@ -58,6 +65,7 @@ export default function AdminConfigPage() {
       setSmtpSecure(data.smtp.secure);
       setPasswordSet(data.smtp.passwordSet);
       setSmtpPassword('');
+      setExternalUrl(data.external_url ?? '');
     } catch (error: any) {
       toast.error(t('admin:config.toasts.loadFailed', { error: error.message }));
       if (error.message.includes('Forbidden') || error.message.includes('Unauthorized')) {
@@ -74,6 +82,7 @@ export default function AdminConfigPage() {
       const port = parseInt(smtpPort, 10);
       await updateAdminConfig({
         require_email_verification: requireEmailVerification,
+        external_url: externalUrl.trim() || null,
         smtp: {
           host: smtpHost.trim() || null,
           port: Number.isFinite(port) && port > 0 ? port : null,
@@ -106,6 +115,52 @@ export default function AdminConfigPage() {
       toast.error(t('admin:config.toasts.resetFailed', { error: error.message }));
     } finally {
       setSaving(false);
+    }
+  };
+
+  const handleTestEmail = async () => {
+    setTestingEmail(true);
+    setTestResult(null);
+    try {
+      // Persist the entered SMTP settings first, so the test uses what's on
+      // screen rather than previously saved values.
+      const port = parseInt(smtpPort, 10);
+      await updateAdminConfig({
+        require_email_verification: requireEmailVerification,
+        external_url: externalUrl.trim() || null,
+        smtp: {
+          host: smtpHost.trim() || null,
+          port: Number.isFinite(port) && port > 0 ? port : null,
+          username: smtpUsername.trim() || null,
+          from: smtpFrom.trim() || null,
+          secure: smtpSecure,
+          ...(smtpPassword ? { password: smtpPassword } : {}),
+        },
+      });
+      setPasswordSet(Boolean(smtpPassword));
+      setSmtpPassword('');
+      await loadConfig();
+
+      const res = await testAdminEmail(testRecipient.trim() || undefined);
+      if (res.ok) {
+        setTestSuccess(true);
+        setTestResult(t('admin:config.toasts.testEmailSent', { to: res.to, defaultValue: 'Test email sent to {{to}}' }));
+      } else {
+        setTestSuccess(false);
+        let msg = res.error || 'Unknown error';
+        if (res.smtp) {
+          msg +=
+            `\n\nSMTP config used:\n  host: ${res.smtp.host}` +
+            `\n  port: ${res.smtp.port}\n  secure: ${res.smtp.secure}` +
+            `\n  username: ${res.smtp.username || '(none)'}\n  from: ${res.smtp.from || '(none)'}`;
+        }
+        setTestResult(msg);
+      }
+    } catch (error: any) {
+      setTestSuccess(false);
+      setTestResult(error?.message || 'Save or send failed');
+    } finally {
+      setTestingEmail(false);
     }
   };
 
@@ -150,6 +205,32 @@ export default function AdminConfigPage() {
                 {t('admin:config.labels.requireEmailVerification')}
               </Label>
             </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <MailCheck className="h-5 w-5" />
+              {t('admin:config.headings.externalUrl')}
+            </CardTitle>
+            <CardDescription>
+              {t('admin:config.text.externalUrlDesc')}
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <div className="space-y-2">
+              <Label htmlFor="external-url">{t('admin:config.labels.externalUrl')}</Label>
+              <Input
+                id="external-url"
+                value={externalUrl}
+                onChange={(e) => setExternalUrl(e.target.value)}
+                placeholder={t('admin:config.placeholders.externalUrl', { defaultValue: 'https://pantrybutler.example.com' })}
+              />
+            </div>
+            <p className="text-xs text-muted-foreground">
+              {t('admin:config.text.externalUrlUsed', { defaultValue: 'Used in verification and notification emails in place of localhost when set.' })}
+            </p>
           </CardContent>
         </Card>
 
@@ -227,6 +308,39 @@ export default function AdminConfigPage() {
             <p className="text-xs text-muted-foreground">
               {t('admin:config.text.smtpEnvFallback')}
             </p>
+            <div className="pt-4 mt-4 border-t space-y-3">
+              <div className="space-y-2">
+                <Label htmlFor="test-email-recipient">
+                  {t('admin:config.labels.testEmailTo', { defaultValue: 'Test recipient email' })}
+                </Label>
+                <div className="flex flex-col sm:flex-row gap-2">
+                  <Input
+                    id="test-email-recipient"
+                    type="email"
+                    value={testRecipient}
+                    onChange={(e) => setTestRecipient(e.target.value)}
+                    placeholder={user?.email ?? 'you@example.com'}
+                  />
+                  <Button variant="outline" onClick={handleTestEmail} disabled={testingEmail || saving}>
+                    <Send className="mr-2 h-4 w-4" />
+                    {testingEmail
+                      ? t('common:sending', { defaultValue: 'Saving & testing…' })
+                      : t('admin:config.buttons.testEmail', { defaultValue: 'Save & test email settings' })}
+                  </Button>
+                </div>
+              </div>
+              {testResult && (
+                <pre
+                  className={`text-xs whitespace-pre-wrap rounded p-3 ${
+                    testSuccess
+                      ? 'bg-green-50 text-green-800 border border-green-200'
+                      : 'bg-red-50 text-red-800 border border-red-200'
+                  }`}
+                >
+                  {testResult}
+                </pre>
+              )}
+            </div>
           </CardContent>
         </Card>
 

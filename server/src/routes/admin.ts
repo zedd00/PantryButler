@@ -10,8 +10,10 @@ import {
   clearSystemConfigValue,
   isEmailVerificationRequired,
   getEffectiveSmtp,
+  getEffectiveAppUrl,
   getStoredSmtpOverrides,
 } from '../utils/system-config';
+import { sendEmail, type EmailMessage } from '../utils/mailer';
  
 const admin = new Hono<{ Variables: AuthVariables }>();
 
@@ -268,6 +270,7 @@ admin.route('/instances', adminInstances);
 
 const adminConfigSchema = z.object({
   require_email_verification: z.boolean().optional(),
+  external_url: z.string().nullable().optional(),
   smtp: z
     .object({
       host: z.string().nullable().optional(),
@@ -293,14 +296,17 @@ adminConfig.use('*', requireSuperAdmin);
 
 adminConfig.get('/', async (c) => {
   try {
-    const [override, smtp, smtpOverride] = await Promise.all([
+    const [override, externalUrlOverride, smtp, smtpOverride] = await Promise.all([
       getSystemConfigValue<boolean>('require_email_verification'),
+      getSystemConfigValue<string>('external_url'),
       getEffectiveSmtp(),
       getStoredSmtpOverrides(),
     ]);
     return c.json({
       require_email_verification: await isEmailVerificationRequired(),
       require_email_verification_override: override ?? null,
+      external_url: await getEffectiveAppUrl(),
+      external_url_override: externalUrlOverride ?? null,
       smtp: {
         host: smtp.host || null,
         port: smtp.port,
@@ -330,6 +336,14 @@ adminConfig.put('/', zValidator('json', adminConfigSchema), async (c) => {
 
     if (data.require_email_verification !== undefined) {
       await setSystemConfigValue('require_email_verification', data.require_email_verification);
+    }
+
+    if (data.external_url !== undefined) {
+      if (data.external_url && data.external_url.trim()) {
+        await setSystemConfigValue('external_url', data.external_url.trim().replace(/\/+$/, ''));
+      } else {
+        await clearSystemConfigValue('external_url');
+      }
     }
 
     if (data.reset_smtp) {
@@ -378,6 +392,59 @@ adminConfig.put('/', zValidator('json', adminConfigSchema), async (c) => {
     return c.json({ error: 'Failed to save config' }, 500);
   }
 });
+
+// Send a test email using the effective SMTP configuration and report verbose
+// errors so admins can diagnose delivery problems directly from the UI.
+adminConfig.post(
+  '/test-email',
+  zValidator('json', z.object({ to: z.string().email().optional() })),
+  async (c) => {
+    try {
+      const body = c.req.valid('json');
+      const smtp = await getEffectiveSmtp();
+      if (!smtp.host) {
+        return c.json(
+          {
+            ok: false,
+            error:
+              'SMTP host is not configured. Set SMTP_HOST (or fill in the SMTP Host field above and save) before sending a test email.',
+            smtp: { host: null, port: smtp.port, secure: smtp.secure, username: smtp.username, from: smtp.from },
+          },
+          400,
+        );
+      }
+
+      const recipient = (body.to ? body.to.trim() : '') || c.get('userEmail');
+      if (!recipient) {
+        return c.json({ ok: false, error: 'No recipient address provided and no admin email is available.' }, 400);
+      }
+
+      const message: EmailMessage = {
+        to: recipient,
+        subject: 'PantryButler SMTP test',
+        text: 'This is a test email from PantryButler to verify your SMTP configuration.',
+      };
+
+      try {
+        await sendEmail(message);
+      } catch (err) {
+        return c.json(
+          {
+            ok: false,
+            error: err instanceof Error ? err.message : String(err),
+            smtp: { host: smtp.host, port: smtp.port, secure: smtp.secure, username: smtp.username, from: smtp.from },
+          },
+          502,
+        );
+      }
+
+      return c.json({ ok: true, to: recipient });
+    } catch (err) {
+      console.error('Test email error:', err);
+      return c.json({ ok: false, error: err instanceof Error ? err.message : String(err) }, 500);
+    }
+  },
+);
 
 admin.route('/config', adminConfig);
 

@@ -54,7 +54,7 @@ Or double-click **`start-windows.bat`**.
 1. A `docker/.env.2container` environment file is created (from the committed `docker/.env.2container.example` template) with a freshly generated `JWT_SECRET`. The file is gitignored — never commit it.
 2. Containers are built and started (project **`PantryButler`**: `PantryButler-db-1`, `PantryButler-pantrybutler-1`).
 3. The app waits until `http://localhost:3000/api/health` responds, then prints the setup summary.
-4. Open **http://localhost:3000** and sign in. All three launchers automatically seed the nutrition data and create the initial admin account on first boot (email `admin@pantrybutler.local`, password `admin123`), printing the credentials in the terminal.
+4. Open **http://localhost:3000** and sign in. All three launchers automatically seed the nutrition data and create the initial admin account on first boot (email `admin@pantrybutler.local`); a secure random password is generated and printed in the terminal.
 
 ### Handy options
 
@@ -64,8 +64,19 @@ Or double-click **`start-windows.bat`**.
 | Wipe database volume (destructive) | `./start-mac.sh --reset-db` | `docker compose -p PantryButler down -v` | `.\start-windows.ps1 -ResetDb` |
 | Container status | `docker compose -p PantryButler ps` | same | same |
 | Stream logs | `docker compose -p PantryButler logs -f` | same | same |
+| Skip GitHub auto-update (local testing) | `./start-mac.sh --noupdate` | `./docker/start-standalone.sh --noupdate` | `.\start-windows.ps1 -NoUpdate` |
+| Set public URL for email links | `./start-mac.sh --url https://example.com` | `./docker/start-standalone.sh --url https://example.com` | `.\start-windows.ps1 -Url https://example.com` |
+
+> **Auto-update:** on every run the launchers run `git pull --ff-only` to fetch the latest version from [github.com/zedd00/PantryButler](https://github.com/zedd00/PantryButler). Pass `--noupdate` (macOS/Linux) or `-NoUpdate` (Windows) to skip the pull — handy when testing local changes before pushing.
 
 > **Admin features & email verification:** with `--enable-admin-features`, new instance creators must verify their email before signing in (override with `REQUIRE_EMAIL_VERIFICATION=false`). Emails are sent via SMTP — configure `SMTP_HOST`, `SMTP_PORT`, `SMTP_USERNAME`, `SMTP_PASSWORD`, `SMTP_FROM` and `SMTP_SECURE` in `docker/.env.2container`, or set them later from the Admin → Configuration page. Without an SMTP host, verification links are logged to the server console instead of being delivered.
+
+> **Public URL for email links:** verification and notification emails embed an absolute link. On a deployment reached from outside localhost, set the public URL so the links point at your domain instead of `http://localhost:3000`. Three equivalent ways:
+> - Launcher flag (prompted interactively when run in a terminal): `./start-mac.sh --url https://pantrybutler.example.com`, `./docker/start-standalone.sh --url https://pantrybutler.example.com`, or `.\start-windows.ps1 -Url https://pantrybutler.example.com`. The value is saved to `docker/.env.2container` as `APP_URL`.
+> - Set `APP_URL=https://pantrybutler.example.com` directly in `docker/.env.2container`.
+> - Any time after first boot, from **Admin → Configuration → Public URL** (this value overrides `APP_URL`).
+>
+> If unset, the server falls back to `CORS_ORIGIN`, then `localhost`. When testing locally, if a verification email doesn't arrive, check the server console for the logged link.
 
 > **Production note:** change `POSTGRES_PASSWORD` in `docker/.env.2container` before exposing PantryButler beyond localhost, and set strong credentials in the setup wizard.
 ---
@@ -204,6 +215,17 @@ Full in-app help is also available under the **/docs** routes (Getting Started, 
 3. `npm install` and `npm run install:server`.
 4. Make your changes and verify with `npm run lint` and `npm run test:db`.
 5. Keep every UI string keyed in **all 7 locales** (`src/locales/<lang>/*.json`).
+
+---
+
+## 💖 Support
+
+If PantryButler helps you cook, plan meals, and waste less food, consider supporting its development — it keeps the project self-hosted, ad-free, and open source:
+
+- ☕ **Buy me a coffee:** https://buymeacoffee.com/pantrybutler
+- 🌟 **Patreon:** https://www.patreon.com/zedd00/
+
+Every contribution goes toward servers, open data licensing, and more time on new features. Thank you! 💛
 
 ---
 

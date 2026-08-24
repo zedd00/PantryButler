@@ -265,35 +265,43 @@
       "saved": "Config saved successfully",
       "saveFailed": "Failed to save config: {{error}}",
       "resetDone": "SMTP settings reset to environment defaults",
-      "resetFailed": "Failed to reset SMTP settings: {{error}}"
+      "resetFailed": "Failed to reset SMTP settings: {{error}}",
+      "testEmailSent": "Test email sent to {{to}}"
     },
     "headings": {
       "management": "Auth & Mail Config",
       "emailVerification": "Email Verification",
+      "externalUrl": "Public URL",
       "smtp": "SMTP / Outgoing Mail"
     },
     "text": {
       "description": "Configure email verification for instance creators and the outgoing mail server.",
       "emailVerificationDesc": "When enabled, new instance creators must confirm their email address before their kitchen is created. When disabled, instances are created immediately at signup.",
       "smtpDesc": "SMTP is used to send verification emails. Empty fields fall back to the environment configuration.",
-      "smtpEnvFallback": "Empty fields fall back to the server's environment settings (SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, SMTP_FROM, SMTP_SECURE). When no SMTP host is set, verification emails are logged to the server console instead of being sent."
+      "smtpEnvFallback": "Empty fields fall back to the server's environment settings (SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, SMTP_FROM, SMTP_SECURE). When no SMTP host is set, verification emails are logged to the server console instead of being sent.",
+      "externalUrlDesc": "The public base URL users use to reach PantryButler (e.g. https://pantrybutler.example.com). Used to build links in verification and notification emails so they work from outside your network.",
+      "externalUrlUsed": "Used in verification and notification emails in place of localhost when set."
     },
     "labels": {
       "requireEmailVerification": "Require email verification for new instance creators",
+      "externalUrl": "External / Public URL",
       "smtpHost": "SMTP Host",
       "smtpPort": "SMTP Port",
       "smtpUsername": "SMTP Username",
       "smtpPassword": "SMTP Password",
       "smtpFrom": "From Address",
-      "smtpSecure": "Use implicit TLS (SMTPS)"
+      "smtpSecure": "Use implicit TLS (SMTPS)",
+      "testEmailTo": "Test recipient email"
     },
     "placeholders": {
       "password": "SMTP password",
-      "passwordSaved": "Saved password (leave blank to keep)"
+      "passwordSaved": "Saved password (leave blank to keep)",
+      "externalUrl": "https://pantrybutler.example.com"
     },
     "buttons": {
       "save": "Save Config",
-      "resetSmtp": "Reset SMTP to defaults"
+      "resetSmtp": "Reset SMTP to defaults",
+      "testEmail": "Save & test email settings"
     },
     "dialogs": {
       "resetSmtpTitle": "Reset SMTP settings?",

@@ -46,12 +46,15 @@ export interface AdminSmtpOverride {
 export interface AdminConfig {
   require_email_verification: boolean;
   require_email_verification_override: boolean | null;
+  external_url: string;
+  external_url_override: string | null;
   smtp: AdminSmtpConfig;
   smtp_override: AdminSmtpOverride;
 }
 
 export interface UpdateAdminConfigInput {
   require_email_verification?: boolean;
+  external_url?: string | null;
   smtp?: {
     host?: string | null;
     port?: number | null;
@@ -69,6 +72,23 @@ export async function getAdminConfig(): Promise<AdminConfig> {
 
 export async function updateAdminConfig(input: UpdateAdminConfigInput): Promise<{ success: boolean }> {
   return api.put<{ success: boolean }>('/api/admin/config', input);
+}
+
+export interface TestEmailResult {
+  ok: boolean;
+  to?: string;
+  error?: string;
+  smtp?: {
+    host: string | null;
+    port: number;
+    secure: boolean;
+    username: string | null;
+    from: string | null;
+  };
+}
+
+export async function testAdminEmail(to?: string): Promise<TestEmailResult> {
+  return api.post<TestEmailResult>('/api/admin/config/test-email', to ? { to } : {});
 }
 
 export interface SetupFile {

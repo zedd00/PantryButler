@@ -41,10 +41,12 @@ Usage:
 Exit code is non-zero if any assertion failed.
 """
 
+import hashlib
 import json
 import os
 import re
 import secrets
+import subprocess
 import sys
 import time
 import urllib.error
@@ -53,9 +55,52 @@ from fractions import Fraction
 
 BASE = os.environ.get("PB_BASE", "http://localhost:3000")
 ADMIN_EMAIL = os.environ.get("PB_ADMIN_EMAIL", "admin@pantrybutler.local")
-ADMIN_PASS = os.environ.get("PB_ADMIN_PASS", "admin123")
 TEST_PASS = "testpass123"
 RUN_UI = os.environ.get("PB_PLAYWRIGHT") == "1"
+
+
+def load_env_2container():
+    """Load credentials from the standalone stack's .env.2container so the smoke
+    test can authenticate as the admin and reach the database without hardcoding
+    secrets. Searched in order: $PB_ENV_2CONTAINER, docker/.env.2container,
+    .env.2container, <repo>/.env.2container. Returns a plain KEY->VALUE dict."""
+    candidates = [
+        os.environ.get("PB_ENV_2CONTAINER"),
+        os.path.join(os.path.dirname(__file__), "..", "docker", ".env.2container"),
+        ".env.2container",
+        os.path.join(os.path.dirname(__file__), "..", ".env.2container"),
+    ]
+    for path in candidates:
+        if not path:
+            continue
+        p = os.path.abspath(path)
+        if not os.path.isfile(p):
+            continue
+        values = {}
+        with open(p, "r", encoding="utf-8") as fh:
+            for line in fh:
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                if line.startswith("export "):
+                    line = line[len("export "):]
+                if "=" not in line:
+                    continue
+                key, _, val = line.partition("=")
+                val = val.strip()
+                if len(val) >= 2 and val[0] in "\"'" and val[-1] == val[0]:
+                    val = val[1:-1]
+                values[key.strip()] = val
+        if values:
+            return values
+    return {}
+
+
+# Admin + DB credentials default to the standalone stack's .env.2container so a
+# freshly launched instance (whose admin/password are generated there) can be
+# smoked without passing anything on the command line.
+ENV2 = load_env_2container()
+ADMIN_PASS = os.environ.get("PB_ADMIN_PASS") or ENV2.get("ADMIN_PASSWORD") or "admin123"
 
 # A real 1x1 transparent PNG (valid magic bytes for the upload check).
 PNG_1PX = bytes.fromhex(
@@ -227,6 +272,64 @@ def parse_cooklang(text):
 
 
 # --------------------------------------------------------------------------- #
+# Email verification helper
+# --------------------------------------------------------------------------- #
+# When the running server requires email verification, /register returns
+# `requiresEmailVerification: true` and no token, so the throwaway smoke-test
+# user cannot sign in until the address is confirmed. The smoke test confirms
+# the address itself: it writes a one-time verification token directly into the
+# database, then finalizes through the real /verify-email endpoint (which runs
+# handle_new_user and creates the instance). The stored token is a SHA-256 hash
+# of the raw token, mirroring server/src/utils/tokens sha256Hex.
+#
+# Connection selection (in order):
+#   PB_DATABASE_URL  set  -> psql "<PB_DATABASE_URL>" directly (no docker)
+#   otherwise             -> `docker compose exec db psql` against the default
+#                            local stack (credentials overridable via
+#                            PB_DB_USER / PB_DB_PASSWORD / PB_DB_NAME).
+COMPOSE_CMD = os.environ.get("PB_COMPOSE_CMD", "docker compose").split()
+COMPOSE_FILE = os.environ.get("PB_COMPOSE_FILE", "docker-compose.yml")
+PSQL_BIN = os.environ.get("PB_PSQL_BIN", "psql")
+DB_USER = os.environ.get("PB_DB_USER") or ENV2.get("POSTGRES_USER") or "pantrybutler"
+DB_PASSWORD = os.environ.get("PB_DB_PASSWORD") or ENV2.get("POSTGRES_PASSWORD") or "pb_local_9f2c4a7e_5b8d"
+DB_NAME = os.environ.get("PB_DB_NAME") or ENV2.get("POSTGRES_DB") or "pantrybutler"
+DATABASE_URL = os.environ.get("PB_DATABASE_URL")
+
+
+def _psql(sql):
+    if DATABASE_URL:
+        cmd = [PSQL_BIN, DATABASE_URL, "-tAc", sql]
+    else:
+        cmd = COMPOSE_CMD + ["-f", COMPOSE_FILE, "exec", "-T",
+               "-e", f"PGPASSWORD={DB_PASSWORD}", "db",
+               "psql", "-U", DB_USER, "-d", DB_NAME, "-tAc", sql]
+    proc = subprocess.run(cmd, capture_output=True, text=True)
+    if proc.returncode != 0:
+        raise RuntimeError(f"psql failed ({proc.returncode}): {proc.stderr.strip()}")
+    return proc.stdout.strip()
+
+
+def verify_test_user_via_db(ctx):
+    email = ctx["test_email"].replace("'", "''")
+    raw = secrets.token_urlsafe(32)
+    token_hash = hashlib.sha256(raw.encode("utf-8")).hexdigest()
+    _psql(
+        "INSERT INTO email_verification_tokens (user_id, token_hash, expires_at) "
+        f"SELECT u.id, '{token_hash}', NOW() + interval '1 hour' "
+        f"FROM users u WHERE u.email = '{email}';"
+    )
+    status, body = call("GET", f"/api/auth/verify-email?token={raw}")
+    ok = status == 200 and isinstance(body, dict) and body.get("token")
+    check(ok, "Verify test user email (db token)", f"status={status}",
+          expected="200 + token")
+    if not ok:
+        print("  Cannot continue: test user email could not be verified.")
+        sys.exit(1)
+    ctx["test_uid"] = body.get("user", {}).get("id")
+    return body["token"]
+
+
+# --------------------------------------------------------------------------- #
 # A. Auth & Account
 # --------------------------------------------------------------------------- #
 def section_auth(ctx):
@@ -262,12 +365,18 @@ def section_auth(ctx):
     status, body = call("POST", "/api/auth/register",
                         body={"email": ctx["test_email"], "password": TEST_PASS,
                               "instance_name": "Smoke Test Kitchen"})
-    ok = status == 201 and isinstance(body, dict) and body.get("token")
+    requires_verify = isinstance(body, dict) and body.get("requiresEmailVerification") is True
+    ok = status == 201 and isinstance(body, dict) and (body.get("token") or requires_verify)
     check(ok, "Register test user", f"status={status}", expected="201 + token")
     if not ok:
         sys.exit(1)
-    ctx["test_token"] = body["token"]
     ctx["test_uid"] = body.get("user", {}).get("id")
+    if body.get("token"):
+        ctx["test_token"] = body["token"]
+    else:
+        # Email verification required: confirm the address via the database, then
+        # finalize through the real verify-email endpoint to create the instance.
+        ctx["test_token"] = verify_test_user_via_db(ctx)
 
     status, body = call("GET", "/api/auth/me", token=ctx["test_token"])
     ok = status == 200 and body.get("instances")
@@ -1022,6 +1131,17 @@ def section_notifications(ctx):
     t = ctx["test_token"]
     inst = ctx["test_instance"]
 
+    # The app does not currently auto-generate notifications for this throwaway
+    # user, so seed one directly (via the DB) to exercise the single-read path
+    # instead of skipping it. Teardown cascades the user (and this row) away.
+    uid = ctx["test_uid"]
+    iid = ctx["test_instance"]
+    _psql(
+        "INSERT INTO notifications (id, user_id, instance_id, type, title, message, is_read) "
+        f"VALUES (gen_random_uuid(), '{uid}', '{iid}', 'system', "
+        "'Smoke Test Notification', 'Seeded by smoke test', FALSE)"
+    )
+
     status, body = call("GET", f"/api/notifications?instance_id={inst}", token=t)
     check(status == 200 and isinstance(body, list), "List notifications",
           f"status={status}", expected="200 []")
@@ -1176,7 +1296,7 @@ def section_ui(ctx):
         try:
             want = path.rstrip("/")
             if not pg.url.rstrip("/").endswith(want):
-                pg.goto(f"{BASE}{path}", wait_until="networkidle")
+                pg.goto(f"{BASE}{path}", wait_until="load")
                 pg.wait_for_timeout(300)
         except Exception:
             pass
@@ -1206,7 +1326,7 @@ def section_ui(ctx):
 
     def _visit(pg, path, label):
         """Navigate to a page, click its buttons, report."""
-        pg.goto(f"{BASE}{path}", wait_until="networkidle")
+        pg.goto(f"{BASE}{path}", wait_until="load")
         pg.wait_for_timeout(500)
         _dismiss(pg)
         clicked = _click_buttons_on_page(pg, path)
@@ -1221,7 +1341,7 @@ def section_ui(ctx):
             page.on("pageerror", _on_page_error)
 
             # ---- Login ------------------------------------------------
-            page.goto(f"{BASE}/login", wait_until="networkidle")
+            page.goto(f"{BASE}/login", wait_until="load")
             check(page.locator("#login-username").count() == 1,
                   "UI: login page renders", "", expected="username input present")
 
