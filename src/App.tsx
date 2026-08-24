@@ -31,9 +31,13 @@ function AppContent() {
     const initAudio = () => {
       console.log('User interaction detected, initializing audio...');
       
-      // Create a silent audio element to unlock audio playback
+      // Unlock audio playback for later (timer-finished) sounds. This must be
+      // silent — playing the real timer file at any audible volume would be
+      // heard by the user on every login. Volume 0 unlocks the element without
+      // making noise; the timer sound itself only plays when a timer actually
+      // finishes (see RecipeDetail.playTimerSound).
       const audio = new Audio('/timer.wav');
-      audio.volume = 0.01; // Very low volume for test
+      audio.volume = 0;
       audio.play()
         .then(() => {
           console.log('Audio context initialized successfully');
