@@ -138,15 +138,19 @@ setup_env() {
 write_app_url() {
   local val="$1"
   [[ -f "$ENV_FILE" ]] || return 0
-  if grep -Eq '^APP_URL=' "$ENV_FILE"; then
-    if [[ "$(uname)" == "Darwin" ]]; then
-      sed -i '' "s|^APP_URL=.*|APP_URL=$val|" "$ENV_FILE"
+  # APP_URL and CORS_ORIGIN both point at the public domain so the web app,
+  # email links, and the browser-extension OAuth flow all use it (not localhost).
+  for key in APP_URL CORS_ORIGIN; do
+    if grep -Eq "^$key=" "$ENV_FILE"; then
+      if [[ "$(uname)" == "Darwin" ]]; then
+        sed -i '' "s|^$key=.*|$key=$val|" "$ENV_FILE"
+      else
+        sed -i "s|^$key=.*|$key=$val|" "$ENV_FILE"
+      fi
     else
-      sed -i "s|^APP_URL=.*|APP_URL=$val|" "$ENV_FILE"
+      printf '%s=%s\n' "$key" "$val" >> "$ENV_FILE"
     fi
-  else
-    printf 'APP_URL=%s\n' "$val" >> "$ENV_FILE"
-  fi
+  done
 }
 
 configure_external_url() {

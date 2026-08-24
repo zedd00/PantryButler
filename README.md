@@ -77,7 +77,7 @@ Or double-click **`start-windows.bat`**.
 
 > **Admin features & email verification:** with `--enable-admin-features`, new instance creators must verify their email before signing in (override with `REQUIRE_EMAIL_VERIFICATION=false`). Emails are sent via SMTP — configure `SMTP_HOST`, `SMTP_PORT`, `SMTP_USERNAME`, `SMTP_PASSWORD`, `SMTP_FROM` and `SMTP_SECURE` in `docker/.env.2container`, or set them later from the Admin → Configuration page. Without an SMTP host, verification links are logged to the server console instead of being delivered.
 
-> **Public URL for email links:** verification and notification emails embed an absolute link. On a deployment reached from outside localhost, set the public URL so the links point at your domain instead of `http://localhost:3000`. Three equivalent ways:
+> **Public URL:** on a deployment reached from outside localhost, set this to your domain (e.g. `https://pantrybutler.example.com`) so verification/notification emails and the **browser-extension OAuth flow** use absolute links instead of `http://localhost:3000`. It is also used as the **CORS origin** — the login/consent redirects the Firefox extension opens must point here, not localhost. Three equivalent ways:
 > - Launcher flag (prompted interactively when run in a terminal): `./start-mac.sh --url https://pantrybutler.mythologic.al`, `./docker/start-standalone.sh --url https://pantrybutler.mythologic.al`, or `.\start-windows.ps1 -Url https://pantrybutler.mythologic.al`. The value is saved to `docker/.env.2container` as `APP_URL`.
 > - Set `APP_URL=https://pantrybutler.mythologic.al` directly in `docker/.env.2container`.
 > - Any time after first boot, from **Admin → Configuration → Public URL** (this value overrides `APP_URL`).

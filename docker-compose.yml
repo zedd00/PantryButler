@@ -28,7 +28,10 @@ services:
       JWT_SECRET: ${JWT_SECRET:-change-me-in-production}
       PORT: 3000
       NODE_ENV: production
-      CORS_ORIGIN: http://localhost:3000
+      # Defaults to APP_URL (set by the --url launcher flag) so a public
+      # deployment's CORS and OAuth login/consent redirects use the real domain
+      # instead of localhost. An explicit CORS_ORIGIN always wins.
+      CORS_ORIGIN: ${CORS_ORIGIN:-${APP_URL:-http://localhost:3000}}
       # Public base URL (e.g. https://pantrybutler.example.com). Used to build
       # links in verification/notification emails. Falls back to CORS_ORIGIN,
       # then localhost. Can also be set from the admin config page.

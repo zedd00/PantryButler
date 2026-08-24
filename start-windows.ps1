@@ -161,10 +161,14 @@ function Set-ExternalUrl {
     if ($url) {
         $url = $url.TrimEnd('/')
         $c = Get-Content $EnvFile -Raw
-        if ($c -match '(?m)^APP_URL=') {
-            $c = $c -replace '(?m)^APP_URL=.*', "APP_URL=$url"
-        } else {
-            $c = $c.TrimEnd() + "`nAPP_URL=$url`n"
+        # APP_URL and CORS_ORIGIN both point at the public domain so the web app,
+        # email links, and the browser-extension OAuth flow all use it (not localhost).
+        foreach ($key in @('APP_URL', 'CORS_ORIGIN')) {
+            if ($c -match "(?m)^$key=") {
+                $c = $c -replace "(?m)^$key=.*", "$key=$url"
+            } else {
+                $c = $c.TrimEnd() + "`n$key=$url`n"
+            }
         }
         Set-Content -Path $EnvFile -Value $c -NoNewline -Encoding ascii
         Write-Ok "APP_URL set to $url (saved to $EnvFile)."
@@ -182,10 +186,14 @@ function Set-ExternalUrl {
     $inputUrl = $inputUrl.TrimEnd('/')
     if ($inputUrl) {
         $c = Get-Content $EnvFile -Raw
-        if ($c -match '(?m)^APP_URL=') {
-            $c = $c -replace '(?m)^APP_URL=.*', "APP_URL=$inputUrl"
-        } else {
-            $c = $c.TrimEnd() + "`nAPP_URL=$inputUrl`n"
+        # APP_URL and CORS_ORIGIN both point at the public domain so the web app,
+        # email links, and the browser-extension OAuth flow all use it (not localhost).
+        foreach ($key in @('APP_URL', 'CORS_ORIGIN')) {
+            if ($c -match "(?m)^$key=") {
+                $c = $c -replace "(?m)^$key=.*", "$key=$inputUrl"
+            } else {
+                $c = $c.TrimEnd() + "`n$key=$inputUrl`n"
+            }
         }
         Set-Content -Path $EnvFile -Value $c -NoNewline -Encoding ascii
         Write-Ok "APP_URL set to $inputUrl (saved to $EnvFile)."

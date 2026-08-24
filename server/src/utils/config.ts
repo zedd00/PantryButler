@@ -43,7 +43,10 @@ export const config = {
   port: parseInt(process.env.PORT || process.env.SERVER_PORT || '3000', 10),
   databaseUrl,
   jwtSecret,
-  corsOrigin: process.env.CORS_ORIGIN || 'http://localhost:3000',
+  // Falls back to APP_URL (set by the --url launcher flag) so a public
+  // deployment's login/consent redirects and CORS use the real domain instead
+  // of localhost. An explicit CORS_ORIGIN always wins.
+  corsOrigin: process.env.CORS_ORIGIN || process.env.APP_URL || 'http://localhost:3000',
   appUrl: process.env.APP_URL || process.env.CORS_ORIGIN || 'http://localhost:3000',
   publicDir: process.env.PUBLIC_DIR || path.resolve(__dirname, '../public'),
   setupDir: process.env.SETUP_DIR || path.resolve(__dirname, '../../../setup'),
