@@ -60,7 +60,11 @@ export function redirectMatches(pattern: string, actual: string, allowWildcard: 
 // and reflect config drift on subsequent starts.
 export async function seedOAuthClients(): Promise<void> {
   for (const client of DEFAULT_OAUTH_CLIENTS) {
-    const active = client.is_dev ? config.oauthDevClients : true;
+    // The official browser extension is a first-class, production-supported
+    // client and must always be registered. Its moz-extension:// wildcard
+    // redirect is scheme-locked (see redirectMatches), so honouring it in
+    // production is safe; other dev clients stay gated behind oauthDevClients.
+    const active = client.client_id === 'web-extension' ? true : (client.is_dev ? config.oauthDevClients : true);
     if (!active) continue;
     await query(
       `INSERT INTO oauth_clients (client_id, name, redirect_uri, default_scopes, is_dev)

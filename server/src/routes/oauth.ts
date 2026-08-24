@@ -48,7 +48,11 @@ oauth.get('/authorize', zValidator('query', authorizeSchema), async (c) => {
     if (!client) {
       return c.json({ error: 'invalid_client' }, 400);
     }
-    if (!redirectMatches(client.redirect_uri, params.redirect_uri, client.is_dev && config.oauthDevClients)) {
+    // The extension's moz-extension://* redirect is scheme-locked, so it is
+    // safe to honour its wildcard in production without enabling dev clients
+    // globally (which would also flip matching for any future dev client).
+    const allowWildcard = client.is_dev && (config.oauthDevClients || client.redirect_uri.startsWith('moz-extension://'));
+    if (!redirectMatches(client.redirect_uri, params.redirect_uri, allowWildcard)) {
       return c.json({ error: 'redirect_uri mismatch' }, 400);
     }
 
