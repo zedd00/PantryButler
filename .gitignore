@@ -57,3 +57,6 @@ scripts/translation_run.log
 /.skills
 /tasks
 package.json.[0-9]*
+
+# Firefox extension build artifact (upload to AMO manually, do not commit)
+*.xpi

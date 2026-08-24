@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "PantryButler Cooklang Export",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Export a recipe from the current page as a Cooklang .cook file, or push it straight to your Pantry Butler instance.",
   "permissions": [
     "activeTab",
@@ -11,7 +11,6 @@
   ],
   "browser_specific_settings": {
     "gecko": {
-      "id": "cook-export@pantrybutler.local",
       "strict_min_version": "142.0",
       "data_collection_permissions": {
         "required": [
