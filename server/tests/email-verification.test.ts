@@ -312,8 +312,8 @@ describe('POST /api/auth/resend-verification', () => {
     mockDb([
       verificationOverride(true),
       {
-        match: (sql) => sql.includes('SELECT id, email_verified_at FROM users'),
-        result: () => row({ id: 'u1', email_verified_at: null }),
+        match: (sql) => sql.includes('SELECT id, email, email_verified_at FROM users'),
+        result: () => row({ id: 'u1', email: 'creator@example.com', email_verified_at: null }),
       },
       { match: (sql) => sql.includes('email_verification_tokens'), result: () => row({ id: 't1' }) },
     ]);

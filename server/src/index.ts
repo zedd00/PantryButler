@@ -73,12 +73,26 @@ export function buildApp(): Hono<{ Variables: Variables }> {
     },
     xFrameOptions: 'DENY',
   }));
+  // Resolve the CORS allow-origin. We reflect two origins:
+  //  - the configured corsOrigin (the web app), and
+  //  - moz-extension://* (the official Firefox extension). Each extension
+  //    install has an unguessable moz-extension:// UUID that a web page cannot
+  //    spoof, so reflecting it is safe and lets the extension call the API and
+  //    the OAuth token endpoint cross-origin with its Bearer token. Any other
+  //    origin falls back to corsOrigin, so cookie-auth responses are never
+  //    exposed to arbitrary websites (CSRF-read safe).
+  const resolveCorsOrigin = (origin: string): string => {
+    if (!origin || origin === config.corsOrigin) return config.corsOrigin;
+    if (origin.startsWith('moz-extension://')) return origin;
+    return config.corsOrigin;
+  };
+
   app.use('/api/*', cors({
-    origin: config.corsOrigin,
+    origin: resolveCorsOrigin,
     credentials: true,
   }));
   app.use('/oauth/*', cors({
-    origin: config.corsOrigin,
+    origin: resolveCorsOrigin,
     credentials: true,
   }));
 
