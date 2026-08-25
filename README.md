@@ -199,7 +199,9 @@ npm run test:db    # Validate SQL queries against schema (offline)
 
 - Click the toolbar icon on any recipe page to auto-extract the title, ingredients, steps, servings, and times.
 - Review and edit in the popup, then push to your Pantry Butler instance via a secure OAuth sign-in, or download the recipe as a Cooklang `.cook` file / copy it to your clipboard.
-- Built with `web-ext`; the AMO-listed package is produced by `web-ext build` (output in `firefox-cook-export/web-ext-artifacts/`, gitignored).
+ - Built with `web-ext`; the AMO-listed package is produced by `web-ext build` (output in `firefox-cook-export/web-ext-artifacts/`, gitignored).
+
+ Install it from Firefox Add-ons: [PantryButler Cooklang Export](https://addons.mozilla.org/en-US/firefox/addon/pantrybutler-cooklang-export/).
 
 ---
 
