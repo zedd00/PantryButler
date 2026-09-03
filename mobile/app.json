@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "PantryButler",
+    "slug": "pantrybutler",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "pantrybutler",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#E6F4FE",
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain"
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "al.mythologic.pantrybutler",
+      "buildNumber": "1",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "al.mythologic.pantrybutler",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
